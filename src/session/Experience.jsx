@@ -1,6 +1,9 @@
 import React, { useState, useRef } from 'react';
 import ExperienceCard from '../component/card/ExperienceCard';
 import { motion, AnimatePresence } from 'motion/react';
+import {ais_rec, analytics, presentation, instalation_ais, instalation_antena, website} from '../component/Experience2';
+import {presentation3, cms3, coding3, dashboard3, workspace} from '../component/Experience3';
+import {class_activity, kickoff, learning_springboot, model_training, output_project, project_presentation} from '../component/Experience1';
 
 const Experience = () => {
     const [activeCardId, setActiveCardId] = useState(null);
@@ -23,13 +26,16 @@ const Experience = () => {
                 "Meningkatkan traffic website perusahaan hingga 30% melalui optimasi performa dan SEO."
             ],
             documentations: [
-                { image: "/src/assets/myself/projects/dashboard3.webp", title: "CMS Dashboard" },
-                { image: "/src/assets/myself/projects/coding3.webp", title: "Web Development" }
+                { image: cms3, title: "CMS Dashboard" },
+                { image: coding3, title: "Web Development" },
+                { image: presentation3, title: "Project Presentation" },
+                { image: dashboard3, title: "Revamped Dashboard" },
+                { image: workspace, title: "Team Workspace" }
             ]
         },
         {
             id: 2,
-            role: "Data Science Trainee",
+            role: "Java & Python For Data Science",
             company: "PT. Tata Informasi Asia",
             date: "Sep 2024 - Dec 2024",
             type: "BOOTCAMP",
@@ -41,8 +47,11 @@ const Experience = () => {
                 "Merancang dan membangun Spring Boot REST API untuk melayani sistem prediksi secara real-time."
             ],
             documentations: [
-                { image: "/src/assets/myself/projects/analytics.webp", title: "Model Accuracy" },
-                { image: "/src/assets/myself/projects/presentation3.webp", title: "Project Presentation" }
+                { image: kickoff, title: "Kickoff Bootcamp" },
+                { image: learning_springboot, title: "Learning Spring Boot" },
+                { image: model_training, title: "Model Training" },
+                { image: output_project, title: "Project Output" },
+                { image: project_presentation, title: "Project Presentation" }
             ]
         },
         {
@@ -59,9 +68,12 @@ const Experience = () => {
                 "Membantu proses prototyping perangkat keras untuk sistem fuel filler."
             ],
             documentations: [
-                { image: "/src/assets/myself/projects/monitoring.webp", title: "Vessel Monitoring" },
-                { image: "/src/assets/myself/projects/ais_rec.webp", title: "AIS Receiver" },
-                { image: "/src/assets/myself/projects/instalation_antena.webp", title: "Antenna Installation" }
+                { image: website, title: "Vessel Monitoring" },
+                { image: ais_rec, title: "AIS Receiver" },
+                { image: instalation_antena, title: "Antenna Installation" },
+                { image: instalation_ais, title: "AIS Installation" },
+                { image: analytics, title: "Data Analytics" },
+                { image: presentation, title: "Project Presentation" }
             ]
         }
     ];
@@ -98,7 +110,7 @@ const Experience = () => {
                     viewport={{ once: true }}
                     className="flex flex-col items-center mb-8"
                 >
-                    <h2 className="text-2xl md:text-4xl font-black tracking-tight uppercase">
+                    <h2 className="text-2xl md:text-4xl font-black tracking-tight font-mono">
                         Experience <span className="text-amber-500">Timeline</span>
                     </h2>
                 </motion.div>

@@ -1,8 +1,5 @@
 import React from 'react'
 import { Suspense, lazy } from 'react';
-import NewSkills from './session/NewSkills';
-import NewProjects from './session/NewProjects';
-
 const Navbar = lazy(() => import('./component/Navbar'));
 const Main = lazy(() => import('./session/Main'));
 const Experience = lazy(() => import('./session/Experience'));
@@ -11,6 +8,7 @@ const Projects = lazy(() => import('./session/Projects'));
 const Contact = lazy(() => import('./session/Contact'));
 const BigContent = lazy(() => import('./layout/BigContent'));
 const Footer = lazy(() => import('./session/Footer'));
+const Certification = lazy(() => import('./session/Certification'));
 
 
 function App() {
@@ -21,11 +19,9 @@ function App() {
         <Navbar />
         <Main />
         <Experience />
-
-        
         <Skills />
-        <NewProjects/>
-
+        <Certification />
+        <Projects/>
         <Contact />
         <Footer/>
       </BigContent>

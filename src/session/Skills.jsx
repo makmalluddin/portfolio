@@ -78,7 +78,7 @@ const Skills = () => {
           viewport={{ once: true }}
           className="flex flex-col items-center mb-5"
         >
-          <h2 className="text-2xl md:text-4xl font-black tracking-tight uppercase">
+          <h2 className="text-2xl md:text-4xl font-black tracking-tight font-mono">
             <span className="text-cyan-500">Core</span> Skills
           </h2>
         </motion.div>

@@ -1,17 +1,53 @@
-import React from 'react'
-import { motion } from "framer-motion" // Gunakan framer-motion untuk konsistensi
-import MainLayout from '../layout/MainLayout'
-import { Icon } from '@iconify/react'
-import CircularText from '/components/CircularText'
-import SosmedCard from '../component/card/SosmedCard'
+import React, { useRef, useState } from 'react';
+import { motion } from "motion/react";
+import MainLayout from '../layout/MainLayout';
+import { Icon } from '@iconify/react';
+import CircularText from '/components/CircularText';
+import SosmedCard from '../component/card/SosmedCard';
 
+// ==========================================
+// Komponen Tambahan: Magnetic Physics Button
+// ==========================================
+const MagneticButton = ({ children }) => {
+    const ref = useRef(null);
+    const [position, setPosition] = useState({ x: 0, y: 0 });
+
+    const handleMouse = (e) => {
+        const { clientX, clientY } = e;
+        const { height, width, left, top } = ref.current.getBoundingClientRect();
+        const middleX = clientX - (left + width / 2);
+        const middleY = clientY - (top + height / 2);
+        setPosition({ x: middleX * 0.2, y: middleY * 0.2 });
+    };
+
+    const reset = () => {
+        setPosition({ x: 0, y: 0 });
+    };
+
+    return (
+        <motion.div
+            ref={ref}
+            onMouseMove={handleMouse}
+            onMouseLeave={reset}
+            animate={{ x: position.x, y: position.y }}
+            transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
+            className="relative cursor-pointer z-10 w-fit"
+        >
+            {children}
+        </motion.div>
+    );
+};
+
+// ==========================================
+// Komponen Utama: Contact Section
+// ==========================================
 function Contact() {
     const socialMedia = [
         { id: 1, name: 'Linkedin', textcol: 'text-blue-400', icon: 'linkedin', bordercol: 'border-blue-500', link: 'https://www.linkedin.com/in/makmalluddin/' },
-        { id: 2, name: 'Github', textcol: 'text-red-400', icon: 'github', bordercol: 'border-slate-400', link: 'https://github.com/makmalluddin/makmalluddin' },
+        { id: 2, name: 'Github', textcol: 'text-gray-300', icon: 'github', bordercol: 'border-gray-500', link: 'https://github.com/makmalluddin/makmalluddin' }, // Merubah merah jadi abu-abu agar lebih elegan
         { id: 3, name: 'Whatsapp', textcol: 'text-green-400', icon: 'whatsapp', bordercol: 'border-green-500', link: 'http://wa.me/6285159594771' },
-        { id: 4, name: 'Instagram', textcol: 'text-yellow-400', icon: 'instagram', bordercol: 'border-pink-500', link: 'https://www.instagram.com/makmalluddin' },
-        { id: 5, name: 'Notion', textcol: 'text-yellow-400', icon: 'notion', bordercol: 'border-stone-200', link: 'https://www.instagram.com/makmalluddin' },
+        { id: 4, name: 'Instagram', textcol: 'text-pink-400', icon: 'instagram', bordercol: 'border-pink-500', link: 'https://www.instagram.com/makmalluddin' },
+        { id: 5, name: 'Gmail', textcol: 'text-red-400', icon: 'gmail', bordercol: 'border-red-500', link: 'mailto:makmalluddin123@gmail.com' }, // Mengganti Notion (duplikat IG) menjadi Gmail
     ];
 
     const containerVariants = {
@@ -39,67 +75,86 @@ function Contact() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.3 }}
-                    className="w-full flex flex-col gap-20"
+                    className="w-full flex flex-col gap-16 md:gap-20 max-w-6xl mx-auto"
                 >
                     {/* Marker Header */}
-                    <motion.div variants={itemVariants} className='flex items-center justify-center'>
-                        <div className="w-30 h-px bg-[#666666]"></div>
-                        <span className="mx-6 text-amber-300 font-mono text-md tracking-widest text-center">
-                            LET'S BUILD SOMETHING TOGETHER
-                        </span>
-                        <div className="w-30 h-px bg-[#666666]"></div>
-                    </motion.div>
+                    
 
-                    <div className='flex flex-col lg:flex-row gap-10 justify-between items-center w-full mt-10'>
+                    <div className='flex flex-col lg:flex-row gap-16 lg:gap-10 justify-between items-center w-full'>
 
-                        {/* Left Part */}
-                        <motion.div variants={itemVariants} className='flex flex-col gap-10 z-10'>
-                            <div className='flex justify-start gap-3 items-center'>
-                                <div className='h-13 w-2 bg-amber-300'></div>
-                                <div className='flex flex-col'>
-                                    <div className="font-mono text-gray-400 text-sm">makmalluddin</div>
-                                    <div className='text-3xl font-bold'>Bachelor Of Physics</div>
-                                </div>
+                        {/* ================= PANEL KIRI (Transmission Hub) ================= */}
+                        <motion.div variants={itemVariants} className='flex flex-col gap-8 z-10 w-full lg:w-1/2'>
+                            
+                            {/* 1. Status Indicator Bar */}
+                            <div className="flex items-center gap-3 px-4 py-2 rounded-full border border-amber-500/30 bg-amber-500/10 w-fit backdrop-blur-sm">
+                                <span className="relative flex h-2.5 w-2.5">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500"></span>
+                                </span>
+                                <span className="text-amber-400 text-[10px] font-mono tracking-widest uppercase font-bold">
+                                    Available for Work
+                                </span>
                             </div>
 
-                            <div className='flex items-center justify-start text-start text-7xl md:text-8xl tracking-tighter bg-gradient-to-r from-yellow-400 via-blue-500 to-yellow-400 bg-clip-text text-transparent animate-pulse font-black leading-none'>
-                                SAY <br /> HELLO
+                            {/* 2. Main Heading */}
+                            <div className='flex flex-col'>
+                                <h2 className='text-6xl md:text-8xl tracking-tighter font-black leading-none text-white'>
+                                    SAY <br /> 
+                                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200'>
+                                        HELLO.
+                                    </span>
+                                </h2>
                             </div>
 
-                            <div className='max-w-xl text-gray-400 leading-relaxed'>
-                                I'm open to job opportunities. With a background in physics, I bring a strong analytical approach to solving complex problems.
+                            {/* 3. Data-Driven Copywriting (Quote Block Style) */}
+                            <div className='flex gap-4 items-stretch'>
+                                <div className="w-1 bg-gray-800 rounded-full"></div>
+                                <p className='max-w-md text-gray-400 leading-relaxed font-mono text-sm md:text-base'>
+                                    Whether you have a question, a project idea, or just want to connect. Blending a background in Physics with expertise in web development and data science, I'm ready to help you build robust systems.
+                                </p>
                             </div>
 
-                            <div className="mt-5">
-                                <a href="mailto:makmalluddin123@gmail.com"
-                                    className="group relative inline-flex items-center justify-center px-10 py-5 font-bold text-white transition-all duration-200 bg-cyan-600 font-mono tracking-widest uppercase
-                                            shadow-[6px_6px_0px_0px_rgba(249,115,22,1)] hover:shadow-none hover:translate-x-[6px] hover:translate-y-[6px]">
-                                    Let's Chat
-                                    <svg className="w-5 h-5 ml-3 group-hover:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                                    </svg>
-                                </a>
+                            {/* 4. High-Tech Action Button */}
+                            <div className="mt-4">
+                                <MagneticButton>
+                                    <a 
+                                        href="mailto:makmalluddin123@gmail.com"
+                                        className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#0b0c10] border border-gray-700 hover:border-amber-500 rounded-lg overflow-hidden transition-all duration-300 shadow-xl"
+                                    >
+                                        {/* Hover Scanner Effect */}
+                                        <div className="absolute inset-0 w-0 bg-amber-500/10 group-hover:w-full transition-all duration-500 ease-out"></div>
+                                        
+                                        <span className="relative text-gray-300 font-mono text-xs tracking-[0.2em] uppercase font-bold group-hover:text-amber-400 transition-colors">
+                                            Transmit Message
+                                        </span>
+                                        <Icon 
+                                            icon="solar:plain-2-linear" 
+                                            className="relative text-xl text-gray-500 group-hover:text-amber-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" 
+                                        />
+                                    </a>
+                                </MagneticButton>
                             </div>
                         </motion.div>
 
-                        {/* Right Part: The Atomic Orbital System */}
-                        <motion.div variants={itemVariants} className='relative flex items-center justify-center w-[350px] h-[350px] md:w-[500px] md:h-[500px]'>
+                        {/* ================= PANEL KANAN (Atomic Orbital System) ================= */}
+                        <motion.div variants={itemVariants} className='relative flex items-center justify-center w-[350px] h-[350px] md:w-[500px] md:h-[500px] lg:w-1/2'>
 
-                            {/* 1. Background Grid */}
+                            {/* Background Grid */}
                             <div className="absolute inset-0 opacity-20 pointer-events-none"
-                                style={{ backgroundImage: 'radial-gradient(#333 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+                                style={{ backgroundImage: 'radial-gradient(#444 1px, transparent 1px)', backgroundSize: '24px 24px' }}>
+                            </div>
 
-                            {/* 2. Garis Orbit (SVG) */}
-                            <svg className="absolute w-full h-full opacity-30 pointer-events-none">
+                            {/* Garis Orbit (SVG) */}
+                            <svg className="absolute w-full h-full opacity-80 pointer-events-none">
                                 <motion.circle
-                                    cx="50%" cy="50%" r="140" // Radius ini harus sinkron dengan variabel 'radius' di bawah
-                                    fill="none" stroke="white" strokeWidth="1" strokeDasharray="5,5"
+                                    cx="50%" cy="50%" r="140" 
+                                    fill="none" stroke="white" strokeWidth="1" strokeDasharray="4,4"
                                     animate={{ rotate: 360 }}
                                     transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
                                 />
                             </svg>
 
-                            {/* Menggunakan inset-0 agar container ini memenuhi seluruh area parent secara presisi */}
+                            {/* Satellite Nodes (Social Media) */}
                             <div className="absolute inset-0 pointer-events-none">
                                 {socialMedia.map((socc, index) => {
                                     const angle = (index / socialMedia.length) * 2 * Math.PI;
@@ -124,36 +179,37 @@ function Contact() {
                                                 ],
                                             }}
                                             transition={{
-                                                duration: 3,
+                                                duration: 4, // Diperlambat sedikit agar mengambangnya lebih elegan
                                                 repeat: Infinity,
                                                 delay: index * 0.5,
                                                 ease: "easeInOut"
                                             }}
                                         >
-                                            {/* Centering element secara internal */}
-                                            <div className="relative -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
-                                                <div className={`absolute inset-0 blur-xl opacity-20 ${socc.textcol.replace('text', 'bg')}`}></div>
-                                                <SosmedCard {...socc}/>
+                                            <div className="relative -translate-x-1/2 -translate-y-1/2 flex items-center justify-center group">
+                                                <div className={`absolute inset-0 blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300 ${socc.textcol.replace('text', 'bg')}`}></div>
+                                                <a href={socc.link} target="_blank" rel="noopener noreferrer">
+                                                    <SosmedCard {...socc}/>
+                                                </a>
                                             </div>
                                         </motion.div>
                                     );
                                 })}
                             </div>
 
-                            {/* 4. Center Core: Circular Text */}
+                            {/* Center Core: Circular Text */}
                             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                <div className="scale-50 opacity-40">
+                                <div className="scale-75 opacity-30">
                                     <CircularText
-                                        text="* DATA * PHYSICS * TECH "
-                                        spinDuration={15}
-                                        className="font-mono text-white"
+                                        text="* DATA * PHYSICS * TECH * WEB "
+                                        spinDuration={20}
+                                        className="font-mono text-white tracking-widest"
                                     />
                                 </div>
                             </div>
 
-                            {/* 5. Central Nucleus */}
-                            <div className="absolute z-20 w-16 h-16 rounded-full border border-gray-700 bg-black/40 flex items-center justify-center backdrop-blur-xl">
-                                <Icon icon="solar:cpu-bold" className="text-3xl text-amber-300 animate-pulse" />
+                            {/* Central Nucleus */}
+                            <div className="absolute z-20 w-16 h-16 rounded-full border border-gray-700 bg-black/60 flex items-center justify-center backdrop-blur-xl shadow-[0_0_30px_rgba(245,158,11,0.1)]">
+                                <Icon icon="solar:cpu-bold" className="text-3xl text-amber-400 animate-pulse" />
                             </div>
 
                         </motion.div>
@@ -161,7 +217,7 @@ function Contact() {
                 </motion.div>
             </MainLayout>
         </section>
-    )
+    );
 }
 
-export default Contact
+export default Contact;
