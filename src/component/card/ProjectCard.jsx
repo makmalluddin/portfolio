@@ -42,7 +42,7 @@ const ProjectCard = memo(({
         <motion.div
             layout
             onClick={!isActive ? onExpand : undefined}
-            className={`relative flex flex-col lg:${isActive ? 'flex-row' : 'flex-col'} overflow-hidden rounded-xl border bg-[#0b0c10] transition-colors duration-300 w-full h-full
+            className={`relative flex flex-col lg:${isActive ? 'flex-row' : 'flex-col'} overflow-hidden rounded-md border bg-[#0b0c10] transition-colors duration-300 w-full h-full
                 ${isActive ? `${theme.borderActive} cursor-default shadow-2xl shadow-black/90` : `border-gray-800/80 cursor-pointer hover:border-gray-600 group`}
             `}
         >

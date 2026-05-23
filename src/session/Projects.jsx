@@ -106,7 +106,7 @@ function Projects() {
         {
             id: 4,
             image: monitoring,
-            title: 'Air & Maritime Traffic Monitoring',
+            title: 'Vessel Monitoring',
             description: 'Built a monitoring and visualization system to track over 120 vessels around Tanjung Priok Port and 5 aircraft trajectories using an interactive web platform.',
             keyFeatures: [
                 "Real-time plotting of 120+ vessels on interactive maps",
@@ -126,7 +126,7 @@ function Projects() {
     ];
 
     const handleViewAll = () => {
-        console.log("Navigating to /all-projects");
+        window.open('https://www.datascienceportfol.io/makmalluddin', '_blank');
     };
 
     return (
@@ -187,7 +187,7 @@ function Projects() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2, duration: 0.5 }}
-                    className="flex justify-center mt-3 w-full"
+                    className="flex justify-center mt-8 w-full"
                 >
                     <MagneticButton onClick={handleViewAll}>
                         <div className="group flex items-center justify-center gap-3 px-8 py-3.5 rounded-full border border-gray-700 bg-[#0b0c10] hover:bg-[#11131a] hover:border-amber-500/50 transition-colors duration-300 shadow-xl overflow-hidden">

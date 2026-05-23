@@ -29,7 +29,7 @@ const SkillCard = memo(({ name, icon, tag, color = 'amber', iconClass = '' }) =>
 
     return (
         <div 
-            className={`relative w-28 h-28 flex flex-col items-center justify-center gap-3 rounded-xl border bg-[#0a0b0d]/50 backdrop-blur-sm cursor-default transition-all duration-300 group ${theme.border} ${theme.glow} hover:bg-[#0f1115] hover:-translate-y-1`}
+            className={`relative w-28 h-28 flex flex-col items-center justify-center gap-3 rounded-md border bg-[#0a0b0d]/50 backdrop-blur-sm cursor-default transition-all duration-300 group ${theme.border} ${theme.glow} hover:bg-[#0f1115] hover:-translate-y-1`}
         >
             {/* Tag / Sub-category Badge di Pojok Kanan Atas */}
             {tag && (

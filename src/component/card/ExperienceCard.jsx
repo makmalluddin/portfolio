@@ -71,7 +71,7 @@ const ExperienceCard = ({
                     }}
                     transition={{ type: "spring", stiffness: 260, damping: 20 }}
                     // Card dibuat lebih compact (p-5 dari p-6)
-                    className={`w-full max-w-md p-5 rounded-2xl border cursor-pointer backdrop-blur-sm transition-colors duration-300
+                    className={`w-full max-w-md p-5 rounded-md border cursor-pointer backdrop-blur-sm transition-colors duration-300
                         ${isActive 
                             ? `bg-[#1a1a1a]/90 ${theme.border} shadow-2xl shadow-black/80` 
                             : 'bg-[#111111]/80 border-gray-800 hover:bg-[#151515]/90 hover:border-gray-700'
@@ -95,7 +95,7 @@ const ExperienceCard = ({
 
                     <div className="flex flex-wrap gap-2 pt-3 border-t border-gray-800/60">
                         {stack.map((tech, idx) => (
-                            <span key={idx} className="text-[10px] font-mono text-gray-400 bg-gray-900 px-2 py-1 rounded">
+                            <span key={idx} className="text-[10px] font-mono text-gray-400 bg-gray-900 px-2 py-1 rounded-xs">
                                 {tech}
                             </span>
                         ))}
@@ -118,7 +118,7 @@ const ExperienceCard = ({
                             className="w-full max-w-md flex flex-col gap-5"
                         >
                             {/* Bullet Points Deskripsi */}
-                            <div className="bg-white/5 backdrop-blur-md border border-white/10 p-5 rounded-xl shadow-xl">
+                            <div className="bg-white/5 backdrop-blur-md border border-white/10 p-5 rounded-md shadow-xl">
                                 <h4 className="text-[10px] font-mono text-gray-500 uppercase tracking-widest mb-3">// key_responsibilities</h4>
                                 <ul className="space-y-2.5">
                                     {descriptions.map((desc, idx) => (
@@ -145,7 +145,7 @@ const ExperienceCard = ({
                                                 <motion.div 
                                                     key={idx}
                                                     whileHover={{ y: -5 }}
-                                                    className="w-40 flex-none flex flex-col bg-white/5 backdrop-blur-xl border border-white/10 rounded-lg overflow-hidden shadow-lg relative"
+                                                    className="w-40 flex-none flex flex-col bg-white/5 backdrop-blur-xl border border-white/10 rounded-xs overflow-hidden shadow-lg relative"
                                                 >
                                                     <img 
                                                         src={doc.image} 

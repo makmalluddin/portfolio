@@ -24,7 +24,7 @@ const CertificationCard = memo(({ title, provider, year, icon, isActive, onClick
     return (
         <div
             onClick={onClick}
-            className={`flex items-center gap-4 p-4 rounded-xl border cursor-pointer transition-all duration-300 group
+            className={`flex items-center gap-4 p-4 rounded-md border cursor-pointer transition-all duration-300 group
                 ${isActive 
                     ? `${theme.activeBorder} ${theme.activeBg} shadow-[0_0_20px_rgba(0,0,0,0.5)]` 
                     : 'border-gray-800/80 bg-[#0b0c10] hover:border-gray-600 hover:bg-[#11131a]'
@@ -32,12 +32,13 @@ const CertificationCard = memo(({ title, provider, year, icon, isActive, onClick
             `}
         >
             {/* Logo / Ikon Provider */}
-            <div className={`flex-none w-12 h-12 rounded-lg bg-[#050505] border flex items-center justify-center transition-colors
+            <div className={`flex-none w-12 h-12 rounded-lg bg-white border flex items-center justify-center transition-colors
                 ${isActive ? theme.activeBorder : 'border-gray-800'}
             `}>
-                <Icon 
-                    icon={icon} 
-                    className={`text-2xl transition-colors duration-300 ${isActive ? theme.iconColor : 'text-gray-500 group-hover:text-gray-300'}`} 
+                <img
+                    src={icon}
+                    alt={provider}
+                    className="w-full h-full object-contain p-2"
                 />
             </div>
 

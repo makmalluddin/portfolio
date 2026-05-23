@@ -2,33 +2,59 @@ import React, { useState } from 'react';
 import CertificationCard from '../component/card/CertificationCard';
 import MainLayout from '../layout/MainLayout';
 import { motion, AnimatePresence } from 'motion/react';
+import {bnsp, dicoding, revou, stupen, xquisite} from '../component/Certification';
+import {bnsp2, dicoding2, revou2, stupen2, xquisite2} from '../component/Provider';
 
-// Ganti path ini dengan lokasi gambar asli Anda
-import bnspCert from '/src/assets/myself/certifications/bnsp.webp';
-import javaCert from '/src/assets/myself/certifications/stupen.webp';
+
 
 function Certification() {
-    // Data sertifikasi (Data pertama otomatis menjadi default aktif)
     const certifications = [
         {
             id: 1,
             title: "Associate Data Scientist",
             provider: "BNSP",
-            year: "2024",
-            icon: "carbon:certificate",
+            year: "2025",
+            icon: bnsp2,
             color: "amber",
-            image: bnspCert // Gambar format lanskap/potret
+            image: bnsp
         },
         {
             id: 2,
             title: "Java & Python For Data Science",
-            provider: "Government Bootcamp",
-            year: "2024",
-            icon: "mdi:code-braces",
-            color: "cyan",
-            image: javaCert // Ganti dengan placeholder/gambar asli
+            provider: "TIA Academy",
+            year: "2025",
+            icon: stupen2,
+            color: "amber",
+            image: stupen
         },
-        // Anda bisa menambahkan sertifikat kompetensi lainnya di sini
+        {
+            id: 3,
+            title: "Introduction SQL",
+            provider: "Dicoding",
+            year: "2025",
+            icon: dicoding2,
+            color: "amber",
+            image: dicoding
+        },
+        {
+            id: 4,
+            title: "Data Analytics Training",
+            provider: "Xquisite AI",
+            year: "2023",
+            icon: xquisite2,
+            color: "amber",
+            image: xquisite
+        },
+        {
+            id: 5,
+            title: "Intro To Software Engineering",
+            provider: "RevoU",
+            year: "2026",
+            icon: revou2,
+            color: "cyan",
+            image: revou
+        },
+        
     ];
 
     // State untuk mengontrol gambar mana yang muncul di proyektor kanan

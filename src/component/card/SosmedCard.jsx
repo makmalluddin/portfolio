@@ -12,6 +12,8 @@ function SosmedCard({  name, icon, bordercol, link }) {
             case "whatsapp": return <Icon icon='ic:sharp-whatsapp' fontSize={30} className='text-green-500'/>;
             case "instagram": return <Icon icon='skill-icons:instagram' fontSize={30} className='text-pink-500'/>;
             case "notion": return <Icon icon='ri:notion-fill' fontSize={30} className='text-slate-200'/>;
+            case "saturn": return <Icon icon='streamline:planet-solid' fontSize={30} className='text-gray-500'/>;
+            case "asteroid": return <Icon icon='game-icons:asteroid' fontSize={30} className='text-gray-500'/>;
         }
     }
 

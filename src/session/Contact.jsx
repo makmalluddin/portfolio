@@ -44,10 +44,8 @@ const MagneticButton = ({ children }) => {
 function Contact() {
     const socialMedia = [
         { id: 1, name: 'Linkedin', textcol: 'text-blue-400', icon: 'linkedin', bordercol: 'border-blue-500', link: 'https://www.linkedin.com/in/makmalluddin/' },
-        { id: 2, name: 'Github', textcol: 'text-gray-300', icon: 'github', bordercol: 'border-gray-500', link: 'https://github.com/makmalluddin/makmalluddin' }, // Merubah merah jadi abu-abu agar lebih elegan
+        { id: 2, name: 'Github', textcol: 'text-gray-300', icon: 'github', bordercol: 'border-gray-500', link: 'https://github.com/makmalluddin/makmalluddin' },
         { id: 3, name: 'Whatsapp', textcol: 'text-green-400', icon: 'whatsapp', bordercol: 'border-green-500', link: 'http://wa.me/6285159594771' },
-        { id: 4, name: 'Instagram', textcol: 'text-pink-400', icon: 'instagram', bordercol: 'border-pink-500', link: 'https://www.instagram.com/makmalluddin' },
-        { id: 5, name: 'Gmail', textcol: 'text-red-400', icon: 'gmail', bordercol: 'border-red-500', link: 'mailto:makmalluddin123@gmail.com' }, // Mengganti Notion (duplikat IG) menjadi Gmail
     ];
 
     const containerVariants = {
@@ -68,7 +66,7 @@ function Contact() {
     };
 
     return (
-        <section id='contact' className='min-h-screen bg-transparent text-white flex items-center justify-center overflow-hidden'>
+        <section id='contact' className='min-h-screen bg-transparent text-white flex items-center justify-center overflow-hidden py-20'>
             <MainLayout>
                 <motion.div
                     variants={containerVariants}
@@ -77,9 +75,6 @@ function Contact() {
                     viewport={{ once: true, amount: 0.3 }}
                     className="w-full flex flex-col gap-16 md:gap-20 max-w-6xl mx-auto"
                 >
-                    {/* Marker Header */}
-                    
-
                     <div className='flex flex-col lg:flex-row gap-16 lg:gap-10 justify-between items-center w-full'>
 
                         {/* ================= PANEL KIRI (Transmission Hub) ================= */}
@@ -106,7 +101,7 @@ function Contact() {
                                 </h2>
                             </div>
 
-                            {/* 3. Data-Driven Copywriting (Quote Block Style) */}
+                            {/* 3. Data-Driven Copywriting */}
                             <div className='flex gap-4 items-stretch'>
                                 <div className="w-1 bg-gray-800 rounded-full"></div>
                                 <p className='max-w-md text-gray-400 leading-relaxed font-mono text-sm md:text-base'>
@@ -114,102 +109,91 @@ function Contact() {
                                 </p>
                             </div>
 
-                            {/* 4. High-Tech Action Button */}
+                            {/* 4. Action Button */}
                             <div className="mt-4">
                                 <MagneticButton>
                                     <a 
                                         href="mailto:makmalluddin123@gmail.com"
                                         className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#0b0c10] border border-gray-700 hover:border-amber-500 rounded-lg overflow-hidden transition-all duration-300 shadow-xl"
                                     >
-                                        {/* Hover Scanner Effect */}
                                         <div className="absolute inset-0 w-0 bg-amber-500/10 group-hover:w-full transition-all duration-500 ease-out"></div>
-                                        
                                         <span className="relative text-gray-300 font-mono text-xs tracking-[0.2em] uppercase font-bold group-hover:text-amber-400 transition-colors">
                                             Transmit Message
                                         </span>
-                                        <Icon 
-                                            icon="solar:plain-2-linear" 
-                                            className="relative text-xl text-gray-500 group-hover:text-amber-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" 
-                                        />
+                                        <Icon icon="solar:plain-2-linear" className="relative text-xl text-gray-500 group-hover:text-amber-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                                     </a>
                                 </MagneticButton>
                             </div>
                         </motion.div>
 
-                        {/* ================= PANEL KANAN (Atomic Orbital System) ================= */}
-                        <motion.div variants={itemVariants} className='relative flex items-center justify-center w-[350px] h-[350px] md:w-[500px] md:h-[500px] lg:w-1/2'>
-
-                            {/* Background Grid */}
-                            <div className="absolute inset-0 opacity-20 pointer-events-none"
-                                style={{ backgroundImage: 'radial-gradient(#444 1px, transparent 1px)', backgroundSize: '24px 24px' }}>
-                            </div>
-
-                            {/* Garis Orbit (SVG) */}
-                            <svg className="absolute w-full h-full opacity-80 pointer-events-none">
-                                <motion.circle
-                                    cx="50%" cy="50%" r="140" 
-                                    fill="none" stroke="white" strokeWidth="1" strokeDasharray="4,4"
-                                    animate={{ rotate: 360 }}
-                                    transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-                                />
-                            </svg>
-
-                            {/* Satellite Nodes (Social Media) */}
-                            <div className="absolute inset-0 pointer-events-none">
-                                {socialMedia.map((socc, index) => {
-                                    const angle = (index / socialMedia.length) * 2 * Math.PI;
-                                    const radius = 140;
-
-                                    return (
-                                        <motion.div
-                                            key={socc.id}
-                                            className="absolute pointer-events-auto"
-                                            style={{
-                                                left: '50%',
-                                                top: '50%',
-                                                x: Math.cos(angle) * radius,
-                                                y: Math.sin(angle) * radius,
-                                            }}
-                                            animate={{
-                                                x: Math.cos(angle) * radius,
-                                                y: [
-                                                    Math.sin(angle) * radius,
-                                                    (Math.sin(angle) * radius) - 10,
-                                                    Math.sin(angle) * radius
-                                                ],
-                                            }}
-                                            transition={{
-                                                duration: 4, // Diperlambat sedikit agar mengambangnya lebih elegan
-                                                repeat: Infinity,
-                                                delay: index * 0.5,
-                                                ease: "easeInOut"
-                                            }}
-                                        >
-                                            <div className="relative -translate-x-1/2 -translate-y-1/2 flex items-center justify-center group">
-                                                <div className={`absolute inset-0 blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300 ${socc.textcol.replace('text', 'bg')}`}></div>
-                                                <a href={socc.link} target="_blank" rel="noopener noreferrer">
-                                                    <SosmedCard {...socc}/>
-                                                </a>
-                                            </div>
-                                        </motion.div>
-                                    );
-                                })}
-                            </div>
-
-                            {/* Center Core: Circular Text */}
-                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                <div className="scale-75 opacity-30">
-                                    <CircularText
-                                        text="* DATA * PHYSICS * TECH * WEB "
-                                        spinDuration={20}
-                                        className="font-mono text-white tracking-widest"
-                                    />
+                        {/* ================= PANEL KANAN (Orbit & Contact Cards) ================= */}
+                        <motion.div variants={itemVariants} className='flex flex-col items-center gap-12 w-full lg:w-1/2'>
+                            
+                            {/* The Atomic Orbital System (Tetap persis seperti kode Anda) */}
+                            <div className='relative flex items-center justify-center w-[350px] h-[350px] md:w-[500px] md:h-[300px]'>
+                                <div className="absolute inset-0 opacity-20 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#444 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
+                                <svg className="absolute w-full h-full opacity-80 pointer-events-none">
+                                    <motion.circle cx="50%" cy="50%" r="140" fill="none" stroke="white" strokeWidth="1" strokeDasharray="4,4" animate={{ rotate: 360 }} transition={{ duration: 60, repeat: Infinity, ease: "linear" }} />
+                                </svg>
+                                <div className="absolute inset-0 pointer-events-none">
+                                    {socialMedia.map((socc, index) => {
+                                        const angle = (index / socialMedia.length) * 2 * Math.PI;
+                                        const radius = 140;
+                                        return (
+                                            <motion.div key={socc.id} className="absolute pointer-events-auto" style={{ left: '50%', top: '50%', x: Math.cos(angle) * radius, y: Math.sin(angle) * radius, }} animate={{ x: Math.cos(angle) * radius, y: [ Math.sin(angle) * radius, (Math.sin(angle) * radius) - 10, Math.sin(angle) * radius ], }} transition={{ duration: 4, repeat: Infinity, delay: index * 0.5, ease: "easeInOut" }}>
+                                                <div className="relative -translate-x-1/2 -translate-y-1/2 flex items-center justify-center group">
+                                                    <div className={`absolute inset-0 blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300 ${socc.textcol.replace('text', 'bg')}`}></div>
+                                                    <a href={socc.link} target="_blank" rel="noopener noreferrer">
+                                                        <SosmedCard {...socc}/>
+                                                    </a>
+                                                </div>
+                                            </motion.div>
+                                        );
+                                    })}
+                                </div>
+                                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                    <div className="scale-75 opacity-30">
+                                        <CircularText text="* DATA * PHYSICS * TECH * WEB " spinDuration={20} className="font-mono text-white tracking-widest" />
+                                    </div>
+                                </div>
+                                <div className="absolute z-20 w-16 h-16 rounded-full border border-gray-700 bg-black/60 flex items-center justify-center backdrop-blur-xl shadow-[0_0_30px_rgba(245,158,11,0.1)]">
+                                    <Icon icon="solar:cpu-bold" className="text-3xl text-amber-400 animate-pulse" />
                                 </div>
                             </div>
 
-                            {/* Central Nucleus */}
-                            <div className="absolute z-20 w-16 h-16 rounded-full border border-gray-700 bg-black/60 flex items-center justify-center backdrop-blur-xl shadow-[0_0_30px_rgba(245,158,11,0.1)]">
-                                <Icon icon="solar:cpu-bold" className="text-3xl text-amber-400 animate-pulse" />
+                            {/* Info Cards (Simpel, Tanpa Glow, Bersih) */}
+                            <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md justify-center items-end">
+                                
+                                {/* Email Card */}
+                                <a 
+                                    href="mailto:makmalluddin123@gmail.com" 
+                                    className="flex-1 flex items-center gap-4 p-4 rounded-xl border border-gray-800 bg-[#0b0c10] hover:bg-[#11131a] hover:border-gray-600 transition-colors group"
+                                >
+                                    <div className="flex-none p-3 bg-gray-900 rounded-lg text-gray-500 group-hover:text-amber-400 transition-colors">
+                                        <Icon icon="mdi:email-outline" className="text-xl" />
+                                    </div>
+                                    <div className="flex flex-col min-w-0">
+                                        <span className="text-[10px] uppercase tracking-widest text-gray-500 font-mono mb-0.5">Email</span>
+                                        <span className="text-xs md:text-sm text-gray-300 font-mono truncate">makmalluddin123<br className="hidden md:block lg:hidden"/>@gmail.com</span>
+                                    </div>
+                                </a>
+
+                                {/* Phone Card */}
+                                <a 
+                                    href="http://wa.me/6285159594771" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className="flex-1 flex items-center gap-4 p-4 rounded-xl border border-gray-800 bg-[#0b0c10] hover:bg-[#11131a] hover:border-gray-600 transition-colors group"
+                                >
+                                    <div className="flex-none p-3 bg-gray-900 rounded-lg text-gray-500 group-hover:text-green-400 transition-colors">
+                                        <Icon icon="mdi:whatsapp" className="text-xl" />
+                                    </div>
+                                    <div className="flex flex-col min-w-0">
+                                        <span className="text-[10px] uppercase tracking-widest text-gray-500 font-mono mb-0.5">WhatsApp</span>
+                                        <span className="text-xs md:text-sm text-gray-300 font-mono truncate">+62 851 5959 4771</span>
+                                    </div>
+                                </a>
+
                             </div>
 
                         </motion.div>

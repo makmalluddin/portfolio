@@ -148,7 +148,7 @@ function Main() {
                         <motion.div variants={itemVariants} className='text-lg lg:text-2xl font-mono text-cyan-400 h-8 flex items-center justify-center lg:justify-start w-full'>
                             <Typewriter
                                 options={{
-                                    strings: ['Data Scientist.', 'AI Engineer.', 'Web Developer.'],
+                                    strings: ['Data Scientist.', 'AI Engineer.'],
                                     autoStart: true,
                                     loop: true,
                                     delay: 75,
@@ -169,7 +169,7 @@ function Main() {
                             
                             {/* Tombol Resume Cyber-Minimalist */}
                             <MagneticButton onClick={openPdf}>
-                                <div className="group relative inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#0b0c10] border border-gray-700 hover:border-amber-500 rounded-lg overflow-hidden transition-all duration-300 shadow-xl">
+                                <div className="group relative inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#0b0c10] border border-gray-700 hover:border-amber-500 rounded-sm overflow-hidden transition-all duration-300 shadow-xl">
                                     <div className="absolute inset-0 w-0 bg-amber-500/10 group-hover:w-full transition-all duration-500 ease-out"></div>
                                     <span className="relative text-gray-300 font-mono text-xs tracking-[0.2em] uppercase font-bold group-hover:text-amber-400 transition-colors">
                                         VIEW RESUME
@@ -180,13 +180,13 @@ function Main() {
 
                             {/* Lingkaran Ikon Sosmed */}
                             <div className='flex items-center gap-4'>
-                                <a href='https://github.com/makmalluddin' target='_blank' rel="noopener noreferrer" className="p-2 border border-gray-800 rounded-full hover:border-cyan-500 hover:bg-cyan-500/10 transition-all group">
+                                <a href='https://github.com/makmalluddin' target='_blank' rel="noopener noreferrer" className="p-2 border border-gray-800 rounded-sm hover:border-cyan-500 hover:bg-cyan-500/10 transition-all group">
                                     <Icon icon='mdi:github' className='text-xl text-gray-400 group-hover:text-cyan-400 transition-colors' />
                                 </a>
-                                <a href='https://www.linkedin.com/in/makmalluddin/' target='_blank' rel="noopener noreferrer" className="p-2 border border-gray-800 rounded-full hover:border-cyan-500 hover:bg-cyan-500/10 transition-all group">
+                                <a href='https://www.linkedin.com/in/makmalluddin/' target='_blank' rel="noopener noreferrer" className="p-2 border border-gray-800 rounded-sm hover:border-cyan-500 hover:bg-cyan-500/10 transition-all group">
                                     <Icon icon='devicon-plain:linkedin' className='text-xl text-gray-400 group-hover:text-cyan-400 transition-colors' />
                                 </a>
-                                <a href='mailto:makmalluddin123@gmail.com' target='_blank' rel="noopener noreferrer" className="p-2 border border-gray-800 rounded-full hover:border-cyan-500 hover:bg-cyan-500/10 transition-all group">
+                                <a href='mailto:makmalluddin123@gmail.com' target='_blank' rel="noopener noreferrer" className="p-2 border border-gray-800 rounded-sm hover:border-cyan-500 hover:bg-cyan-500/10 transition-all group">
                                     <Icon icon='mdi:gmail' className='text-xl text-gray-400 group-hover:text-cyan-400 transition-colors' />
                                 </a>
                             </div>
@@ -203,8 +203,8 @@ function Main() {
                     className="flex flex-col md:flex-row relative bg-[#0b0c10]/80 backdrop-blur-md border border-gray-800 w-full max-w-4xl mx-auto font-mono shadow-2xl rounded-xl z-20"
                 >
                     {/* Sudut Dekoratif Cyber */}
-                    <div className="h-4 w-4 border-t-2 border-l-2 border-amber-500 absolute -top-1 -left-1 rounded-tl-sm"></div>
-                    <div className="h-4 w-4 border-b-2 border-r-2 border-amber-500 absolute -right-1 -bottom-1 rounded-br-sm"></div>
+                    <div className="h-4 w-4 border-t-2 border-l-2 border-amber-500 absolute -top-1 -left-1 rounded-tl-xs"></div>
+                    <div className="h-4 w-4 border-b-2 border-r-2 border-amber-500 absolute -right-1 -bottom-1 rounded-br-xs"></div>
 
                     {[
                         { val: "6+", label: "month experience" },

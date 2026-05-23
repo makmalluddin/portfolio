@@ -21,9 +21,9 @@ const Experience = () => {
             color: "amber", 
             stack: ["React", "Laravel", "PostgreSQL", "Tailwind"],
             descriptions: [
-                "Merevitalisasi dan membangun ulang website utama perusahaan menggunakan modern React frontend.",
-                "Mengembangkan platform e-commerce secara penuh (full-stack) beserta integrasi payment gateway.",
-                "Meningkatkan traffic website perusahaan hingga 30% melalui optimasi performa dan SEO."
+                "Revamped and rebuilt the company’s main website using React and Laravel.",
+                "Developed an e-commerce platform with payment gateway integration.",
+                "Increased company website traffic by 30% through performance optimization and SEO improvements."
             ],
             documentations: [
                 { image: cms3, title: "CMS Dashboard" },
@@ -42,9 +42,9 @@ const Experience = () => {
             color: "cyan", 
             stack: ["Python", "Java", "Spring Boot", "Machine Learning"],
             descriptions: [
-                "Membangun model Machine Learning (Random Forest) dengan tingkat akurasi dan presisi mencapai 97%.",
-                "Mengembangkan lebih dari 10 model prediktif pendukung dalam berbagai sub-project data science.",
-                "Merancang dan membangun Spring Boot REST API untuk melayani sistem prediksi secara real-time."
+                "Built a Random Forest model for the final project, achieving 97% accuracy and precision.",
+                "Developed more than 10 predictive models across various data science sub-projects.",
+                "Designed and built a Spring Boot REST API to serve a delivery time accuracy prediction system."
             ],
             documentations: [
                 { image: kickoff, title: "Kickoff Bootcamp" },
@@ -63,9 +63,9 @@ const Experience = () => {
             color: "amber", 
             stack: ["JavaScript", "Python", "Arduino", "Linux"],
             descriptions: [
-                "Membangun platform pemantauan (monitoring) terintegrasi untuk lebih dari 120 kapal (vessel) dan 5 pesawat.",
-                "Mengelola dan menganalisis data anomali pergerakan kapal selama 6 bulan masa operasional.",
-                "Membantu proses prototyping perangkat keras untuk sistem fuel filler."
+                "Built an integrated monitoring platform for more than 120 vessels and 5 aircraft.",
+                "Managed and analyzed 6 months of vessel movement anomaly data during operational monitoring.",
+                "Assisted in assembling a device prototype for a vessel fuel filling system."
             ],
             documentations: [
                 { image: website, title: "Vessel Monitoring" },
