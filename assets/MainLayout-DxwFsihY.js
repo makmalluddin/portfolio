@@ -1,0 +1,1 @@
+import{n as e,t}from"./jsx-runtime-DyTGnfRu.js";e();var n=t();function r({children:e}){return(0,n.jsx)(`div`,{className:`w-full px-4 sm:px-6 lg:px-8`,children:(0,n.jsx)(`div`,{className:`max-w-7xl mx-auto my-2`,children:e})})}export{r as t};
