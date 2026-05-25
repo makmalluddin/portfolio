@@ -150,6 +150,10 @@ const ExperienceCard = ({
                                                     <img 
                                                         src={doc.image} 
                                                         alt={doc.title} 
+                                                        width="160"
+                                                        height="96" 
+                                                        loading="lazy"
+                                                        decoding="async"
                                                         className="w-full h-24 object-cover pointer-events-none opacity-80" 
                                                     />
                                                     <div className="p-2 bg-gradient-to-t from-black/90 to-transparent absolute bottom-0 w-full">

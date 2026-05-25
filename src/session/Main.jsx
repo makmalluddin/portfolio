@@ -5,9 +5,6 @@ import FuzzyText from '/components/FuzzyText';
 import { motion } from "motion/react";
 import { Icon } from '@iconify/react';
 
-// ==========================================
-// Komponen Khusus: Magnetic Physics Button
-// ==========================================
 const MagneticButton = ({ children, onClick }) => {
     const ref = useRef(null);
     const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -39,9 +36,6 @@ const MagneticButton = ({ children, onClick }) => {
     );
 };
 
-// ==========================================
-// Komponen Utama: Hero / Main Section
-// ==========================================
 function Main() {
     const bevelStyle = {
         clipPath: "polygon(0 15%, 15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%)"
@@ -67,7 +61,7 @@ function Main() {
     return (
         // Ditambahkan padding vertikal (py-20) untuk mobile agar tidak menempel di tepi layar
         <section id='main' className='relative flex flex-col w-full min-h-screen scroll-mt-10 items-center justify-center text-white overflow-hidden bg-transparent py-20 lg:py-0'>
-            
+
             {/* Version Website Tracker (Desktop Only) */}
             <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -91,7 +85,7 @@ function Main() {
 
             {/* Container Utama (Lebar dibatasi ke max-w-6xl agar proporsional) */}
             <div className='flex flex-col max-w-6xl mx-auto px-6 lg:px-8 z-10 w-full gap-12 lg:gap-16'>
-                
+
                 {/* 1. Area Avatar & Tipografi */}
                 <div className='flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20'>
 
@@ -123,6 +117,10 @@ function Main() {
                         <img
                             src={avatar}
                             alt="Muhammad Akmalluddin"
+                            width={232}
+                            height={280}
+                            loading="eager"
+                            decoding="sync"
                             className='w-58 h-70 lg:w-60 lg:h-75 object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl relative z-10 bg-[#0a0a0a]'
                             style={bevelStyle}
                             fetchPriority='high'
@@ -166,7 +164,7 @@ function Main() {
 
                         {/* Area Tombol & Sosmed (Flex adaptif untuk mobile) */}
                         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 pt-6 w-full">
-                            
+
                             {/* Tombol Resume Cyber-Minimalist */}
                             <MagneticButton onClick={openPdf}>
                                 <div className="group relative inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#0b0c10] border border-gray-700 hover:border-amber-500 rounded-sm overflow-hidden transition-all duration-300 shadow-xl">
@@ -211,8 +209,8 @@ function Main() {
                         { val: "5+", label: "featured projects" },
                         { val: "3", label: "prog. languages" }
                     ].map((item, index) => (
-                        <div 
-                            key={index} 
+                        <div
+                            key={index}
                             // Menggunakan border-b di mobile, border-r di desktop
                             className={`w-full flex flex-col gap-1 items-center justify-center py-6 px-4 text-center group border-gray-800 ${index !== 2 ? 'border-b md:border-b-0 md:border-r' : ''}`}
                         >

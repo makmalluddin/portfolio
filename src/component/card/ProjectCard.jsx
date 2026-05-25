@@ -57,10 +57,15 @@ const ProjectCard = memo(({
                     layout
                     alt={title}
                     src={image}
+                    /* --- Siasat Optimasi Gambar --- */
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
+                    /* ------------------------------ */
                     className={`w-full h-full object-cover transition-transform duration-700 ease-out 
                         ${!isActive ? 'group-hover:scale-105 opacity-80 group-hover:opacity-100' : 'opacity-100'}
                     `}
-                    loading="lazy"
                 />
 
                 <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent transition-opacity duration-300 ${isActive ? 'opacity-0 pointer-events-none' : 'opacity-100'}`} />

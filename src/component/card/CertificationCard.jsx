@@ -38,6 +38,10 @@ const CertificationCard = memo(({ title, provider, year, icon, isActive, onClick
                 <img
                     src={icon}
                     alt={provider}
+                    widht="48"
+                    height="48"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-contain p-2"
                 />
             </div>

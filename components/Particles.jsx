@@ -84,7 +84,7 @@ const fragment = /* glsl */ `
 `;
 
 const Particles = ({
-  particleCount = 200,
+  particleCount = 150, // Siasat: Kurangi default dari 200 ke 150 untuk performa ekstra
   particleSpread = 10,
   speed = 0.1,
   particleColors,
@@ -95,7 +95,7 @@ const Particles = ({
   sizeRandomness = 1,
   cameraDistance = 20,
   disableRotation = false,
-  pixelRatio = 1,
+  pixelRatio, // Akan di-handle secara dinamis di dalam useEffect
   className
 }) => {
   const containerRef = useRef(null);
@@ -105,8 +105,12 @@ const Particles = ({
     const container = containerRef.current;
     if (!container) return;
 
+    // Siasat 1: Batasi Device Pixel Ratio (DPR) maksimal di angka 1.5
+    // Layar HP modern punya DPR 2 atau 3, yang membuat WebGL sangat berat. Membatasi di 1.5 tidak akan terlihat bedanya untuk partikel, tapi menghemat performa secara drastis.
+    const optimizedDpr = pixelRatio || Math.min(window.devicePixelRatio, 1.5);
+
     const renderer = new Renderer({
-      dpr: pixelRatio,
+      dpr: optimizedDpr,
       depth: false,
       alpha: true
     });
@@ -170,7 +174,7 @@ const Particles = ({
       uniforms: {
         uTime: { value: 0 },
         uSpread: { value: particleSpread },
-        uBaseSize: { value: particleBaseSize * pixelRatio },
+        uBaseSize: { value: particleBaseSize * optimizedDpr },
         uSizeRandomness: { value: sizeRandomness },
         uAlphaParticles: { value: alphaParticles ? 1 : 0 }
       },
@@ -183,9 +187,22 @@ const Particles = ({
     let animationFrameId;
     let lastTime = performance.now();
     let elapsed = 0;
+    
+    // Siasat 2: Intersection Observer untuk mendeteksi apakah partikel ada di layar
+    let isVisible = true;
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            isVisible = entry.isIntersecting;
+        });
+    });
+    observer.observe(container);
 
     const update = t => {
       animationFrameId = requestAnimationFrame(update);
+      
+      // Jika komponen tidak terlihat (user sudah scroll ke bawah), hentikan kalkulasi WebGL!
+      if (!isVisible) return; 
+
       const delta = t - lastTime;
       lastTime = t;
       elapsed += delta * speed;
@@ -216,12 +233,12 @@ const Particles = ({
       if (moveParticlesOnHover) {
         container.removeEventListener('mousemove', handleMouseMove);
       }
+      observer.disconnect(); // Bersihkan observer
       cancelAnimationFrame(animationFrameId);
       if (container.contains(gl.canvas)) {
         container.removeChild(gl.canvas);
       }
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     particleCount,
     particleSpread,

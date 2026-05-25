@@ -5,8 +5,6 @@ import { motion, AnimatePresence } from 'motion/react';
 import {bnsp, dicoding, revou, stupen, xquisite} from '../component/Certification';
 import {bnsp2, dicoding2, revou2, stupen2, xquisite2} from '../component/Provider';
 
-
-
 function Certification() {
     const certifications = [
         {
@@ -54,7 +52,6 @@ function Certification() {
             color: "cyan",
             image: revou
         },
-        
     ];
 
     // State untuk mengontrol gambar mana yang muncul di proyektor kanan
@@ -64,11 +61,6 @@ function Certification() {
     const activeCert = certifications.find(cert => cert.id === activeCertId);
 
     // Variasi Animasi
-    const titleVariant = {
-        hidden: { opacity: 0, x: 30 },
-        visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } }
-    };
-
     const containerVariant = {
         hidden: { opacity: 0 },
         visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
@@ -139,9 +131,15 @@ function Certification() {
                             {/* AnimatePresence untuk transisi cross-fade gambar yang mulus */}
                             <AnimatePresence mode="wait">
                                 <motion.img
-                                    key={activeCert.id} // Kunci (key) perubahan state
+                                    key={activeCert.id} 
                                     src={activeCert.image}
                                     alt={activeCert.title}
+                                    /* --- Siasat Optimasi Gambar --- */
+                                    width="800"
+                                    height="600"
+                                    loading="lazy"
+                                    decoding="async"
+                                    /* ------------------------------ */
                                     initial={{ opacity: 0, scale: 0.95, filter: 'blur(5px)' }}
                                     animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
                                     exit={{ opacity: 0, scale: 1.05, filter: 'blur(5px)' }}
