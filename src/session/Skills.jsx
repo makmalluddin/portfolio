@@ -12,6 +12,7 @@ const Skills = () => {
       { name: "TensorFlow", icon: "logos:tensorflow", tag: "ML" },
       { name: "Python", icon: "material-icon-theme:python", tag: "DP" },
       { name: "Pandas", icon: "devicon:pandas", tag: "DP" },
+      { name: "Ms. Excel", icon: "vscode-icons:file-type-excel", tag: "DP" },
       { name: "Numpy", icon: "devicon:numpy", tag: "DP" },
       { name: "Tableau", icon: "logos:tableau-icon", tag: "DV" },
       { name: "Matplotlib", icon: "devicon:matplotlib", tag: "DV" },
