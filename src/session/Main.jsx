@@ -59,9 +59,7 @@ function Main() {
     };
 
     return (
-        // Ditambahkan padding vertikal (py-20) untuk mobile agar tidak menempel di tepi layar
         <section id='main' className='relative flex flex-col w-full min-h-screen scroll-mt-10 items-center justify-center text-white overflow-hidden bg-transparent py-20 lg:py-0'>
-
             {/* Version Website Tracker (Desktop Only) */}
             <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -78,7 +76,7 @@ function Main() {
             >
                 <div className="text-[10px] font-mono text-gray-500 tracking-[0.5em] rotate-90 origin-left">
                     <FuzzyText baseIntensity={0.1} hoverIntensity={0.5} fontSize={13} enableHover>
-                        RESUME_SYSTEM.v1.0
+                        RESUME_SYSTEM.v1.2
                     </FuzzyText>
                 </div>
             </motion.div>
@@ -146,7 +144,7 @@ function Main() {
                         <motion.div variants={itemVariants} className='text-lg lg:text-2xl font-mono text-cyan-400 h-8 flex items-center justify-center lg:justify-start w-full'>
                             <Typewriter
                                 options={{
-                                    strings: ['Data Scientist.', 'AI Engineer.'],
+                                    strings: ['Full Stack Engineer', 'Software Developer'],
                                     autoStart: true,
                                     loop: true,
                                     delay: 75,
