@@ -5,7 +5,6 @@ import { motion } from "motion/react";
 
 const Skills = () => {
   // 1. Data Diratakan (Flattened Data)
-  // Sub-kategori sekarang menjadi 'tag' di sudut kanan kotak
   const skillsData = {
     dataScience: [
       { name: "Scikit-learn", icon: "devicon:scikitlearn", tag: "ML" },
