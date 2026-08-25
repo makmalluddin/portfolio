@@ -144,7 +144,7 @@ function Main() {
                         <motion.div variants={itemVariants} className='text-lg lg:text-2xl font-mono text-cyan-400 h-8 flex items-center justify-center lg:justify-start w-full'>
                             <Typewriter
                                 options={{
-                                    strings: ['Full Stack Engineer', 'Software Developer'],
+                                    strings: ['Full Stack Developer', 'Software Engineer'],
                                     autoStart: true,
                                     loop: true,
                                     delay: 75,
