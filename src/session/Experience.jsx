@@ -21,9 +21,10 @@ const Experience = () => {
             color: "amber", 
             stack: ["React", "Laravel", "PostgreSQL", "Tailwind"],
             descriptions: [
-                "Revamped and rebuilt the company’s main website using React and Laravel.",
-                "Developed an e-commerce platform with payment gateway integration.",
-                "Increased company website traffic by 30% through performance optimization and SEO improvements."
+                "Worked with a team of 4 junior programmers and coordinated with stakeholders to manage the transition of the corporate website using Next.js, React.js, and Git for version control",
+                "Led a team for website deployment and domain migration to a shared hosting server",
+                "Built a custom Content Management System (CMS) from scratch using Laravel and PostgreSQL",
+                "Optimized the design workflow by using AI tools with Figma for UI/UX mockups"
             ],
             documentations: [
                 { image: cms3, title: "CMS Dashboard" },
@@ -56,16 +57,16 @@ const Experience = () => {
         },
         {
             id: 3,
-            role: "Technical Support Intern",
+            role: "Junior Software Engineer",
             company: "PT. IndoMega Teknologi",
             date: "Feb 2024 - June 2024",
             type: "INTERN",
             color: "amber", 
             stack: ["JavaScript", "Python", "Arduino", "Linux"],
             descriptions: [
-                "Built an integrated monitoring platform for more than 120 vessels and 5 aircraft.",
-                "Managed and analyzed 6 months of vessel movement anomaly data during operational monitoring.",
-                "Assisted in assembling a device prototype for a vessel fuel filling system."
+                "Developed a web monitoring dashboard using JavaScript, successfully mapping and visualizing the movements of 120+ vessels.",
+                "Built an IoT system with Raspberry Pi (Debian) for AIS data collection, encoding 2,000+ raw data points into geographic data via Python.",
+                "Applied analytical techniques to identify missing data from the API, created an Excel dashboard and achieved 99% telemetry data loss."
             ],
             documentations: [
                 { image: website, title: "Vessel Monitoring" },

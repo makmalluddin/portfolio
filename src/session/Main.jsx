@@ -42,7 +42,7 @@ function Main() {
     };
 
     const openPdf = () => {
-        window.open("/src/assets/myself/cv/CV_Muhammad_Akmalluddin.pdf", "_blank");
+        window.open("https://drive.google.com/file/d/1EW2LCEcWlBTI88M1xfy8Hv64Hq74THoj/view?usp=sharing", "_blank");
     };
 
     const containerVariants = {
@@ -155,9 +155,8 @@ function Main() {
 
                         {/* Deskripsi Singkat */}
                         <motion.p variants={itemVariants} className='text-gray-400 text-sm lg:text-base leading-relaxed font-mono max-w-md mx-auto lg:mx-0'>
-                            Physics graduate with experience in <span className='text-amber-400 font-bold'>web development</span>,
-                            currently focused on data visualization, <span className='text-amber-400 font-bold'>machine learning</span>,
-                            and building model.
+                            Full-Stack Developer with <span className='text-amber-400 font-bold'>1 year</span> of experience building scalable 
+                            web applications using <span className='text-amber-400 font-bold'>React, Node.js, Python, and PostgreSQL</span>. 
                         </motion.p>
 
                         {/* Area Tombol & Sosmed (Flex adaptif untuk mobile) */}
@@ -203,9 +202,9 @@ function Main() {
                     <div className="h-4 w-4 border-b-2 border-r-2 border-amber-500 absolute -right-1 -bottom-1 rounded-br-xs"></div>
 
                     {[
-                        { val: "6+", label: "month experience" },
-                        { val: "5+", label: "featured projects" },
-                        { val: "3", label: "prog. languages" }
+                        { val: "1", label: "year experience" },
+                        { val: "4", label: "featured projects" },
+                        { val: "4", label: "prog. languages" }
                     ].map((item, index) => (
                         <div
                             key={index}

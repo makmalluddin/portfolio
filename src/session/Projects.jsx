@@ -48,11 +48,11 @@ function Projects() {
             id: 1,
             image: delivery,
             title: 'Delivery Time Accuracy Prediction',
-            description: 'Built a delivery time prediction model using Random Forest algorithm based on shipping factors, achieving 97% accuracy.',
+            description: 'Built a web application that replicates a cargo tracking system, allowing users to input order details and get estimated delivery days',
             keyFeatures: [
                 "Real-time prediction integration via Spring Boot REST API",
                 "Optimized Random Forest hyper-parameters for peak accuracy",
-                "End-to-end data pipeline from preprocessing to deployment"
+                "End-to-end data pipeline from preprocessing to application"
             ],
             tools: [
                 { icon: 'devicon:python', name: 'Python' },
@@ -71,7 +71,7 @@ function Projects() {
             keyFeatures: [
                 "Custom-built sensor array with Arduino for data acquisition",
                 "Signal filtering and feature extraction pipeline",
-                "High-precision classification models evaluated via cross-validation"
+                "High precision classification models evaluated via cross validation"
             ],
             tools: [
                 { icon: 'devicon:python', name: 'Python' },
