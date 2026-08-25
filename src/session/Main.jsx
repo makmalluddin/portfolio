@@ -76,7 +76,7 @@ function Main() {
             >
                 <div className="text-[10px] font-mono text-gray-500 tracking-[0.5em] rotate-90 origin-left">
                     <FuzzyText baseIntensity={0.1} hoverIntensity={0.5} fontSize={13} enableHover>
-                        RESUME_SYSTEM.v1.2
+                        RESUME_SYSTEM.v1.3
                     </FuzzyText>
                 </div>
             </motion.div>
