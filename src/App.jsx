@@ -1,31 +1,22 @@
 import React from 'react'
-import { Suspense, lazy } from 'react';
-const Navbar = lazy(() => import('./component/Navbar'));
-const Main = lazy(() => import('./session/Main'));
-const Experience = lazy(() => import('./session/Experience'));
-const Skills = lazy(() => import('./session/Skills'));
-const Projects = lazy(() => import('./session/Projects'));
-const Contact = lazy(() => import('./session/Contact'));
-const BigContent = lazy(() => import('./layout/BigContent'));
-const Footer = lazy(() => import('./session/Footer'));
-const Certification = lazy(() => import('./session/Certification'));
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Main from './pages/homes/Main';
+import Navbar from './pages/Navbar';
 
 function App() {
   return (
-    <div >
-      <Suspense fallback={<div className="h-screen bg-black" />}/>
-      <BigContent>
-        <Navbar />
-        <Main />
-        <Experience />
-        <Skills />
-        <Certification />
-        <Projects/>
-        <Contact />
-        <Footer/>
-      </BigContent>
-    </div>
+    <BrowserRouter>
+      <div className='min-h-screen bg-bg-primary'>
+        <header>
+          <Navbar />
+        </header>
+        <main className='w-full max-w-5xl mx-auto'>
+          <Routes>
+            <Route path='/' element={<Main />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
   )
 }
 
