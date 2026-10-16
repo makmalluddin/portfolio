@@ -1,5 +1,5 @@
 import React from 'react';
-import SkillCard from '../component/card/SkillCard'; // Sesuaikan path dengan lokasi SkillCard yang baru
+import SkillCard from '../components/card/SkillCard'; // Sesuaikan path dengan lokasi SkillCard yang baru
 import MainLayout from '../layout/MainLayout';
 import { motion } from "motion/react";
 

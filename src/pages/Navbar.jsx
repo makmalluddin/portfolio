@@ -1,10 +1,40 @@
+import { Link } from "react-router-dom"
+import Button from "../components/Button"
+
 function Navbar() {
   return (
-    <div className="flex leading-relaxed gap-2 h-12 items-center border-b border-border-muted">
-      <p className="h-full px-2 border-r border-border-muted">Udin</p>
-      <p>Home</p>
-      <p>Experience</p>
-    </div>
+    <header className="flex justify-between font-mono font-light h-12 border-b border-border-muted">
+      <div className="flex">
+        <Link to={'#'} className="flex h-full items-center px-5 border-r border-border-muted">
+          Udin
+        </Link>
+
+        <ul className="list-none flex gap-8 px-5 items-center border-r border-border-muted">
+          <li>
+            <Button className="p-1">Projects</Button>
+          </li>
+          <li>
+            <Button className="p-1">Experiences</Button>
+          </li>
+          <li>
+            <Button className="p-1">Skills</Button>
+          </li>
+        </ul>
+      </div>
+      <div className="flex">
+        <ul className="flex list-none">
+          <li className="flex px-5 items-center h-full border-l border-border-muted">
+            <Link to={'https://github.com/makmalluddin'} target="_blank">Github</Link>
+          </li>
+          <li className="flex px-5 items-center h-full border-l border-border-muted">
+            <Link to={'mailto:makmalluddin123@gmail.com'} target="_blank">Email</Link>
+          </li>
+          <li className="flex px-5 items-center h-full border-l border-border-muted">
+            <Link to={'linkedin.com/in/makmalluddin'} target="_blank">Linkedin</Link>
+          </li>
+        </ul>
+      </div>
+    </header>
   )
 }
 

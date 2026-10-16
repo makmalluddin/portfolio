@@ -7,9 +7,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className='min-h-screen bg-bg-primary'>
-        <header>
-          <Navbar />
-        </header>
+        {/* Navigation Bar  */}
+        <Navbar />
+
+        {/* Main Content */}
         <main className='w-full max-w-5xl mx-auto'>
           <Routes>
             <Route path='/' element={<Main />} />

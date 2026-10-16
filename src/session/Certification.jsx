@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import CertificationCard from '../component/card/CertificationCard';
+import CertificationCard from '../components/card/CertificationCard';
 import MainLayout from '../layout/MainLayout';
 import { motion, AnimatePresence } from 'motion/react';
-import { bnsp, dicoding, revou, stupen, xquisite } from '../component/Certification';
-import { bnsp2, dicoding2, revou2, stupen2, xquisite2 } from '../component/Provider';
+import { bnsp, dicoding, revou, stupen, xquisite } from '../components/Certification';
+import { bnsp2, dicoding2, revou2, stupen2, xquisite2 } from '../components/Provider';
 
 function Certification() {
   const certifications = [
