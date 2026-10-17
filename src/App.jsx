@@ -11,7 +11,7 @@ function App() {
         <Navbar />
 
         {/* Main Content */}
-        <main className='w-full max-w-5xl mx-auto'>
+        <main className='w-full'>
           <Routes>
             <Route path='/' element={<Main />} />
           </Routes>

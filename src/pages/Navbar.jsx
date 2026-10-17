@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom"
 import Button from "../components/Button"
-
 function Navbar() {
   return (
-    <header className="flex justify-between font-mono font-light h-12 border-b border-border-muted">
+    <header className="flex justify-between text-xs font-mono font-light h-12 border-b border-border-muted">
       <div className="flex">
         <Link to={'#'} className="flex h-full items-center px-5 border-r border-border-muted">
           Udin
@@ -11,13 +10,13 @@ function Navbar() {
 
         <ul className="list-none flex gap-8 px-5 items-center border-r border-border-muted">
           <li>
-            <Button className="p-1">Projects</Button>
+            <Button className="p-1">PROJECTS</Button>
           </li>
           <li>
-            <Button className="p-1">Experiences</Button>
+            <Button className="p-1">EXPERIENCES</Button>
           </li>
           <li>
-            <Button className="p-1">Skills</Button>
+            <Button className="p-1">SKILLS</Button>
           </li>
         </ul>
       </div>
@@ -30,7 +29,7 @@ function Navbar() {
             <Link to={'mailto:makmalluddin123@gmail.com'} target="_blank">Email</Link>
           </li>
           <li className="flex px-5 items-center h-full border-l border-border-muted">
-            <Link to={'linkedin.com/in/makmalluddin'} target="_blank">Linkedin</Link>
+            <Link to={'www.linkedin.com/in/makmalluddin'} target="_blank">Linkedin</Link>
           </li>
         </ul>
       </div>
