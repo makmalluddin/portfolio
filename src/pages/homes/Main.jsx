@@ -34,6 +34,9 @@ function Main() {
               <h2>
                 Fullstack Web Developer
               </h2>
+              <div>
+                Stack : Javascript
+              </div>
             </div>
           </div>
 
