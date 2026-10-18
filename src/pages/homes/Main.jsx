@@ -15,7 +15,7 @@ function Main() {
             <div className="flex flex-col gap-4">
               <h1 className="flex flex-col font-bold text-4xl tracking-normal">
                 <span>Build Systems & Deliver Solutions.</span>
-                <span className="text-blue-2">Fullstack Developer.</span>
+                <span className="text-blue-2">Fullstack Web Developer.</span>
               </h1>
 
               <p className="max-w-xl text-lg">
@@ -24,16 +24,21 @@ function Main() {
                 kebutuhan bisnis.
               </p>
 
-              <div className="flex gap-4">
-                <Button className="bg-black text-white p-3 px-8">Download CV</Button>
-                <Button className="p-3 px-8 border border-border-muted">Explore My Work</Button>
+              <div className="flex gap-4 text-xs font-mono tracking-wide">
+                <Button className="bg-black text-white p-3 px-8">DOWNLOAD CV</Button>
+                <Button className="p-3 px-8 border border-border-muted">MY WORKS</Button>
               </div>
             </div>
-            <div>
-              ini adalah saya
+
+            <div className="flex items-center justify-center">
+              <h2>
+                Fullstack Web Developer
+              </h2>
             </div>
           </div>
-        } />
+
+        }
+      />
       <MainFrame
         title={
           <h2 className="font-mono">
@@ -42,7 +47,7 @@ function Main() {
         }
         content={
           <h2>
-            this is contetn
+            <div className="w-full border-b border-border-muted"></div>
           </h2>
         } />
 

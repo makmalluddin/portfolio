@@ -37,7 +37,7 @@
 /* Tailwind v4 Theme Mapping */
 @theme inline {
   /* Fonts */
-  --font-heading: 'Space Grotesk Variable', 'Space Grotesk', sans-serif;
+  --font-heading: 'Raleway Variable', 'Raleway', sans-serif;
   --font-sans: 'Inter Variable', 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono Variable', 'JetBrains Mono', monospace;
 
