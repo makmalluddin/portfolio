@@ -1,5 +1,6 @@
 import Button from "@/src/components/Button"
 import MainFrame from "@/src/components/MainFrame"
+import avatar from "../../assets/myself/avatar.webp"
 
 function Main() {
   return (
@@ -19,8 +20,8 @@ function Main() {
               </h1>
 
               <p className="max-w-xl text-lg">
-                Saya Muhammad Akmalluddin seorang Fullstack Developer dengan pengalaman 1 tahun membangun sistem end-to-end.
-                Fokus saya adalah menganalisa problem untuk membangun sistem yang tepat dan dapat menjadi solusi terhadap
+                Fullstack Web Developer dengan pengalaman 1 tahun membangun sistem end-to-end.
+                Fokus dalam menganalisa problem untuk membangun sistem yang tepat dan dapat menjadi solusi terhadap
                 kebutuhan bisnis.
               </p>
 
@@ -31,11 +32,8 @@ function Main() {
             </div>
 
             <div className="flex items-center justify-center">
-              <h2>
-                Fullstack Web Developer
-              </h2>
-              <div>
-                Stack : Javascript
+              <div className="h-72 w-56 border border-border-muted">
+
               </div>
             </div>
           </div>
