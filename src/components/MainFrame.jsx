@@ -3,7 +3,7 @@ function MainFrame({ title, content, className = "", ...restProps }) {
     <div className="flex justify-center border-b border-border-muted" {...restProps}>
       <div className="flex flex-col w-full max-w-7xl">
         {title && (
-          <div className={`border-x border-b border-border-muted px-8 py-2`}>
+          <div className={`border-x border-b border-border-muted px-8 py-4`}>
             {title}
           </div>
         )}
