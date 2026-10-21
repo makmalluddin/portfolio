@@ -11,6 +11,7 @@
   /* Core Canvas & Surfaces */
   --bg-primary: #f2f1ee;
   --bg-surface: #ffffff;
+  --bg-muted: #e9e8e4;
   --border-bold: #202020;
   --border-muted: #cecdca;
   --radius: 0.25rem; /* 4px */
@@ -46,6 +47,7 @@
   /* Color Utility Mapping */
   --color-bg-primary: var(--bg-primary);
   --color-bg-surface: var(--bg-surface);
+  --color-bg-muted: var(--bg-muted);
   --color-border-bold: var(--border-bold);
   --color-border-muted: var(--border-muted);
   

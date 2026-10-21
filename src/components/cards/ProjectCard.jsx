@@ -40,27 +40,32 @@ function ProjectCard({ project }) {
         </h3>
       </div>
 
-      <p className="px-6 text-text-secondary text-md leading-relaxed mt-1">
+      <p className="px-6 text-md leading-relaxed mt-1">
         {project.description}
       </p>
 
-      {/* Tags */}
       <div className="flex flex-wrap px-6 gap-2 py-6">
-        {project.tags.map((tag, index) => (
+        {project.highlightTags?.map((tag, index) => (
           <span
-            key={index}
-            className={`font-mono text-xs border px-2 py-1 ${index === 0 ? `${accent.text}${accent.border}` : "border-border-muted text-text-muted"
-              }`}
+            key={`highlight-${index}`}
+            className={`font-mono font-semibold text-xs border px-2 py-1 bg-bg-muted ${accent.text} ${accent.border}`}
+          >
+            {tag}
+          </span>
+        ))}
+        {project.tags?.map((tag, index) => (
+          <span
+            key={`tag-${index}`}
+            className="font-mono font-semibold text-xs border border-border-bold/60 px-2 py-1 text-text-muted bg-bg-muted"
           >
             {tag}
           </span>
         ))}
       </div>
 
-      {/* 3. Link Detail dengan Ikon & Bolding Accent */}
-      <div className="mt-auto px-6 pt-2 flex items-center gap-1.5 text-sm font-medium transition-colors duration-200">
-        <span className={`group-hover:${accent.text} transition-colors duration-200`}>
-          Lihat Detail Projek
+      <div className="font-mono text-text-muted mt-auto px-6 pt-2 flex items-center gap-1.5 text-sm font-medium transition-colors duration-200">
+        <span className={`group-hover:text-text-secondary transition-colors duration-200`}>
+          DETAIL PROJEK
         </span>
         <ArrowUpRight
           className={`w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ${accent.text}`}

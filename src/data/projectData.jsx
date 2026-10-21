@@ -11,7 +11,8 @@ export const projectData = [
     description:
       "Revamp website company untuk modernisasi tampilan dilengkapi custom CMS dengan role-based akses untuk manage konten di landing page.",
     image: xquisite,
-    tags: ["Website Development", "React.js"],
+    highlightTags: ["Website Development", "Live Demo"],
+    tags: ["React.js"],
     accentColor: "blue-1",
   },
   {
@@ -24,7 +25,8 @@ export const projectData = [
     description:
       "Dashboard monitoring untuk visualisasi pergerakan pesawat dan kapal secara real-time maupun historis, memanfaatkan integrasi websocket serta penyedia API pihak ketiga.",
     image: xquisite,
-    tags: ["Dashboard Monitoring", "MongoDB", "Express.js", "React.js", "Node.js"],
+    highlightTags: ['Dashboard Monitoring', 'Real-Time'],
+    tags: ["MongoDB", "Express.js", "React.js", "Node.js"],
     accentColor: "purple-1",
   },
   {
@@ -37,7 +39,8 @@ export const projectData = [
     description:
       "Dashboard monitoring untuk visualisasi pergerakan pesawat dan kapal secara real-time maupun historis, memanfaatkan integrasi websocket serta penyedia API pihak ketiga.",
     image: xquisite,
-    tags: ["Dashboard Monitoring", "MongoDB", "Express.js"],
+    highlightTags: ['Dashboard Monitoring', 'Real-Time'],
+    tags: ["MongoDB", "Express.js", "React.js", "Node.js"],
     accentColor: "purple-1",
   },
   {
@@ -50,7 +53,8 @@ export const projectData = [
     description:
       "Dashboard monitoring untuk visualisasi pergerakan pesawat dan kapal secara real-time maupun historis, memanfaatkan integrasi websocket serta penyedia API pihak ketiga.",
     image: xquisite,
-    tags: ["Dashboard Monitoring", "MongoDB", "Express.js"],
+    highlightTags: ['Dashboard Monitoring', 'Real-Time'],
+    tags: ["MongoDB", "Express.js", "React.js", "Node.js"],
     accentColor: "purple-1",
   },
 ];
