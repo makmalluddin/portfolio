@@ -3,6 +3,7 @@ import MainFrame from "@/src/components/MainFrame"
 import avatar from "../../assets/myself/avatar.webp"
 import Projects from "../projects/Projects"
 import Experience from "./Experience"
+import Skill from "./Skill"
 
 function Main() {
   return (
@@ -67,6 +68,7 @@ function Main() {
 
       <Projects />
       <Experience />
+      <Skill />
 
       <div className="py-20">
 
