@@ -7,7 +7,7 @@ function ExperienceCard({ experience }) {
       to={`/experience/${experience.slug}`}
       className="group flex flex-col md:flex-row py-8 px-8 gap-6 md:gap-32 transition-colors duration-200 hover:bg-bg-surface/50"
     >
-      <div className="flex flex-col gap-2 shrink-0 md:w-36">
+      <div className="flex flex-col gap-2 shrink-0 md:w-28">
         <p className="text-xs font-mono text-text-muted whitespace-nowrap">
           {experience.period}
         </p>
