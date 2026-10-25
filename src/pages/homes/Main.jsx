@@ -1,9 +1,10 @@
-import Button from "@/src/components/Button"
+import Button from "@/src/utils/Button"
 import MainFrame from "@/src/components/MainFrame"
 import avatar from "../../assets/myself/avatar.webp"
 import Projects from "../projects/Projects"
 import Experience from "./Experience"
 import Skill from "./Skill"
+import Footer from "../Footer"
 
 function Main() {
   return (
@@ -69,6 +70,7 @@ function Main() {
       <Projects />
       <Experience />
       <Skill />
+      <Footer />
 
       <div className="py-20">
 

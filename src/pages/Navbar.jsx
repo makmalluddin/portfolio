@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Button from "../components/Button"
+import Button from "../utils/Button"
 function Navbar() {
   return (
     <header className="flex justify-between text-xs font-mono font-light h-12 border-b border-border-muted">
