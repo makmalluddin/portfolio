@@ -12,16 +12,17 @@ function SkillCard({ skill }) {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 gap-x-6 gap-y-6">
-        {tools.map((tool, index) => {
-          const ToolIcon = tool.Icon;
-          return (
-            <div key={index} className="flex items-center gap-3">
-              <ToolIcon className="size-8 text-text-secondary shrink-0" />
-              <p className="text-text-primary text-sm font-medium">{tool.name}</p>
-            </div>
-          );
-        })}
+      <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+        {tools.map((tool, index) => (
+          <div key={index} className="flex items-center gap-2">
+            <img
+              src={tool.iconUrl}
+              alt={tool.name}
+              className="size-6 shrink-0 object-contain opacity-70"
+            />
+            <p className="font-medium">{tool.name}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
