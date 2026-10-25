@@ -12,7 +12,7 @@ function Skill() {
       }
     >
       <div className="overflow-hidden">
-        <div className="grid grid-cols-1 md:grid-cols-3 -mr-[1px] -mb-[1px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 -mr-px -mb-px">
           {skillData.map((skill) => (
             <SkillCard key={skill.id} skill={skill} />
           ))}
