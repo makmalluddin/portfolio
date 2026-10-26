@@ -11,15 +11,13 @@ function Certification() {
         </p>
       }
     >
-      <div className="flex flex-col">
-        {certificationData.map((cert, index) => (
-          <CertificationCard
-            key={cert.id}
-            cert={cert}
-            index={index}
-          />
-        ))}
-      </div>
+      {certificationData.map((cert, index) => (
+        <CertificationCard
+          key={cert.id}
+          cert={cert}
+          index={index}
+        />
+      ))}
     </MainFrame>
   );
 }

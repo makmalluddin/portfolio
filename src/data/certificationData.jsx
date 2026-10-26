@@ -5,6 +5,7 @@ export const certificationData = [
     issuer: "PT Tata Informasi Asia",
     type: "PELATIHAN",
     slug: "java-python-for-data-scientist",
+    duration: "Des 2024 – Mar 2025 · Durasi 20 jam",
     metadata: [
       { label: "WAKTU", value: "Desember 2024 - Maret 2025" },
       { label: "DURASI", value: "20 Jam" },
@@ -16,6 +17,7 @@ export const certificationData = [
     issuer: "PT Tata Informasi Asia",
     type: "SERTIFIKAT",
     slug: "frontend-development",
+    duration: "Diterbitkan Des 2024 · Berlaku hingga Des 2027",
     metadata: [
       { label: "TERBIT", value: "Desember 2024" },
       { label: "BERAKHIR", value: "Desember 2027" },
