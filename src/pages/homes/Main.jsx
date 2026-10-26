@@ -5,6 +5,7 @@ import Projects from "../projects/Projects"
 import Experience from "./Experience"
 import Skill from "./Skill"
 import Footer from "../Footer"
+import Certification from "./Certification"
 
 function Main() {
   return (
@@ -70,6 +71,7 @@ function Main() {
       <Projects />
       <Experience />
       <Skill />
+      <Certification />
       <Footer />
 
       <div className="py-20">

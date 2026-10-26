@@ -17,7 +17,8 @@ function DirectLinkButton({ label, href, copyText, isExternal }) {
         <span>{label}</span>
         <ArrowRight className="size-4 rotate-305 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
       </Link>
-      <CopyButton textToCopy={copyText} />
+
+      {copyText && (<CopyButton textToCopy={copyText} />)}
     </div>
   );
 }
