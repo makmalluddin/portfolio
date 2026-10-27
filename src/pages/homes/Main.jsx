@@ -1,7 +1,6 @@
 import Button from "@/src/utils/Button"
 import MainFrame from "@/src/components/MainFrame"
-import avatar from "../../assets/myself/avatar.webp"
-import Projects from "../projects/Projects"
+import Projects from "./Projects"
 import Experience from "./Experience"
 import Skill from "./Skill"
 import Footer from "../Footer"
@@ -72,11 +71,7 @@ function Main() {
       <Experience />
       <Skill />
       <Certification />
-      <Footer />
 
-      <div className="py-20">
-
-      </div>
     </div>
   )
 }
