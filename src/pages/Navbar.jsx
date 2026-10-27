@@ -10,13 +10,13 @@ function Navbar() {
 
         <ul className="list-none flex gap-8 px-5 items-center border-r border-border-muted">
           <li>
-            <Button className="p-1">PROJECTS</Button>
+            PROJEK
           </li>
           <li>
-            <Button className="p-1">EXPERIENCES</Button>
+            PENGALAMAN
           </li>
           <li>
-            <Button className="p-1">SKILLS</Button>
+            KEAHLIAN
           </li>
         </ul>
       </div>

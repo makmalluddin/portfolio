@@ -22,6 +22,7 @@ export const skillData = [
       { name: "Tailwind CSS", iconUrl: "https://devicons.io/devicons/icons/tailwind-icon.svg" },
       { name: "HTML5", iconUrl: "https://devicons.io/devicons/icons/html-5.svg" },
       { name: "CSS3", iconUrl: "https://devicons.io/devicons/icons/css-3.svg" },
+      { name: "Vite", iconUrl: "https://devicons.io/devicons/icons/vite.svg" },
     ],
   },
   {

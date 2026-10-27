@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './pages/homes/Main';
 import Navbar from './pages/Navbar';
 import NotFound from './pages/NotFound';
-import CertificationDetail from './pages/slug/CertificationDetail';
 import Footer from './pages/Footer';
+import ProjectDetailWrapper from './pages/wrapper/ProjectDetailWrapper';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <main className='w-full'>
           <Routes>
             <Route path='/' element={<Main />} />
-            <Route path='/certification/slug' element={<CertificationDetail />} />
+            <Route path='/projects/:slug' element={<ProjectDetailWrapper />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </main>

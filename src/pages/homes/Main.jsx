@@ -8,7 +8,7 @@ import Certification from "./Certification"
 
 function Main() {
   return (
-    <div className="flex flex-col bg-bg-primary">
+    <div className="flex flex-col">
       <MainFrame
         title={
           <p className="font-mono text-sm font-medium">
