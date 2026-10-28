@@ -5,6 +5,7 @@ import Navbar from './pages/Navbar';
 import NotFound from './pages/NotFound';
 import Footer from './pages/Footer';
 import ProjectDetailWrapper from './pages/wrapper/ProjectDetailWrapper';
+import ExperienceDetailSlug from './pages/slug/ExperienceDetailSlug';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Main />} />
             <Route path='/projects/:slug' element={<ProjectDetailWrapper />} />
+            <Route path='/experience' element={<ExperienceDetailSlug />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </main>

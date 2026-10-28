@@ -9,23 +9,25 @@ function ProjectDetailSlug({ project }) {
 
   return (
     <div>
+      {/* Header & Hero */}
       <MainFrame
         title={
-          <p className="font-mono tracking-wide text-sm">
+          <p className="font-mono tracking-wide text-xs sm:text-sm">
             <span className="text-text-secondary font-medium">
               {project.categoryTitle}
             </span>
           </p>
         }
       >
-        <div className="flex flex-col mx-auto max-w-4xl items-center justify-center py-20 gap-6">
-          <h2 className="text-6xl text-text-primary scale-y-90 origin-bottom font-bold text-center leading-16">
+        <div className="flex flex-col mx-auto max-w-4xl items-center justify-center py-10 md:py-20 px-4 md:px-0 gap-4 md:gap-6">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl text-text-primary scale-y-90 origin-bottom font-bold text-center leading-tight md:leading-16">
             {project.titlePrefix}
             <span className={variant.text}>{project.highlightedWord}</span>
             {project.titleSuffix}
           </h2>
-          <p className="text-center max-w-xl text-lg">{project.description}</p>
-          <div className="flex gap-4 mt-2">
+          <p className="text-center max-w-xl text-base md:text-lg">{project.description}</p>
+
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 w-full sm:w-auto">
             {project.repoUrl && (
               <Button type="light" href={project.repoUrl}>
                 REPOSITORI
@@ -35,14 +37,16 @@ function ProjectDetailSlug({ project }) {
               <Button href={project.liveDemoUrl}>LIVE DEMO</Button>
             )}
           </div>
-          <div className="flex border divide-x border-border-muted divide-border-muted">
+
+          {/* Meta Data Box */}
+          <div className="grid grid-cols-2 sm:flex border border-border-muted divide-x divide-y sm:divide-y-0 divide-border-muted w-full sm:w-auto">
             {project.metaData.map((item) => (
               <div
                 key={item.id}
-                className="flex p-2 h-10 items-center justify-center text-text-muted/70 gap-2"
+                className="flex p-2 min-h-10 items-center justify-center text-text-muted/70 gap-2"
               >
-                <span>{item.key}</span>
-                <span className="uppercase text-xs tracking-wider font-medium font-mono text-text-muted">
+                <span className="shrink-0">{item.key}</span>
+                <span className="uppercase text-[11px] tracking-wider font-medium font-mono text-text-muted">
                   {item.value}
                 </span>
               </div>
@@ -51,6 +55,7 @@ function ProjectDetailSlug({ project }) {
         </div>
       </MainFrame>
 
+      {/* Screenshot Main */}
       <MainFrame
         title={
           <p className="flex w-full justify-between font-mono tracking-wide text-xs text-text-muted font-light">
@@ -66,6 +71,7 @@ function ProjectDetailSlug({ project }) {
         />
       </MainFrame>
 
+      {/* Konteks Projek */}
       <MainFrame
         title={
           <p className="flex w-full justify-between font-mono tracking-wide text-xs text-text-muted font-light">
@@ -73,25 +79,26 @@ function ProjectDetailSlug({ project }) {
           </p>
         }
       >
-        <h3 className="px-8 py-12 text-5xl text-text-primary font-bold scale-y-90">
+        <h3 className="px-4 py-8 md:px-8 md:py-12 text-3xl md:text-5xl text-text-primary font-bold scale-y-90">
           Tentang <span className={variant.text}>Projek</span>.
         </h3>
 
-        <div className="grid grid-cols-2 divide-x divide-y divide-border-muted -mr-px -mb-px">
+        <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y divide-x-0 md:divide-x divide-border-muted -mr-px -mb-px">
           {project.contexts.map((ctx) => (
-            <div key={ctx.id} className="flex flex-col px-8 py-6 gap-2">
+            <div key={ctx.id} className="flex flex-col px-4 py-6 md:px-8 md:py-6 gap-2">
               <span className="font-mono text-right text-text-muted">
                 {ctx.id}
               </span>
-              <h4 className="text-2xl font-heading font-bold scale-y-90">
+              <h4 className="text-xl md:text-2xl font-heading font-bold scale-y-90">
                 {ctx.title}
               </h4>
-              <p>{ctx.description}</p>
+              <p className="text-sm md:text-base">{ctx.description}</p>
             </div>
           ))}
         </div>
       </MainFrame>
 
+      {/* Galeri Projek */}
       <MainFrame
         title={
           <p className="flex w-full justify-between font-mono tracking-wide text-xs text-text-muted font-light">
@@ -99,13 +106,13 @@ function ProjectDetailSlug({ project }) {
           </p>
         }
       >
-        <div className="grid grid-cols-2 -mr-px -mb-px">
+        <div className="grid grid-cols-1 md:grid-cols-2 -mr-px -mb-px">
           {project.galery.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col border-r border-b border-border-muted"
+              className="flex flex-col border-b md:border-r border-border-muted"
             >
-              <span className="flex w-full justify-between px-8 py-2 text-text-muted font-mono text-sm border-b border-border-muted">
+              <span className="flex w-full justify-between px-4 md:px-8 py-2 text-text-muted font-mono text-xs md:text-sm border-b border-border-muted">
                 <span className="uppercase text-text-muted/70 tracking-wider">
                   {item.caption}
                 </span>
@@ -120,6 +127,11 @@ function ProjectDetailSlug({ project }) {
               </div>
             </div>
           ))}
+
+          {/* Slot border penyeimbang ganjil (hanya aktif di desktop) */}
+          {project.galery.length % 2 !== 0 && (
+            <div className="hidden md:block border-r border-b border-border-muted" />
+          )}
         </div>
       </MainFrame>
     </div>
