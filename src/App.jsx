@@ -19,7 +19,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Main />} />
             <Route path='/projects/:slug' element={<ProjectDetailWrapper />} />
-            <Route path='/experience' element={<ExperienceDetailSlug />} />
+            <Route path='/experience/web-developer-sg8' element={<ExperienceDetailSlug />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </main>
