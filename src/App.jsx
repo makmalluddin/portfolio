@@ -13,9 +13,7 @@ function App() {
     <BrowserRouter>
       <div className='min-h-screen bg-bg-primary'>
         {/* Navigation Bar  */}
-        <header>
-          <Navbar />
-        </header>
+        <Navbar />
 
         {/* Main Content */}
         <main className='w-full'>
@@ -29,9 +27,7 @@ function App() {
         </main>
 
         {/* Footer */}
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </div>
     </BrowserRouter>
   )

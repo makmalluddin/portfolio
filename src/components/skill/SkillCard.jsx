@@ -7,7 +7,7 @@ function SkillCard({ skill }) {
         <div className="border border-border-muted p-2">
           <CategoryIcon className="size-6 text-text-secondary" />
         </div>
-        <p className="text-text-primary font-medium text-2xl scale-y-90">
+        <p className="text-text-primary font-medium text-xl md:text-2xl scale-y-90">
           {category}
         </p>
       </div>
