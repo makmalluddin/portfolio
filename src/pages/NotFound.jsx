@@ -1,7 +1,7 @@
 function NotFound() {
   return (
     <div>
-      404 - Halaman Tidak Ditemukan
+      404 - Halo not found
     </div>
   )
 }

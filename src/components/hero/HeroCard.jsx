@@ -1,5 +1,6 @@
 import Button from "@/src/utils/Button";
 import MainFrame from "@/src/components/MainFrame";
+import avatar from "@/src/assets/avatar.webp"
 
 function HeroCard({ data }) {
   const {
@@ -44,7 +45,10 @@ function HeroCard({ data }) {
           </div>
 
           <div className="flex items-center justify-center">
-            <div className="h-60 w-48 md:h-72 md:w-56 border border-border-muted"></div>
+            <img
+              src={avatar}
+              className="h-60 w-60 object-cover rounded-full shadow-2xl shadow-black">
+            </img>
           </div>
         </div>
       </MainFrame>

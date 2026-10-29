@@ -65,7 +65,6 @@ function ExperienceDetailSlug({ experience }) {
         </div>
       </MainFrame>
 
-      {/* Section 01: Alur Pekerjaan */}
       <MainFrame
         title={
           <p className="font-mono text-text-muted text-sm">
@@ -76,7 +75,6 @@ function ExperienceDetailSlug({ experience }) {
         <WorkTimelineTable />
       </MainFrame>
 
-      {/* Section 02: Konteks */}
       <MainFrame
         title={
           <p className="font-mono text-text-muted text-sm">02 / KONTEKS</p>
@@ -109,7 +107,6 @@ function ExperienceDetailSlug({ experience }) {
         </div>
       </MainFrame>
 
-      {/* Section 03: Teknologi */}
       <MainFrame
         title={
           <p className="font-mono text-text-muted text-sm">03 / TEKNOLOGI</p>
@@ -123,7 +120,7 @@ function ExperienceDetailSlug({ experience }) {
             key={item.id}
             className="flex flex-col sm:flex-row px-4 md:px-8 py-6 items-start sm:items-center justify-start gap-2 sm:gap-0"
           >
-            <span className="font-mono text-sm text-text-muted w-20 shrink-0">
+            <span className="font-mono text-sm text-text-muted/80 w-20 shrink-0">
               0{item.id}
             </span>
 

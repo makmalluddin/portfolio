@@ -12,7 +12,7 @@ function DirectLinkButton({ label, href, copyText, isExternal }) {
       <Link
         to={href}
         {...linkProps}
-        className="group text-xs md:text-lg flex gap-2 font-mono font-medium tracking-wider items-center transition-colors duration-300 hover:text-text-primary"
+        className="group text-xs md:text-[14px] flex gap-2 font-mono font-medium tracking-wider items-center transition-colors duration-300 hover:text-text-primary"
       >
         <span>{label}</span>
         <ArrowRight className="size-4 rotate-305 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
