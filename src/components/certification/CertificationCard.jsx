@@ -6,7 +6,7 @@ function CertificationCard({ cert, index }) {
   return (
     <Link
       to={`/certification/${cert.slug}`}
-      className="flex px-4 md:px-8 py-6 border-border-muted transition-colors duration-300 hover:bg-bg-surface/50 group"
+      className="flex px-4 md:px-8 py-6 border-border-muted transition-colors duration-300 hover:bg-bg-surface/50 group border-b -mb-px"
     >
       <span className="w-10 hidden md:block md:w-24 shrink-0 text-text-muted font-mono text-sm md:text-base">
         {formattedIndex}

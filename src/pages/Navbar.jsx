@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <header className="flex justify-between text-xs font-mono font-light h-12 border-b border-border-muted">
       <div className="flex">
-        <Link to={'#'} className="flex h-full items-center px-5 border-r border-border-muted">
+        <Link to={'/'} className="flex h-full items-center px-5 border-r border-border-muted">
           Udin
         </Link>
 
