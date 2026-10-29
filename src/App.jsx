@@ -5,7 +5,7 @@ import Navbar from './pages/Navbar';
 import NotFound from './pages/NotFound';
 import Footer from './pages/Footer';
 import ProjectDetailWrapper from './pages/wrapper/ProjectDetailWrapper';
-import ExperienceDetailSlug from './pages/slug/ExperienceDetailSlug';
+import ExperienceDetailWrapper from './pages/wrapper/ExperienceDetailWrapper';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Main />} />
             <Route path='/projects/:slug' element={<ProjectDetailWrapper />} />
-            <Route path='/experience/web-developer-sg8' element={<ExperienceDetailSlug />} />
+            <Route path="/experience/:slug" element={<ExperienceDetailWrapper />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </main>

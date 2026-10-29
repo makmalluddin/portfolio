@@ -4,6 +4,7 @@ export const projectData = [
   {
     id: "1",
     slug: "corporate-website-revamp",
+    related: "sg8-group",
     number: "01",
     category: "LANDING PAGE",
     title: "Corporate Website",
@@ -18,6 +19,7 @@ export const projectData = [
   {
     id: "2",
     slug: "aerosea-monitoring",
+    related: "indomega",
     number: "02",
     category: "DASHBOARD MONITORING",
     title: "Aerosea",
@@ -31,6 +33,21 @@ export const projectData = [
   },
   {
     id: "3",
+    slug: "aerosea-monitoring",
+    related: "indomega",
+    number: "02",
+    category: "DASHBOARD MONITORING",
+    title: "Aerosea",
+    highlightTitle: "Monitoring",
+    description:
+      "Dashboard monitoring untuk visualisasi pergerakan pesawat dan kapal secara real-time maupun historis, memanfaatkan integrasi websocket serta penyedia API pihak ketiga.",
+    image: xquisite,
+    highlightTags: ['Dashboard Monitoring', 'Real-Time'],
+    tags: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    accentColor: "purple-1",
+  },
+  {
+    id: "4",
     slug: "aerosea-monitoring",
     number: "02",
     category: "DASHBOARD MONITORING",
