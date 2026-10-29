@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import Button from "../utils/Button"
 function Navbar() {
   return (
-    <header className="flex justify-between text-xs font-mono font-light h-12 border-b border-border-muted">
+    <div className="flex justify-between text-xs font-mono font-light h-12 border-b border-border-muted">
       <div className="flex">
         <Link to={'/'} className="flex h-full items-center px-5 border-r border-border-muted">
           Udin
@@ -33,7 +33,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
-    </header>
+    </div>
   )
 }
 

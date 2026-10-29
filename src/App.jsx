@@ -6,13 +6,16 @@ import NotFound from './pages/NotFound';
 import Footer from './pages/Footer';
 import ProjectDetailWrapper from './pages/wrapper/ProjectDetailWrapper';
 import ExperienceDetailWrapper from './pages/wrapper/ExperienceDetailWrapper';
+import CertificationPage from './pages/homes/subpages/CertificationPage';
 
 function App() {
   return (
     <BrowserRouter>
       <div className='min-h-screen bg-bg-primary'>
         {/* Navigation Bar  */}
-        <Navbar />
+        <header>
+          <Navbar />
+        </header>
 
         {/* Main Content */}
         <main className='w-full'>
@@ -20,12 +23,15 @@ function App() {
             <Route path='/' element={<Main />} />
             <Route path='/projects/:slug' element={<ProjectDetailWrapper />} />
             <Route path="/experience/:slug" element={<ExperienceDetailWrapper />} />
+            <Route path="/certifications" element={<CertificationPage />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </main>
 
         {/* Footer */}
-        <Footer />
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </BrowserRouter>
   )
