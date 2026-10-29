@@ -14,7 +14,7 @@ function CertificationCard({ cert, index }) {
 
       <div className="flex flex-col md:flex-row w-full justify-between items-start gap-4 md:gap-0">
         <div className="flex flex-col">
-          <h3 className="text-text-primary/80 font-bold text-xl md:text-3xl scale-y-90 origin-top leading-snug">
+          <h3 className="text-text-primary/80 font-bold text-lg md:text-3xl scale-y-90 origin-top leading-snug">
             {cert.title}
           </h3>
           <p className="text-text-secondary text-base md:text-lg font-medium mt-1">

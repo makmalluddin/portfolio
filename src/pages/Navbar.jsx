@@ -9,6 +9,13 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const handleLogoClick = (e) => {
+    if (window.location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-bg-primary w-full border-b border-border-muted text-xs font-mono font-light h-12">
       <div className="flex justify-between h-full">
@@ -16,6 +23,7 @@ function Navbar() {
           <Link
             to={"/"}
             className="flex h-full items-center px-5 font-semibold text-text-secondary text-lg scale-y-80"
+            onClick={handleLogoClick}
           >
             UDIN
           </Link>
@@ -69,6 +77,7 @@ function Navbar() {
           <Link
             to={"/"}
             className="flex h-full items-center border-r border-border-muted px-5 font-semibold text-text-secondary text-lg"
+            onClick={handleLogoClick}
           >
             <span className="scale-y-80">
               UDIN
