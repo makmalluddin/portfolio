@@ -30,22 +30,22 @@ function Navbar() {
 
           <ul className="list-none flex gap-8 px-5 items-center border-x border-border-muted tracking-wider text-xs font-mono font-medium text-text-muted">
             <li>
-              <a href="#projects" className="hover:text-text-primary transition-colors">
+              <a href="/#projects" className="hover:text-text-primary transition-colors">
                 PROJEK
               </a>
             </li>
             <li>
-              <a href="#experiences" className="hover:text-text-primary transition-colors">
+              <a href="/#experiences" className="hover:text-text-primary transition-colors">
                 PENGALAMAN
               </a>
             </li>
             <li>
-              <a href="#skills" className="hover:text-text-primary transition-colors">
+              <a href="/#skills" className="hover:text-text-primary transition-colors">
                 KEAHLIAN
               </a>
             </li>
             <li>
-              <a href="#certifications" className="hover:text-text-primary transition-colors">
+              <a href="/#certifications" className="hover:text-text-primary transition-colors">
                 SERTIFIKASI
               </a>
             </li>
@@ -113,7 +113,7 @@ function Navbar() {
           <ul className="flex flex-col list-none">
             <li>
               <a
-                href="#projects"
+                href="/#projects"
                 onClick={() => setIsOpen(false)}
                 className="block px-5 py-3 hover:bg-bg-surface/50 transition-colors"
               >
@@ -122,7 +122,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="#experiences"
+                href="/#experiences"
                 onClick={() => setIsOpen(false)}
                 className="block px-5 py-3 hover:bg-bg-surface/50 transition-colors"
               >
@@ -131,7 +131,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="#skills"
+                href="/#skills"
                 onClick={() => setIsOpen(false)}
                 className="block px-5 py-3 hover:bg-bg-surface/50 transition-colors"
               >
@@ -140,7 +140,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="#certifications"
+                href="/#certifications"
                 onClick={() => setIsOpen(false)}
                 className="block px-5 py-3 hover:bg-bg-surface/50 transition-colors"
               >

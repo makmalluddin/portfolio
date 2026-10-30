@@ -26,14 +26,12 @@ function Certification() {
 
         <Link
           to={'certifications/'}
-          className="flex flex-col gap-2 px-8 py-6 items-center justify-center hover:bg-bg-surface/60 transition-all"
+          className="flex gap-2 px-8 py-6 items-center justify-center hover:bg-bg-surface/60 transition-all"
         >
-          <div className="border border-border-muted p-1">
-            <ArrowRight className="-rotate-45" />
-          </div>
           <span className="uppercase font-mono text-sm text-text-muted">
-            LAINNYA
+            LIHAT SERTIFIKASI LAINNYA
           </span>
+            <ArrowRight className="-rotate-45 size-4" />
         </Link>
       </MainFrame>
     </section>
