@@ -1,31 +1,35 @@
 import React from 'react'
-import { Suspense, lazy } from 'react';
-const Navbar = lazy(() => import('./component/Navbar'));
-const Main = lazy(() => import('./session/Main'));
-const Experience = lazy(() => import('./session/Experience'));
-const Skills = lazy(() => import('./session/Skills'));
-const Projects = lazy(() => import('./session/Projects'));
-const Contact = lazy(() => import('./session/Contact'));
-const BigContent = lazy(() => import('./layout/BigContent'));
-const Footer = lazy(() => import('./session/Footer'));
-const Certification = lazy(() => import('./session/Certification'));
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Main from './pages/homes/Main';
+import Navbar from './pages/Navbar';
+import NotFound from './pages/NotFound';
+import Footer from './pages/Footer';
+import ProjectDetailWrapper from './pages/wrapper/ProjectDetailWrapper';
+import ExperienceDetailWrapper from './pages/wrapper/ExperienceDetailWrapper';
+import CertificationPage from './pages/homes/subpages/CertificationPage';
 
 function App() {
   return (
-    <div >
-      <Suspense fallback={<div className="h-screen bg-black" />}/>
-      <BigContent>
+    <BrowserRouter>
+      <div className='min-h-screen bg-bg-primary'>
+        {/* Navigation Bar  */}
         <Navbar />
-        <Main />
-        <Experience />
-        <Skills />
-        <Certification />
-        <Projects/>
-        <Contact />
-        <Footer/>
-      </BigContent>
-    </div>
+
+        {/* Main Content */}
+        <main className='w-full'>
+          <Routes>
+            <Route path='/' element={<Main />} />
+            <Route path='/projects/:slug' element={<ProjectDetailWrapper />} />
+            <Route path="/experience/:slug" element={<ExperienceDetailWrapper />} />
+            <Route path="/certifications" element={<CertificationPage />} />
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </main>
+
+        {/* Footer */}
+        <Footer />
+      </div>
+    </BrowserRouter>
   )
 }
 

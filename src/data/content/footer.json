@@ -1,0 +1,69 @@
+{
+  "cta": {
+    "titleLine1": "Let's Discuss",
+    "titleLine2": "Your ",
+    "titleHighlight": "Problems.",
+    "description": "Saya selalu terbuka untuk diskusi mengenai trend seputar software development, ide kreatif, tantangan bisnis, dan kolaborasi. Jangan ragu untuk menghubungi saya!",
+    "buttonText": "MARI BERDISKUSI",
+    "buttonHref": "mailto:makmalluddin123@gmail.com"
+  },
+  "directLinks": [
+    {
+      "id": "email",
+      "label": "MAKMALLUDDIN123@GMAIL.COM",
+      "href": "mailto:makmalluddin123@gmail.com",
+      "copyText": "makmalluddin123@gmail.com",
+      "isExternal": false
+    },
+    {
+      "id": "whatsapp",
+      "label": "+6285159594771",
+      "href": "https://wa.me/+6285159594771",
+      "copyText": "+6285159594771",
+      "isExternal": true
+    }
+  ],
+  "exploreLinks": [
+    {
+      "id": "1",
+      "label": "Profile",
+      "path": "#profile"
+    },
+    {
+      "id": "2",
+      "label": "Projek",
+      "path": "#projects"
+    },
+    {
+      "id": "3",
+      "label": "Pengalaman",
+      "path": "#experience"
+    },
+    {
+      "id": "4",
+      "label": "Keahlian",
+      "path": "#skills"
+    }
+  ],
+  "socialLinks": [
+    {
+      "id": "1",
+      "label": "Linkedin",
+      "href": "https://linkedin.com"
+    },
+    {
+      "id": "2",
+      "label": "Whatsapp",
+      "href": "https://wa.me/+6285159594771"
+    },
+    {
+      "id": "3",
+      "label": "Github",
+      "href": "https://github.com"
+    }
+  ],
+  "copyright": {
+    "name": "Muhammad Akmalluddin",
+    "year": "2026"
+  }
+}
