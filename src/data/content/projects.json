@@ -1,17 +1,17 @@
 [
   {
     "id": "1",
-    "slug": "corporate-website",
+    "slug": "sales-profit",
     "related": "sg8-group",
     "number": "01",
-    "category": "LANDING PAGE",
-    "title": "Corporate Website",
-    "highlightTitle": "Revamp",
-    "description": "Revamp website company untuk modernisasi tampilan dilengkapi custom CMS dengan role-based akses untuk manage konten di landing page.",
+    "category": "DASHBOARD",
+    "title": "Sales & Profit ",
+    "highlightTitle": "Dashboard",
+    "description": "Creating a Kimia Farma sales dashboard from 2021 to 2024, with details on product categories and monthly breakdowns. I am using Excel pivot tables for data processing and visualization",
     "image": "src/assets/myself/certifications/xquisite.webp",
     "highlightTags": [
-      "Website Development",
-      "Live Demo"
+      "Power BI",
+      "Data Visualization"
     ],
     "tags": [
       "React.js"
@@ -21,23 +21,127 @@
   {
     "id": "2",
     "slug": "aerosea-monitoring",
-    "related": "indomega",
+    "related": "sg8-group",
     "number": "02",
-    "category": "DASHBOARD MONITORING",
-    "title": "Aerosea",
-    "highlightTitle": "Monitoring",
-    "description": "Dashboard monitoring untuk visualisasi pergerakan pesawat dan kapal secara real-time maupun historis, memanfaatkan integrasi websocket serta penyedia API pihak ketiga.",
+    "category": "DASHBOARD ",
+    "title": "Car Sales",
+    "highlightTitle": "Dashboard",
+    "description": "Creating a dashboard using Tableau to analyze car sales performance. The dashboard displays key KPIs such as total sales, average car price, number of units sold, sales trends, sales distribution by vehicle category, color, dealer region, as well as the performance of each automotive company",
     "image": "src/assets/myself/certifications/xquisite.webp",
     "highlightTags": [
-      "Dashboard Monitoring",
-      "Real-Time"
+      "Dashboard ",
+      "Data Visualization"
     ],
     "tags": [
-      "MongoDB",
-      "Express.js",
-      "React.js",
-      "Node.js"
+      "Power BI",
+      "Excel",
+      "Tableau"
+    ],
+    "accentColor": "yellow-1"
+  },
+  {
+    "id": "3",
+    "slug": "sales",
+    "related": "sg8-group",
+    "number": "03",
+    "category": "DASHBOARD",
+    "title": "Sales",
+    "highlightTitle": "Dashboard",
+    "description": "A Sales Dashboard was created using Power BI to interactively monitor supermarket sales performance. The dashboard displays total sales, total profit, total buying, top products and categories, monthly and daily sales trends, sales distribution by sales type (direct sales and online), as well as payment methods used by customers.",
+    "image": "src/assets/myself/experience/indomega/analytics.webp",
+    "highlightTags": [
+      "Data Visualization",
+      "Traffic Sales"
+    ],
+    "tags": [
+      "Power BI",
+      "Excel",
+      "Tableau"
+    ],
+    "accentColor": "blue-2"
+  },
+  {
+    "id": "4",
+    "slug": "sales-distribution",
+    "related": "sg8-group",
+    "number": "04",
+    "category": "DASHBOARD",
+    "title": "Sales Distribution ",
+    "highlightTitle": "Dashboard",
+    "description": "The Sales Distribution Dashboard was developed using Power BI to analyze sales distribution across regions, products, and customers. The dashboard provides insights into total sales, top-performing customers, product performance, comparisons between actual sales and monthly targets, regional sales distribution, and geographic sales visualization through interactive maps. It helps users identify high-performing areas, monitor sales trends, and support data-driven business decision-making.",
+    "image": "src/assets/myself/certifications/dicoding.webp",
+    "highlightTags": [
+      "Data Visualization",
+      "Data Distribution"
+    ],
+    "tags": [
+      "Power BI",
+      "Excel",
+      "Tableau"
+    ],
+    "accentColor": "purple-1"
+  },
+  {
+    "id": "5",
+    "slug": "covid-19-global",
+    "related": "sg8-group",
+    "number": "05",
+    "category": "DASHBOARD",
+    "title": "Covid-19 Global ",
+    "highlightTitle": "Analysis Report",
+    "description": "This dashboard is designed to monitor the global development of COVID-19 cases and help users understand the progression of the pandemic while comparing conditions across different regions quickly and effectively. The dashboard displays key metrics, including Total Confirmed Cases, Total Deaths, Total Recovered Cases, Active Cases, Case Fatality Rate (CFR), and Recovery Rate.",
+    "image": "src/assets/myself/experience/indomega/website_vessel.webp",
+    "highlightTags": [
+      "Data Visualization",
+      "Traffic Record"
+    ],
+    "tags": [
+      "Power BI",
+      "Excel",
+      "Tableau"
+    ],
+    "accentColor": "green-1"
+  },
+  {
+    "id": "6",
+    "slug": "amazon-sales",
+    "related": "sg8-group",
+    "number": "06",
+    "category": "DASHBOARD",
+    "title": "Amazon Sales",
+    "highlightTitle": "Dashboard",
+    "description": "The Amazon Sales Dashboard was developed using Power BI to analyze Amazon's global sales data. The dashboard presents key performance indicators (KPIs), including Total Revenue, Total Profit, Total Cost, Units Sold, and Unit Price. It also provides detailed analysis based on regions, product categories, sales channels, and order priorities. Through interactive visualizations, the dashboard helps users identify sales trends, evaluate product performance, monitor profitability, and gain valuable insights to support data-driven business decisions.",
+    "image": "src/assets/myself/experience/stupen/output_project.webp",
+    "highlightTags": [
+      "Data Visualization",
+      "Data Cleaning"
+    ],
+    "tags": [
+      "Power BI",
+      "Excel",
+      "Tableau"
     ],
     "accentColor": "red-1"
+  },
+  {
+    "id": "7",
+    "slug": "routine-data",
+    "related": "sg8-group",
+    "number": "07",
+    "category": "DASHBOARD",
+    "title": "Routine Data ",
+    "highlightTitle": "Report",
+    "description": "At PT Trans Indonesia Superkoridor, I was responsible for consolidating data from multiple sources, performing data cleaning and transformation processes, and conducting data analysis using Microsoft Excel. The results were visualized through Pivot Tables and presented in PowerPoint reports to support business performance evaluation and data-driven decision-making.",
+    "image": "src/assets/myself/projects/volatile.webp",
+    "highlightTags": [
+      "Data Visualization",
+      "Data Cleaning"
+    ],
+    "tags": [
+      "OSS",
+      "Excel",
+      "Power BI"
+    ],
+    "accentColor": "green-blue-1"
   }
 ]

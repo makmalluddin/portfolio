@@ -2,19 +2,37 @@
   {
     "id": "1",
     "slug": "web-developer",
-    "period": "DEC 2025 - JUNE 2026",
-    "role": "Web Developer",
-    "company": "PT Dwitunggal Jaya Pratama Maju (SG8 Group)",
+    "period": "NOV 2025 - MEI 2026",
+    "role": "Business Performance",
+    "company": "PT Trans Indonesia Superkoridor",
     "type": "INTERNSHIP",
-    "description": "Membuat landing page untuk corporate website dilengkapi dengan sistem kustomisasi data terintegrasi (CMS), melakukan migrasi domain dan deployment aplikasi."
+    "description": "Performed weekly and monthly performance data updates, as well as merging, cleaning, processing, and visualizing over 200,000+ business data entries (B2B and B2C)."
   },
   {
     "id": "2",
-    "slug": "freelance-video-editor",
-    "period": "JAN 2025 - PRESENT",
-    "role": "Video Editor & Motion Designer",
-    "company": "Freelance",
-    "type": "FREELANCE",
-    "description": "Mengolah konten video promosi dan edukasi visual menggunakan Kdenlive untuk kebutuhan klien UMKM dan konten media sosial."
+    "slug": "calibration-data-analyst",
+    "period": "APR 2024 - JUNE 2024",
+    "role": "Calibration & Data Analyst",
+    "company": "Lembaga Minyak dan Gas Bumi",
+    "type": "Internship",
+    "description": "Collected, cleaned, and managed over 200 calibration data entries in Excel to support the Calibration certification process."
+  },
+  {
+    "id": "3",
+    "slug": "research-assistant-data-entry",
+    "period": "18 MAR 2024 - 29 MAR 2024",
+    "role": "Research Assistant & Data Entry",
+    "company": "Statsiun Geofisika Kelas 1 Tangerang (BMKG)",
+    "type": "INTERNSHIP",
+    "description": "Collected and managed over 100 daily weather data entries to ensure accurate and up-to-date meteorological records."
+  },
+  {
+    "id": "4",
+    "slug": "accounts-payable-data-analyst-support",
+    "period": "FEB 2024 - MAR 2024",
+    "role": "Accounts Payable & Data Analyst Support",
+    "company": "PT Solar Energy Power",
+    "type": "INTERNSHIP",
+    "description": "Managed the Accounts Payable process, including recording and verifying over 100 financial transactions related to solar panel projects."
   }
 ]

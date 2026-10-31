@@ -32,7 +32,7 @@ function HeroCard({ data }) {
               <span className="text-blue-2">{titleLine2}</span>
             </h1>
 
-            <p className="max-w-xl text-base md:text-lg leading-relaxed font-inter">
+            <p className="max-w-2xl text-base md:text-lg leading-relaxed font-inter">
               {description}
             </p>
 
