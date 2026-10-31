@@ -52,15 +52,21 @@ function ExperienceDetailSlug({ experience }) {
           </h2>
           <p className="max-w-xl text-center text-sm md:text-base">{caption}</p>
           <div className="flex flex-wrap sm:flex-nowrap divide-y sm:divide-y-0 sm:divide-x border border-border-muted divide-border-muted">
-            {metaData.map((item) => (
-              <span
-                key={item.id}
-                className="flex gap-1 items-center justify-center px-4 py-2 text-text-secondary text-sm"
-              >
-                <span className="text-md text-text-muted/70">{item.icon}</span>
-                <span>{item.value}</span>
-              </span>
-            ))}
+            {metaData.map((item) => {
+              const Icon = item.icon;
+
+              return (
+                <span
+                  key={item.id}
+                  className="flex gap-1 items-center justify-center px-4 py-2 text-text-secondary text-sm"
+                >
+                  <span className="text-md text-text-muted/70">
+                    <Icon className="size-4" />
+                  </span>
+                  <span>{item.value}</span>
+                </span>
+              );
+            })}
           </div>
         </div>
       </MainFrame>
@@ -85,25 +91,29 @@ function ExperienceDetailSlug({ experience }) {
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-3 -mr-px -mb-px">
-          {detailPengalaman.map((item) => (
-            <div
-              key={item.id}
-              className="flex flex-col gap-4 px-6 md:px-8 py-8 border-r border-b border-border-muted"
-            >
-              <div className="flex w-full justify-between items-end">
-                <span className="border border-border-muted p-2 text-green-blue-1/80">
-                  {item.icon}
-                </span>
-                <span className="font-mono text-text-muted text-xs">
-                  0{item.id}
-                </span>
+          {detailPengalaman.map((item) => {
+            const Icon = item.icon;
+
+            return (
+              <div
+                key={item.id}
+                className="flex flex-col gap-4 px-6 md:px-8 py-8 border-r border-b border-border-muted"
+              >
+                <div className="flex w-full justify-between items-end">
+                  <span className="border border-border-muted p-2 text-green-blue-1/80">
+                    <Icon className="size-4" />
+                  </span>
+                  <span className="font-mono text-text-muted text-xs">
+                    0{item.id}
+                  </span>
+                </div>
+                <h4 className="font-bold text-lg md:text-xl">{item.title}</h4>
+                <p className="text-text-muted text-sm md:text-base">
+                  {item.description}
+                </p>
               </div>
-              <h4 className="font-bold text-lg md:text-xl">{item.title}</h4>
-              <p className="text-text-muted text-sm md:text-base">
-                {item.description}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </MainFrame>
 

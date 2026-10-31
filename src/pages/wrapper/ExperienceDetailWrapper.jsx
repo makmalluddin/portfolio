@@ -8,8 +8,6 @@ function ExperienceDetailWrapper() {
   const { pathname } = useLocation();
 
   const experience = expDetailData.find((item) => item.slug === slug);
-  console.log("Halo ini isinya: ", experience)
-  console.log(expDetailData)
 
   useEffect(() => {
     window.scrollTo(0, 0);

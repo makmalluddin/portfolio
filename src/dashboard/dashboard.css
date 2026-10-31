@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f3f3f1;
+  color: #17171a;
+  font-family:
+    "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* Scrollbar tipis untuk panel daftar dan form */
+.dash-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #c7c7c2 transparent;
+}
+
+.dash-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.dash-scroll::-webkit-scrollbar-thumb {
+  background: #c7c7c2;
+  border-radius: 999px;
+}
+
+.dash-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Cegah halaman ikut scroll saat modal aset terbuka */
+body.dash-modal-open {
+  overflow: hidden;
+}

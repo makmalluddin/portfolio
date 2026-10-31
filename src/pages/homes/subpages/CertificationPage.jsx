@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams, Navigate, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import MainFrame from "@/src/components/MainFrame";
 import CertificationGallery from "../../slug/CertificationGalery";
 import { galleryCertifications } from "@/src/data/skill/skillPageData";

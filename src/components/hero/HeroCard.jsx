@@ -1,6 +1,5 @@
 import Button from "@/src/utils/Button";
 import MainFrame from "@/src/components/MainFrame";
-import avatar from "@/src/assets/avatar.webp"
 
 function HeroCard({ data }) {
   const {
@@ -10,6 +9,9 @@ function HeroCard({ data }) {
     description,
     statsTagline,
     stats,
+    avatar,
+    cvUrl,
+    worksHref,
   } = data;
 
   return (
@@ -35,10 +37,15 @@ function HeroCard({ data }) {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 text-xs font-mono tracking-widest">
-              <Button type={'dark'}>
+              <Button
+                type={'dark'}
+                href={cvUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 DOWNLOAD CV
               </Button>
-              <Button type={'light'}>
+              <Button type={'light'} href={worksHref}>
                 MY WORKS
               </Button>
             </div>

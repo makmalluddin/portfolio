@@ -40,17 +40,23 @@ function ProjectDetailSlug({ project }) {
 
           {/* Meta Data Box */}
           <div className="grid grid-cols-2 sm:flex border border-border-muted divide-x divide-y sm:divide-y-0 divide-border-muted w-full sm:w-auto">
-            {project.metaData.map((item) => (
-              <div
-                key={item.id}
-                className="flex p-2 min-h-10 items-center justify-center text-text-muted/70 gap-2"
-              >
-                <span className="shrink-0">{item.key}</span>
-                <span className="uppercase text-[11px] tracking-wider font-medium font-mono text-text-muted">
-                  {item.value}
-                </span>
-              </div>
-            ))}
+            {project.metaData.map((item) => {
+              const Icon = item.key;
+
+              return (
+                <div
+                  key={item.id}
+                  className="flex p-2 min-h-10 items-center justify-center text-text-muted/70 gap-2"
+                >
+                  <span className="shrink-0">
+                    <Icon className="size-4" />
+                  </span>
+                  <span className="uppercase text-[11px] tracking-wider font-medium font-mono text-text-muted">
+                    {item.value}
+                  </span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </MainFrame>
