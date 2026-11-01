@@ -7,6 +7,13 @@ import { Mail } from "lucide-react";
 function Footer() {
   const { cta, directLinks, exploreLinks, socialLinks, copyright } = footerData;
 
+  const handleLogoClick = (e) => {
+    if (window.location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <MainFrame className="md:px-8">
       <div className="flex flex-col items-center justify-center py-16 md:py-24 gap-6">

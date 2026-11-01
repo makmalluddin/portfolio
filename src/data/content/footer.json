@@ -26,23 +26,28 @@
   "exploreLinks": [
     {
       "id": "1",
-      "label": "Profile",
-      "path": "#profile"
+      "label": "Home",
+      "path": "/"
     },
     {
       "id": "2",
       "label": "Projek",
-      "path": "#projects"
+      "path": "/#projects"
     },
     {
       "id": "3",
       "label": "Pengalaman",
-      "path": "#experience"
+      "path": "/#experiences"
     },
     {
       "id": "4",
       "label": "Keahlian",
-      "path": "#skills"
+      "path": "/#skills"
+    },
+    {
+      "id": "5",
+      "label": "Sertifikasi",
+      "path": "/#certifications"
     }
   ],
   "socialLinks": [

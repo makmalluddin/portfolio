@@ -10,11 +10,11 @@
   },
   {
     "id": "2",
-    "slug": "freelance-video-editor",
-    "period": "JAN 2025 - PRESENT",
-    "role": "Video Editor & Motion Designer",
-    "company": "Freelance",
+    "slug": "junior-software-engineer",
+    "period": "FEB 2024 - JUNE 2024",
+    "role": "Junior Software Engineer",
+    "company": "PT IndoMega Teknologi",
     "type": "FREELANCE",
-    "description": "Mengolah konten video promosi dan edukasi visual menggunakan Kdenlive untuk kebutuhan klien UMKM dan konten media sosial."
+    "description": "Membuat AIS Receiver untuk mengumpulkan, mengekstrak, dan menyimpan data. Membangun dashboard untuk monitoring kapal dan pesawat secara historis maupun real-time"
   }
 ]

@@ -8,13 +8,16 @@
     "title": "Corporate Website",
     "highlightTitle": "Revamp",
     "description": "Revamp website company untuk modernisasi tampilan dilengkapi custom CMS dengan role-based akses untuk manage konten di landing page.",
-    "image": "src/assets/myself/certifications/xquisite.webp",
+    "image": "src/assets/myself/experience/sg8group/workspace.webp",
     "highlightTags": [
       "Website Development",
-      "Live Demo"
+      "Content Management System (CMS)"
     ],
     "tags": [
-      "React.js"
+      "React.js",
+      "Laravel",
+      "Next.js",
+      "cPanel"
     ],
     "accentColor": "blue-1"
   },
