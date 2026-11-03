@@ -216,6 +216,61 @@ export function BooleanField({ field, value, onChange, path, errors }) {
   );
 }
 
+export function ProjectMultiSelectField({ field, value, onChange, path, errors, context }) {
+  const id = path.join(".");
+  const error = fieldError(errors, id);
+  const projects = context.relations?.projects ?? [];
+  const selected = Array.isArray(value) ? value : [];
+
+  const toggle = (slug) => {
+    if (selected.includes(slug)) {
+      onChange(selected.filter(s => s !== slug));
+    } else {
+      onChange([...selected, slug]);
+    }
+  };
+
+  return (
+    <FieldFrame id={id} label={field.label} help={field.help} error={error}>
+      <div className="space-y-2">
+        {projects.map((project) => {
+          const isSelected = selected.includes(project.slug);
+          return (
+            <label
+              key={project.slug}
+              className="flex cursor-pointer items-center gap-2.5 rounded-md border px-3 py-2.5 text-sm transition"
+              style={{
+                borderColor: isSelected ? '#17171a' : '#d7d6d1',
+                backgroundColor: isSelected ? '#f1f1ed' : 'white',
+              }}
+            >
+              <input
+                type="checkbox"
+                checked={isSelected}
+                onChange={() => toggle(project.slug)}
+                className="h-4 w-4 accent-[#17171a]"
+              />
+              <div className="flex-1">
+                <div className="font-medium text-[#17171a]">
+                  {project.title}
+                </div>
+                <div className="text-xs text-[#6d6c65]">
+                  {project.slug}
+                </div>
+              </div>
+            </label>
+          );
+        })}
+        {projects.length === 0 && (
+          <p className="rounded-md border border-dashed border-[#d7d6d1] px-3 py-3 text-xs text-[#8a8982]">
+            Tidak ada proyek tersedia.
+          </p>
+        )}
+      </div>
+    </FieldFrame>
+  );
+}
+
 export function StringListField({ field, value, onChange, path, errors }) {
   const list = Array.isArray(value) ? value : [];
   const pathString = path.join(".");

@@ -12,12 +12,16 @@ function ExperienceDetailSlug({ experience }) {
     metaData,
     detailPengalaman,
     teknologi,
-    relatedProjectKey,
+    relatedProjectKeys,
+    colorVariantKey,
+    timeline,
   } = experience;
 
   const relatedProject = projectData.filter(
-    (item) => item.related === relatedProjectKey
+    (item) => relatedProjectKeys && relatedProjectKeys.includes(item.slug)
   );
+
+  const colorClass = colorVariantKey ? `text-${colorVariantKey}` : "text-green-blue-1";
 
   return (
     <div>
@@ -26,7 +30,7 @@ function ExperienceDetailSlug({ experience }) {
         title={
           <p className="font-mono font-medium text-sm">
             <span className="uppercase text-sm">
-              {role} {relatedProjectKey}
+              {role} {relatedProjectKeys?.join(", ")}
             </span>
           </p>
         }
@@ -45,7 +49,7 @@ function ExperienceDetailSlug({ experience }) {
           </div>
           <h2 className="font-bold text-3xl md:text-6xl scale-y-90">
             {role.split(" ")[0]}{" "}
-            <span className="text-green-blue-1">
+            <span className={colorClass}>
               {role.split(" ").slice(1).join(" ")}
             </span>
             .
@@ -71,15 +75,17 @@ function ExperienceDetailSlug({ experience }) {
         </div>
       </MainFrame>
 
-      <MainFrame
-        title={
-          <p className="font-mono text-text-muted text-sm">
-            01 / ALUR PEKERJAAN
-          </p>
-        }
-      >
-        <WorkTimelineTable />
-      </MainFrame>
+      {timeline && (
+        <MainFrame
+          title={
+            <p className="font-mono text-text-muted text-sm">
+              01 / ALUR PEKERJAAN
+            </p>
+          }
+        >
+          <WorkTimelineTable timeline={timeline} colorVariantKey={colorVariantKey} />
+        </MainFrame>
+      )}
 
       <MainFrame
         title={
@@ -87,7 +93,7 @@ function ExperienceDetailSlug({ experience }) {
         }
       >
         <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
-          Detail <span className="text-green-blue-1">Pengalaman</span>.
+          Detail <span className={colorClass}>Pengalaman</span>.
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-3 -mr-px -mb-px">
@@ -100,7 +106,7 @@ function ExperienceDetailSlug({ experience }) {
                 className="flex flex-col gap-4 px-6 md:px-8 py-8 border-r border-b border-border-muted"
               >
                 <div className="flex w-full justify-between items-end">
-                  <span className="border border-border-muted p-2 text-green-blue-1/80">
+                  <span className={`border border-border-muted p-2 ${colorClass}/80`}>
                     <Icon className="size-4" />
                   </span>
                   <span className="font-mono text-text-muted text-xs">
@@ -123,7 +129,7 @@ function ExperienceDetailSlug({ experience }) {
         }
       >
         <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
-          Alat dan <span className="text-green-blue-1">Teknologi</span>.
+          Alat dan <span className={colorClass}>Teknologi</span>.
         </h3>
         {teknologi.map((item) => (
           <div
@@ -147,21 +153,23 @@ function ExperienceDetailSlug({ experience }) {
       </MainFrame>
 
       {/* Section 04: Projek Dikerjakan */}
-      <MainFrame
-        title={
-          <p className="font-mono text-text-muted text-sm">
-            04 / PROJEK DIKERJAKAN
-          </p>
-        }
-      >
-        <div className="-m-8 overflow-hidden p-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -mr-px -mb-px">
-            {relatedProject.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
+      {relatedProject.length > 0 && (
+        <MainFrame
+          title={
+            <p className="font-mono text-text-muted text-sm">
+              04 / PROJEK DIKERJAKAN
+            </p>
+          }
+        >
+          <div className="-m-8 overflow-hidden p-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -mr-px -mb-px">
+              {relatedProject.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </div>
           </div>
-        </div>
-      </MainFrame>
+        </MainFrame>
+      )}
     </div>
   );
 }

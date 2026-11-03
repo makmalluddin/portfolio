@@ -16,10 +16,18 @@ function Main() {
   return (
     <div className="flex flex-col">
       <Hero />
-      <Projects />
-      <Experience />
-      <Skill />
-      <Certification />
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="experiences">
+        <Experience />
+      </div>
+      <div id="skills">
+        <Skill />
+      </div>
+      <div id="certifications">
+        <Certification />
+      </div>
     </div>
   )
 }

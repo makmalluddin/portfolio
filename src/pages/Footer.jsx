@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import MainFrame from "@/src/components/MainFrame";
 import DirectLinkButton from "@/src/utils/DirectLinkButton";
 import { footerData } from "@/src/data/footerData";
@@ -6,11 +6,30 @@ import { Mail } from "lucide-react";
 
 function Footer() {
   const { cta, directLinks, exploreLinks, socialLinks, copyright } = footerData;
+  const navigate = useNavigate();
 
   const handleLogoClick = (e) => {
     if (window.location.pathname === "/") {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  const handleExploreClick = (e, path) => {
+    if (path.includes("#")) {
+      const [basePath, hash] = path.split("#");
+      if (window.location.pathname === basePath || basePath === "/") {
+        e.preventDefault();
+        if (window.location.pathname !== "/") {
+          navigate("/");
+        }
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100);
+      }
     }
   };
 
@@ -65,6 +84,7 @@ function Footer() {
               <Link
                 key={item.id}
                 to={item.path}
+                onClick={(e) => handleExploreClick(e, item.path)}
                 className="text-text-secondary hover:text-text-primary transition-colors duration-200"
               >
                 {item.label}

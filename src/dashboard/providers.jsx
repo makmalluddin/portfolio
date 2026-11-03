@@ -130,8 +130,18 @@ export function DataProvider({ children }) {
       : [];
 
     return {
+      projects: projects.map((p) => ({
+        slug: p.slug,
+        title: p.title,
+      })),
       relatedProjectKeys: uniqueValues(
-        experienceDetails.map((item) => item.relatedProjectKey)
+        experienceDetails.flatMap((item) =>
+          Array.isArray(item.relatedProjectKeys)
+            ? item.relatedProjectKeys
+            : item.relatedProjectKey
+            ? [item.relatedProjectKey]
+            : []
+        )
       ),
       projectRelatedKeys: uniqueValues(projects.map((item) => item.related)),
       projectSlugs: uniqueValues(projects.map((item) => item.slug)),

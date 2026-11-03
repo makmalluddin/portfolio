@@ -3,6 +3,7 @@ import {
   ColorField,
   GroupSection,
   IconField,
+  ProjectMultiSelectField,
   SelectField,
   SlugField,
   StringListField,
@@ -11,6 +12,7 @@ import {
 } from "./BasicFields";
 import { ImageField } from "./ImageField";
 import { RepeaterField } from "./RepeaterField";
+import { TimelineEditorField } from "./TimelineEditorField";
 import { isWideField } from "./shared";
 
 export function FieldRenderer(props) {
@@ -31,6 +33,10 @@ export function FieldRenderer(props) {
       return <BooleanField {...props} />;
     case "string-list":
       return <StringListField {...props} />;
+    case "project-multiselect":
+      return <ProjectMultiSelectField {...props} />;
+    case "timeline-editor":
+      return <TimelineEditorField {...props} />;
     case "image":
       return <ImageField {...props} field={{ ...field, accept: "image" }} />;
     case "file":
