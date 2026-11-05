@@ -130,7 +130,6 @@ export const collectionSchemas = {
     createItem: (items) => ({
       id: nextId(items, "project"),
       slug: "",
-      related: "",
       number: String((items?.length ?? 0) + 1).padStart(2, "0"),
       category: "",
       title: "",
@@ -148,14 +147,6 @@ export const collectionSchemas = {
         sourceKey: "title",
         help: "Dipakai di URL /projects/:slug.",
       }),
-      {
-        key: "related",
-        label: "Relasi pengalaman",
-        type: "select",
-        optionsKey: "relatedProjectKeys",
-        allowEmpty: true,
-        help: "Cocokkan dengan relatedProjectKey di Detail Pengalaman.",
-      },
       text("number", "Nomor"),
       text("category", "Kategori"),
       text("title", "Judul"),
@@ -463,7 +454,12 @@ export const collectionSchemas = {
       metaData: [],
       detailPengalaman: [],
       teknologi: [],
-      timeline: null,
+      timeline: {
+        startMonth: 1,
+        startYear: new Date().getFullYear(),
+        durationMonths: 12,
+        tasks: [],
+      },
     }),
     fields: [
       idField(),

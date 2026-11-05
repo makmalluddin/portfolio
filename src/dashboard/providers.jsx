@@ -143,7 +143,6 @@ export function DataProvider({ children }) {
             : []
         )
       ),
-      projectRelatedKeys: uniqueValues(projects.map((item) => item.related)),
       projectSlugs: uniqueValues(projects.map((item) => item.slug)),
       experienceSlugs: uniqueValues(
         (Array.isArray(snapshot.experiences) ? snapshot.experiences : []).map(

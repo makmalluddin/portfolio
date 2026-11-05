@@ -182,9 +182,6 @@ async function validateProjects(result, data) {
       (field) => requireString(result, project[field], `${path}.${field}`)
     );
     requireSlug(result, project.slug, `${path}.slug`);
-    if (project.related !== undefined) {
-      requireString(result, project.related, `${path}.related`);
-    }
     requireColor(result, project.accentColor, `${path}.accentColor`);
     await requireAsset(result, project.image, `${path}.image`);
     requireStringArray(result, project.highlightTags, `${path}.highlightTags`);
@@ -425,13 +422,62 @@ async function validateExperienceDetails(result, data) {
       "role",
       "companyName",
       "caption",
-      "relatedProjectKey",
     ].forEach((field) =>
       requireString(result, experience[field], `${path}.${field}`)
     );
 
     requireSlug(result, experience.slug, `${path}.slug`);
+    requireColor(result, experience.colorVariantKey, `${path}.colorVariantKey`);
     await requireAsset(result, experience.logo, `${path}.logo`);
+
+    // relatedProjectKeys: array of strings (optional)
+    if (experience.relatedProjectKeys !== undefined && experience.relatedProjectKeys !== null) {
+      requireStringArray(result, experience.relatedProjectKeys, `${path}.relatedProjectKeys`);
+    }
+
+    // timeline: optional object with tasks array, startMonth, startYear
+    if (experience.timeline !== undefined && experience.timeline !== null) {
+      const timeline = requireObject(result, experience.timeline, `${path}.timeline`);
+      
+      // Validate startMonth (1-12)
+      if (timeline.startMonth !== undefined) {
+        const month = timeline.startMonth;
+        if (typeof month !== "number" || month < 1 || month > 12) {
+          addError(result, `${path}.timeline.startMonth`, "Harus berupa angka 1-12.");
+        }
+      }
+      
+      // Validate startYear (positive number)
+      if (timeline.startYear !== undefined) {
+        const year = timeline.startYear;
+        if (typeof year !== "number" || year < 2000 || year > 2100) {
+          addError(result, `${path}.timeline.startYear`, "Harus berupa tahun 2000-2100.");
+        }
+      }
+      
+      // Validate durationMonths (1-60)
+      if (timeline.durationMonths !== undefined) {
+        const months = timeline.durationMonths;
+        if (typeof months !== "number" || months < 1 || months > 60) {
+          addError(result, `${path}.timeline.durationMonths`, "Harus berupa angka 1-60 (bulan).");
+        }
+      }
+      
+      const tasks = requireArray(result, timeline.tasks, `${path}.timeline.tasks`);
+      tasks.forEach((task, taskIndex) => {
+        const taskPath = `${path}.timeline.tasks.${taskIndex}`;
+        if (!isObject(task)) {
+          addError(result, taskPath, "Harus berupa object.");
+          return;
+        }
+        requireString(result, task.id, `${taskPath}.id`);
+        requireString(result, task.name, `${taskPath}.name`);
+        // allocation is object with boolean values
+        if (task.allocation !== undefined) {
+          requireObject(result, task.allocation, `${taskPath}.allocation`);
+        }
+      });
+    }
 
     const metaData = requireArray(result, experience.metaData, `${path}.metaData`);
     metaData.forEach((item, metaIndex) => {
@@ -538,7 +584,8 @@ export async function integrityWarnings(snapshot) {
   );
   const relatedKeys = new Set(
     experienceDetails
-      .map((detail) => detail?.relatedProjectKey)
+      .map((detail) => detail?.relatedProjectKeys ?? [])
+      .flat()
       .filter(Boolean)
   );
 
@@ -548,14 +595,6 @@ export async function integrityWarnings(snapshot) {
         result,
         `projects.${index}.slug`,
         `Proyek "${project.slug}" belum punya halaman detail dan akan mengarah ke 404.`
-      );
-    }
-
-    if (project.related && !relatedKeys.has(project.related)) {
-      addWarning(
-        result,
-        `projects.${index}.related`,
-        `Relasi "${project.related}" belum punya detail pengalaman dengan relatedProjectKey yang sama.`
       );
     }
   });

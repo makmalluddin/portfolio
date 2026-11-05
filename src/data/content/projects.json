@@ -2,7 +2,6 @@
   {
     "id": "1",
     "slug": "corporate-website",
-    "related": "sg8-group",
     "number": "01",
     "category": "LANDING PAGE",
     "title": "Corporate Website",
@@ -24,7 +23,6 @@
   {
     "id": "2",
     "slug": "aerosea-monitoring",
-    "related": "indomega",
     "number": "02",
     "category": "DASHBOARD MONITORING",
     "title": "Aerosea",

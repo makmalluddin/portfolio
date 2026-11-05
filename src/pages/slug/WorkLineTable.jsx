@@ -1,3 +1,5 @@
+import { useMemo } from "react";
+
 const MONTHS = [
   "JANUARI",
   "FEBRUARI",
@@ -15,8 +17,16 @@ const MONTHS = [
 
 const WEEKS = ["M1", "M2", "M3", "M4"];
 
+// Singkat nama bulan jika panjang > 4 karakter
+const getMonthShort = (monthName) => {
+  return monthName.length > 4 ? monthName.substring(0, 3) : monthName;
+};
+
 function WorkTimelineTable({ timeline, colorVariantKey }) {
   const tasks = timeline?.tasks || [];
+  const startMonth = timeline?.startMonth || 1;
+  const startYear = timeline?.startYear || new Date().getFullYear();
+  const durationMonths = timeline?.durationMonths || 12;
   const colorClass = colorVariantKey ? `bg-${colorVariantKey}` : "bg-green-blue-1";
 
   if (!tasks.length) {
@@ -32,6 +42,19 @@ function WorkTimelineTable({ timeline, colorVariantKey }) {
     return allocation?.[key] || false;
   };
 
+  // Generate dynamic month headers based on startMonth/startYear/durationMonths
+  const monthHeaders = useMemo(() => {
+    return MONTHS.slice(0, durationMonths).map((_, idx) => {
+      const totalMonths = (startMonth - 1) + idx;
+      const displayMonth = totalMonths % 12;
+      const displayYear = startYear + Math.floor(totalMonths / 12);
+      return { 
+        monthName: MONTHS[displayMonth], 
+        displayLabel: `${getMonthShort(MONTHS[displayMonth])} ${displayYear}` 
+      };
+    });
+  }, [startMonth, startYear, durationMonths]);
+
   return (
     <div className="w-full overflow-x-auto border border-border-muted">
       <table className="w-full text-left font-mono text-xs border-collapse">
@@ -43,13 +66,13 @@ function WorkTimelineTable({ timeline, colorVariantKey }) {
             <th className="p-3 border-r border-border-muted min-w-72">
               TAHAP PEKERJAAN
             </th>
-            {MONTHS.map((month, idx) => (
+            {monthHeaders.map((mh, idx) => (
               <th
                 key={idx}
                 colSpan={4}
                 className="p-3 border-r border-border-muted text-center tracking-wider min-w-28 last:border-r-0"
               >
-                {month}
+                {mh.displayLabel}
               </th>
             ))}
           </tr>
@@ -57,7 +80,7 @@ function WorkTimelineTable({ timeline, colorVariantKey }) {
           <tr className="border-b border-border-muted text-center text-text-muted">
             <th className="border-r border-border-muted"></th>
             <th className="border-r border-border-muted"></th>
-            {MONTHS.map((_, mIdx) =>
+            {Array.from({ length: durationMonths }).map((_, mIdx) =>
               WEEKS.map((week) => (
                 <th
                   key={`${mIdx}-${week}`}
@@ -82,7 +105,7 @@ function WorkTimelineTable({ timeline, colorVariantKey }) {
               <td className="p-3 border-r border-border-muted font-inter font-medium text-text-secondary">
                 {task.name}
               </td>
-              {MONTHS.map((_, monthIdx) =>
+              {Array.from({ length: durationMonths }).map((_, monthIdx) =>
                 WEEKS.map((week) => {
                   const active = getCellActive(task.allocation, monthIdx, week);
                   return (
