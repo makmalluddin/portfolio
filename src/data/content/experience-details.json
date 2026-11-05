@@ -2,7 +2,9 @@
   {
     "id": "1",
     "slug": "web-developer",
-    "relatedProjectKeys": [],
+    "relatedProjectKeys": [
+      "corporate-website"
+    ],
     "colorVariantKey": "green-blue-1",
     "role": "Web Developer",
     "companyName": "PT DWITUNGGAL JAYA PRATAMA MAJU (SG8 GROUP)",
@@ -334,7 +336,7 @@
     "timeline": {
       "startMonth": 1,
       "startYear": 2024,
-      "durationMonths": 12,
+      "durationMonths": 7,
       "tasks": [
         {
           "id": "task-1793852606103",

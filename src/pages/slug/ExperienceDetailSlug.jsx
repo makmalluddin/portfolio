@@ -30,7 +30,7 @@ function ExperienceDetailSlug({ experience }) {
         title={
           <p className="font-mono font-medium text-sm">
             <span className="uppercase text-sm">
-              {role} {relatedProjectKeys?.join(", ")}
+              {role} {`- ${companyName}`}
             </span>
           </p>
         }
