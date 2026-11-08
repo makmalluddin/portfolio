@@ -17,11 +17,11 @@ export function TimelineEditorField({ field, value, onChange, path, errors }) {
   const id = path.join(".");
   const error = fieldError(errors, id);
 
-  const data = value || { 
-    startMonth: 1, 
-    startYear: new Date().getFullYear(), 
+  const data = value || {
+    startMonth: 1,
+    startYear: new Date().getFullYear(),
     durationMonths: 12,
-    tasks: [] 
+    tasks: []
   };
   const tasks = data.tasks || [];
   const startMonth = data.startMonth || 1;
@@ -116,7 +116,7 @@ export function TimelineEditorField({ field, value, onChange, path, errors }) {
         </div>
       </div>
 
-      <div className="overflow-hidden rounded-md border border-[#d7d6d1] bg-white">
+      <div className="w-full overflow-hidden rounded-md border border-[#d7d6d1] bg-white">
         <div className="overflow-x-auto">
           <table className="w-full border-collapse text-left text-[11px]">
             <thead>
@@ -170,9 +170,8 @@ export function TimelineEditorField({ field, value, onChange, path, errors }) {
                         <td
                           key={key}
                           onClick={() => toggleAllocation(task.id, mIdx, wIdx)}
-                          className={`cursor-pointer border-r border-[#f1f1ed] p-0 transition-colors ${
-                            isActive ? "bg-[#17171a]" : "hover:bg-[#f1f1ed]"
-                          }`}
+                          className={`cursor-pointer border-r border-[#f1f1ed] p-0 transition-colors ${isActive ? "bg-[#17171a]" : "hover:bg-[#f1f1ed]"
+                            }`}
                         >
                           <div className="h-5 w-full"></div>
                         </td>

@@ -1,6 +1,122 @@
 [
   {
     "id": "1",
+    "slug": "it-programmer",
+    "relatedProjectKeys": [],
+    "colorVariantKey": "pink-1",
+    "role": "IT Programmer (R&D)",
+    "companyName": "PT CARE TECHNOLOGIES",
+    "logo": "src/assets/sg8_logo.webp",
+    "caption": "Ini adalah contoh caption yang akan menjelaskan tanggung jawab dan peran secara general saya selama menjadi web developer di sg8 group",
+    "timeline": {
+      "startMonth": 11,
+      "startYear": 2026,
+      "tasks": [
+        {
+          "id": "task-1",
+          "name": "Training",
+          "allocation": {
+            "0-M1": true,
+            "0-M2": false,
+            "0-M3": false,
+            "0-M4": false,
+            "1-M1": false,
+            "1-M2": false,
+            "1-M3": false,
+            "1-M4": false,
+            "2-M1": false,
+            "2-M2": false,
+            "2-M3": false,
+            "2-M4": false,
+            "3-M1": false,
+            "3-M2": false,
+            "3-M3": false,
+            "3-M4": false,
+            "4-M1": false,
+            "4-M2": false,
+            "4-M3": false,
+            "4-M4": false,
+            "5-M1": false,
+            "5-M2": false,
+            "5-M3": false,
+            "5-M4": false,
+            "6-M1": false,
+            "6-M2": false,
+            "6-M3": false,
+            "6-M4": false
+          }
+        }
+      ],
+      "durationMonths": 1
+    },
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "value": "2026"
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "value": "Saat Ini"
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "value": "Contract"
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "value": "Jakarta"
+      }
+    ],
+    "detailPengalaman": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "title": "Tanggung Jawab",
+        "description": "Ini contoh deskripsi dan tanggung jawab"
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "title": "Kontribusi",
+        "description": "Ini contoh deskripsi dan tanggung jawab"
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "title": "Tantangan & Solusi",
+        "description": "Ini contoh deskripsi dan tanggung jawab"
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "title": "Hasil & Dampak",
+        "description": "Ini contoh deskripsi dan tanggung jawab"
+      }
+    ],
+    "teknologi": [
+      {
+        "id": "1",
+        "type": "Alat Pengembangan",
+        "tools": "Visual Studio Code, Git, GitHub, Postman, Figma, Canva, Notion"
+      },
+      {
+        "id": "2",
+        "type": "Frontend",
+        "tools": "Javascript, Next.js, React.js, Tailwind CSS"
+      },
+      {
+        "id": "3",
+        "type": "Backend",
+        "tools": "PHP, Laravel, REST API"
+      }
+    ]
+  },
+  {
+    "id": "2",
     "slug": "web-developer",
     "relatedProjectKeys": [
       "corporate-website"
@@ -16,11 +132,11 @@
       "tasks": [
         {
           "id": "task-1",
-          "name": "Perencanaan Arsitektur & Arsitektur Database",
+          "name": "Kick off bersama perusahaan online",
           "allocation": {
-            "0-M1": true,
+            "0-M1": false,
             "0-M2": true,
-            "0-M3": true,
+            "0-M3": false,
             "0-M4": false,
             "1-M1": false,
             "1-M2": false,
@@ -50,10 +166,78 @@
         },
         {
           "id": "task-2",
-          "name": "Desain Antarmuka & Wireframing UI/UX",
+          "name": "Analisis brand dan SWOT perusahaan",
           "allocation": {
             "0-M1": false,
             "0-M2": true,
+            "0-M3": true,
+            "0-M4": false,
+            "1-M1": false,
+            "1-M2": false,
+            "1-M3": false,
+            "1-M4": false,
+            "2-M1": false,
+            "2-M2": false,
+            "2-M3": false,
+            "2-M4": false,
+            "3-M1": false,
+            "3-M2": false,
+            "3-M3": false,
+            "3-M4": false,
+            "4-M1": false,
+            "4-M2": false,
+            "4-M3": false,
+            "4-M4": false,
+            "5-M1": false,
+            "5-M2": false,
+            "5-M3": false,
+            "5-M4": false,
+            "6-M1": false,
+            "6-M2": false,
+            "6-M3": false,
+            "6-M4": false
+          }
+        },
+        {
+          "id": "task-3",
+          "name": "Activity plan bersama mentor",
+          "allocation": {
+            "0-M1": false,
+            "0-M2": false,
+            "0-M3": true,
+            "0-M4": false,
+            "1-M1": false,
+            "1-M2": false,
+            "1-M3": false,
+            "1-M4": false,
+            "2-M1": false,
+            "2-M2": false,
+            "2-M3": false,
+            "2-M4": false,
+            "3-M1": false,
+            "3-M2": false,
+            "3-M3": false,
+            "3-M4": false,
+            "4-M1": false,
+            "4-M2": false,
+            "4-M3": false,
+            "4-M4": false,
+            "5-M1": false,
+            "5-M2": false,
+            "5-M3": false,
+            "5-M4": false,
+            "6-M1": false,
+            "6-M2": false,
+            "6-M3": false,
+            "6-M4": false
+          }
+        },
+        {
+          "id": "task-4",
+          "name": "Pitch deck activity bersama mentor",
+          "allocation": {
+            "0-M1": false,
+            "0-M2": false,
             "0-M3": true,
             "0-M4": true,
             "1-M1": false,
@@ -83,95 +267,27 @@
           }
         },
         {
-          "id": "task-3",
-          "name": "Pengembangan Core Backend & RESTful API",
+          "id": "task-5",
+          "name": "Membuat mock up Ui/UX website",
           "allocation": {
             "0-M1": false,
             "0-M2": false,
             "0-M3": false,
-            "0-M4": true,
+            "0-M4": false,
             "1-M1": true,
             "1-M2": true,
-            "1-M3": true,
-            "1-M4": true,
-            "2-M1": false,
-            "2-M2": false,
-            "2-M3": false,
-            "2-M4": false,
-            "3-M1": false,
-            "3-M2": false,
-            "3-M3": false,
-            "3-M4": false,
-            "4-M1": false,
-            "4-M2": false,
-            "4-M3": false,
-            "4-M4": false,
-            "5-M1": false,
-            "5-M2": false,
-            "5-M3": false,
-            "5-M4": false,
-            "6-M1": false,
-            "6-M2": false,
-            "6-M3": false,
-            "6-M4": false
-          }
-        },
-        {
-          "id": "task-4",
-          "name": "Pengembangan Frontend & Integrasi State Management",
-          "allocation": {
-            "0-M1": false,
-            "0-M2": false,
-            "0-M3": false,
-            "0-M4": false,
-            "1-M1": false,
-            "1-M2": false,
-            "1-M3": true,
-            "1-M4": true,
-            "2-M1": true,
-            "2-M2": true,
-            "2-M3": true,
-            "2-M4": true,
-            "3-M1": false,
-            "3-M2": false,
-            "3-M3": false,
-            "3-M4": false,
-            "4-M1": false,
-            "4-M2": false,
-            "4-M3": false,
-            "4-M4": false,
-            "5-M1": false,
-            "5-M2": false,
-            "5-M3": false,
-            "5-M4": false,
-            "6-M1": false,
-            "6-M2": false,
-            "6-M3": false,
-            "6-M4": false
-          }
-        },
-        {
-          "id": "task-5",
-          "name": "Integrasi Sistem, Fitur Real-time & Modul Tambahan",
-          "allocation": {
-            "0-M1": false,
-            "0-M2": false,
-            "0-M3": false,
-            "0-M4": false,
-            "1-M1": false,
-            "1-M2": false,
             "1-M3": false,
             "1-M4": false,
             "2-M1": false,
             "2-M2": false,
             "2-M3": false,
             "2-M4": false,
-            "3-M1": true,
-            "3-M2": true,
-            "3-M3": true,
-            "3-M4": true,
-            "4-M1": true,
-            "4-M2": true,
+            "3-M1": false,
+            "3-M2": false,
+            "3-M3": false,
+            "3-M4": false,
+            "4-M1": false,
+            "4-M2": false,
             "4-M3": false,
             "4-M4": false,
             "5-M1": false,
@@ -186,7 +302,7 @@
         },
         {
           "id": "task-6",
-          "name": "Pengujian Sistem (QA, Unit Test & User Acceptance)",
+          "name": "Set up awal aplikasi dan version control",
           "allocation": {
             "0-M1": false,
             "0-M2": false,
@@ -194,41 +310,7 @@
             "0-M4": false,
             "1-M1": false,
             "1-M2": false,
-            "1-M3": false,
-            "1-M4": false,
-            "2-M1": false,
-            "2-M2": false,
-            "2-M3": false,
-            "2-M4": false,
-            "3-M1": false,
-            "3-M2": false,
-            "3-M3": false,
-            "3-M4": false,
-            "4-M1": false,
-            "4-M2": false,
-            "4-M3": true,
-            "4-M4": true,
-            "5-M1": true,
-            "5-M2": true,
-            "5-M3": false,
-            "5-M4": false,
-            "6-M1": false,
-            "6-M2": false,
-            "6-M3": false,
-            "6-M4": false
-          }
-        },
-        {
-          "id": "task-7",
-          "name": "Deployment Server, Optimalisasi & Dokumentasi",
-          "allocation": {
-            "0-M1": false,
-            "0-M2": false,
-            "0-M3": false,
-            "0-M4": false,
-            "1-M1": false,
-            "1-M2": false,
-            "1-M3": false,
+            "1-M3": true,
             "1-M4": false,
             "2-M1": false,
             "2-M2": false,
@@ -244,12 +326,71 @@
             "4-M4": false,
             "5-M1": false,
             "5-M2": false,
+            "5-M3": false,
+            "5-M4": false,
+            "6-M1": false,
+            "6-M2": false,
+            "6-M3": false,
+            "6-M4": false
+          }
+        },
+        {
+          "id": "task-7",
+          "name": "Pengembangan core backend & restful API",
+          "allocation": {
+            "0-M1": false,
+            "0-M2": false,
+            "0-M3": false,
+            "0-M4": false,
+            "1-M1": false,
+            "1-M2": false,
+            "1-M3": true,
+            "1-M4": true,
+            "2-M1": true,
+            "2-M2": true,
+            "2-M3": true,
+            "2-M4": true,
+            "3-M1": true,
+            "3-M2": true,
+            "3-M3": true,
+            "3-M4": true,
+            "4-M1": true,
+            "4-M2": true,
+            "4-M3": true,
+            "4-M4": true,
+            "5-M1": true,
+            "5-M2": true,
             "5-M3": true,
             "5-M4": true,
             "6-M1": true,
             "6-M2": true,
-            "6-M3": true,
-            "6-M4": true
+            "6-M3": false,
+            "6-M4": false
+          }
+        },
+        {
+          "id": "task-1794119079865",
+          "name": "Pengembangan frontend & integrasi",
+          "allocation": {
+            "1-M4": true,
+            "2-M1": true,
+            "2-M2": true,
+            "2-M3": true,
+            "2-M4": true,
+            "3-M1": true,
+            "3-M2": true,
+            "3-M4": true,
+            "3-M3": true,
+            "4-M1": true,
+            "4-M2": true,
+            "4-M3": true,
+            "4-M4": true,
+            "5-M1": true,
+            "5-M2": true,
+            "5-M3": true,
+            "5-M4": true,
+            "6-M1": true,
+            "6-M2": true
           }
         }
       ],
@@ -322,29 +463,150 @@
     ]
   },
   {
-    "id": "2",
+    "id": "3",
     "slug": "junior-software-engineer",
     "relatedProjectKeys": [
-      "aerosea-monitoring",
-      "corporate-website"
+      "aerosea-monitoring"
     ],
-    "colorVariantKey": "green-blue-1",
+    "colorVariantKey": "yellow-1",
     "role": "Junior Software Engineer",
     "companyName": "PT IndoMega Teknologi",
     "logo": "src/assets/logos/stupen.webp",
     "caption": "Ini adalah contoh caption yang akan menjelaskan tanggung jawab dan peran secara general saya selama menjadi web developer di sg8 group",
     "timeline": {
-      "startMonth": 1,
+      "startMonth": 2,
       "startYear": 2024,
-      "durationMonths": 7,
+      "durationMonths": 5,
       "tasks": [
         {
           "id": "task-1793852606103",
-          "name": "Membaca buku",
+          "name": "Rekap dan Analisis data vessel",
           "allocation": {
-            "0-M4": true,
+            "0-M4": false,
+            "1-M1": false,
+            "1-M2": false,
+            "1-M3": false,
+            "0-M1": true,
+            "0-M2": true
+          }
+        },
+        {
+          "id": "task-1794117768320",
+          "name": "Studi Literatur Vue.js dan Packet Tracer",
+          "allocation": {
+            "0-M3": true,
+            "0-M4": false,
+            "0-M2": true
+          }
+        },
+        {
+          "id": "task-1794117841450",
+          "name": "Simulasi jaringan dengan Packet Tracer",
+          "allocation": {
+            "0-M3": true,
+            "0-M4": true
+          }
+        },
+        {
+          "id": "task-1794117901119",
+          "name": "Belajar linux Debian beserta konfigurasi",
+          "allocation": {
+            "0-M4": true
+          }
+        },
+        {
+          "id": "task-1794117931380",
+          "name": "Projek hotswap audio arduino",
+          "allocation": {
+            "1-M1": true
+          }
+        },
+        {
+          "id": "task-1794117960930",
+          "name": "Support perakitan alat Smart System Fuelling",
+          "allocation": {
+            "1-M2": true,
             "1-M1": true,
-            "1-M2": true
+            "1-M3": true,
+            "1-M4": true,
+            "2-M1": true
+          }
+        },
+        {
+          "id": "task-1794118051811",
+          "name": "Perencanaan projek akhir bersama mentor",
+          "allocation": {
+            "2-M1": true
+          }
+        },
+        {
+          "id": "task-1794118078530",
+          "name": "Tahap programming projek akhir",
+          "allocation": {
+            "2-M1": true,
+            "2-M2": true,
+            "2-M3": true,
+            "2-M4": true,
+            "3-M1": false
+          }
+        },
+        {
+          "id": "task-1794118169712",
+          "name": "Merancang dan menguji IoT Pooling data",
+          "allocation": {
+            "3-M1": true
+          }
+        },
+        {
+          "id": "task-1794118213090",
+          "name": "Mengumpulkan data dengan IoT Ais Receiver",
+          "allocation": {
+            "3-M1": true
+          }
+        },
+        {
+          "id": "task-1794118231883",
+          "name": "Mengolah data dengan Python",
+          "allocation": {
+            "3-M2": true
+          }
+        },
+        {
+          "id": "task-1794118260523",
+          "name": "Lanjut pembuatan dashboard visualisasi data",
+          "allocation": {
+            "3-M3": true,
+            "3-M2": true,
+            "3-M4": true,
+            "4-M2": false,
+            "4-M1": false
+          }
+        },
+        {
+          "id": "task-1794118287190",
+          "name": "Debugging dan penyempurnaan UI",
+          "allocation": {
+            "4-M2": false,
+            "4-M3": false,
+            "3-M4": true,
+            "4-M1": true
+          }
+        },
+        {
+          "id": "task-1794118313531",
+          "name": "Penyusunan laporan akhir",
+          "allocation": {
+            "4-M3": false,
+            "4-M4": false,
+            "4-M2": false,
+            "4-M1": true
+          }
+        },
+        {
+          "id": "task-1794118411211",
+          "name": "Monev dan presentasi projek akhir bersama mentor dan dosen",
+          "allocation": {
+            "4-M1": true
           }
         }
       ]
@@ -353,12 +615,12 @@
       {
         "id": "1",
         "icon": "calendar",
-        "value": "2026"
+        "value": "2024"
       },
       {
         "id": "2",
         "icon": "clock",
-        "value": "6 Bulan"
+        "value": "5 Bulan"
       },
       {
         "id": "3",

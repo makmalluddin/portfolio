@@ -43,7 +43,7 @@
   },
   {
     "id": "3",
-    "slug": "gas-chromatography",
+    "slug": "gas-chromatography-detection",
     "number": "03",
     "category": "UNDERGRADUATE THESIS",
     "title": "Gas Chromatography",
@@ -65,7 +65,7 @@
   },
   {
     "id": "4",
-    "slug": "my-finance",
+    "slug": "my-finance-app",
     "number": "04",
     "category": "FINANCIAL DASHBOARD",
     "title": "My Finance ",
@@ -106,7 +106,7 @@
   },
   {
     "id": "6",
-    "slug": "ozon-level",
+    "slug": "ozon-level-detection",
     "number": "06",
     "category": "COLLEGE PROJECT",
     "title": "Ozon Level ",
@@ -125,7 +125,7 @@
   },
   {
     "id": "7",
-    "slug": "aerosea-monitoring-copy-copy-copy-copy-copy",
+    "slug": "power-plant-regression",
     "number": "07",
     "category": "BOOTCAMP PROJECT",
     "title": "Power Plant ",
@@ -142,6 +142,6 @@
       "Pandas",
       "Machine Learning"
     ],
-    "accentColor": "green-1"
+    "accentColor": "pink-1"
   }
 ]

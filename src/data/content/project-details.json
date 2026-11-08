@@ -82,5 +82,509 @@
         "caption": "Halaman awal landing page"
       }
     ]
+  },
+  {
+    "id": "2",
+    "slug": "aerosea-monitoring",
+    "categoryTitle": "AEROSEA MONITORING",
+    "titlePrefix": "Monitoring Dashboard to Visualize ",
+    "highlightedWord": "Vessel and Airplane ",
+    "titleSuffix": "Real-time.",
+    "colorVariantKey": "red-1",
+    "description": "Aplikasi yang saya buat sebagai visualisasi dari data yang didapatkan melalui kegiatan internship & penyedia data pihak ketiga. Data dapat disajikan secara real-time maupun historis sesuai preferensi user.",
+    "repoUrl": "https://github.com/makmalluddin?tab=repositories",
+    "liveDemoUrl": "#",
+    "heroImage": "src/assets/Project/corporateRevamp.webp",
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "user",
+        "value": "Junior Software Engineer"
+      },
+      {
+        "id": "2",
+        "icon": "check",
+        "value": "Selesai"
+      },
+      {
+        "id": "3",
+        "icon": "calendar-days",
+        "value": "6 Bulan"
+      },
+      {
+        "id": "4",
+        "icon": "users",
+        "value": "Individu"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "01",
+        "title": "Latar Belakang & Tujuan",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "02",
+        "title": "Kontribusi yang Saya Lakukan",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "03",
+        "title": "Tantangan & Solusi",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "04",
+        "title": "Hasil Akhir",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "2",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "3",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "4",
+        "image": "src/assets/Project/bnsp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "5",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "slug": "gas-chromatography-detection",
+    "categoryTitle": "GAS CHROMATOGRAPHY DETECTION",
+    "titlePrefix": "Classification of Volatile Compounds using ",
+    "highlightedWord": "Gas Chromatography ",
+    "titleSuffix": ".",
+    "colorVariantKey": "purple-1",
+    "description": "Ini adalah sistem yang saya buat agar dapat membedakan 2 jenis gas volatile yaitu butana dan metanol. IoT System menggunakan sensor TCD dan TVOC, model yang digunakan untuk Deep Learning adalah ANN.",
+    "repoUrl": "https://github.com/makmalluddin?tab=repositories",
+    "liveDemoUrl": "#",
+    "heroImage": "src/assets/Project/corporateRevamp.webp",
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "user",
+        "value": "Researcher"
+      },
+      {
+        "id": "2",
+        "icon": "check",
+        "value": "Selesai"
+      },
+      {
+        "id": "3",
+        "icon": "calendar-days",
+        "value": "1 Tahun"
+      },
+      {
+        "id": "4",
+        "icon": "users",
+        "value": "2 Orang"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "01",
+        "title": "Latar Belakang & Tujuan",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "02",
+        "title": "Kontribusi yang Saya Lakukan",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "03",
+        "title": "Tantangan & Solusi",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "04",
+        "title": "Hasil Akhir",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "2",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "3",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "4",
+        "image": "src/assets/Project/bnsp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "5",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "slug": "my-finance-app",
+    "categoryTitle": "MY FINANCE APP",
+    "titlePrefix": "My ",
+    "highlightedWord": "Finance ",
+    "titleSuffix": "App.",
+    "colorVariantKey": "green-1",
+    "description": "Aplikasi yang saya buat sebagai sistem pencatatan keuangan harian. Aplikasi ini saya bangun agar penggunaan uang harian tercatat secara rapi untuk melacak penggunaan uang.",
+    "repoUrl": "https://github.com/makmalluddin?tab=repositories",
+    "liveDemoUrl": "#",
+    "heroImage": "src/assets/Project/corporateRevamp.webp",
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "user",
+        "value": "Fullstack Developer"
+      },
+      {
+        "id": "2",
+        "icon": "check",
+        "value": "Selesai"
+      },
+      {
+        "id": "3",
+        "icon": "calendar-days",
+        "value": "2 Bulan"
+      },
+      {
+        "id": "4",
+        "icon": "users",
+        "value": "Individu"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "01",
+        "title": "Latar Belakang & Tujuan",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "02",
+        "title": "Kontribusi yang Saya Lakukan",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "03",
+        "title": "Tantangan & Solusi",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "04",
+        "title": "Hasil Akhir",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "2",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "3",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "4",
+        "image": "src/assets/Project/bnsp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "5",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "shipping-prediction",
+    "categoryTitle": "SHIPPING PREDICTION",
+    "titlePrefix": "Delivery Time ",
+    "highlightedWord": "Accuracy ",
+    "titleSuffix": "Prediction.",
+    "colorVariantKey": "yellow-1",
+    "description": "Aplikasi yang saya buat untuk memprediksi waktu pengiriman barang berdasarkan variabel tertentu di bandingkan dengan estimasi yang diberikan pihak logistik.",
+    "repoUrl": "https://github.com/makmalluddin?tab=repositories",
+    "liveDemoUrl": "#",
+    "heroImage": "src/assets/Project/corporateRevamp.webp",
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "user",
+        "value": "Data Scientist"
+      },
+      {
+        "id": "2",
+        "icon": "check",
+        "value": "Selesai"
+      },
+      {
+        "id": "3",
+        "icon": "calendar-days",
+        "value": "4 Bulan"
+      },
+      {
+        "id": "4",
+        "icon": "users",
+        "value": "Individu"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "01",
+        "title": "Latar Belakang & Tujuan",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "02",
+        "title": "Kontribusi yang Saya Lakukan",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "03",
+        "title": "Tantangan & Solusi",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "04",
+        "title": "Hasil Akhir",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "2",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "3",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "4",
+        "image": "src/assets/Project/bnsp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "5",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "slug": "ozon-level-detection",
+    "categoryTitle": "OZON LEVEL DETECTION",
+    "titlePrefix": "Ozon ",
+    "highlightedWord": "Level ",
+    "titleSuffix": "Detection.",
+    "colorVariantKey": "blue-2",
+    "description": "Mengembangkan sistem machine learning untuk memprediksi kualitas udara berdasarkan level ozon dengan 18 fitur environmental. Mengaplikasikan FFT untuk ekstraksi fitur dan 3 model machine learning untuk prediksi.",
+    "repoUrl": "https://github.com/makmalluddin?tab=repositories",
+    "liveDemoUrl": "#",
+    "heroImage": "src/assets/Project/corporateRevamp.webp",
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "user",
+        "value": "Undergraduate Student"
+      },
+      {
+        "id": "2",
+        "icon": "check",
+        "value": "Selesai"
+      },
+      {
+        "id": "3",
+        "icon": "calendar-days",
+        "value": "1 Bulan"
+      },
+      {
+        "id": "4",
+        "icon": "users",
+        "value": "3 Orang"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "01",
+        "title": "Latar Belakang & Tujuan",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "02",
+        "title": "Kontribusi yang Saya Lakukan",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "03",
+        "title": "Tantangan & Solusi",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "04",
+        "title": "Hasil Akhir",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "2",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "3",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "4",
+        "image": "src/assets/Project/bnsp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "5",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "slug": "power-plant-regression",
+    "categoryTitle": "POWER PLANT REGRESSION",
+    "titlePrefix": "Power Plant ",
+    "highlightedWord": "Regression",
+    "titleSuffix": ".",
+    "colorVariantKey": "pink-1",
+    "description": "Membuat model regresi untuk memprediksi powerpant energy menggunakan 4 parameter utama. Mengevaluasi lima algoritma regresi untuk membandingakan efektivitas model dalam mengestimasi produksi energi listrik bersih per jam (PE).",
+    "repoUrl": "https://github.com/makmalluddin?tab=repositories",
+    "liveDemoUrl": "#",
+    "heroImage": "src/assets/Project/corporateRevamp.webp",
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "user",
+        "value": "Bootcamp Student"
+      },
+      {
+        "id": "2",
+        "icon": "check",
+        "value": "Selesai"
+      },
+      {
+        "id": "3",
+        "icon": "calendar-days",
+        "value": "1 Minggu"
+      },
+      {
+        "id": "4",
+        "icon": "users",
+        "value": "Individual"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "01",
+        "title": "Latar Belakang & Tujuan",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "02",
+        "title": "Kontribusi yang Saya Lakukan",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "03",
+        "title": "Tantangan & Solusi",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "04",
+        "title": "Hasil Akhir",
+        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "2",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "3",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "4",
+        "image": "src/assets/Project/bnsp.webp",
+        "caption": "Halaman awal landing page"
+      },
+      {
+        "id": "5",
+        "image": "src/assets/Project/corporateRevamp.webp",
+        "caption": "Halaman awal landing page"
+      }
+    ]
   }
 ]
