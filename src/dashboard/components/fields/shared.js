@@ -21,7 +21,7 @@ export function fieldError(errors, path) {
 }
 
 export function isWideField(field) {
-  return ["textarea", "repeater", "string-list", "image", "file", "group"].includes(
+  return ["textarea", "repeater", "string-list", "image", "file", "group", "timeline-editor"].includes(
     field.type
   );
 }

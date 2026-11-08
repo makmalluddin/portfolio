@@ -121,7 +121,7 @@ export function TimelineEditorField({ field, value, onChange, path, errors }) {
           <table className="w-full border-collapse text-left text-[11px]">
             <thead>
               <tr className="border-b border-[#e3e2dd] bg-[#fafaf8]">
-                <th className="sticky left-0 z-10 border-r border-[#e3e2dd] bg-[#fafaf8] p-2 font-semibold text-[#6d6c65] min-w-[150px]">
+                <th className="sticky left-0 z-10 border-r border-[#e3e2dd] bg-[#fafaf8] p-2 font-semibold text-[#6d6c65] min-w-30">
                   Task Name
                 </th>
                 {Array.from({ length: durationMonths }).map((_, mIdx) => (
