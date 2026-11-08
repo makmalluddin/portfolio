@@ -336,7 +336,7 @@
         },
         {
           "id": "task-7",
-          "name": "Pengembangan core backend & restful API",
+          "name": "Pengembangan core backend & CMS",
           "allocation": {
             "0-M1": false,
             "0-M2": false,
@@ -361,9 +361,9 @@
             "5-M1": true,
             "5-M2": true,
             "5-M3": true,
-            "5-M4": true,
-            "6-M1": true,
-            "6-M2": true,
+            "5-M4": false,
+            "6-M1": false,
+            "6-M2": false,
             "6-M3": false,
             "6-M4": false
           }
@@ -372,7 +372,7 @@
           "id": "task-1794119079865",
           "name": "Pengembangan frontend & integrasi",
           "allocation": {
-            "1-M4": true,
+            "1-M4": false,
             "2-M1": true,
             "2-M2": true,
             "2-M3": true,
@@ -388,9 +388,51 @@
             "5-M1": true,
             "5-M2": true,
             "5-M3": true,
+            "5-M4": false,
+            "6-M1": false,
+            "6-M2": false
+          }
+        },
+        {
+          "id": "task-1794120700969",
+          "name": "Training Internal software engineering",
+          "allocation": {
+            "2-M2": true
+          }
+        },
+        {
+          "id": "task-1794120755120",
+          "name": "Evaluasi projek fase 1",
+          "allocation": {
+            "2-M3": false,
+            "3-M1": true
+          }
+        },
+        {
+          "id": "task-1794120834656",
+          "name": "Evaluasi projek fase 2",
+          "allocation": {
+            "5-M1": true
+          }
+        },
+        {
+          "id": "task-1794120914189",
+          "name": "Debugging dan penyesuaian kesesuaian logic bisnis code",
+          "allocation": {
+            "5-M2": true,
+            "5-M3": true,
+            "5-M4": true
+          }
+        },
+        {
+          "id": "task-1794120940888",
+          "name": "Deployment aplikasi",
+          "allocation": {
+            "6-M2": true,
+            "6-M3": false,
+            "6-M4": false,
             "5-M4": true,
-            "6-M1": true,
-            "6-M2": true
+            "6-M1": true
           }
         }
       ],

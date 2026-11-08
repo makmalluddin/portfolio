@@ -13,7 +13,7 @@ function CertificationPage() {
     <MainFrame
       title={
         <p className="font-mono tracking-wide text-sm">
-          01 / <span className="text-text-secondary font-medium">DAFTAR SERTIKAT & PELATIHAN</span>
+          04 / <span className="text-text-secondary font-medium">DAFTAR SERTIKAT & PELATIHAN</span>
         </p>
       }
     >

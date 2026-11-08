@@ -1,6 +1,8 @@
 import MainFrame from "@/src/components/MainFrame";
 import ExperienceCard from "@/src/components/experience/ExperienceCard";
 import { experiencesData as experienceData } from "@/src/data/experienceData.jsx";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Experience() {
   return (
@@ -12,18 +14,19 @@ function Experience() {
           </p>
         }
       >
-        <div className="py-12 px-8 flex flex-col gap-2">
-          <h3 className="text-4xl md:text-5xl font-bold scale-y-90">
-            Profesional & Non-Formal.
-          </h3>
-          <p>
-            Pengalaman kerja, freelance, volunteer, & bootcamp.
-          </p>
-        </div>
-
         {experienceData.map((exp) => (
           <ExperienceCard key={exp.id} experience={exp} />
         ))}
+
+        <Link
+          to={'experiences/'}
+          className="flex gap-2 px-8 py-6 items-center justify-center hover:bg-bg-surface/60 transition-all"
+        >
+          <span className="uppercase font-mono text-sm text-text-muted">
+            LIHAT PENGALAMAN LAINNYA
+          </span>
+          <ArrowRight className="-rotate-45 size-4" />
+        </Link>
       </MainFrame>
     </section>
   );
