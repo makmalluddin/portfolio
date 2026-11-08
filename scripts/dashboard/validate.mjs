@@ -208,6 +208,45 @@ async function validateExperiences(result, data) {
   });
 }
 
+async function validateExperienceCategories(result, data) {
+  const categories = requireArray(result, data, "experience-categories");
+  requireUnique(result, categories, "id", "experience-categories");
+
+  categories.forEach((category, index) => {
+    const path = `experience-categories.${index}`;
+    if (!isObject(category)) {
+      addError(result, path, "Harus berupa object.");
+      return;
+    }
+
+    requireString(result, category.id, `${path}.id`);
+    requireString(result, category.label, `${path}.label`);
+    
+    if (typeof category.order !== "number") {
+      addError(result, `${path}.order`, "Harus berupa angka.");
+    }
+  });
+}
+
+async function validateExperiencesByCategory(result, data, categoryLabel) {
+  const experiences = requireArray(result, data, categoryLabel);
+  requireUnique(result, experiences, "id", categoryLabel);
+  requireUnique(result, experiences, "slug", categoryLabel);
+
+  experiences.forEach((experience, index) => {
+    const path = `${categoryLabel}.${index}`;
+    if (!isObject(experience)) {
+      addError(result, path, "Harus berupa object.");
+      return;
+    }
+
+    ["id", "period", "role", "company", "type", "description"].forEach((field) =>
+      requireString(result, experience[field], `${path}.${field}`)
+    );
+    requireSlug(result, experience.slug, `${path}.slug`);
+  });
+}
+
 async function validateSkills(result, data) {
   const skills = requireArray(result, data, "skills");
   requireUnique(result, skills, "id", "skills");
@@ -530,6 +569,11 @@ const validators = {
   hero: validateHero,
   projects: validateProjects,
   experiences: validateExperiences,
+  "experience-categories": validateExperienceCategories,
+  "experiences-professional": (result, data) => validateExperiencesByCategory(result, data, "experiences-professional"),
+  "experiences-freelance": (result, data) => validateExperiencesByCategory(result, data, "experiences-freelance"),
+  "experiences-volunteer": (result, data) => validateExperiencesByCategory(result, data, "experiences-volunteer"),
+  "experiences-bootcamp": (result, data) => validateExperiencesByCategory(result, data, "experiences-bootcamp"),
   skills: validateSkills,
   certifications: validateCertifications,
   "certification-gallery": validateCertificationGallery,

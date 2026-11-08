@@ -14,6 +14,31 @@ export const collections = {
     kind: "array",
     file: "src/data/content/experiences.json",
   },
+  "experience-categories": {
+    label: "Kategori Pengalaman",
+    kind: "array",
+    file: "src/data/content/experience-categories.json",
+  },
+  "experiences-professional": {
+    label: "Pengalaman - Professional",
+    kind: "array",
+    file: "src/data/content/experiences-professional.json",
+  },
+  "experiences-freelance": {
+    label: "Pengalaman - Freelance",
+    kind: "array",
+    file: "src/data/content/experiences-freelance.json",
+  },
+  "experiences-volunteer": {
+    label: "Pengalaman - Volunteer",
+    kind: "array",
+    file: "src/data/content/experiences-volunteer.json",
+  },
+  "experiences-bootcamp": {
+    label: "Pengalaman - Bootcamp",
+    kind: "array",
+    file: "src/data/content/experiences-bootcamp.json",
+  },
   skills: {
     label: "Keahlian",
     kind: "array",

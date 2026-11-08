@@ -1,10 +1,27 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import MainFrame from "@/src/components/MainFrame"
 import ExperienceCard from "@/src/components/experience/ExperienceCard";
-import { experiencesData as experienceData } from "@/src/data/experienceData.jsx";
-import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import categoriesData from "@/src/data/content/experience-categories.json";
+import professionalData from "@/src/data/content/experiences-professional.json";
+import freelanceData from "@/src/data/content/experiences-freelance.json";
+import volunteerData from "@/src/data/content/experiences-volunteer.json";
+import bootcampData from "@/src/data/content/experiences-bootcamp.json";
+
+const categoryDataMap = {
+  "cat-1": professionalData,
+  "cat-2": freelanceData,
+  "cat-3": volunteerData,
+  "cat-4": bootcampData,
+};
 
 function ExperiencePage() {
+  const sortedCategories = [...categoriesData].sort((a, b) => a.order - b.order);
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div>
       <MainFrame
@@ -23,23 +40,27 @@ function ExperiencePage() {
           </p>
         </div>
 
-        <div className="uppercase text-sm px-8 py-4 text-text-muted font-mono">
-          Profesional
-        </div>
-        {experienceData.map((exp) => (
-          <ExperienceCard key={exp.id} experience={exp} />
-        ))}
+        {sortedCategories.map((category) => {
+          const experiences = categoryDataMap[category.id] || [];
 
-        <div className="uppercase text-sm px-8 py-4 text-text-muted font-mono">
-          Freelance
-        </div>
-        {experienceData.map((exp) => (
-          <ExperienceCard key={exp.id} experience={exp} />
-        ))}
+          if (experiences.length === 0) return null;
 
+          return (
+            <div key={category.id}>
+              <div className="uppercase text-sm px-8 py-4 text-text-muted font-mono">
+                {category.label}
+              </div>
+              {experiences.map((exp) => (
+                <div className="border-t border-border-muted">
+                  <ExperienceCard key={exp.id} experience={exp} />
+                </div>
+              ))}
+            </div>
+          );
+        })}
       </MainFrame>
-    </div >
-  )
+    </div>
+  );
 }
 
 export default ExperiencePage;

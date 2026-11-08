@@ -1,0 +1,22 @@
+[
+  {
+    "id": "cat-1",
+    "label": "Professional",
+    "order": 1
+  },
+  {
+    "id": "cat-2",
+    "label": "Freelance",
+    "order": 2
+  },
+  {
+    "id": "cat-3",
+    "label": "Volunteer",
+    "order": 3
+  },
+  {
+    "id": "cat-4",
+    "label": "Bootcamp",
+    "order": 4
+  }
+]

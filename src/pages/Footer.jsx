@@ -8,13 +8,6 @@ function Footer() {
   const { cta, directLinks, exploreLinks, socialLinks, copyright } = footerData;
   const navigate = useNavigate();
 
-  const handleLogoClick = (e) => {
-    if (window.location.pathname === "/") {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  };
-
   const handleExploreClick = (e, path) => {
     if (path.includes("#")) {
       const [basePath, hash] = path.split("#");
