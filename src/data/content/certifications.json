@@ -19,11 +19,20 @@
   },
   {
     "id": "2",
-    "title": "Frontend Development",
-    "issuer": "PT Tata Informasi Asia",
+    "title": "Python Essentials",
+    "issuer": "Cisco Networking Academy",
     "type": "SERTIFIKAT",
     "slug": "certifications",
-    "duration": "Diterbitkan Des 2024 · Berlaku hingga Des 2027",
+    "duration": "Diterbitkan Oktober 2026 · Berlaku Selamanya",
+    "metadata": []
+  },
+  {
+    "id": "3",
+    "title": "Associate Data Scientist",
+    "issuer": "BNSP",
+    "type": "SERTIFIKAT",
+    "slug": "certifications",
+    "duration": "Diterbitkan Feb 2024 · Berlaku hingga Feb 2027",
     "metadata": [
       {
         "label": "TERBIT",

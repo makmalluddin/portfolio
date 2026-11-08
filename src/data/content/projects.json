@@ -40,5 +40,108 @@
       "Node.js"
     ],
     "accentColor": "red-1"
+  },
+  {
+    "id": "3",
+    "slug": "gas-chromatography",
+    "number": "03",
+    "category": "UNDERGRADUATE THESIS",
+    "title": "Gas Chromatography",
+    "highlightTitle": "Detection",
+    "description": "Projek akhir ketika menempuh Sarjana Fisika, membangun sistem IoT dan Deep Learning untuk membedakan antara dua jenis Gas Chromatography.",
+    "image": "src/assets/myself/experience/indomega/analytics.webp",
+    "highlightTags": [
+      "Undergraduate Thesis",
+      "Deep Learning",
+      "IoT System"
+    ],
+    "tags": [
+      "Python",
+      "ANN (Artificial Neural Network)",
+      "PyQt5",
+      "Jupyter Notebook"
+    ],
+    "accentColor": "purple-1"
+  },
+  {
+    "id": "4",
+    "slug": "my-finance",
+    "number": "04",
+    "category": "FINANCIAL DASHBOARD",
+    "title": "My Finance ",
+    "highlightTitle": "App",
+    "description": "Dashboard keuangan untuk mengatur keuangan harian.",
+    "image": "src/assets/myself/experience/indomega/analytics.webp",
+    "highlightTags": [
+      "Financial Dashboard",
+      "Live"
+    ],
+    "tags": [
+      "Next.js",
+      "Supabase",
+      "Typescript"
+    ],
+    "accentColor": "green-1"
+  },
+  {
+    "id": "5",
+    "slug": "shipping-prediction",
+    "number": "05",
+    "category": "BOOTCAMP PROJECT",
+    "title": "Shipping ",
+    "highlightTitle": "Prediction",
+    "description": "Dashboard yang memprediksi lama pengiriman barang dari waktu estimasi yang diberikan ekspedisi dengan metode Random Forest.",
+    "image": "src/assets/myself/certifications/dicoding.webp",
+    "highlightTags": [
+      "Dashboard",
+      "Machine Learning"
+    ],
+    "tags": [
+      "Java",
+      "Spring Boot",
+      "Python",
+      "Scikit-Learn"
+    ],
+    "accentColor": "yellow-1"
+  },
+  {
+    "id": "6",
+    "slug": "ozon-level",
+    "number": "06",
+    "category": "COLLEGE PROJECT",
+    "title": "Ozon Level ",
+    "highlightTitle": "Detection",
+    "description": "Projek untuk membandingkan performa 3 model machine learning terhadap kemampuan untuk memprediksi ozon level dengan dataset kaggle.",
+    "image": "src/assets/myself/projects/delivery.webp",
+    "highlightTags": [
+      "Jupyter Notebook"
+    ],
+    "tags": [
+      "Python",
+      "Scikit-Learn",
+      "Pandas"
+    ],
+    "accentColor": "blue-2"
+  },
+  {
+    "id": "7",
+    "slug": "aerosea-monitoring-copy-copy-copy-copy-copy",
+    "number": "07",
+    "category": "BOOTCAMP PROJECT",
+    "title": "Power Plant ",
+    "highlightTitle": "Regression",
+    "description": "Notebook untuk membandingkan performa 5 model machine learning regresi terhadap kemampuan untuk memprediksi Power Plant dengan dataset publik.",
+    "image": "src/assets/myself/experience/stupen/learning_springboot.webp",
+    "highlightTags": [
+      "Jupyter Notebook",
+      "Regression"
+    ],
+    "tags": [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "Machine Learning"
+    ],
+    "accentColor": "green-1"
   }
 ]
