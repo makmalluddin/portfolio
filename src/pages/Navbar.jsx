@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Menu, X, Moon } from "lucide-react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -13,6 +14,24 @@ function Navbar() {
     if (window.location.pathname === "/") {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  const handleExploreClick = (e, path) => {
+    if (path.includes("#")) {
+      const [basePath, hash] = path.split("#");
+      if (window.location.pathname === basePath || basePath === "/") {
+        e.preventDefault();
+        if (window.location.pathname !== "/") {
+          navigate("/");
+        }
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100);
+      }
     }
   };
 
@@ -30,24 +49,36 @@ function Navbar() {
 
           <ul className="list-none flex gap-8 px-5 items-center border-x border-border-muted tracking-wider text-xs font-mono font-medium text-text-muted">
             <li>
-              <a href="/#projects" className="hover:text-text-primary transition-colors">
+              <button
+                onClick={(e) => handleExploreClick(e, "/#projects")}
+                className="cursor-pointer hover:text-text-primary transition-colors"
+              >
                 PROJEK
-              </a>
+              </button>
             </li>
             <li>
-              <a href="/#experiences" className="hover:text-text-primary transition-colors">
+              <button
+                onClick={(e) => handleExploreClick(e, "/#experiences")}
+                className="cursor-pointer hover:text-text-primary transition-colors"
+              >
                 PENGALAMAN
-              </a>
+              </button>
             </li>
             <li>
-              <a href="/#skills" className="hover:text-text-primary transition-colors">
+              <button
+                onClick={(e) => handleExploreClick(e, "/#skills")}
+                className="cursor-pointer hover:text-text-primary transition-colors"
+              >
                 KEAHLIAN
-              </a>
+              </button>
             </li>
             <li>
-              <a href="/#certifications" className="hover:text-text-primary transition-colors">
+              <button
+                onClick={(e) => handleExploreClick(e, "/#certifications")}
+                className="cursor-pointer hover:text-text-primary transition-colors"
+              >
                 SERTIFIKASI
-              </a>
+              </button>
             </li>
           </ul>
         </div>
@@ -88,7 +119,7 @@ function Navbar() {
             <a
               href="https://github.com/makmalluddin"
               target="_blank"
-              className="flex items-center justify-center h-full w-12 border-l border-border-muted text-text-primary hover:bg-bg-surface/50 transition-colors"
+              className="cursor-pointer flex items-center justify-center h-full w-12 border-l border-border-muted text-text-primary hover:bg-bg-surface/50 transition-colors"
               aria-label="Github"
             >
               <img
@@ -99,7 +130,7 @@ function Navbar() {
 
             <button
               onClick={toggleMenu}
-              className="flex items-center justify-center h-full w-12 border-l border-border-muted text-text-primary hover:bg-bg-surface/50 transition-colors"
+              className="cursor-pointer flex items-center justify-center h-full w-12 border-l border-border-muted text-text-primary hover:bg-bg-surface/50 transition-colors"
               aria-label="Toggle Menu"
             >
               {isOpen ? <X size={18} /> : <Menu size={18} />}
@@ -112,40 +143,48 @@ function Navbar() {
         <nav className="md:hidden flex flex-col bg-bg-primary border-y border-border-muted font-mono text-xs tracking-wider font-medium text-text-muted">
           <ul className="flex flex-col list-none">
             <li>
-              <a
-                href="/#projects"
-                onClick={() => setIsOpen(false)}
-                className="block px-5 py-3 hover:bg-bg-surface/50 transition-colors"
+              <button
+                onClick={(e) => {
+                  handleExploreClick(e, "/#projects");
+                  setIsOpen(false);
+                }}
+                className="cursor-pointer block w-full text-left px-5 py-3 hover:bg-bg-surface/50 transition-colors"
               >
                 PROJEK
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="/#experiences"
-                onClick={() => setIsOpen(false)}
-                className="block px-5 py-3 hover:bg-bg-surface/50 transition-colors"
+              <button
+                onClick={(e) => {
+                  handleExploreClick(e, "/#experiences");
+                  setIsOpen(false);
+                }}
+                className="cursor-pointer block w-full text-left px-5 py-3 hover:bg-bg-surface/50 transition-colors"
               >
                 PENGALAMAN
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="/#skills"
-                onClick={() => setIsOpen(false)}
-                className="block px-5 py-3 hover:bg-bg-surface/50 transition-colors"
+              <button
+                onClick={(e) => {
+                  handleExploreClick(e, "/#skills");
+                  setIsOpen(false);
+                }}
+                className="cursor-pointer block w-full text-left px-5 py-3 hover:bg-bg-surface/50 transition-colors"
               >
                 KEAHLIAN
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="/#certifications"
-                onClick={() => setIsOpen(false)}
-                className="block px-5 py-3 hover:bg-bg-surface/50 transition-colors"
+              <button
+                onClick={(e) => {
+                  handleExploreClick(e, "/#certifications");
+                  setIsOpen(false);
+                }}
+                className="cursor-pointer block w-full text-left px-5 py-3 hover:bg-bg-surface/50 transition-colors"
               >
                 SERTIFIKASI
-              </a>
+              </button>
             </li>
           </ul>
         </nav>

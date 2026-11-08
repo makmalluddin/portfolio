@@ -40,6 +40,7 @@ function ExperienceDetailSlug({ experience }) {
             <img
               src={logo}
               alt={companyName}
+              loading="lazy"
               className="border border-border-muted size-20 object-contain rounded-sm"
             />
 

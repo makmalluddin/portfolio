@@ -2,10 +2,19 @@
   {
     "id": "exp-1",
     "slug": "tech-electronics-freelancer",
-    "period": "2022 - Sekarang",
+    "period": "2022 - 2025",
     "role": "IT & Electronics Engineer ",
     "company": "Smartnerdies",
     "type": "FREELANCE",
     "description": "asd"
+  },
+  {
+    "id": "exp-2",
+    "slug": "ojs-unj",
+    "period": "LUPA",
+    "role": "Tim OJS (Open Journal System) UNJ",
+    "company": "OJS UNJ",
+    "type": "FREELANCE",
+    "description": "asimilikit"
   }
 ]

@@ -41,6 +41,7 @@ function CertificationGallery({ certifications }) {
           <img
             src={currentCert.image}
             alt={currentCert.title}
+            loading="lazy"
             className="h-60 md:h-105 w-auto object-contain transition-all duration-300"
           />
         </div>

@@ -73,6 +73,7 @@ function ProjectDetailSlug({ project }) {
         <img
           src={project.heroImage}
           alt={project.categoryTitle}
+          loading="lazy"
           className="w-full h-auto"
         />
       </MainFrame>
@@ -128,6 +129,7 @@ function ProjectDetailSlug({ project }) {
                 <img
                   src={item.image}
                   alt={item.caption}
+                  loading="lazy"
                   className="absolute inset-0 w-full h-full object-contain"
                 />
               </div>

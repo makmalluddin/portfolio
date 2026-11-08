@@ -54,6 +54,7 @@ function HeroCard({ data }) {
           <div className="flex items-center justify-center">
             <img
               src={avatar}
+              loading="eager"
               className="h-60 w-60 object-cover rounded-full shadow-2xl shadow-black">
             </img>
           </div>

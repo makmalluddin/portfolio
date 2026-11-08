@@ -41,7 +41,7 @@ function Footer() {
         </p>
         <Link
           to={cta.buttonHref}
-          className="flex items-center justify-center gap-2 p-4 font-mono font-medium tracking-wider text-white bg-black transition-all duration-300 hover:bg-black/80 active:scale-95"
+          className="cursor-pointer flex items-center justify-center gap-2 p-4 font-mono font-medium tracking-wider text-white bg-black transition-all duration-300 hover:bg-black/80 active:scale-95"
         >
           <Mail className="size-4" />
           <span className="text-xs tracking-wider">{cta.buttonText}</span>
@@ -78,7 +78,7 @@ function Footer() {
                 key={item.id}
                 to={item.path}
                 onClick={(e) => handleExploreClick(e, item.path)}
-                className="text-text-secondary hover:text-text-primary transition-colors duration-200"
+                className="cursor-pointer text-text-secondary hover:text-text-primary transition-colors duration-200"
               >
                 {item.label}
               </Link>
@@ -95,7 +95,7 @@ function Footer() {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-text-secondary hover:text-text-primary transition-colors duration-200"
+                className="cursor-pointer text-text-secondary hover:text-text-primary transition-colors duration-200"
               >
                 {item.label}
               </a>

@@ -18,6 +18,7 @@ function SkillCard({ skill }) {
             <img
               src={tool.iconUrl}
               alt={tool.name}
+              loading="lazy"
               className="size-6 shrink-0 object-contain opacity-70"
             />
             <p className="font-medium">{tool.name}</p>

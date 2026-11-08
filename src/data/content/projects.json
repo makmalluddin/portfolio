@@ -48,18 +48,19 @@
     "category": "UNDERGRADUATE THESIS",
     "title": "Gas Chromatography",
     "highlightTitle": "Detection",
-    "description": "Projek akhir ketika menempuh Sarjana Fisika, membangun sistem IoT dan Deep Learning untuk membedakan antara dua jenis Gas Chromatography.",
+    "description": "Sebuah sistem untuk membedakan 2 jenis gas volatil yaitu Butana dan Metanol. Dikembangkan bersama sistem IoT dengan integrasi sensor untuk pengumpulan data.",
     "image": "src/assets/myself/experience/indomega/analytics.webp",
     "highlightTags": [
-      "Undergraduate Thesis",
       "Deep Learning",
       "IoT System"
     ],
     "tags": [
       "Python",
-      "ANN (Artificial Neural Network)",
+      "ANN",
       "PyQt5",
-      "Jupyter Notebook"
+      "Jupyter Notebook",
+      "ESP32",
+      "TCD & TVOC Sensor"
     ],
     "accentColor": "purple-1"
   },
@@ -70,16 +71,16 @@
     "category": "FINANCIAL DASHBOARD",
     "title": "My Finance ",
     "highlightTitle": "App",
-    "description": "Dashboard keuangan untuk mengatur keuangan harian.",
+    "description": "Aplikasi pencatat keuangan pribadi dengan lebih dari tujuh fitur yang membantu pengguna mencatat transaksi, memantau pengeluaran dan pemasukan, dan melihat kondisi keuangan.",
     "image": "src/assets/myself/experience/indomega/analytics.webp",
     "highlightTags": [
-      "Financial Dashboard",
-      "Live"
+      "Finance"
     ],
     "tags": [
       "Next.js",
       "Supabase",
-      "Typescript"
+      "Typescript",
+      "Vercel"
     ],
     "accentColor": "green-1"
   },
@@ -90,7 +91,7 @@
     "category": "BOOTCAMP PROJECT",
     "title": "Shipping ",
     "highlightTitle": "Prediction",
-    "description": "Dashboard yang memprediksi lama pengiriman barang dari waktu estimasi yang diberikan ekspedisi dengan metode Random Forest.",
+    "description": "Dashboard dengan model machine learning untuk memprediksi waktu pengiriman dengan estimasi perkiraan kurir. Menggunakan Spring Boot dan HTML untuk dashboard, dan model Random Forest dengan 18 Fitur Data.",
     "image": "src/assets/myself/certifications/dicoding.webp",
     "highlightTags": [
       "Dashboard",
@@ -111,15 +112,16 @@
     "category": "COLLEGE PROJECT",
     "title": "Ozon Level ",
     "highlightTitle": "Detection",
-    "description": "Projek untuk membandingkan performa 3 model machine learning terhadap kemampuan untuk memprediksi ozon level dengan dataset kaggle.",
+    "description": "Membandingkan performa 3 model machine learning untuk klasifikasi kualitas udara berdasarkan tingkat ozon dengan data yang terdiri dari 18 Fitur. Menerapkan FFT & PCA untuk ekstraksi fitur",
     "image": "src/assets/myself/projects/delivery.webp",
     "highlightTags": [
-      "Jupyter Notebook"
+      "Machine Learning"
     ],
     "tags": [
       "Python",
       "Scikit-Learn",
-      "Pandas"
+      "Pandas",
+      "Jupyter Notebook"
     ],
     "accentColor": "blue-2"
   },
@@ -130,17 +132,17 @@
     "category": "BOOTCAMP PROJECT",
     "title": "Power Plant ",
     "highlightTitle": "Regression",
-    "description": "Notebook untuk membandingkan performa 5 model machine learning regresi terhadap kemampuan untuk memprediksi Power Plant dengan dataset publik.",
+    "description": "Menguji keefektifan 5 model regresi machine learning untuk memprediksi output energi listrik bersih per jam (PE) menggunakan dataset dengan 4 parameter utama.",
     "image": "src/assets/myself/experience/stupen/learning_springboot.webp",
     "highlightTags": [
-      "Jupyter Notebook",
-      "Regression"
+      "Regression",
+      "Machine Learning"
     ],
     "tags": [
       "Python",
       "Scikit-Learn",
       "Pandas",
-      "Machine Learning"
+      "Jupyter Notebook"
     ],
     "accentColor": "pink-1"
   }

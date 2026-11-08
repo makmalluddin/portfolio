@@ -37,22 +37,22 @@
       {
         "id": "01",
         "title": "Latar Belakang & Tujuan",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Proyek ini bertujuan untuk memodernisasi tampilan website perusahaan sekaligus menyediakan Content Management System (CMS) agar tim internal dapat mengelola konten website secara lebih mandiri dan efisien."
       },
       {
         "id": "02",
         "title": "Kontribusi yang Saya Lakukan",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Pada proyek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, membuat fitur baru short link, mengembangkan CMS, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
       },
       {
         "id": "03",
         "title": "Tantangan & Solusi",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Tantangan utama dalam proyek ini adalah memastikan aplikasi berjalan stabil di lingkungan produksi tanpa mengalami kendala yang dapat mengganggu operasional website. Untuk mengantisipasinya, saya melakukan backup website sebelumnya dan menyiapkan rencana pemulihan apabila proses deployment tidak berjalan sesuai harapan."
       },
       {
         "id": "04",
         "title": "Hasil Akhir",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Website berhasil dipublikasikan menggunakan provider baru dan kini dapat diakses oleh pengguna. Implementasi ini juga mendukung pengelolaan konten website secara lebih mandiri sehingga memudahkan tim internal dalam melakukan pemeliharaan dan pembaruan informasi."
       }
     ],
     "galery": [
@@ -94,7 +94,7 @@
     "description": "Aplikasi yang saya buat sebagai visualisasi dari data yang didapatkan melalui kegiatan internship & penyedia data pihak ketiga. Data dapat disajikan secara real-time maupun historis sesuai preferensi user.",
     "repoUrl": "https://github.com/makmalluddin?tab=repositories",
     "liveDemoUrl": "#",
-    "heroImage": "src/assets/Project/corporateRevamp.webp",
+    "heroImage": "src/assets/myself/experience/indomega/website_vessel.webp",
     "metaData": [
       {
         "id": "1",
@@ -121,22 +121,22 @@
       {
         "id": "01",
         "title": "Latar Belakang & Tujuan",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Proyek ini bertujuan mengembangkan dashboard monitoring untuk memvisualisasikan pergerakan kapal dan pesawat menggunakan data historis maupun real-time. Sistem ini dirancang untuk mengintegrasikan berbagai sumber data ke dalam satu platform sehingga informasi dapat dipantau secara terpusat dan mudah dipahami."
       },
       {
         "id": "02",
         "title": "Kontribusi yang Saya Lakukan",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Saya mengembangkan sistem IoT bernama AIS Receiver untuk mengumpulkan raw data AIS, kemudian melakukan decoding menggunakan Python agar dapat diolah menjadi informasi kapal. Saya juga membangun dashboard monitoring menggunakan MERN Stack, dengan mengintegrasikan data historis serta data real-time dari penyedia layanan pihak ketiga, yaitu AISStream.io dan OpenSky Network."
       },
       {
         "id": "03",
         "title": "Tantangan & Solusi",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Tantangan utama dalam proyek ini adalah mengoptimalkan performa dashboard di sisi client serta mengelola permintaan data dari layanan pihak ketiga agar tetap sesuai dengan batas penggunaan dan ketentuan layanan. Untuk mengatasinya, saya mengatur mekanisme polling data secara efisien dan mengimplementasikan WebSocket menggunakan Socket.IO agar pembaruan data real-time dapat diterima tanpa membebani sistem secara berlebihan."
       },
       {
         "id": "04",
         "title": "Hasil Akhir",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Proyek ini menghasilkan dashboard monitoring yang mampu memvisualisasikan pergerakan kapal dan pesawat melalui integrasi data historis dan real-time. Dashboard dirancang agar informasi dapat ditampilkan secara responsif, dengan pembaruan data yang lancar dan antarmuka yang mudah digunakan."
       }
     ],
     "galery": [
@@ -205,22 +205,22 @@
       {
         "id": "01",
         "title": "Latar Belakang & Tujuan",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Proyek ini merupakan penelitian tugas akhir yang bertujuan mengembangkan sistem deteksi dan klasifikasi gas volatil berupa butana dan metanol dengan memanfaatkan teknologi IoT dan Deep Learning. Sistem dirancang sebagai replika Gas Chromatography (GC) konvensional untuk memisahkan gas volatil, merekam respons sensor, dan mengolah data tersebut sebagai dasar proses klasifikasi."
       },
       {
         "id": "02",
         "title": "Kontribusi yang Saya Lakukan",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Bersama rekan penelitian, saya mengembangkan sistem IoT dengan integrasi sensor untuk membangun replika perangkat Gas Chromatography. Sistem ini dirancang untuk memisahkan gas volatil dan merekam respons sensor sebagai fitur klasifikasi. Saya juga mengembangkan model Artificial Neural Network (ANN) untuk mengidentifikasi jenis gas berdasarkan pola respons sensor yang diperoleh dari perangkat."
       },
       {
         "id": "03",
         "title": "Tantangan & Solusi",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Tantangan utama dalam proyek ini adalah mereplikasi kondisi kerja Gas Chromatography, khususnya dalam mengatur lingkungan pemisahan gas agar menghasilkan respons sensor yang optimal. Hal ini mencakup pemilihan material pemisah, pengaturan kondisi ruang, dan penggunaan gas pendorong. Untuk mengatasinya, saya menggunakan silika gel sebagai material pemisah dalam kolom serta merancang kotak khusus untuk mengatur kondisi setiap ruang agar mendukung proses pemisahan gas."
       },
       {
         "id": "04",
         "title": "Hasil Akhir",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Proyek ini menghasilkan sistem IoT yang mampu merekam respons sensor terhadap gas butana dan metanol, serta model ANN yang berhasil mengklasifikasikan kedua jenis gas tersebut. Model menghasilkan tingkat akurasi dan presisi hingga 97% yang dikategorikan berhasil mengklasifikasikan kedua gas volatil."
       }
     ],
     "galery": [
@@ -289,22 +289,22 @@
       {
         "id": "01",
         "title": "Latar Belakang & Tujuan",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "My Finance App merupakan aplikasi berbasis web yang dikembangkan untuk membantu pengguna mencatat transaksi keuangan harian, memantau pemasukan dan pengeluaran, serta memahami kondisi finansial secara lebih terstruktur. Aplikasi ini dirancang untuk menyediakan satu platform yang memudahkan pengguna dalam mengelola aktivitas keuangan sehari-hari."
       },
       {
         "id": "02",
         "title": "Kontribusi yang Saya Lakukan",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Saya mengembangkan antarmuka aplikasi menggunakan Next.js, React, dan TypeScript, serta memanfaatkan Supabase sebagai backend dan database. Saya juga mengintegrasikan seluruh komponen aplikasi, mulai dari antarmuka hingga pengelolaan data, kemudian melakukan deployment menggunakan Vercel agar aplikasi dapat diakses secara online."
       },
       {
         "id": "03",
         "title": "Tantangan & Solusi",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Tantangan utama dalam proyek ini adalah memastikan setiap pengguna hanya dapat mengakses dan mengelola data keuangan miliknya sendiri. Untuk mengatasi hal tersebut, saya menerapkan Row Level Security (RLS) pada database Supabase. RLS memungkinkan pengaturan hak akses data melalui kebijakan (policy) yang dievaluasi pada setiap operasi database, sehingga akses terhadap data dapat dibatasi berdasarkan identitas pengguna yang sedang terautentikasi."
       },
       {
         "id": "04",
         "title": "Hasil Akhir",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Proyek ini menghasilkan aplikasi pengelolaan keuangan berbasis web yang telah dipublikasikan dan dapat diakses secara online. Aplikasi memungkinkan pengguna mencatat transaksi, memantau arus pemasukan dan pengeluaran, serta mengelola informasi keuangan harian dengan lebih terstruktur."
       }
     ],
     "galery": [
@@ -373,22 +373,22 @@
       {
         "id": "01",
         "title": "Latar Belakang & Tujuan",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Proyek ini merupakan proyek akhir Bootcamp Data Science yang bertujuan mengembangkan aplikasi prediksi estimasi waktu pengiriman barang berdasarkan 18 fitur dataset. Sistem dirancang untuk mengolah berbagai atribut pengiriman dan menghasilkan prediksi waktu yang dapat digunakan sebagai referensi dalam memperkirakan durasi pengiriman."
       },
       {
         "id": "02",
         "title": "Kontribusi yang Saya Lakukan",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Saya melakukan pengumpulan dataset, data cleaning, serta pengembangan dan evaluasi beberapa model Machine Learning, meliputi Decision Tree Regressor, Random Forest Regressor, Gradient Boosting Regressor, XGBoost Regressor, dan Artificial Neural Network (ANN). Berdasarkan hasil evaluasi, saya memilih Random Forest sebagai model terbaik dan mengekspornya ke format Pickle. Saya kemudian mengembangkan backend menggunakan Spring Boot untuk memuat model, memproses input, dan mengirimkan hasil prediksi ke antarmuka berbasis HTML, CSS, dan JavaScript."
       },
       {
         "id": "03",
         "title": "Tantangan & Solusi",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Tantangan utama dalam proyek ini adalah menyelesaikan seluruh tahapan pengembangan dalam waktu yang terbatas, mulai dari proses pemodelan Machine Learning hingga pembangunan backend dan frontend. Untuk mengatasinya, saya menerapkan skala prioritas dan membagi pekerjaan ke dalam target harian agar setiap tahapan dapat diselesaikan secara terstruktur sesuai tenggat waktu."
       },
       {
         "id": "04",
         "title": "Hasil Akhir",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Proyek ini menghasilkan aplikasi dashboard prediksi waktu pengiriman yang mengintegrasikan model Random Forest dengan backend Spring Boot dan antarmuka web. Aplikasi berhasil menerima input pengguna, memproses data melalui model yang telah diintegrasikan, dan menampilkan hasil prediksi sesuai dengan data yang dimasukkan."
       }
     ],
     "galery": [
@@ -457,22 +457,22 @@
       {
         "id": "01",
         "title": "Latar Belakang & Tujuan",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Proyek ini merupakan penelitian kolaboratif yang bertujuan membandingkan performa beberapa model Machine Learning dalam mengklasifikasikan kualitas udara berdasarkan data konsentrasi ozon. Penelitian ini menerapkan Fast Fourier Transform (FFT) dan Principal Component Analysis (PCA) untuk proses ekstraksi dan reduksi fitur sebelum data digunakan dalam pemodelan."
       },
       {
         "id": "02",
         "title": "Kontribusi yang Saya Lakukan",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Dalam tim yang terdiri dari tiga orang, saya bertanggung jawab melakukan pemodelan dan evaluasi Machine Learning menggunakan data hasil ekstraksi fitur. Saya mengembangkan dan membandingkan tiga model klasifikasi, yaitu Random Forest, Gradient Boosting, dan Voting Classifier untuk mengidentifikasi model dengan performa klasifikasi terbaik."
       },
       {
         "id": "03",
         "title": "Tantangan & Solusi",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Tantangan utama dalam proyek ini adalah memastikan data hasil ekstraksi fitur menggunakan FFT dan PCA telah sesuai dan siap digunakan dalam proses pemodelan. Untuk mengantisipasi ketidaksesuaian data, saya melakukan pemeriksaan ulang terhadap dataset hasil pengolahan sebelum menggunakannya dalam proses pelatihan dan evaluasi model."
       },
       {
         "id": "04",
         "title": "Hasil Akhir",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Hasil evaluasi menunjukkan bahwa model Gradien Boosting menghasilkan performa klasifikasi terbaik dengan akurasi mencapai 92%. Temuan ini menjadi bagian dari hasil perbandingan performa model dalam mengklasifikasikan kualitas udara berdasarkan data tingkat ozon."
       }
     ],
     "galery": [
@@ -541,22 +541,22 @@
       {
         "id": "01",
         "title": "Latar Belakang & Tujuan",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Proyek ini bertujuan membandingkan performa lima model regresi untuk memprediksi output energi listrik bersih per jam (PE) berdasarkan empat parameter utama dalam dataset. Penelitian ini dilakukan untuk mengidentifikasi algoritma Machine Learning yang mampu menghasilkan prediksi dengan performa terbaik."
       },
       {
         "id": "02",
         "title": "Kontribusi yang Saya Lakukan",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Saya melakukan pengembangan dan evaluasi lima model regresi, yaitu Random Forest Regressor, Polynomial Regression, Support Vector Regressor (SVR), Multiple Linear Regression, dan Decision Tree Regressor. Setiap model menggunakan pendekatan pengolahan data yang disesuaikan dengan karakteristik algoritmanya, termasuk transformasi fitur ke dalam bentuk polinomial untuk Polynomial Regression."
       },
       {
         "id": "03",
         "title": "Tantangan & Solusi",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Tantangan utama dalam proyek ini adalah memastikan setiap model menggunakan representasi data yang sesuai dengan kebutuhan algoritmanya. Hal ini penting karena setiap pendekatan regresi memiliki karakteristik pemrosesan fitur yang berbeda. Untuk mengatasinya, saya menyesuaikan preprocessing dan transformasi fitur pada masing-masing model agar proses pelatihan dan evaluasi dapat dilakukan secara tepat."
       },
       {
         "id": "04",
         "title": "Hasil Akhir",
-        "description": "Pada projek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+        "description": "Hasil perbandingan menunjukkan bahwa Random Forest Regressor menghasilkan performa prediksi terbaik dengan nilai akurasi yang dilaporkan mencapai 97%. Temuan ini menunjukkan bahwa pendekatan Random Forest memberikan hasil paling optimal dibandingkan empat model regresi lainnya dalam memprediksi output energi listrik berdasarkan dataset yang digunakan."
       }
     ],
     "galery": [
