@@ -31,13 +31,15 @@
     "image": "src/assets/myself/certifications/xquisite.webp",
     "highlightTags": [
       "Dashboard Monitoring",
-      "Real-Time"
+      "Docker"
     ],
     "tags": [
       "MongoDB",
       "Express.js",
       "React.js",
-      "Node.js"
+      "Node.js",
+      "Socker.io",
+      "Leaflet.js"
     ],
     "accentColor": "red-1"
   },

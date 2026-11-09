@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "id": "exp-1",
+    "slug": "java-python-for-data-science",
+    "period": "2024",
+    "role": "Java & Python For Data Science",
+    "company": "PT Tata Informasi Asia",
+    "type": "BOOTCAMP",
+    "description": "ini adalah bootcamp"
+  }
+]

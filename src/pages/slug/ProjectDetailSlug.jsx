@@ -113,6 +113,9 @@ function ProjectDetailSlug({ project }) {
           </p>
         }
       >
+        <h3 className="px-4 py-8 md:px-8 md:py-12 text-3xl md:text-5xl text-text-primary font-bold scale-y-90">
+          Dokumentasi <span className={variant.text}>Projek</span>.
+        </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 -mr-px -mb-px">
           {project.galery.map((item) => (
             <div
