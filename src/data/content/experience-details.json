@@ -116,9 +116,14 @@
     ],
     "galery": [
       {
-        "id": 1,
+        "id": "1",
         "caption": "Percobaan",
         "image": "src/assets/myself/experience/indomega/analytics.webp"
+      },
+      {
+        "id": "2",
+        "image": "src/assets/myself/certifications/stupen.webp",
+        "caption": "cobaan"
       }
     ]
   },
@@ -512,22 +517,22 @@
     ],
     "galery": [
       {
-        "id": 1,
+        "id": "1",
         "caption": "Dashboard hasil revamp",
         "image": "src/assets/myself/experience/sg8group/dashboard_revamp.webp"
       },
       {
-        "id": 2,
+        "id": "2",
         "caption": "Custom CMS pengelolaan konten",
         "image": "src/assets/myself/experience/sg8group/cms.webp"
       },
       {
-        "id": 3,
+        "id": "3",
         "caption": "Proses pengembangan aplikasi",
         "image": "src/assets/myself/experience/sg8group/coding.webp"
       },
       {
-        "id": 4,
+        "id": "4",
         "caption": "Presentasi hasil pekerjaan",
         "image": "src/assets/myself/experience/sg8group/presentation.webp"
       }
@@ -749,22 +754,22 @@
     ],
     "galery": [
       {
-        "id": 1,
+        "id": "1",
         "caption": "Analisis data vessel",
         "image": "src/assets/myself/experience/indomega/analytics.webp"
       },
       {
-        "id": 2,
+        "id": "2",
         "caption": "Dashboard monitoring vessel",
         "image": "src/assets/myself/experience/indomega/website_vessel.webp"
       },
       {
-        "id": 3,
+        "id": "3",
         "caption": "Perangkat AIS Receiver",
         "image": "src/assets/myself/experience/indomega/ais_receiver.webp"
       },
       {
-        "id": 4,
+        "id": "4",
         "caption": "Pemasangan antena AIS",
         "image": "src/assets/myself/experience/indomega/pemasangan_antena.webp"
       }

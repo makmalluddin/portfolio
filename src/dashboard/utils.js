@@ -16,6 +16,25 @@ export function slugify(value) {
     .slice(0, 80);
 }
 
+export function normalizeIds(value) {
+  if (Array.isArray(value)) {
+    return value.map(normalizeIds);
+  }
+
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, child]) => [
+        key,
+        key === "id" && child !== undefined && child !== null
+          ? String(child)
+          : normalizeIds(child),
+      ])
+    );
+  }
+
+  return value;
+}
+
 export function nextId(items, prefix = "item") {
   let max = 0;
 

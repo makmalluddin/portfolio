@@ -11,6 +11,7 @@ import {
   deepClone,
   formatTime,
   nextId,
+  normalizeIds,
   slugify,
   uniqueSlug,
 } from "../utils";
@@ -89,8 +90,9 @@ export function CollectionEditor() {
       .getCollection(key)
       .then((result) => {
         if (cancelled) return;
-        setData(result.data);
-        setOriginal(deepClone(result.data));
+        const normalized = normalizeIds(result.data);
+        setData(normalized);
+        setOriginal(deepClone(normalized));
         setMtime(result.mtime);
         setWarnings(result.warnings ?? []);
       })
@@ -184,8 +186,10 @@ export function CollectionEditor() {
     setGlobalError("");
 
     try {
-      const result = await api.saveCollection(key, data);
-      setOriginal(deepClone(data));
+      const normalized = normalizeIds(data);
+      const result = await api.saveCollection(key, normalized);
+      setData(normalized);
+      setOriginal(deepClone(normalized));
       setMtime(result.mtime);
       setWarnings(result.warnings ?? []);
       setErrors([]);
@@ -202,7 +206,7 @@ export function CollectionEditor() {
 
   const validate = async () => {
     try {
-      const result = await api.validate(key, data);
+      const result = await api.validate(key, normalizeIds(data));
       setErrors(result.errors ?? []);
       setWarnings(result.warnings ?? []);
       pushToast(
