@@ -3,20 +3,21 @@ import { useLocation } from "react-router-dom";
 import MainFrame from "@/src/components/MainFrame"
 import ExperienceCard from "@/src/components/experience/ExperienceCard";
 import categoriesData from "@/src/data/content/experience-categories.json";
+import { experienceCategoryCollections } from "@/src/data/experienceCategoryCollections";
 import professionalData from "@/src/data/content/experiences-professional.json";
 import freelanceData from "@/src/data/content/experiences-freelance.json";
 import volunteerData from "@/src/data/content/experiences-volunteer.json";
 import bootcampData from "@/src/data/content/experiences-bootcamp.json";
 
-const categoryDataMap = {
-  "cat-1": professionalData,
-  "cat-2": freelanceData,
-  "cat-3": volunteerData,
-  "cat-4": bootcampData,
+const experienceDataByCollection = {
+  "experiences-professional": professionalData,
+  "experiences-freelance": freelanceData,
+  "experiences-volunteer": volunteerData,
+  "experiences-bootcamp": bootcampData,
 };
 
 function ExperiencePage() {
-  const sortedCategories = [...categoriesData].sort((a, b) => a.order - b.order);
+  const categories = categoriesData;
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -40,8 +41,9 @@ function ExperiencePage() {
           </p>
         </div>
 
-        {sortedCategories.map((category) => {
-          const experiences = categoryDataMap[category.id] || [];
+        {categories.map((category) => {
+          const collectionKey = experienceCategoryCollections[category.id];
+          const experiences = experienceDataByCollection[collectionKey] || [];
 
           if (experiences.length === 0) return null;
 

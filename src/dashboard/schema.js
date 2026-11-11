@@ -1,3 +1,4 @@
+import { experienceCategoryIdByCollectionKey } from "../data/experienceCategoryCollections";
 import { nextId } from "./utils";
 
 const text = (key, label, extra = {}) => ({ key, label, type: "text", ...extra });
@@ -204,19 +205,12 @@ export const collectionSchemas = {
     createItem: (items) => ({
       id: nextId(items, "cat"),
       label: "",
-      order: (items?.length ?? 0) + 1,
     }),
     fields: [
       idField(),
       text("label", "Nama kategori", {
         help: "Contoh: Professional, Freelance, Volunteer, Bootcamp",
       }),
-      {
-        key: "order",
-        label: "Urutan",
-        type: "number",
-        help: "Urutan tampilan di halaman /experiences",
-      },
     ],
   },
 
@@ -692,4 +686,18 @@ export const collectionSchemas = {
 
 export function getSchema(key) {
   return collectionSchemas[key];
+}
+
+export function collectionLabel(key, categories = []) {
+  const categoryId = experienceCategoryIdByCollectionKey[key];
+
+  if (categoryId) {
+    const category = categories.find(
+      (item) => String(item?.id) === String(categoryId)
+    );
+
+    if (category?.label) return `Pengalaman - ${category.label}`;
+  }
+
+  return collectionSchemas[key]?.label ?? key;
 }

@@ -5,7 +5,7 @@ import {
   useDirty,
   useToast,
 } from "../context";
-import { collectionGroups, collectionSchemas } from "../schema";
+import { collectionGroups, collectionLabel } from "../schema";
 
 function pathFor(item) {
   if (item === "overview") return "/";
@@ -13,16 +13,19 @@ function pathFor(item) {
   return `/collections/${item}`;
 }
 
-function labelFor(item) {
+function labelFor(item, categories) {
   if (item === "overview") return "Overview";
   if (item === "colors") return "Palet warna";
   if (item === "icons") return "Daftar ikon";
-  return collectionSchemas[item]?.label ?? item;
+  return collectionLabel(item, categories);
 }
 
 function Sidebar({ onNavigate }) {
-  const { collections } = useDashboardData();
+  const { collections, snapshot } = useDashboardData();
   const { confirmLeave } = useDirty();
+  const experienceCategories = Array.isArray(snapshot["experience-categories"])
+    ? snapshot["experience-categories"]
+    : [];
 
   const counts = new Map(
     (collections ?? []).map((collection) => [collection.key, collection.count])
@@ -71,7 +74,9 @@ function Sidebar({ onNavigate }) {
                       }`
                     }
                   >
-                    <span className="truncate">{labelFor(item)}</span>
+                    <span className="truncate">
+                      {labelFor(item, experienceCategories)}
+                    </span>
                     {typeof count === "number" ? (
                       <span className="rounded-full bg-black/10 px-1.5 text-[10px] text-current opacity-70">
                         {count}

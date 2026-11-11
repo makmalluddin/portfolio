@@ -221,10 +221,6 @@ async function validateExperienceCategories(result, data) {
 
     requireString(result, category.id, `${path}.id`);
     requireString(result, category.label, `${path}.label`);
-    
-    if (typeof category.order !== "number") {
-      addError(result, `${path}.order`, "Harus berupa angka.");
-    }
   });
 }
 

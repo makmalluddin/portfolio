@@ -7,14 +7,5 @@
     "company": "Smartnerdies",
     "type": "FREELANCE",
     "description": "asd"
-  },
-  {
-    "id": "exp-2",
-    "slug": "ojs-unj",
-    "period": "LUPA",
-    "role": "Tim OJS (Open Journal System) UNJ",
-    "company": "OJS UNJ",
-    "type": "FREELANCE",
-    "description": "asimilikit"
   }
 ]

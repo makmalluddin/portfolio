@@ -2,7 +2,11 @@ import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../api";
 import { useDashboardData, useToast } from "../context";
-import { collectionGroups, collectionSchemas } from "../schema";
+import {
+  collectionGroups,
+  collectionLabel,
+  collectionSchemas,
+} from "../schema";
 import { formatBytes, formatTime } from "../utils";
 import { ValidationPanel } from "./ValidationPanel";
 import {
@@ -18,7 +22,8 @@ const websiteLinks = [
 ];
 
 export function Overview() {
-  const { collections, warnings, assets, loading, refresh } = useDashboardData();
+  const { collections, warnings, assets, loading, refresh, snapshot } =
+    useDashboardData();
   const { pushToast } = useToast();
   const [backups, setBackups] = useState([]);
 
@@ -50,6 +55,9 @@ export function Overview() {
   const counts = new Map(
     (collections ?? []).map((collection) => [collection.key, collection.count])
   );
+  const experienceCategories = Array.isArray(snapshot["experience-categories"])
+    ? snapshot["experience-categories"]
+    : [];
 
   const totalItems = Object.values(collectionSchemas)
     .filter((schema) => schema.kind === "array")
@@ -151,7 +159,7 @@ export function Overview() {
                       <div className="flex items-start justify-between gap-3">
                         <div>
                           <p className="text-sm font-semibold text-[#17171a]">
-                            {schema.label}
+                            {collectionLabel(key, experienceCategories)}
                           </p>
                           <p className="mt-1 text-xs leading-relaxed text-[#8a8982]">
                             {schema.description}
