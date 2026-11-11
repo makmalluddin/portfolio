@@ -153,12 +153,53 @@ function ExperienceDetailSlug({ experience }) {
         ))}
       </MainFrame>
 
-      {/* Section 04: Projek Dikerjakan */}
+      {/* Galeri Pengalaman */}
+      {experience.galery?.length > 0 && (
+        <MainFrame
+          title={
+            <p className="font-mono text-text-muted text-sm">04 / GALERI PENGALAMAN</p>
+          }
+        >
+          <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
+            Dokumentasi <span className={colorClass}>Pengalaman</span>.
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 -mr-px -mb-px">
+            {experience.galery.map((item) => (
+              <div
+                key={item.id}
+                className="flex flex-col border-b md:border-r border-border-muted"
+              >
+                <span className="flex w-full justify-between px-4 md:px-8 py-2 text-text-muted font-mono text-xs md:text-sm border-b border-border-muted">
+                  <span className="uppercase text-text-muted/70 tracking-wider">
+                    {item.caption}
+                  </span>
+                  <span>0{item.id}</span>
+                </span>
+                <div className="relative w-full aspect-video overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.caption}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+            ))}
+
+            {/* Slot border penyeimbang ganjil (hanya aktif di desktop) */}
+            {experience.galery.length % 2 !== 0 && (
+              <div className="hidden md:block border-r border-b border-border-muted" />
+            )}
+          </div>
+        </MainFrame>
+      )}
+
+      {/* Section 05: Projek Dikerjakan */}
       {relatedProject.length > 0 && (
         <MainFrame
           title={
             <p className="font-mono text-text-muted text-sm">
-              04 / PROJEK DIKERJAKAN
+              05 / PROJEK DIKERJAKAN
             </p>
           }
         >
@@ -171,6 +212,8 @@ function ExperienceDetailSlug({ experience }) {
           </div>
         </MainFrame>
       )}
+
+      
     </div>
   );
 }

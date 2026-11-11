@@ -13,4 +13,8 @@ export const expDetailData = experienceDetails.map((experience) => ({
     ...item,
     icon: getIcon(item.icon),
   })),
+  galery: (experience.galery ?? []).map((item) => ({
+    ...item,
+    image: asset(item.image),
+  })),
 }));

@@ -20,11 +20,12 @@ const staticAssets = {
 };
 
 /**
- * Gambar hasil upload dashboard disimpan di src/assets/uploads.
- * Glob dibatasi ke folder ini agar build tetap ramping.
+ * Semua gambar lokal di src/assets ikut di-glob agar path yang dipilih
+ * lewat dashboard (CMS) selalu ter-resolve, baik saat dev maupun build.
+ * File non-gambar (mis. PDF) tetap memakai impor eksplisit di staticAssets.
  */
-const uploadedModules = import.meta.glob(
-  "/src/assets/uploads/**/*.{webp,png,jpg,jpeg,svg,avif}",
+const localImageModules = import.meta.glob(
+  "/src/assets/**/*.{webp,png,jpg,jpeg,svg,avif,gif}",
   {
     eager: true,
     query: "?url",
@@ -48,7 +49,7 @@ export function asset(path) {
 
   return (
     staticAssets[path] ??
-    uploadedModules[normalized] ??
+    localImageModules[normalized] ??
     (path.startsWith("src/assets/") ? normalized : path)
   );
 }

@@ -608,6 +608,7 @@ export const collectionSchemas = {
       metaData: [],
       detailPengalaman: [],
       teknologi: [],
+      galery: [],
       timeline: {
         startMonth: 1,
         startYear: new Date().getFullYear(),
@@ -669,6 +670,19 @@ export const collectionSchemas = {
             id: nextId(items, "tech"),
             type: "",
             tools: "",
+          }),
+        }
+      ),
+      repeater(
+        "galery",
+        "Galeri",
+        [idField(), image("image", "Gambar"), text("caption", "Caption")],
+        {
+          itemLabel: (item, index) => item.caption || `Gambar ${index + 1}`,
+          createItem: (items) => ({
+            id: nextId(items, "galery"),
+            image: "",
+            caption: "",
           }),
         }
       ),

@@ -562,6 +562,20 @@ async function validateExperienceDetails(result, data) {
       requireString(result, item.type, `${technologyPath}.type`);
       requireString(result, item.tools, `${technologyPath}.tools`);
     });
+
+    if (experience.galery !== undefined && experience.galery !== null) {
+      const gallery = requireArray(result, experience.galery, `${path}.galery`);
+      for (const [galleryIndex, item] of gallery.entries()) {
+        const galleryPath = `${path}.galery.${galleryIndex}`;
+        if (!isObject(item)) {
+          addError(result, galleryPath, "Harus berupa object.");
+          continue;
+        }
+        requireString(result, item.id, `${galleryPath}.id`);
+        requireString(result, item.caption, `${galleryPath}.caption`);
+        await requireAsset(result, item.image, `${galleryPath}.image`);
+      }
+    }
   }
 }
 
