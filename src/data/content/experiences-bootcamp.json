@@ -1,7 +1,16 @@
 [
   {
+    "id": "exp-2",
+    "slug": "s1-unj",
+    "period": "2021-2025",
+    "role": "Sarjana Fisika Komputasi",
+    "company": "Universitas Negeri Jakarta",
+    "type": "S.Si",
+    "description": "ini contoh"
+  },
+  {
     "id": "exp-1",
-    "slug": "java-python-for-data-science",
+    "slug": "studi-independen",
     "period": "2024",
     "role": "Java & Python For Data Science",
     "company": "PT Tata Informasi Asia",

@@ -10,7 +10,7 @@
     "description": "Ini adalah aplikasi yang saya buat sebagai pembaruan landing page perusahaan lengkap dengan custom CMS untuk manage berbagai konten yang ditampilkan di landing page.",
     "repoUrl": "https://github.com/makmalluddin?tab=repositories",
     "liveDemoUrl": "#",
-    "heroImage": "src/assets/Project/corporateRevamp.webp",
+    "heroImage": "src/assets/Project/Corporate Website Revamp/landing_hero.png",
     "metaData": [
       {
         "id": "1",
@@ -58,28 +58,48 @@
     "galery": [
       {
         "id": "1",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Corporate Website Revamp/landing_hero.png",
+        "caption": "Halaman Utama"
       },
       {
         "id": "2",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Corporate Website Revamp/landing_company_profile.png",
+        "caption": "Halaman Profil Perusahaan"
       },
       {
         "id": "3",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Corporate Website Revamp/landing_recruitment.png",
+        "caption": "Halaman Recruitment "
       },
       {
         "id": "4",
-        "image": "src/assets/Project/bnsp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Corporate Website Revamp/landing_article.png",
+        "caption": "Halaman Artikel"
       },
       {
         "id": "5",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Corporate Website Revamp/cms_dashboard.png",
+        "caption": "Halaman Utama CMS"
+      },
+      {
+        "id": "6",
+        "image": "src/assets/Project/Corporate Website Revamp/cms_recruitment.png",
+        "caption": "Halaman Recruitment CMS"
+      },
+      {
+        "id": "7",
+        "image": "src/assets/Project/Corporate Website Revamp/cms_admin_role.png",
+        "caption": "Halaman Role Privilege"
+      },
+      {
+        "id": "8",
+        "image": "src/assets/Project/Corporate Website Revamp/deploy_folder_structure.jpeg",
+        "caption": "Deployment Folder Structure"
+      },
+      {
+        "id": "9",
+        "image": "src/assets/Project/Corporate Website Revamp/deploy_htaccess.jpeg",
+        "caption": "Deployment Example Htaccess"
       }
     ]
   },
@@ -94,7 +114,7 @@
     "description": "Aplikasi yang saya buat sebagai visualisasi dari data yang didapatkan melalui kegiatan internship & penyedia data pihak ketiga. Data dapat disajikan secara real-time maupun historis sesuai preferensi user.",
     "repoUrl": "https://github.com/makmalluddin?tab=repositories",
     "liveDemoUrl": "#",
-    "heroImage": "src/assets/myself/experience/indomega/website_vessel.webp",
+    "heroImage": "src/assets/Project/Aerosea Monitoring/landing_dashboard.png",
     "metaData": [
       {
         "id": "1",
@@ -142,28 +162,33 @@
     "galery": [
       {
         "id": "1",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Aerosea Monitoring/landing_dashboard.png",
+        "caption": "Halaman Utama"
       },
       {
         "id": "2",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Aerosea Monitoring/landing_information.png",
+        "caption": "Halaman Informasi "
       },
       {
         "id": "3",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Aerosea Monitoring/landing_information2.png",
+        "caption": "Halaman Informasi"
       },
       {
         "id": "4",
-        "image": "src/assets/Project/bnsp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Aerosea Monitoring/vessel_historis.png",
+        "caption": "Halaman Vessel Historis"
       },
       {
         "id": "5",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Aerosea Monitoring/vessel_live.png",
+        "caption": "Halaman Vessel Live"
+      },
+      {
+        "id": "6",
+        "image": "src/assets/Project/Aerosea Monitoring/aircraft_historis.png",
+        "caption": "Halaman Aircraft Historis"
       }
     ]
   },
@@ -178,7 +203,7 @@
     "description": "Ini adalah sistem yang saya buat agar dapat membedakan 2 jenis gas volatile yaitu butana dan metanol. IoT System menggunakan sensor TCD dan TVOC, model yang digunakan untuk Deep Learning adalah ANN.",
     "repoUrl": "https://github.com/makmalluddin?tab=repositories",
     "liveDemoUrl": "#",
-    "heroImage": "src/assets/Project/corporateRevamp.webp",
+    "heroImage": "src/assets/Project/Gas Chromatography/pengambilan_data.jpeg",
     "metaData": [
       {
         "id": "1",
@@ -226,28 +251,58 @@
     "galery": [
       {
         "id": "1",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Gas Chromatography/alat_jadi.jpeg",
+        "caption": "Alat Kromatografi Gas"
       },
       {
         "id": "2",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Gas Chromatography/design_alat.png",
+        "caption": "Desain Alat Top"
       },
       {
         "id": "3",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Gas Chromatography/design_alat2.png",
+        "caption": "Desain Alat Layer 1"
       },
       {
         "id": "4",
-        "image": "src/assets/Project/bnsp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Gas Chromatography/design_alat3.png",
+        "caption": "Desain Alat Layer 2"
       },
       {
         "id": "5",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Gas Chromatography/design_alat4.png",
+        "caption": "Desain Ruang Sampel"
+      },
+      {
+        "id": "6",
+        "image": "src/assets/Project/Gas Chromatography/hasil_cetak.jpeg",
+        "caption": "Cetak Alat 3d Printing"
+      },
+      {
+        "id": "7",
+        "image": "src/assets/Project/Gas Chromatography/skematik_rangkaian.png",
+        "caption": "Skematik Rangkaian"
+      },
+      {
+        "id": "8",
+        "image": "src/assets/Project/Gas Chromatography/training_data.png",
+        "caption": "Training Model"
+      },
+      {
+        "id": "9",
+        "image": "src/assets/Project/Gas Chromatography/pca_data.png",
+        "caption": "Principle Component Analysis (PCA)"
+      },
+      {
+        "id": "10",
+        "image": "src/assets/Project/Gas Chromatography/pengambilan_data2.jpeg",
+        "caption": "Pengambilan Data"
+      },
+      {
+        "id": "11",
+        "image": "src/assets/Project/Gas Chromatography/antarmuka_alat.png",
+        "caption": "GUI Alat"
       }
     ]
   },
@@ -262,7 +317,7 @@
     "description": "Aplikasi yang saya buat sebagai sistem pencatatan keuangan harian. Aplikasi ini saya bangun agar penggunaan uang harian tercatat secara rapi untuk melacak penggunaan uang.",
     "repoUrl": "https://github.com/makmalluddin?tab=repositories",
     "liveDemoUrl": "#",
-    "heroImage": "src/assets/Project/corporateRevamp.webp",
+    "heroImage": "src/assets/Project/My Finance App/landing_login.png",
     "metaData": [
       {
         "id": "1",
@@ -310,28 +365,38 @@
     "galery": [
       {
         "id": "1",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/My Finance App/landing_login.png",
+        "caption": "Halaman Login & Register"
       },
       {
         "id": "2",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/My Finance App/dashboard.png",
+        "caption": "Halaman Utama"
       },
       {
         "id": "3",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/My Finance App/add_transaction.png",
+        "caption": "Halaman Menambah Transaksi"
       },
       {
         "id": "4",
-        "image": "src/assets/Project/bnsp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/My Finance App/filter_transactions.png",
+        "caption": "Halaman Melihat Detail Transaksi"
       },
       {
         "id": "5",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/My Finance App/summary.png",
+        "caption": "Halaman Summary Keuangan"
+      },
+      {
+        "id": "6",
+        "image": "src/assets/Project/My Finance App/supabase.png",
+        "caption": "Database di Supabase"
+      },
+      {
+        "id": "7",
+        "image": "src/assets/Project/My Finance App/supabase_rls_db.png",
+        "caption": "Pengaturan RLS (Row Level Security) pada Database"
       }
     ]
   },
@@ -346,7 +411,7 @@
     "description": "Aplikasi yang saya buat untuk memprediksi waktu pengiriman barang berdasarkan variabel tertentu di bandingkan dengan estimasi yang diberikan pihak logistik.",
     "repoUrl": "https://github.com/makmalluddin?tab=repositories",
     "liveDemoUrl": "#",
-    "heroImage": "src/assets/Project/corporateRevamp.webp",
+    "heroImage": "src/assets/Project/Delivery Time Accuracy Prediction/dashboard.jpeg",
     "metaData": [
       {
         "id": "1",
@@ -394,28 +459,38 @@
     "galery": [
       {
         "id": "1",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/dashboard.jpeg",
+        "caption": "Halaman Utama"
       },
       {
         "id": "2",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/what_info.jpeg",
+        "caption": "Modal Informasi"
       },
       {
         "id": "3",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/input_1.jpeg",
+        "caption": "Modal Input Data Pilihan"
       },
       {
         "id": "4",
-        "image": "src/assets/Project/bnsp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/input_3.jpeg",
+        "caption": "Modal Input Data Geografis"
       },
       {
         "id": "5",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/input_4.jpeg",
+        "caption": "Modal Input Data Waktu"
+      },
+      {
+        "id": "6",
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/output.jpeg",
+        "caption": "Hasil Prediksi"
+      },
+      {
+        "id": "7",
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/model_training.png",
+        "caption": "Model Training"
       }
     ]
   },
@@ -430,7 +505,7 @@
     "description": "Mengembangkan sistem machine learning untuk memprediksi kualitas udara berdasarkan level ozon dengan 18 fitur environmental. Mengaplikasikan FFT untuk ekstraksi fitur dan 3 model machine learning untuk prediksi.",
     "repoUrl": "https://github.com/makmalluddin?tab=repositories",
     "liveDemoUrl": "#",
-    "heroImage": "src/assets/Project/corporateRevamp.webp",
+    "heroImage": "src/assets/Project/Ozon Level Detection/datasets.png",
     "metaData": [
       {
         "id": "1",

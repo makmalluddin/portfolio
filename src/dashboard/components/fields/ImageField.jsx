@@ -95,7 +95,7 @@ export function AssetPicker({
           />
         </div>
 
-        <div className="dash-scroll grid flex-1 grid-cols-2 gap-3 overflow-y-auto p-5 sm:grid-cols-3 md:grid-cols-4">
+        <div className="dash-scroll grid flex-1 auto-rows-max grid-cols-2 gap-3 overflow-y-auto p-5 sm:grid-cols-3 md:grid-cols-4">
           {filtered.length === 0 ? (
             <p className="col-span-full rounded-md border border-dashed border-[#d7d6d1] px-4 py-10 text-center text-sm text-[#8a8982]">
               Tidak ada aset yang cocok.

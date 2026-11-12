@@ -1,23 +1,3 @@
-import avatar from "@/src/assets/avatar.webp";
-import cv from "@/src/assets/myself/cv/CV_Muhammad_Akmalluddin.pdf";
-import xquisite from "@/src/assets/myself/certifications/xquisite.webp";
-import corporateRevamp from "@/src/assets/Project/corporateRevamp.webp";
-import bnsp from "@/src/assets/Project/bnsp.webp";
-import sg8Logo from "@/src/assets/sg8_logo.webp";
-
-/**
- * Aset yang saat ini direferensikan oleh konten.
- * Impor eksplisit supaya aset yang tidak dipakai tidak ikut ter-bundle.
- * Tambahkan entri di sini ketika memakai aset baru yang sudah ada.
- */
-const staticAssets = {
-  "src/assets/avatar.webp": avatar,
-  "src/assets/myself/cv/CV_Muhammad_Akmalluddin.pdf": cv,
-  "src/assets/myself/certifications/xquisite.webp": xquisite,
-  "src/assets/Project/corporateRevamp.webp": corporateRevamp,
-  "src/assets/Project/bnsp.webp": bnsp,
-  "src/assets/sg8_logo.webp": sg8Logo,
-};
 
 /**
  * Semua gambar lokal di src/assets ikut di-glob agar path yang dipilih
@@ -48,7 +28,6 @@ export function asset(path) {
   const normalized = "/" + path.replace(/^\/+/, "");
 
   return (
-    staticAssets[path] ??
     localImageModules[normalized] ??
     (path.startsWith("src/assets/") ? normalized : path)
   );

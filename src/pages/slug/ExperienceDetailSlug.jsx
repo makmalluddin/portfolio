@@ -161,7 +161,7 @@ function ExperienceDetailSlug({ experience }) {
           }
         >
           <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
-            Dokumentasi <span className={colorClass}>Pengalaman</span>.
+            Dokumentasi <span className={colorClass}>Aktivitas</span>.
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 -mr-px -mb-px">
             {experience.galery.map((item) => (
@@ -169,7 +169,7 @@ function ExperienceDetailSlug({ experience }) {
                 key={item.id}
                 className="flex flex-col border-b md:border-r border-border-muted"
               >
-                <span className="flex w-full justify-between px-4 md:px-8 py-2 text-text-muted font-mono text-xs md:text-sm border-b border-border-muted">
+                <span className="flex w-full justify-between px-4 md:px-8 py-2 text-text-muted font-mono text-xs border-b border-border-muted">
                   <span className="uppercase text-text-muted/70 tracking-wider">
                     {item.caption}
                   </span>
@@ -203,6 +203,10 @@ function ExperienceDetailSlug({ experience }) {
             </p>
           }
         >
+          <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
+            Projek <span className={colorClass}>Terkait</span>.
+          </h3>
+
           <div className="-m-8 overflow-hidden p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -mr-px -mb-px">
               {relatedProject.map((project) => (
@@ -213,7 +217,7 @@ function ExperienceDetailSlug({ experience }) {
         </MainFrame>
       )}
 
-      
+
     </div>
   );
 }

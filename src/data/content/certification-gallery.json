@@ -1,13 +1,13 @@
 [
   {
     "id": "1",
-    "title": "Frontend Development",
+    "title": "Python Essentials 1",
     "type": "SERTIFIKAT",
-    "issueYear": "Desember 2024",
-    "expiryYear": "Desember 2027",
+    "issueYear": "October 2024",
+    "expiryYear": "Selamanya",
     "duration": "-",
     "image": "src/assets/Project/bnsp.webp",
-    "credentialUrl": "https://www.credly.com/earner/earned/badge/..."
+    "credentialUrl": "https://www.credly.com/badges/b59de019-440b-49e5-a3e1-568f2812c29a/public_url"
   },
   {
     "id": "2",
@@ -18,5 +18,15 @@
     "duration": "20 Jam",
     "image": "src/assets/Project/corporateRevamp.webp",
     "credentialUrl": "https://www.credly.com/earner/earned/badge/..."
+  },
+  {
+    "id": "3",
+    "title": "Associate Data Scientist",
+    "type": "SERTIFIKAT",
+    "issueYear": "Februari 2025",
+    "expiryYear": "Februari 2028",
+    "duration": "-",
+    "image": "src/assets/Sertifikasi/bnsp.webp",
+    "credentialUrl": "drive"
   }
 ]
