@@ -1,59 +1,21 @@
 import { useMemo } from "react";
-
-const MONTHS = [
-  "JANUARI",
-  "FEBRUARI",
-  "MARET",
-  "APRIL",
-  "MEI",
-  "JUNI",
-  "JULI",
-  "AGUSTUS",
-  "SEPTEMBER",
-  "OKTOBER",
-  "NOVEMBER",
-  "DESEMBER",
-];
-
-const WEEKS = ["M1", "M2", "M3", "M4"];
-
-// Singkat nama bulan jika panjang > 4 karakter
-const getMonthShort = (monthName) => {
-  return monthName.length > 4 ? monthName.substring(0, 3) : monthName;
-};
+import {
+  getVisibleWeeks,
+  isWeekAllocated,
+  normalizeTimeline,
+} from "../../utils/timeline";
 
 function WorkTimelineTable({ timeline, colorVariantKey }) {
-  const tasks = timeline?.tasks || [];
-  const startMonth = timeline?.startMonth || 1;
-  const startYear = timeline?.startYear || new Date().getFullYear();
-  const durationMonths = timeline?.durationMonths || 12;
+  const { months, tasks } = useMemo(() => normalizeTimeline(timeline), [timeline]);
   const colorClass = colorVariantKey ? `bg-${colorVariantKey}` : "bg-green-blue-1";
 
-  if (!tasks.length) {
+  if (!tasks.length || !months.length) {
     return (
       <div className="rounded-lg border border-border-muted p-4 text-center text-text-muted">
         Belum ada data timeline.
       </div>
     );
   }
-
-  const getCellActive = (allocation, monthIdx, week) => {
-    const key = `${monthIdx}-${week}`;
-    return allocation?.[key] || false;
-  };
-
-  // Generate dynamic month headers based on startMonth/startYear/durationMonths
-  const monthHeaders = useMemo(() => {
-    return MONTHS.slice(0, durationMonths).map((_, idx) => {
-      const totalMonths = (startMonth - 1) + idx;
-      const displayMonth = totalMonths % 12;
-      const displayYear = startYear + Math.floor(totalMonths / 12);
-      return { 
-        monthName: MONTHS[displayMonth], 
-        displayLabel: `${getMonthShort(MONTHS[displayMonth])} ${displayYear}` 
-      };
-    });
-  }, [startMonth, startYear, durationMonths]);
 
   return (
     <div className="w-full overflow-x-auto border border-border-muted">
@@ -66,13 +28,13 @@ function WorkTimelineTable({ timeline, colorVariantKey }) {
             <th className="p-3 border-r border-border-muted min-w-72">
               TAHAP PEKERJAAN
             </th>
-            {monthHeaders.map((mh, idx) => (
+            {months.map((month, index) => (
               <th
-                key={idx}
-                colSpan={4}
+                key={month.id}
+                colSpan={month.weeks}
                 className="p-3 border-r border-border-muted text-center tracking-wider min-w-28 last:border-r-0"
               >
-                {mh.displayLabel}
+                {month.label || `Bulan ${index + 1}`}
               </th>
             ))}
           </tr>
@@ -80,10 +42,10 @@ function WorkTimelineTable({ timeline, colorVariantKey }) {
           <tr className="border-b border-border-muted text-center text-text-muted">
             <th className="border-r border-border-muted"></th>
             <th className="border-r border-border-muted"></th>
-            {Array.from({ length: durationMonths }).map((_, mIdx) =>
-              WEEKS.map((week) => (
+            {months.flatMap((month) =>
+              getVisibleWeeks(month).map((week) => (
                 <th
-                  key={`${mIdx}-${week}`}
+                  key={`${month.id}-${week}`}
                   className="p-2 border-r border-border-muted font-normal text-xs last:border-r-0"
                 >
                   {week}
@@ -105,12 +67,13 @@ function WorkTimelineTable({ timeline, colorVariantKey }) {
               <td className="p-3 border-r border-border-muted font-inter font-medium text-text-secondary">
                 {task.name}
               </td>
-              {Array.from({ length: durationMonths }).map((_, monthIdx) =>
-                WEEKS.map((week) => {
-                  const active = getCellActive(task.allocation, monthIdx, week);
+              {months.flatMap((month) =>
+                getVisibleWeeks(month).map((week) => {
+                  const active = isWeekAllocated(task, month.id, week);
+
                   return (
                     <td
-                      key={`${monthIdx}-${week}`}
+                      key={`${month.id}-${week}`}
                       className="p-0 border-r border-border-muted text-center last:border-r-0 h-full"
                     >
                       <div

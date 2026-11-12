@@ -62,7 +62,8 @@
       "PyQt5",
       "Jupyter Notebook",
       "ESP32",
-      "TCD & TVOC Sensor"
+      "TCD & TVOC Sensor",
+      "Autocad"
     ],
     "accentColor": "purple-1"
   },

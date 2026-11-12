@@ -553,28 +553,58 @@
     "galery": [
       {
         "id": "1",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Ozon Level Detection/data_cleaning.png",
+        "caption": "Data Cleaning - Missing Value"
       },
       {
         "id": "2",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Ozon Level Detection/data_cleaning2.png",
+        "caption": "Data Cleaning - Duplicate"
       },
       {
         "id": "3",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Ozon Level Detection/eda_1.png",
+        "caption": "EDA"
       },
       {
         "id": "4",
-        "image": "src/assets/Project/bnsp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Ozon Level Detection/eda_2.png",
+        "caption": "EDA - Histogram"
       },
       {
         "id": "5",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Ozon Level Detection/fft_implementation.png",
+        "caption": "Implementasi FFT"
+      },
+      {
+        "id": "6",
+        "image": "src/assets/Project/Ozon Level Detection/fft_implementation2.png",
+        "caption": "Implementasi FFT"
+      },
+      {
+        "id": "7",
+        "image": "src/assets/Project/Ozon Level Detection/heatmap.png",
+        "caption": "Heatmap"
+      },
+      {
+        "id": "8",
+        "image": "src/assets/Project/Ozon Level Detection/pca.png",
+        "caption": "Principle Component Analysis (PCA)"
+      },
+      {
+        "id": "9",
+        "image": "src/assets/Project/Ozon Level Detection/gradien_boosting.png",
+        "caption": "Model Gradien Boosting"
+      },
+      {
+        "id": "10",
+        "image": "src/assets/Project/Ozon Level Detection/random_forest.png",
+        "caption": "Model Random Forest"
+      },
+      {
+        "id": "11",
+        "image": "src/assets/Project/Ozon Level Detection/voting_classifier.png",
+        "caption": "Model Voting Classifier"
       }
     ]
   },
@@ -589,7 +619,7 @@
     "description": "Membuat model regresi untuk memprediksi powerpant energy menggunakan 4 parameter utama. Mengevaluasi lima algoritma regresi untuk membandingakan efektivitas model dalam mengestimasi produksi energi listrik bersih per jam (PE).",
     "repoUrl": "https://github.com/makmalluddin?tab=repositories",
     "liveDemoUrl": "#",
-    "heroImage": "src/assets/Project/corporateRevamp.webp",
+    "heroImage": "src/assets/Project/Powerplant/dataset.png",
     "metaData": [
       {
         "id": "1",
@@ -637,28 +667,28 @@
     "galery": [
       {
         "id": "1",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Powerplant/dt_model.png",
+        "caption": "Model Decision Tree"
       },
       {
         "id": "2",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Powerplant/mlr_model.png",
+        "caption": "Model Multiple Linear Regression"
       },
       {
         "id": "3",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Powerplant/polynomial_model.png",
+        "caption": "Model Polynomial Regression"
       },
       {
         "id": "4",
-        "image": "src/assets/Project/bnsp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Powerplant/rf_model.png",
+        "caption": "Model Random Forest Regressor"
       },
       {
         "id": "5",
-        "image": "src/assets/Project/corporateRevamp.webp",
-        "caption": "Halaman awal landing page"
+        "image": "src/assets/Project/Powerplant/svr_model.png",
+        "caption": "Model Support Vector Regressor"
       }
     ]
   }

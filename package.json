@@ -8,6 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "test": "node --test scripts/dashboard/*.test.mjs",
+    "migrate:timeline": "node scripts/dashboard/timeline-migration.mjs",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"

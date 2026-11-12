@@ -470,34 +470,84 @@ async function validateExperienceDetails(result, data) {
       requireStringArray(result, experience.relatedProjectKeys, `${path}.relatedProjectKeys`);
     }
 
-    // timeline: optional object with tasks array, startMonth, startYear
+    // timeline: optional object. Bentuk baru memakai months[].weeks,
+    // bentuk lama (startMonth/startYear/durationMonths) tetap diterima.
     if (experience.timeline !== undefined && experience.timeline !== null) {
       const timeline = requireObject(result, experience.timeline, `${path}.timeline`);
-      
-      // Validate startMonth (1-12)
+
+      const monthIds = new Set();
+
+      if (timeline.months !== undefined) {
+        const months = requireArray(
+          result,
+          timeline.months,
+          `${path}.timeline.months`
+        );
+
+        months.forEach((month, monthIndex) => {
+          const monthPath = `${path}.timeline.months.${monthIndex}`;
+
+          if (!isObject(month)) {
+            addError(result, monthPath, "Harus berupa object.");
+            return;
+          }
+
+          requireString(result, month.id, `${monthPath}.id`);
+          requireString(result, month.label, `${monthPath}.label`);
+
+          if (isNonEmptyString(month.id)) {
+            if (monthIds.has(month.id)) {
+              addError(
+                result,
+                `${monthPath}.id`,
+                `id bulan duplikat dengan bulan sebelumnya (${month.id}).`
+              );
+            } else {
+              monthIds.add(month.id);
+            }
+          }
+
+          if (month.weeks !== undefined) {
+            const weeks = month.weeks;
+
+            if (
+              typeof weeks !== "number" ||
+              !Number.isInteger(weeks) ||
+              weeks < 1 ||
+              weeks > 4
+            ) {
+              addError(
+                result,
+                `${monthPath}.weeks`,
+                "Harus berupa angka bulat 1-4 (minggu)."
+              );
+            }
+          }
+        });
+      }
+
+      // Validasi field lama selama masa transisi.
       if (timeline.startMonth !== undefined) {
         const month = timeline.startMonth;
         if (typeof month !== "number" || month < 1 || month > 12) {
           addError(result, `${path}.timeline.startMonth`, "Harus berupa angka 1-12.");
         }
       }
-      
-      // Validate startYear (positive number)
+
       if (timeline.startYear !== undefined) {
         const year = timeline.startYear;
         if (typeof year !== "number" || year < 2000 || year > 2100) {
           addError(result, `${path}.timeline.startYear`, "Harus berupa tahun 2000-2100.");
         }
       }
-      
-      // Validate durationMonths (1-60)
+
       if (timeline.durationMonths !== undefined) {
         const months = timeline.durationMonths;
         if (typeof months !== "number" || months < 1 || months > 60) {
           addError(result, `${path}.timeline.durationMonths`, "Harus berupa angka 1-60 (bulan).");
         }
       }
-      
+
       const tasks = requireArray(result, timeline.tasks, `${path}.timeline.tasks`);
       tasks.forEach((task, taskIndex) => {
         const taskPath = `${path}.timeline.tasks.${taskIndex}`;
@@ -507,9 +557,74 @@ async function validateExperienceDetails(result, data) {
         }
         requireString(result, task.id, `${taskPath}.id`);
         requireString(result, task.name, `${taskPath}.name`);
-        // allocation is object with boolean values
+
         if (task.allocation !== undefined) {
-          requireObject(result, task.allocation, `${taskPath}.allocation`);
+          const allocation = requireObject(
+            result,
+            task.allocation,
+            `${taskPath}.allocation`
+          );
+
+          Object.entries(allocation).forEach(([key, entry]) => {
+            const allocationPath = `${taskPath}.allocation.${key}`;
+
+            // Bentuk lama: { "0-M1": true }.
+            if (typeof entry === "boolean") return;
+
+            if (!isObject(entry)) {
+              addError(
+                result,
+                allocationPath,
+                "Harus berupa boolean atau object minggu."
+              );
+              return;
+            }
+
+            const month = Array.isArray(timeline.months)
+              ? timeline.months.find(
+                  (item) => isObject(item) && item.id === key
+                )
+              : null;
+
+            if (monthIds.size > 0 && !monthIds.has(key)) {
+              addWarning(
+                result,
+                allocationPath,
+                `Alokasi merujuk bulan tidak dikenal: ${key}.`
+              );
+            }
+
+            Object.entries(entry).forEach(([week, active]) => {
+              const weekPath = `${allocationPath}.${week}`;
+
+              if (!/^M[1-4]$/.test(week)) {
+                addWarning(
+                  result,
+                  weekPath,
+                  `Nama minggu tidak dikenal: ${week}. Gunakan M1-M4.`
+                );
+                return;
+              }
+
+              if (typeof active !== "boolean") {
+                addError(result, weekPath, "Harus berupa boolean.");
+                return;
+              }
+
+              if (
+                active &&
+                month &&
+                typeof month.weeks === "number" &&
+                Number(week.slice(1)) > month.weeks
+              ) {
+                addWarning(
+                  result,
+                  weekPath,
+                  `Alokasi aktif di minggu ${week.slice(1)}, melebihi jumlah grid bulan (${month.weeks}).`
+                );
+              }
+            });
+          });
         }
       });
     }

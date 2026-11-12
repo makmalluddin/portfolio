@@ -65,7 +65,7 @@ function ProjectDetailSlug({ project }) {
       <MainFrame
         title={
           <p className="flex w-full justify-between font-mono tracking-wide text-xs text-text-muted font-light">
-            <span>ANTARMUKA PROFESIONAL</span>
+            <span>HIGHLIGHT</span>
             <span>SCREENSHOT</span>
           </p>
         }
@@ -87,7 +87,7 @@ function ProjectDetailSlug({ project }) {
         }
       >
         <h3 className="px-4 py-8 md:px-8 md:py-12 text-3xl md:text-5xl text-text-primary font-bold scale-y-90">
-          Tentang <span className={variant.text}>Projek</span>.
+          Tentang <span className={variant.text}>Proyek</span>.
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y divide-x-0 md:divide-x divide-border-muted -mr-px -mb-px">
@@ -109,12 +109,12 @@ function ProjectDetailSlug({ project }) {
       <MainFrame
         title={
           <p className="flex w-full justify-between font-mono tracking-wide text-xs text-text-muted font-light">
-            <span>02 / GALERI PROJEK</span>
+            <span>02 / GALERI PROYEK</span>
           </p>
         }
       >
         <h3 className="px-4 py-8 md:px-8 md:py-12 text-3xl md:text-5xl text-text-primary font-bold scale-y-90">
-          Dokumentasi <span className={variant.text}>Projek</span>.
+          Dokumentasi <span className={variant.text}>Proyek</span>.
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 -mr-px -mb-px">
           {project.galery.map((item) => (

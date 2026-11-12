@@ -6,7 +6,7 @@
     "role": "KKN Desa Majalaya",
     "company": "Universitas Negeri Jakarta",
     "type": "VOLUNTEER",
-    "description": "ini adalah volunteer"
+    "description": "Mengoordinasikan pengembangan sistem IoT greenhouse, instalasi penerangan jalan, dan perawatan panel surya desa."
   },
   {
     "id": "exp-2",
@@ -15,6 +15,6 @@
     "role": "KKN SMAN 16",
     "company": "Universitas Negeri Jakarta",
     "type": "VOLUNTEER",
-    "description": "ini adalah volunteer"
+    "description": "Berpartisipasi dalam edukasi energi terbarukan serta instalasi panel surya sebagai bagian dari program P5."
   }
 ]

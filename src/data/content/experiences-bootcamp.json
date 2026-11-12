@@ -3,10 +3,10 @@
     "id": "exp-2",
     "slug": "s1-unj",
     "period": "2021-2025",
-    "role": "Sarjana Fisika Komputasi",
+    "role": "Fisika Komputasi",
     "company": "Universitas Negeri Jakarta",
     "type": "S.Si",
-    "description": "ini contoh"
+    "description": "Menempuh pendidikan S1 Fisika dengan fokus pada komputasi, pemrograman, analisis data, serta pemodelan matematis dan kecerdasan buatan."
   },
   {
     "id": "exp-1",
@@ -15,6 +15,6 @@
     "role": "Java & Python For Data Science",
     "company": "PT Tata Informasi Asia",
     "type": "BOOTCAMP",
-    "description": "ini adalah bootcamp"
+    "description": "Mempelajari pemrograman dan Machine Learning serta mengembangkan dashboard prediksi ketepatan waktu pengiriman."
   }
 ]

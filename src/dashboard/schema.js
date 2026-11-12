@@ -604,9 +604,7 @@ export const collectionSchemas = {
       teknologi: [],
       galery: [],
       timeline: {
-        startMonth: 1,
-        startYear: new Date().getFullYear(),
-        durationMonths: 12,
+        months: [],
         tasks: [],
       },
     }),
@@ -633,7 +631,7 @@ export const collectionSchemas = {
         key: "timeline",
         label: "Timeline Pekerjaan",
         type: "timeline-editor",
-        help: "Atur timeline minggu per bulan untuk setiap task. Kosongkan untuk menyembunyikan section timeline.",
+        help: "Tambah kolom bulan sendiri, atur label dan jumlah grid minggu (1-4) per bulan. Kosongkan untuk menyembunyikan section timeline.",
       },
       repeater(
         "detailPengalaman",
