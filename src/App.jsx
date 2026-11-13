@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SmoothScroll from './components/SmoothScroll';
 import Main from './pages/homes/Main';
 import Navbar from './pages/Navbar';
 import NotFound from './pages/NotFound';
@@ -11,7 +12,8 @@ import ExperiencePage from './pages/homes/subpages/ExperiencePage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <SmoothScroll />
       <div className='min-h-screen bg-bg-primary'>
         {/* Navigation Bar  */}
         <Navbar />

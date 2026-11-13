@@ -5,7 +5,7 @@
  * File non-gambar (mis. PDF) tetap memakai impor eksplisit di staticAssets.
  */
 const localImageModules = import.meta.glob(
-  "/src/assets/**/*.{webp,png,jpg,jpeg,svg,avif,gif}",
+  "/src/assets/**/*.{webp,png,jpg,jpeg,svg,avif,gif,WEBP,PNG,JPG,JPEG,SVG,AVIF,GIF}",
   {
     eager: true,
     query: "?url",
@@ -26,9 +26,11 @@ export function asset(path) {
   }
 
   const normalized = "/" + path.replace(/^\/+/, "");
+  const base = import.meta.env.BASE_URL || "/";
+  const baseUrl = `${base.replace(/\/+$/, "")}${normalized}`;
 
   return (
     localImageModules[normalized] ??
-    (path.startsWith("src/assets/") ? normalized : path)
+    (path.startsWith("src/assets/") ? baseUrl : path)
   );
 }

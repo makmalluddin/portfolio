@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { colorVariants } from "@/src/data/colorVariants";
+import Reveal from "@/src/components/Reveal";
 
 function ProjectCard({ project }) {
   const accent = colorVariants[project.accentColor] || colorVariants["blue-1"];
 
   return (
-    <Link
-      to={`/projects/${project.slug}`}
-      className="group relative flex flex-col py-4 h-full border-b border-r border-border-muted transition-colors duration-200"
-    >
+    <Reveal className="h-full">
+      <Link
+        to={`/projects/${project.slug}`}
+        className="group relative flex flex-col py-4 h-full border-b border-r border-border-muted transition-colors duration-200"
+      >
       <div
         className={`absolute top-0 left-0 w-full h-0.5 ${accent.bg} scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 ease-out`}
       />
@@ -72,7 +74,8 @@ function ProjectCard({ project }) {
           className={`w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ${accent.text}`}
         />
       </div>
-    </Link>
+      </Link>
+    </Reveal>
   );
 }
 

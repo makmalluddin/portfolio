@@ -1,4 +1,5 @@
 import MainFrame from "@/src/components/MainFrame";
+import Reveal from "@/src/components/Reveal";
 import Button from "@/src/utils/Button";
 import { colorVariants } from "@/src/data/colorVariants";
 
@@ -19,7 +20,7 @@ function ProjectDetailSlug({ project }) {
           </p>
         }
       >
-        <div className="flex flex-col mx-auto max-w-4xl items-center justify-center py-10 md:py-20 px-4 md:px-0 gap-4 md:gap-6">
+        <Reveal className="flex flex-col mx-auto max-w-4xl items-center justify-center py-10 md:py-20 px-4 md:px-0 gap-4 md:gap-6">
           <h2 className="text-3xl sm:text-5xl md:text-6xl text-text-primary scale-y-90 origin-bottom font-bold text-center leading-tight md:leading-16">
             {project.titlePrefix}
             <span className={variant.text}>{project.highlightedWord}</span>
@@ -60,7 +61,7 @@ function ProjectDetailSlug({ project }) {
               );
             })}
           </div>
-        </div>
+        </Reveal>
       </MainFrame>
 
       {/* Screenshot Main */}
@@ -72,12 +73,14 @@ function ProjectDetailSlug({ project }) {
           </p>
         }
       >
-        <img
-          src={project.heroImage}
-          alt={project.categoryTitle}
-          loading="lazy"
-          className="w-full h-auto"
-        />
+        <Reveal>
+          <img
+            src={project.heroImage}
+            alt={project.categoryTitle}
+            loading="lazy"
+            className="w-full h-auto"
+          />
+        </Reveal>
       </MainFrame>
 
       {/* Konteks Projek */}
@@ -88,21 +91,25 @@ function ProjectDetailSlug({ project }) {
           </p>
         }
       >
-        <h3 className="px-4 py-8 md:px-8 md:py-12 text-3xl md:text-5xl text-text-primary font-bold scale-y-90">
-          Tentang <span className={variant.text}>Proyek</span>.
-        </h3>
+        <Reveal>
+          <h3 className="px-4 py-8 md:px-8 md:py-12 text-3xl md:text-5xl text-text-primary font-bold scale-y-90">
+            Tentang <span className={variant.text}>Proyek</span>.
+          </h3>
+        </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y divide-x-0 md:divide-x divide-border-muted -mr-px -mb-px">
           {project.contexts.map((ctx) => (
-            <div key={ctx.id} className="flex flex-col px-4 py-6 md:px-8 md:py-6 gap-2">
-              <span className="font-mono text-right text-text-muted">
-                {ctx.id}
-              </span>
-              <h4 className="text-xl md:text-2xl font-heading font-bold scale-y-90">
-                {ctx.title}
-              </h4>
-              <p className="text-sm md:text-base">{ctx.description}</p>
-            </div>
+            <Reveal key={ctx.id} className="h-full">
+              <div className="flex flex-col px-4 py-6 md:px-8 md:py-6 gap-2">
+                <span className="font-mono text-right text-text-muted">
+                  {ctx.id}
+                </span>
+                <h4 className="text-xl md:text-2xl font-heading font-bold scale-y-90">
+                  {ctx.title}
+                </h4>
+                <p className="text-sm md:text-base">{ctx.description}</p>
+              </div>
+            </Reveal>
           ))}
         </div>
       </MainFrame>
@@ -115,30 +122,31 @@ function ProjectDetailSlug({ project }) {
           </p>
         }
       >
-        <h3 className="px-4 py-8 md:px-8 md:py-12 text-3xl md:text-5xl text-text-primary font-bold scale-y-90">
-          Dokumentasi <span className={variant.text}>Proyek</span>.
-        </h3>
+        <Reveal>
+          <h3 className="px-4 py-8 md:px-8 md:py-12 text-3xl md:text-5xl text-text-primary font-bold scale-y-90">
+            Dokumentasi <span className={variant.text}>Proyek</span>.
+          </h3>
+        </Reveal>
         <div className="grid grid-cols-1 md:grid-cols-2 -mr-px -mb-px">
           {project.galery.map((item) => (
-            <div
-              key={item.id}
-              className="flex flex-col border-b md:border-r border-border-muted"
-            >
-              <span className="flex w-full justify-between px-4 md:px-8 py-2 text-text-muted font-mono text-xs md:text-sm border-b border-border-muted">
-                <span className="uppercase text-text-muted/70 tracking-wider">
-                  {item.caption}
+            <Reveal key={item.id} className="h-full">
+              <div className="flex flex-col h-full border-b md:border-r border-border-muted">
+                <span className="flex w-full justify-between px-4 md:px-8 py-2 text-text-muted font-mono text-xs md:text-sm border-b border-border-muted">
+                  <span className="uppercase text-text-muted/70 tracking-wider">
+                    {item.caption}
+                  </span>
+                  <span>0{item.id}</span>
                 </span>
-                <span>0{item.id}</span>
-              </span>
-              <div className="relative w-full aspect-video overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.caption}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-contain"
-                />
+                <div className="relative w-full aspect-video overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.caption}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-contain"
+                  />
+                </div>
               </div>
-            </div>
+            </Reveal>
           ))}
 
           {/* Slot border penyeimbang ganjil (hanya aktif di desktop) */}

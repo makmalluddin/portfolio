@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import MainFrame from "@/src/components/MainFrame"
+import Reveal from "@/src/components/Reveal"
 import ExperienceCard from "@/src/components/experience/ExperienceCard";
 import categoriesData from "@/src/data/content/experience-categories.json";
 import { experienceCategoryCollections } from "@/src/data/experienceCategoryCollections";
@@ -32,14 +33,14 @@ function ExperiencePage() {
           </p>
         }
       >
-        <div className="py-12 px-8 flex flex-col gap-2">
+        <Reveal className="py-12 px-8 flex flex-col gap-2">
           <h3 className="text-4xl md:text-5xl font-bold scale-y-90">
             <span className="text-blue-2">Profesional </span>& Non-Formal.
           </h3>
           <p>
             Pengalaman kerja, freelance, volunteer, & pendidikan.
           </p>
-        </div>
+        </Reveal>
 
         {categories.map((category) => {
           const collectionKey = experienceCategoryCollections[category.id];
@@ -49,9 +50,9 @@ function ExperiencePage() {
 
           return (
             <div key={category.id}>
-              <div className="uppercase text-sm px-8 py-4 text-text-muted font-mono">
+              <Reveal className="uppercase text-sm px-8 py-4 text-text-muted font-mono">
                 {category.label}
-              </div>
+              </Reveal>
               {experiences.map((exp) => (
                 <div className="border-t border-border-muted">
                   <ExperienceCard key={exp.id} experience={exp} />

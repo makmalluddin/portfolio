@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Menu, X, Moon } from "lucide-react";
 import { navbarData } from "@/src/data/navbarData";
 import { getSocialIcon } from "@/src/data/socialIcons";
+import { scrollToElement, scrollToTop } from "@/src/lib/smoothScroll";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ function Navbar() {
   const handleLogoClick = (e) => {
     if (window.location.pathname === "/") {
       e.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      scrollToTop();
     }
   };
 
@@ -31,7 +32,7 @@ function Navbar() {
         setTimeout(() => {
           const element = document.getElementById(hash);
           if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
+            scrollToElement(element);
           }
         }, 100);
       }

@@ -1,4 +1,5 @@
 import MainFrame from "@/src/components/MainFrame";
+import Reveal from "@/src/components/Reveal";
 import WorkTimelineTable from "./WorkLineTable";
 import { projectData } from "@/src/data/projectData";
 import ProjectCard from "@/src/components/project/ProjectCard";
@@ -35,7 +36,7 @@ function ExperienceDetailSlug({ experience }) {
           </p>
         }
       >
-        <div className="flex flex-col px-4 md:px-8 py-12 md:py-16 items-center justify-center gap-4 text-center">
+        <Reveal className="flex flex-col px-4 md:px-8 py-12 md:py-16 items-center justify-center gap-4 text-center">
           <div className="flex flex-col items-center justify-center gap-2">
             <img
               src={logo}
@@ -73,7 +74,7 @@ function ExperienceDetailSlug({ experience }) {
               );
             })}
           </div>
-        </div>
+        </Reveal>
       </MainFrame>
 
       {timeline && (
@@ -84,7 +85,9 @@ function ExperienceDetailSlug({ experience }) {
             </p>
           }
         >
-          <WorkTimelineTable timeline={timeline} colorVariantKey={colorVariantKey} />
+          <Reveal>
+            <WorkTimelineTable timeline={timeline} colorVariantKey={colorVariantKey} />
+          </Reveal>
         </MainFrame>
       )}
 
@@ -93,32 +96,33 @@ function ExperienceDetailSlug({ experience }) {
           <p className="font-mono text-text-muted text-sm">02 / KONTEKS</p>
         }
       >
-        <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
-          Detail <span className={colorClass}>Pengalaman</span>.
-        </h3>
+        <Reveal>
+          <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
+            Detail <span className={colorClass}>Pengalaman</span>.
+          </h3>
+        </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 -mr-px -mb-px">
           {detailPengalaman.map((item) => {
             const Icon = item.icon;
 
             return (
-              <div
-                key={item.id}
-                className="flex flex-col gap-4 px-6 md:px-8 py-8 border-r border-b border-border-muted"
-              >
-                <div className="flex w-full justify-between items-end">
-                  <span className={`border border-border-muted p-2 ${colorClass}/80`}>
-                    <Icon className="size-4" />
-                  </span>
-                  <span className="font-mono text-text-muted text-xs">
-                    0{item.id}
-                  </span>
+              <Reveal key={item.id} className="h-full">
+                <div className="flex flex-col h-full gap-4 px-6 md:px-8 py-8 border-r border-b border-border-muted">
+                  <div className="flex w-full justify-between items-end">
+                    <span className={`border border-border-muted p-2 ${colorClass}/80`}>
+                      <Icon className="size-4" />
+                    </span>
+                    <span className="font-mono text-text-muted text-xs">
+                      0{item.id}
+                    </span>
+                  </div>
+                  <h4 className="font-bold text-lg md:text-xl">{item.title}</h4>
+                  <p className="text-text-muted text-sm md:text-base">
+                    {item.description}
+                  </p>
                 </div>
-                <h4 className="font-bold text-lg md:text-xl">{item.title}</h4>
-                <p className="text-text-muted text-sm md:text-base">
-                  {item.description}
-                </p>
-              </div>
+              </Reveal>
             );
           })}
         </div>
@@ -129,27 +133,28 @@ function ExperienceDetailSlug({ experience }) {
           <p className="font-mono text-text-muted text-sm">03 / TEKNOLOGI</p>
         }
       >
-        <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
-          Alat dan <span className={colorClass}>Teknologi</span>.
-        </h3>
+        <Reveal>
+          <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
+            Alat dan <span className={colorClass}>Teknologi</span>.
+          </h3>
+        </Reveal>
         {teknologi.map((item) => (
-          <div
-            key={item.id}
-            className="flex flex-col sm:flex-row px-4 md:px-8 py-6 items-start sm:items-center justify-start gap-2 sm:gap-0"
-          >
-            <span className="font-mono text-sm text-text-muted/80 w-20 shrink-0">
-              0{item.id}
-            </span>
+          <Reveal key={item.id}>
+            <div className="flex flex-col sm:flex-row px-4 md:px-8 py-6 items-start sm:items-center justify-start gap-2 sm:gap-0">
+              <span className="font-mono text-sm text-text-muted/80 w-20 shrink-0">
+                0{item.id}
+              </span>
 
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-16 w-full">
-              <span className="text-text-secondary text-base md:text-lg min-w-60 font-medium">
-                {item.type}
-              </span>
-              <span className="font-inter text-text-secondary text-sm md:text-lg tracking-wider">
-                {item.tools}
-              </span>
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-16 w-full">
+                <span className="text-text-secondary text-base md:text-lg min-w-60 font-medium">
+                  {item.type}
+                </span>
+                <span className="font-inter text-text-secondary text-sm md:text-lg tracking-wider">
+                  {item.tools}
+                </span>
+              </div>
             </div>
-          </div>
+          </Reveal>
         ))}
       </MainFrame>
 
@@ -160,30 +165,31 @@ function ExperienceDetailSlug({ experience }) {
             <p className="font-mono text-text-muted text-sm">04 / GALERI PENGALAMAN</p>
           }
         >
-          <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
-            Dokumentasi <span className={colorClass}>Aktivitas</span>.
-          </h3>
+          <Reveal>
+            <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
+              Dokumentasi <span className={colorClass}>Aktivitas</span>.
+            </h3>
+          </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-2 -mr-px -mb-px">
             {experience.galery.map((item) => (
-              <div
-                key={item.id}
-                className="flex flex-col border-b md:border-r border-border-muted"
-              >
-                <span className="flex w-full justify-between px-4 md:px-8 py-2 text-text-muted font-mono text-xs border-b border-border-muted">
-                  <span className="uppercase text-text-muted/70 tracking-wider">
-                    {item.caption}
+              <Reveal key={item.id} className="h-full">
+                <div className="flex flex-col h-full border-b md:border-r border-border-muted">
+                  <span className="flex w-full justify-between px-4 md:px-8 py-2 text-text-muted font-mono text-xs border-b border-border-muted">
+                    <span className="uppercase text-text-muted/70 tracking-wider">
+                      {item.caption}
+                    </span>
+                    <span>0{item.id}</span>
                   </span>
-                  <span>0{item.id}</span>
-                </span>
-                <div className="relative w-full aspect-video overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.caption}
-                    loading="lazy"
-                    className="absolute inset-0 w-full h-full object-contain"
-                  />
+                  <div className="relative w-full aspect-video overflow-hidden">
+                    <img
+                      src={item.image}
+                      alt={item.caption}
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-contain"
+                    />
+                  </div>
                 </div>
-              </div>
+              </Reveal>
             ))}
 
             {/* Slot border penyeimbang ganjil (hanya aktif di desktop) */}

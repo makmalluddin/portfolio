@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import MainFrame from "@/src/components/MainFrame";
 import DirectLinkButton from "@/src/utils/DirectLinkButton";
 import { footerData } from "@/src/data/footerData";
+import { scrollToElement } from "@/src/lib/smoothScroll";
 import { Mail } from "lucide-react";
 
 function Footer() {
@@ -19,7 +20,7 @@ function Footer() {
         setTimeout(() => {
           const element = document.getElementById(hash);
           if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
+            scrollToElement(element);
           }
         }, 100);
       }

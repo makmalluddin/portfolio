@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import MainFrame from "@/src/components/MainFrame";
+import Reveal from "@/src/components/Reveal";
 import CertificationGallery from "../../slug/CertificationGalery";
 import { galleryCertifications } from "@/src/data/skill/skillPageData";
 
@@ -17,13 +18,15 @@ function CertificationPage() {
         </p>
       }
     >
-      <div className="flex flex-col gap-2 px-8 py-8 md:py-12">
+      <Reveal className="flex flex-col gap-2 px-8 py-8 md:py-12">
         <h2 className="font-heading font-bold text-5xl scale-y-90">
           Daftar Sertifikat & <span className="text-green-blue-1">Pelatihan</span>.
         </h2>
         <p>Sertifikasi & Pelatihan yang saya ikuti selama berkarir</p>
-      </div>
-      <CertificationGallery certifications={galleryCertifications} />
+      </Reveal>
+      <Reveal>
+        <CertificationGallery certifications={galleryCertifications} />
+      </Reveal>
     </MainFrame>
   );
 }

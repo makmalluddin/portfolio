@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "lenis/dist/lenis.css";
 
 /* Font Imports (Pastikan package terinstall atau import via Google Fonts) */
 @import "@fontsource-variable/plus-jakarta-sans";
@@ -74,11 +75,20 @@
 
 @layer base {
   html {
-    scroll-behavior: smooth;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+  }
+
+  /* Lenis mengatur scroll sendiri; scroll-behavior native harus dimatikan. */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
   }
 
   body {

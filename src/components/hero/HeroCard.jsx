@@ -1,5 +1,6 @@
 import Button from "@/src/utils/Button";
 import MainFrame from "@/src/components/MainFrame";
+import Reveal from "@/src/components/Reveal";
 
 function HeroCard({ data }) {
   const {
@@ -11,7 +12,6 @@ function HeroCard({ data }) {
     stats,
     avatar,
     cvUrl,
-    worksHref,
   } = data;
 
   return (
@@ -26,7 +26,7 @@ function HeroCard({ data }) {
         className="py-2 px-4 md:px-8"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 py-6 md:py-28 gap-8 md:gap-0">
-          <div className="flex flex-col gap-4">
+          <Reveal className="flex flex-col gap-4">
             <h1 className="flex flex-col font-bold text-3xl sm:text-5xl md:text-6xl tracking-normal">
               <span>{titleLine1}</span>
               <span className="text-blue-2">{titleLine2}</span>
@@ -49,21 +49,21 @@ function HeroCard({ data }) {
                 MY EXPERIENCE
               </Button>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="flex items-center justify-center">
+          <Reveal className="flex items-center justify-center" delay={0.1}>
             <img
               src={avatar}
               loading="eager"
               className="h-60 w-60 object-cover rounded-full shadow-2xl shadow-black">
             </img>
-          </div>
+          </Reveal>
         </div>
       </MainFrame>
 
       {/* Hero Stats Frame */}
       <MainFrame>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y sm:divide-x divide-border-muted">
+        <Reveal className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y sm:divide-x divide-border-muted">
           <div className="flex items-center justify-start py-4 md:py-2 px-6 md:px-8 gap-1 text-text-muted">
             <span className="text-xl md:text-2xl text-red-1">Apa </span>{" "}
             {statsTagline}
@@ -81,7 +81,7 @@ function HeroCard({ data }) {
               <p className="text-xs md:text-sm">{item.label}</p>
             </div>
           ))}
-        </div>
+        </Reveal>
       </MainFrame>
     </div>
   );

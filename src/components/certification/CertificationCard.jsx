@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
+import Reveal from "@/src/components/Reveal";
 
 function CertificationCard({ cert, index }) {
   const formattedIndex = String(index + 1).padStart(2, "0");
 
   return (
-    <Link
-      to={`/certifications`}
-      className="flex px-4 md:px-8 py-6 border-border-muted transition-colors duration-300 hover:bg-bg-surface/50 group border-b -mb-px"
-    >
+    <Reveal>
+      <Link
+        to={`/certifications`}
+        className="flex px-4 md:px-8 py-6 border-border-muted transition-colors duration-300 hover:bg-bg-surface/50 group border-b -mb-px"
+      >
       <span className="w-10 hidden md:block md:w-24 shrink-0 text-text-muted font-mono text-sm md:text-base">
         {formattedIndex}
       </span>
@@ -31,7 +33,8 @@ function CertificationCard({ cert, index }) {
           </p>
         </div>
       </div>
-    </Link>
+      </Link>
+    </Reveal>
   );
 }
 

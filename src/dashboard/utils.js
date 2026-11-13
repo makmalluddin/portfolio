@@ -77,11 +77,20 @@ export function assetUrl(path) {
   if (!path) return "";
   const value = String(path);
 
-  if (isExternalUrl(value) || value.startsWith("/")) {
+  if (isExternalUrl(value)) {
     return value;
   }
 
-  return `/${encodeURI(value.replace(/^\/+/, ""))}`;
+  const base = import.meta.env.BASE_URL || "/";
+  const basePath = base.endsWith("/") ? base : `${base}/`;
+  const normalized = value.replace(/^\/+/, "");
+
+  // Jangan dobel-prefix kalau path sudah membawa base (mis. hasil build).
+  if (basePath !== "/" && normalized.startsWith(basePath.slice(1))) {
+    return `/${encodeURI(normalized)}`;
+  }
+
+  return `${basePath}${encodeURI(normalized)}`;
 }
 
 export function extensionOf(path) {

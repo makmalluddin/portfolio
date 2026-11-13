@@ -6,8 +6,10 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import dashboardApiPlugin from './scripts/dashboard/vite-plugin.mjs'
 
 // https://vite.dev/config/
-export default defineConfig({
-  base: '/',
+// Base hanya dipakai untuk build/preview (GitHub Pages). Di dev tetap "/" agar
+// dashboard (/input/dashboard) dan aset /src/assets bisa diakses langsung.
+export default defineConfig(({ command, isPreview }) => ({
+  base: command === 'build' || isPreview ? '/portfolio/' : '/',
   plugins: [react(), tailwindcss(), dashboardApiPlugin(),
   ViteImageOptimizer({
     png: {
@@ -42,4 +44,4 @@ export default defineConfig({
     }
   }
 
-})
+}))
