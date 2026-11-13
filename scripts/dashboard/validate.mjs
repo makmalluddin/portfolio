@@ -36,6 +36,15 @@ function requireString(result, value, path) {
   return true;
 }
 
+function requireOptionalString(result, value, path) {
+  if (value === undefined || value === null || value === "") return true;
+  if (typeof value !== "string") {
+    addError(result, path, "Harus berupa teks.");
+    return false;
+  }
+  return true;
+}
+
 function requireSlug(result, value, path) {
   if (!requireString(result, value, path)) return;
   if (!slugPattern.test(value)) {
@@ -394,9 +403,10 @@ async function validateProjectDetails(result, data) {
       "highlightedWord",
       "titleSuffix",
       "description",
-      "repoUrl",
-      "liveDemoUrl",
     ].forEach((field) => requireString(result, project[field], `${path}.${field}`));
+
+    requireOptionalString(result, project.repoUrl, `${path}.repoUrl`);
+    requireOptionalString(result, project.liveDemoUrl, `${path}.liveDemoUrl`);
 
     requireSlug(result, project.slug, `${path}.slug`);
     requireColor(result, project.colorVariantKey, `${path}.colorVariantKey`);

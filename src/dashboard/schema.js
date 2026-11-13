@@ -550,8 +550,12 @@ export const collectionSchemas = {
       text("titleSuffix", "Akhiran judul"),
       color("colorVariantKey", "Warna aksen"),
       textarea("description", "Deskripsi"),
-      text("repoUrl", "URL repository"),
-      text("liveDemoUrl", "URL live demo"),
+      text("repoUrl", "URL repository", {
+        help: "Boleh dikosongkan jika proyek tidak punya repository publik.",
+      }),
+      text("liveDemoUrl", "URL live demo", {
+        help: "Boleh dikosongkan jika proyek belum punya live demo.",
+      }),
       image("heroImage", "Gambar utama"),
       metaRepeater(),
       repeater(
