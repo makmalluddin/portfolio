@@ -29,12 +29,14 @@ function ProjectDetailSlug({ project }) {
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 w-full sm:w-auto">
             {project.repoUrl && (
-              <Button type="light" href={project.repoUrl}>
+              <Button type="light" href={project.repoUrl} target="_blank"
+                rel="noopener noreferrer">
                 REPOSITORI
               </Button>
             )}
             {project.liveDemoUrl && (
-              <Button href={project.liveDemoUrl}>LIVE DEMO</Button>
+              <Button href={project.liveDemoUrl} target="_blank"
+                rel="noopener noreferrer">LIVE DEMO</Button>
             )}
           </div>
 

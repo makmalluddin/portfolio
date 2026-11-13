@@ -112,8 +112,8 @@
     "titleSuffix": "Real-time.",
     "colorVariantKey": "red-1",
     "description": "Aplikasi yang saya buat sebagai visualisasi dari data yang didapatkan melalui kegiatan internship & penyedia data pihak ketiga. Data dapat disajikan secara real-time maupun historis sesuai preferensi user.",
-    "repoUrl": "https://github.com/makmalluddin?tab=repositories",
-    "liveDemoUrl": "#",
+    "repoUrl": "https://github.com/makmalluddin/aerosea-monitoring",
+    "liveDemoUrl": "",
     "heroImage": "src/assets/Project/Aerosea Monitoring/landing_dashboard.png",
     "metaData": [
       {
@@ -201,8 +201,8 @@
     "titleSuffix": ".",
     "colorVariantKey": "purple-1",
     "description": "Ini adalah sistem yang saya buat agar dapat membedakan 2 jenis gas volatile yaitu butana dan metanol. IoT System menggunakan sensor TCD dan TVOC, model yang digunakan untuk Deep Learning adalah ANN.",
-    "repoUrl": "https://github.com/makmalluddin?tab=repositories",
-    "liveDemoUrl": "#",
+    "repoUrl": "https://github.com/makmalluddin/chromatography-gas",
+    "liveDemoUrl": "",
     "heroImage": "src/assets/Project/Gas Chromatography/pengambilan_data.jpeg",
     "metaData": [
       {
@@ -315,8 +315,8 @@
     "titleSuffix": "App.",
     "colorVariantKey": "green-1",
     "description": "Aplikasi yang saya buat sebagai sistem pencatatan keuangan harian. Aplikasi ini saya bangun agar penggunaan uang harian tercatat secara rapi untuk melacak penggunaan uang.",
-    "repoUrl": "https://github.com/makmalluddin?tab=repositories",
-    "liveDemoUrl": "#",
+    "repoUrl": "https://github.com/makmalluddin/my-finance-app",
+    "liveDemoUrl": "https://my-finance-app-green.vercel.app/",
     "heroImage": "src/assets/Project/My Finance App/landing_login.png",
     "metaData": [
       {
@@ -409,8 +409,8 @@
     "titleSuffix": "Prediction.",
     "colorVariantKey": "yellow-1",
     "description": "Aplikasi yang saya buat untuk memprediksi waktu pengiriman barang berdasarkan variabel tertentu di bandingkan dengan estimasi yang diberikan pihak logistik.",
-    "repoUrl": "https://github.com/makmalluddin?tab=repositories",
-    "liveDemoUrl": "#",
+    "repoUrl": "https://github.com/makmalluddin/shipping-prediction",
+    "liveDemoUrl": "",
     "heroImage": "src/assets/Project/Delivery Time Accuracy Prediction/dashboard.jpeg",
     "metaData": [
       {
@@ -503,8 +503,8 @@
     "titleSuffix": "Detection.",
     "colorVariantKey": "blue-2",
     "description": "Mengembangkan sistem machine learning untuk memprediksi kualitas udara berdasarkan level ozon dengan 18 fitur environmental. Mengaplikasikan FFT untuk ekstraksi fitur dan 3 model machine learning untuk prediksi.",
-    "repoUrl": "https://github.com/makmalluddin?tab=repositories",
-    "liveDemoUrl": "#",
+    "repoUrl": "https://github.com/makmalluddin/ozon-detection",
+    "liveDemoUrl": "",
     "heroImage": "src/assets/Project/Ozon Level Detection/datasets.png",
     "metaData": [
       {
@@ -617,8 +617,8 @@
     "titleSuffix": ".",
     "colorVariantKey": "pink-1",
     "description": "Membuat model regresi untuk memprediksi powerpant energy menggunakan 4 parameter utama. Mengevaluasi lima algoritma regresi untuk membandingakan efektivitas model dalam mengestimasi produksi energi listrik bersih per jam (PE).",
-    "repoUrl": "https://github.com/makmalluddin?tab=repositories",
-    "liveDemoUrl": "#",
+    "repoUrl": "https://github.com/makmalluddin/powerplant-regression",
+    "liveDemoUrl": "",
     "heroImage": "src/assets/Project/Powerplant/dataset.png",
     "metaData": [
       {

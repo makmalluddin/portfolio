@@ -41,7 +41,7 @@
       "Socker.io",
       "Leaflet.js"
     ],
-    "accentColor": "red-1"
+    "accentColor": "yellow-1"
   },
   {
     "id": "3",
@@ -106,7 +106,7 @@
       "Python",
       "Scikit-Learn"
     ],
-    "accentColor": "yellow-1"
+    "accentColor": "red-1"
   },
   {
     "id": "6",

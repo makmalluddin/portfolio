@@ -2070,6 +2070,21 @@
         "id": "8",
         "caption": "Persiapan Perkuliahan",
         "image": "src/assets/Experience/Kuliah/prepare_perkuliahan.jpeg"
+      },
+      {
+        "id": "9",
+        "caption": "Panitia PKKMB Fisika",
+        "image": "src/assets/Experience/Kuliah/panitia_pkkmb.jpeg"
+      },
+      {
+        "id": "10",
+        "caption": "Panitia Hari Guru",
+        "image": "src/assets/Experience/Kuliah/panitia_hariguru.jpeg"
+      },
+      {
+        "id": "11",
+        "caption": "Online Meeting Panitia PKKMB",
+        "image": "src/assets/Experience/Kuliah/panitia_pkkmb2.jpeg"
       }
     ]
   },
