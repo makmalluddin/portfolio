@@ -54,6 +54,11 @@ export const collections = {
     kind: "array",
     file: "src/data/content/certification-gallery.json",
   },
+  navbar: {
+    label: "Navbar",
+    kind: "object",
+    file: "src/data/content/navbar.json",
+  },
   footer: {
     label: "Footer",
     kind: "object",

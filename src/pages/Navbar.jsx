@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Menu, X, Moon } from "lucide-react";
+import { navbarData } from "@/src/data/navbarData";
+import { getSocialIcon } from "@/src/data/socialIcons";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+  const { brandName, socialLinks } = navbarData;
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -44,7 +47,7 @@ function Navbar() {
             className="flex h-full items-center px-5 font-semibold text-text-secondary text-lg scale-y-80"
             onClick={handleLogoClick}
           >
-            UDIN
+            {brandName}
           </Link>
 
           <ul className="list-none flex gap-8 px-5 items-center border-x border-border-muted tracking-wider text-xs font-mono font-medium text-text-muted">
@@ -85,21 +88,16 @@ function Navbar() {
 
         <div className="hidden md:flex h-full">
           <ul className="flex list-none h-full">
-            <li className="flex px-5 items-center h-full border-l border-border-muted">
-              <Link to={"https://github.com/makmalluddin"} target="_blank">
-                Github
-              </Link>
-            </li>
-            <li className="flex px-5 items-center h-full border-l border-border-muted">
-              <Link to={"mailto:makmalluddin123@gmail.com"} target="_blank">
-                Email
-              </Link>
-            </li>
-            <li className="flex px-5 items-center h-full border-l border-border-muted">
-              <Link to={"https://www.linkedin.com/in/makmalluddin"} target="_blank">
-                Linkedin
-              </Link>
-            </li>
+            {socialLinks.map((item) => (
+              <li
+                key={item.id}
+                className="flex px-5 items-center h-full border-l border-border-muted"
+              >
+                <a href={item.href} target="_blank" rel="noreferrer">
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -111,22 +109,27 @@ function Navbar() {
             onClick={handleLogoClick}
           >
             <span className="scale-y-80">
-              UDIN
+              {brandName}
             </span>
           </Link>
 
           <div className="flex h-full">
-            <a
-              href="https://github.com/makmalluddin"
-              target="_blank"
-              className="cursor-pointer flex items-center justify-center h-full w-12 border-l border-border-muted text-text-primary hover:bg-bg-surface/50 transition-colors"
-              aria-label="Github"
-            >
-              <img
-                src="https://devicons.io/devicons/font/github-icon.svg"
-                className="size-4"
-              />
-            </a>
+            {socialLinks.slice(0, 1).map((item) => {
+              const Icon = getSocialIcon(item.icon);
+
+              return (
+                <a
+                  key={item.id}
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer flex items-center justify-center h-full w-12 border-l border-border-muted text-text-primary hover:bg-bg-surface/50 transition-colors"
+                  aria-label={item.label}
+                >
+                  <Icon size={16} />
+                </a>
+              );
+            })}
 
             <button
               onClick={toggleMenu}

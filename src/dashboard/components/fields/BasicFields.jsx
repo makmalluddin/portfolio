@@ -120,6 +120,9 @@ export function SlugField({ field, value, onChange, path, errors, context }) {
 export function IconField({ field, value, onChange, path, errors }) {
   const id = path.join(".");
   const error = fieldError(errors, id);
+  const options = (field.options ?? iconKeys).map((option) =>
+    typeof option === "string" ? { value: option, label: option } : option
+  );
 
   return (
     <FieldFrame
@@ -135,9 +138,9 @@ export function IconField({ field, value, onChange, path, errors }) {
         className={inputClasses(error)}
       >
         <option value="">— Pilih ikon —</option>
-        {iconKeys.map((key) => (
-          <option key={key} value={key}>
-            {key}
+        {options.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
           </option>
         ))}
       </select>

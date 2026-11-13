@@ -1,9 +1,11 @@
 import { collections } from "./collections.mjs";
 import { iconKeys } from "../../src/data/iconKeys.js";
+import { socialIconKeys } from "../../src/data/socialIconKeys.js";
 import { colorVariants } from "../../src/data/colorVariants.js";
 import { assetExists } from "./storage.mjs";
 
 const iconKeySet = new Set(iconKeys);
+const socialIconKeySet = new Set(socialIconKeys);
 const colorKeys = new Set(Object.keys(colorVariants));
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const imageExtensionPattern = /\.(webp|png|jpe?g|svg|avif|gif)$/i;
@@ -328,6 +330,30 @@ async function validateCertificationGallery(result, data) {
     );
     await requireAsset(result, certification.image, `${path}.image`);
   }
+}
+
+async function validateNavbar(result, data) {
+  const navbar = requireObject(result, data, "");
+  requireString(result, navbar.brandName, "brandName");
+
+  const socialLinks = requireArray(result, navbar.socialLinks, "socialLinks");
+  socialLinks.forEach((link, index) => {
+    const path = `socialLinks.${index}`;
+    if (!isObject(link)) {
+      addError(result, path, "Harus berupa object.");
+      return;
+    }
+    ["id", "label", "href"].forEach((field) =>
+      requireString(result, link[field], `${path}.${field}`)
+    );
+    if (!isNonEmptyString(link.icon) || !socialIconKeySet.has(link.icon)) {
+      addError(
+        result,
+        `${path}.icon`,
+        `Ikon sosial tidak dikenal. Pilih salah satu: ${socialIconKeys.join(", ")}.`
+      );
+    }
+  });
 }
 
 async function validateFooter(result, data) {
@@ -712,6 +738,7 @@ const validators = {
   skills: validateSkills,
   certifications: validateCertifications,
   "certification-gallery": validateCertificationGallery,
+  navbar: validateNavbar,
   footer: validateFooter,
   "project-details": validateProjectDetails,
   "experience-details": validateExperienceDetails,

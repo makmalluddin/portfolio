@@ -1,4 +1,5 @@
 import { experienceCategoryIdByCollectionKey } from "../data/experienceCategoryCollections";
+import { socialIconKeys } from "../data/socialIconKeys";
 import { nextId } from "./utils";
 
 const text = (key, label, extra = {}) => ({ key, label, type: "text", ...extra });
@@ -71,7 +72,7 @@ export const collectionGroups = [
   },
   {
     label: "Global",
-    items: ["footer"],
+    items: ["navbar", "footer"],
   },
   {
     label: "Referensi",
@@ -436,6 +437,35 @@ export const collectionSchemas = {
       text("duration", "Durasi"),
       image("image", "Gambar sertifikat"),
       text("credentialUrl", "URL kredensial"),
+    ],
+  },
+
+  navbar: {
+    key: "navbar",
+    label: "Navbar",
+    kind: "object",
+    description: "Nama brand dan tautan media sosial di navigasi atas.",
+    fields: [
+      text("brandName", "Nama brand"),
+      repeater(
+        "socialLinks",
+        "Media sosial",
+        [
+          text("id", "ID"),
+          text("label", "Label"),
+          text("href", "Link"),
+          icon("icon", "Ikon", { options: socialIconKeys }),
+        ],
+        {
+          itemLabel: (item, index) => item.label || `Sosial ${index + 1}`,
+          createItem: (items) => ({
+            id: nextId(items, "social"),
+            label: "",
+            href: "",
+            icon: "globe",
+          }),
+        }
+      ),
     ],
   },
 
