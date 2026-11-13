@@ -7,7 +7,7 @@
     "title": "Corporate Website",
     "highlightTitle": "Revamp",
     "description": "Revamp website company untuk modernisasi tampilan dilengkapi custom CMS dengan role-based akses untuk manage konten di landing page.",
-    "image": "src/assets/Project/Corporate Website Revamp/landing_company_profile.png",
+    "image": "src/assets/Project/Corporate Website Revamp/landing_company_profile.webp",
     "highlightTags": [
       "Website Development",
       "Content Management System (CMS)"
@@ -28,7 +28,7 @@
     "title": "Aerosea",
     "highlightTitle": "Monitoring",
     "description": "Dashboard monitoring untuk visualisasi pergerakan pesawat dan kapal secara real-time maupun historis, memanfaatkan integrasi websocket serta penyedia API pihak ketiga.",
-    "image": "src/assets/Project/Aerosea Monitoring/vessel_historis.png",
+    "image": "src/assets/Project/Aerosea Monitoring/vessel_historis.webp",
     "highlightTags": [
       "Dashboard Monitoring",
       "Docker"
@@ -75,7 +75,7 @@
     "title": "My Finance ",
     "highlightTitle": "App",
     "description": "Aplikasi pencatat keuangan pribadi dengan lebih dari tujuh fitur yang membantu pengguna mencatat transaksi, memantau pengeluaran dan pemasukan, dan melihat kondisi keuangan.",
-    "image": "src/assets/Project/My Finance App/dashboard.png",
+    "image": "src/assets/Project/My Finance App/dashboard.webp",
     "highlightTags": [
       "Finance"
     ],
@@ -116,7 +116,7 @@
     "title": "Ozon Level ",
     "highlightTitle": "Detection",
     "description": "Membandingkan performa 3 model machine learning untuk klasifikasi kualitas udara berdasarkan tingkat ozon dengan data yang terdiri dari 18 Fitur. Menerapkan FFT & PCA untuk ekstraksi fitur",
-    "image": "src/assets/Project/Ozon Level Detection/heatmap.png",
+    "image": "src/assets/Project/Ozon Level Detection/heatmap.webp",
     "highlightTags": [
       "Machine Learning"
     ],

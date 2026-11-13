@@ -2,11 +2,9 @@
 @import "lenis/dist/lenis.css";
 
 /* Font Imports (Pastikan package terinstall atau import via Google Fonts) */
-@import "@fontsource-variable/plus-jakarta-sans";
-@import "@fontsource-variable/space-grotesk";
 @import "@fontsource-variable/inter";
-@import "@fontsource-variable/jetbrains-mono";
 @import "@fontsource-variable/geist-mono";
+@import "@fontsource-variable/raleway";
 
 :root {
   /* Core Canvas & Surfaces */
@@ -29,7 +27,7 @@
 
   /* Section Accents & Badges */
   --blue-var-1: #2f7bf5;
-  --blue-var-2: #14aac5;
+  --blue-var-2: #0b6e7e;
   --red-var-1: #e7573e;
   --purple-var-1: #8a5cf6;
   --yellow-var-1: #f3a617;

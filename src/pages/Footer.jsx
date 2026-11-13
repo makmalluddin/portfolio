@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import MainFrame from "@/src/components/MainFrame";
 import DirectLinkButton from "@/src/utils/DirectLinkButton";
 import { footerData } from "@/src/data/footerData";
@@ -8,13 +8,14 @@ import { Mail } from "lucide-react";
 function Footer() {
   const { cta, directLinks, exploreLinks, socialLinks, copyright } = footerData;
   const navigate = useNavigate();
+  const { pathname } = useLocation();
 
   const handleExploreClick = (e, path) => {
     if (path.includes("#")) {
       const [basePath, hash] = path.split("#");
-      if (window.location.pathname === basePath || basePath === "/") {
+      if (pathname === basePath || basePath === "/") {
         e.preventDefault();
-        if (window.location.pathname !== "/") {
+        if (pathname !== "/") {
           navigate("/");
         }
         setTimeout(() => {

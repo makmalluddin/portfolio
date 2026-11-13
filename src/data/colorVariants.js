@@ -9,7 +9,7 @@ export const colorVariants = {
     text: "text-blue-2",
     bg: "bg-blue-2",
     border: "border-blue-2",
-    hex: "#14aac5",
+    hex: "#0b6e7e",
   },
   "red-1": {
     text: "text-red-1",

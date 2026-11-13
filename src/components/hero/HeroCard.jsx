@@ -29,7 +29,7 @@ function HeroCard({ data }) {
           <Reveal className="flex flex-col gap-4">
             <h1 className="flex flex-col font-bold text-3xl sm:text-5xl md:text-6xl tracking-normal">
               <span>{titleLine1}</span>
-              <span className="text-blue-2">{titleLine2}</span>
+              <span className="text-yellow-1">{titleLine2}</span>
             </h1>
 
             <p className="max-w-xl text-base md:text-lg leading-relaxed font-inter">
@@ -51,13 +51,17 @@ function HeroCard({ data }) {
             </div>
           </Reveal>
 
-          <Reveal className="flex items-center justify-center" delay={0.1}>
+          <div className="flex items-center justify-center">
             <img
               src={avatar}
+              alt="Foto profil Makmalluddin"
               loading="eager"
-              className="h-60 w-60 object-cover rounded-full shadow-2xl shadow-black">
-            </img>
-          </Reveal>
+              fetchPriority="high"
+              width="240"
+              height="240"
+              className="h-60 w-60 object-cover rounded-full shadow-2xl shadow-black"
+            />
+          </div>
         </div>
       </MainFrame>
 

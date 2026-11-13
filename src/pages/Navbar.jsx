@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X, Moon } from "lucide-react";
 import { navbarData } from "@/src/data/navbarData";
 import { getSocialIcon } from "@/src/data/socialIcons";
@@ -8,6 +8,7 @@ import { scrollToElement, scrollToTop } from "@/src/lib/smoothScroll";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+  const { pathname } = useLocation();
   const { brandName, socialLinks } = navbarData;
 
   const toggleMenu = () => {
@@ -15,7 +16,7 @@ function Navbar() {
   };
 
   const handleLogoClick = (e) => {
-    if (window.location.pathname === "/") {
+    if (pathname === "/") {
       e.preventDefault();
       scrollToTop();
     }
@@ -24,9 +25,9 @@ function Navbar() {
   const handleExploreClick = (e, path) => {
     if (path.includes("#")) {
       const [basePath, hash] = path.split("#");
-      if (window.location.pathname === basePath || basePath === "/") {
+      if (pathname === basePath || basePath === "/") {
         e.preventDefault();
-        if (window.location.pathname !== "/") {
+        if (pathname !== "/") {
           navigate("/");
         }
         setTimeout(() => {

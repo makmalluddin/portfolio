@@ -10,7 +10,7 @@
     "description": "Ini adalah aplikasi yang saya buat sebagai pembaruan landing page perusahaan lengkap dengan custom CMS untuk manage berbagai konten yang ditampilkan di landing page.",
     "repoUrl": "",
     "liveDemoUrl": "https://sg8group.com/",
-    "heroImage": "src/assets/Project/Corporate Website Revamp/landing_hero.png",
+    "heroImage": "src/assets/Project/Corporate Website Revamp/landing_hero.webp",
     "metaData": [
       {
         "id": "1",
@@ -58,22 +58,22 @@
     "galery": [
       {
         "id": "1",
-        "image": "src/assets/Project/Corporate Website Revamp/landing_hero.png",
+        "image": "src/assets/Project/Corporate Website Revamp/landing_hero.webp",
         "caption": "Halaman Utama"
       },
       {
         "id": "2",
-        "image": "src/assets/Project/Corporate Website Revamp/landing_company_profile.png",
+        "image": "src/assets/Project/Corporate Website Revamp/landing_company_profile.webp",
         "caption": "Halaman Profil Perusahaan"
       },
       {
         "id": "3",
-        "image": "src/assets/Project/Corporate Website Revamp/landing_recruitment.png",
+        "image": "src/assets/Project/Corporate Website Revamp/landing_recruitment.webp",
         "caption": "Halaman Recruitment "
       },
       {
         "id": "4",
-        "image": "src/assets/Project/Corporate Website Revamp/landing_article.png",
+        "image": "src/assets/Project/Corporate Website Revamp/landing_article.webp",
         "caption": "Halaman Artikel"
       },
       {
@@ -83,7 +83,7 @@
       },
       {
         "id": "6",
-        "image": "src/assets/Project/Corporate Website Revamp/cms_recruitment.png",
+        "image": "src/assets/Project/Corporate Website Revamp/cms_recruitment.webp",
         "caption": "Halaman Recruitment CMS"
       },
       {
@@ -114,7 +114,7 @@
     "description": "Aplikasi yang saya buat sebagai visualisasi dari data yang didapatkan melalui kegiatan internship & penyedia data pihak ketiga. Data dapat disajikan secara real-time maupun historis sesuai preferensi user.",
     "repoUrl": "https://github.com/makmalluddin/aerosea-monitoring",
     "liveDemoUrl": "",
-    "heroImage": "src/assets/Project/Aerosea Monitoring/landing_dashboard.png",
+    "heroImage": "src/assets/Project/Aerosea Monitoring/landing_dashboard.webp",
     "metaData": [
       {
         "id": "1",
@@ -162,32 +162,32 @@
     "galery": [
       {
         "id": "1",
-        "image": "src/assets/Project/Aerosea Monitoring/landing_dashboard.png",
+        "image": "src/assets/Project/Aerosea Monitoring/landing_dashboard.webp",
         "caption": "Halaman Utama"
       },
       {
         "id": "2",
-        "image": "src/assets/Project/Aerosea Monitoring/landing_information.png",
+        "image": "src/assets/Project/Aerosea Monitoring/landing_information.webp",
         "caption": "Halaman Informasi "
       },
       {
         "id": "3",
-        "image": "src/assets/Project/Aerosea Monitoring/landing_information2.png",
+        "image": "src/assets/Project/Aerosea Monitoring/landing_information2.webp",
         "caption": "Halaman Informasi"
       },
       {
         "id": "4",
-        "image": "src/assets/Project/Aerosea Monitoring/vessel_historis.png",
+        "image": "src/assets/Project/Aerosea Monitoring/vessel_historis.webp",
         "caption": "Halaman Vessel Historis"
       },
       {
         "id": "5",
-        "image": "src/assets/Project/Aerosea Monitoring/vessel_live.png",
+        "image": "src/assets/Project/Aerosea Monitoring/vessel_live.webp",
         "caption": "Halaman Vessel Live"
       },
       {
         "id": "6",
-        "image": "src/assets/Project/Aerosea Monitoring/aircraft_historis.png",
+        "image": "src/assets/Project/Aerosea Monitoring/aircraft_historis.webp",
         "caption": "Halaman Aircraft Historis"
       }
     ]
@@ -203,7 +203,7 @@
     "description": "Ini adalah sistem yang saya buat agar dapat membedakan 2 jenis gas volatile yaitu butana dan metanol. IoT System menggunakan sensor TCD dan TVOC, model yang digunakan untuk Deep Learning adalah ANN.",
     "repoUrl": "https://github.com/makmalluddin/chromatography-gas",
     "liveDemoUrl": "",
-    "heroImage": "src/assets/Project/Gas Chromatography/pengambilan_data.jpeg",
+    "heroImage": "src/assets/Project/Gas Chromatography/pengambilan_data.webp",
     "metaData": [
       {
         "id": "1",
@@ -256,22 +256,22 @@
       },
       {
         "id": "2",
-        "image": "src/assets/Project/Gas Chromatography/design_alat.png",
+        "image": "src/assets/Project/Gas Chromatography/design_alat.webp",
         "caption": "Desain Alat Top"
       },
       {
         "id": "3",
-        "image": "src/assets/Project/Gas Chromatography/design_alat2.png",
+        "image": "src/assets/Project/Gas Chromatography/design_alat2.webp",
         "caption": "Desain Alat Layer 1"
       },
       {
         "id": "4",
-        "image": "src/assets/Project/Gas Chromatography/design_alat3.png",
+        "image": "src/assets/Project/Gas Chromatography/design_alat3.webp",
         "caption": "Desain Alat Layer 2"
       },
       {
         "id": "5",
-        "image": "src/assets/Project/Gas Chromatography/design_alat4.png",
+        "image": "src/assets/Project/Gas Chromatography/design_alat4.webp",
         "caption": "Desain Ruang Sampel"
       },
       {
@@ -301,7 +301,7 @@
       },
       {
         "id": "11",
-        "image": "src/assets/Project/Gas Chromatography/antarmuka_alat.png",
+        "image": "src/assets/Project/Gas Chromatography/antarmuka_alat.webp",
         "caption": "GUI Alat"
       }
     ]
@@ -317,7 +317,7 @@
     "description": "Aplikasi yang saya buat sebagai sistem pencatatan keuangan harian. Aplikasi ini saya bangun agar penggunaan uang harian tercatat secara rapi untuk melacak penggunaan uang.",
     "repoUrl": "https://github.com/makmalluddin/my-finance-app",
     "liveDemoUrl": "https://my-finance-app-green.vercel.app/",
-    "heroImage": "src/assets/Project/My Finance App/landing_login.png",
+    "heroImage": "src/assets/Project/My Finance App/landing_login.webp",
     "metaData": [
       {
         "id": "1",
@@ -365,37 +365,37 @@
     "galery": [
       {
         "id": "1",
-        "image": "src/assets/Project/My Finance App/landing_login.png",
+        "image": "src/assets/Project/My Finance App/landing_login.webp",
         "caption": "Halaman Login & Register"
       },
       {
         "id": "2",
-        "image": "src/assets/Project/My Finance App/dashboard.png",
+        "image": "src/assets/Project/My Finance App/dashboard.webp",
         "caption": "Halaman Utama"
       },
       {
         "id": "3",
-        "image": "src/assets/Project/My Finance App/add_transaction.png",
+        "image": "src/assets/Project/My Finance App/add_transaction.webp",
         "caption": "Halaman Menambah Transaksi"
       },
       {
         "id": "4",
-        "image": "src/assets/Project/My Finance App/filter_transactions.png",
+        "image": "src/assets/Project/My Finance App/filter_transactions.webp",
         "caption": "Halaman Melihat Detail Transaksi"
       },
       {
         "id": "5",
-        "image": "src/assets/Project/My Finance App/summary.png",
+        "image": "src/assets/Project/My Finance App/summary.webp",
         "caption": "Halaman Summary Keuangan"
       },
       {
         "id": "6",
-        "image": "src/assets/Project/My Finance App/supabase.png",
+        "image": "src/assets/Project/My Finance App/supabase.webp",
         "caption": "Database di Supabase"
       },
       {
         "id": "7",
-        "image": "src/assets/Project/My Finance App/supabase_rls_db.png",
+        "image": "src/assets/Project/My Finance App/supabase_rls_db.webp",
         "caption": "Pengaturan RLS (Row Level Security) pada Database"
       }
     ]
@@ -411,7 +411,7 @@
     "description": "Aplikasi yang saya buat untuk memprediksi waktu pengiriman barang berdasarkan variabel tertentu di bandingkan dengan estimasi yang diberikan pihak logistik.",
     "repoUrl": "https://github.com/makmalluddin/shipping-prediction",
     "liveDemoUrl": "",
-    "heroImage": "src/assets/Project/Delivery Time Accuracy Prediction/dashboard.jpeg",
+    "heroImage": "src/assets/Project/Delivery Time Accuracy Prediction/dashboard.webp",
     "metaData": [
       {
         "id": "1",
@@ -459,7 +459,7 @@
     "galery": [
       {
         "id": "1",
-        "image": "src/assets/Project/Delivery Time Accuracy Prediction/dashboard.jpeg",
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/dashboard.webp",
         "caption": "Halaman Utama"
       },
       {
@@ -505,7 +505,7 @@
     "description": "Mengembangkan sistem machine learning untuk memprediksi kualitas udara berdasarkan level ozon dengan 18 fitur environmental. Mengaplikasikan FFT untuk ekstraksi fitur dan 3 model machine learning untuk prediksi.",
     "repoUrl": "https://github.com/makmalluddin/ozon-detection",
     "liveDemoUrl": "",
-    "heroImage": "src/assets/Project/Ozon Level Detection/datasets.png",
+    "heroImage": "src/assets/Project/Ozon Level Detection/datasets.webp",
     "metaData": [
       {
         "id": "1",
@@ -553,7 +553,7 @@
     "galery": [
       {
         "id": "1",
-        "image": "src/assets/Project/Ozon Level Detection/data_cleaning.png",
+        "image": "src/assets/Project/Ozon Level Detection/data_cleaning.webp",
         "caption": "Data Cleaning - Missing Value"
       },
       {
@@ -568,27 +568,27 @@
       },
       {
         "id": "4",
-        "image": "src/assets/Project/Ozon Level Detection/eda_2.png",
+        "image": "src/assets/Project/Ozon Level Detection/eda_2.webp",
         "caption": "EDA - Histogram"
       },
       {
         "id": "5",
-        "image": "src/assets/Project/Ozon Level Detection/fft_implementation.png",
+        "image": "src/assets/Project/Ozon Level Detection/fft_implementation.webp",
         "caption": "Implementasi FFT"
       },
       {
         "id": "6",
-        "image": "src/assets/Project/Ozon Level Detection/fft_implementation2.png",
+        "image": "src/assets/Project/Ozon Level Detection/fft_implementation2.webp",
         "caption": "Implementasi FFT"
       },
       {
         "id": "7",
-        "image": "src/assets/Project/Ozon Level Detection/heatmap.png",
+        "image": "src/assets/Project/Ozon Level Detection/heatmap.webp",
         "caption": "Heatmap"
       },
       {
         "id": "8",
-        "image": "src/assets/Project/Ozon Level Detection/pca.png",
+        "image": "src/assets/Project/Ozon Level Detection/pca.webp",
         "caption": "Principle Component Analysis (PCA)"
       },
       {
@@ -619,7 +619,7 @@
     "description": "Membuat model regresi untuk memprediksi powerpant energy menggunakan 4 parameter utama. Mengevaluasi lima algoritma regresi untuk membandingakan efektivitas model dalam mengestimasi produksi energi listrik bersih per jam (PE).",
     "repoUrl": "https://github.com/makmalluddin/powerplant-regression",
     "liveDemoUrl": "",
-    "heroImage": "src/assets/Project/Powerplant/dataset.png",
+    "heroImage": "src/assets/Project/Powerplant/dataset.webp",
     "metaData": [
       {
         "id": "1",

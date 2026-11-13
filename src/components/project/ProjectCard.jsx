@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { colorVariants } from "@/src/data/colorVariants";
 import Reveal from "@/src/components/Reveal";
+import LazyImage from "@/src/components/LazyImage";
 
 function ProjectCard({ project }) {
   const accent = colorVariants[project.accentColor] || colorVariants["blue-1"];
@@ -27,20 +28,24 @@ function ProjectCard({ project }) {
 
       <div className="py-4 overflow-hidden">
         <div className="overflow-hidden aspect-video w-full">
-          <img
+          <LazyImage
             src={project.image}
             alt={project.title}
-            fetchPriority="high"
+            loading="lazy"
+            decoding="async"
+            fetchPriority="low"
+            width="1600"
+            height="900"
             className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
           />
         </div>
       </div>
 
       <div className="flex items-start px-6 py-1">
-        <h3 className="font-inter text-2xl font-semibold">
+        <h2 className="font-inter text-2xl font-semibold">
           {project.title}{" "}
           <span className={accent.text}>{project.highlightTitle}.</span>
-        </h3>
+        </h2>
       </div>
 
       <p className="px-6 text-md leading-relaxed mt-1">

@@ -77,7 +77,7 @@
       {
         "id": "1",
         "caption": "WFH Meeting",
-        "image": "src/assets/Experience/ITProgrammer/WFH_Meeting.jpeg"
+        "image": "src/assets/Experience/ITProgrammer/WFH_Meeting.webp"
       }
     ]
   },
@@ -661,7 +661,7 @@
       {
         "id": "7",
         "caption": "Intern Team",
-        "image": "src/assets/Experience/WebDev/intern_team.jpg"
+        "image": "src/assets/Experience/WebDev/intern_team.webp"
       }
     ]
   },
@@ -1526,37 +1526,37 @@
       {
         "id": "1",
         "caption": "Greenhouse Desa Majalaya",
-        "image": "src/assets/Experience/KKNMajalaya/greenhouse.jpg"
+        "image": "src/assets/Experience/KKNMajalaya/greenhouse.webp"
       },
       {
         "id": "2",
         "caption": "Box 1 - Power Supply & Modem",
-        "image": "src/assets/Experience/KKNMajalaya/panel_1.jpg"
+        "image": "src/assets/Experience/KKNMajalaya/panel_1.webp"
       },
       {
         "id": "3",
         "caption": "Wiring Sistem IoT",
-        "image": "src/assets/Experience/KKNMajalaya/installing_wiring.JPG"
+        "image": "src/assets/Experience/KKNMajalaya/installing_wiring.webp"
       },
       {
         "id": "4",
         "caption": "Instalasi Panel Box",
-        "image": "src/assets/Experience/KKNMajalaya/instalasi_panel.jpg"
+        "image": "src/assets/Experience/KKNMajalaya/instalasi_panel.webp"
       },
       {
         "id": "5",
         "caption": "Box 2 - Relay & Modul",
-        "image": "src/assets/Experience/KKNMajalaya/panel_2.jpg"
+        "image": "src/assets/Experience/KKNMajalaya/panel_2.webp"
       },
       {
         "id": "6",
         "caption": "Implementasi Program di IoT",
-        "image": "src/assets/Experience/KKNMajalaya/programming_iot.JPG"
+        "image": "src/assets/Experience/KKNMajalaya/programming_iot.webp"
       },
       {
         "id": "7",
         "caption": "Tracking Hulu Mata Air",
-        "image": "src/assets/Experience/KKNMajalaya/tracking_hulu.JPG"
+        "image": "src/assets/Experience/KKNMajalaya/tracking_hulu.webp"
       },
       {
         "id": "8",
@@ -1566,7 +1566,7 @@
       {
         "id": "9",
         "caption": "Pembuatan Tiang Penerangan Jalan",
-        "image": "src/assets/Experience/KKNMajalaya/persiapan_tiang_penerangan.JPG"
+        "image": "src/assets/Experience/KKNMajalaya/persiapan_tiang_penerangan.webp"
       }
     ]
   },
@@ -1692,32 +1692,32 @@
       {
         "id": "1",
         "caption": "Sosialisasi Kepada Guru",
-        "image": "src/assets/Experience/KKNSMA/sosialisasi_energi2.jpeg"
+        "image": "src/assets/Experience/KKNSMA/sosialisasi_energi2.webp"
       },
       {
         "id": "2",
         "caption": "Sosialisasi Kepada Siswa",
-        "image": "src/assets/Experience/KKNSMA/sosialisasi_energi3.jpeg"
+        "image": "src/assets/Experience/KKNSMA/sosialisasi_energi3.webp"
       },
       {
         "id": "3",
         "caption": "Instalasi Solar Panel",
-        "image": "src/assets/Experience/KKNSMA/instalasi_panel2.jpeg"
+        "image": "src/assets/Experience/KKNSMA/instalasi_panel2.webp"
       },
       {
         "id": "4",
         "caption": "Hasil Instalasi Solar Panel",
-        "image": "src/assets/Experience/KKNSMA/instalasi_panel.jpeg"
+        "image": "src/assets/Experience/KKNSMA/instalasi_panel.webp"
       },
       {
         "id": "5",
         "caption": "Terbitan Jurnal ",
-        "image": "src/assets/Experience/KKNSMA/jurnal_pengabdian.png"
+        "image": "src/assets/Experience/KKNSMA/jurnal_pengabdian.webp"
       },
       {
         "id": "6",
         "caption": "News KKN",
-        "image": "src/assets/Experience/KKNSMA/berita_pengabdian.png"
+        "image": "src/assets/Experience/KKNSMA/berita_pengabdian.webp"
       }
     ]
   },
@@ -1731,7 +1731,7 @@
     "colorVariantKey": "yellow-1",
     "role": "S1 Fisika Komputasi",
     "companyName": "Universitas Negeri Jakarta",
-    "logo": "src/assets/Logos/unj.png",
+    "logo": "src/assets/Logos/unj.webp",
     "caption": "Menempuh pendidikan S1 Fisika dengan fokus pada fisika komputasi, metode numerik, pemrograman, analisis data, dan pemodelan matematis. Saya juga aktif mengikuti organisasi, kegiatan kepanitiaan, pelatihan, serta program pengembangan kompetensi di luar perkuliahan.",
     "timeline": {
       "months": [
@@ -2034,47 +2034,47 @@
       {
         "id": "1",
         "caption": "After Class",
-        "image": "src/assets/Experience/Kuliah/after_class.jpeg"
+        "image": "src/assets/Experience/Kuliah/after_class.webp"
       },
       {
         "id": "2",
         "caption": "Bersama Dosen",
-        "image": "src/assets/Experience/Kuliah/after_class2.jpeg"
+        "image": "src/assets/Experience/Kuliah/after_class2.webp"
       },
       {
         "id": "3",
         "caption": "Buka Bersama Fisika",
-        "image": "src/assets/Experience/Kuliah/buka_bersama_fisika.jpeg"
+        "image": "src/assets/Experience/Kuliah/buka_bersama_fisika.webp"
       },
       {
         "id": "4",
         "caption": "Panitia PKMP",
-        "image": "src/assets/Experience/Kuliah/panitia_pkmp.JPG"
+        "image": "src/assets/Experience/Kuliah/panitia_pkmp.webp"
       },
       {
         "id": "5",
         "caption": "Panitia PKMP",
-        "image": "src/assets/Experience/Kuliah/panitia_pkmp2.jpg"
+        "image": "src/assets/Experience/Kuliah/panitia_pkmp2.webp"
       },
       {
         "id": "6",
         "caption": "Tim Evaluasi OJS UNJ",
-        "image": "src/assets/Experience/Kuliah/evaluasi_jurnal.jpeg"
+        "image": "src/assets/Experience/Kuliah/evaluasi_jurnal.webp"
       },
       {
         "id": "7",
         "caption": "Asisten Laboratorium",
-        "image": "src/assets/Experience/Kuliah/aslab_elektronika.jpeg"
+        "image": "src/assets/Experience/Kuliah/aslab_elektronika.webp"
       },
       {
         "id": "8",
         "caption": "Persiapan Perkuliahan",
-        "image": "src/assets/Experience/Kuliah/prepare_perkuliahan.jpeg"
+        "image": "src/assets/Experience/Kuliah/prepare_perkuliahan.webp"
       },
       {
         "id": "9",
         "caption": "Panitia PKKMB Fisika",
-        "image": "src/assets/Experience/Kuliah/panitia_pkkmb.jpeg"
+        "image": "src/assets/Experience/Kuliah/panitia_pkkmb.webp"
       },
       {
         "id": "10",

@@ -23,9 +23,9 @@ function ExperienceCard({ experience }) {
       <div className="flex-1 flex flex-col gap-2">
         <div className="flex flex-col w-full">
           <div className="w-full flex justify-between items-center">
-            <h4 className="text-2xl md:text-3xl font-bold scale-y-90 text-text-primary">
+            <h2 className="text-2xl md:text-3xl font-bold scale-y-90 text-text-primary">
               {experience.role}
-            </h4>
+            </h2>
             <ArrowRight className="w-6 h-6 text-text-primary transition-transform duration-200 group-hover:translate-x-2" />
           </div>
           <p className="font-medium text-text-secondary mt-1">
