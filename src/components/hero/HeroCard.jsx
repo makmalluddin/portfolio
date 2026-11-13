@@ -25,9 +25,9 @@ function HeroCard({ data }) {
         }
         className="py-2 px-4 md:px-8"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 py-6 md:py-10 gap-8 md:gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 py-6 md:py-28 gap-8 md:gap-0">
           <div className="flex flex-col gap-4">
-            <h1 className="flex flex-col font-bold text-3xl sm:text-4xl md:text-5xl tracking-normal">
+            <h1 className="flex flex-col font-bold text-3xl sm:text-5xl md:text-6xl tracking-normal">
               <span>{titleLine1}</span>
               <span className="text-blue-2">{titleLine2}</span>
             </h1>
@@ -45,8 +45,8 @@ function HeroCard({ data }) {
               >
                 DOWNLOAD CV
               </Button>
-              <Button type={'light'} href={worksHref}>
-                MY WORKS
+              <Button type={'light'} href={'/experiences'}>
+                MY EXPERIENCE
               </Button>
             </div>
           </div>
@@ -63,7 +63,7 @@ function HeroCard({ data }) {
 
       {/* Hero Stats Frame */}
       <MainFrame>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-border-muted">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y sm:divide-x divide-border-muted">
           <div className="flex items-center justify-start py-4 md:py-2 px-6 md:px-8 gap-1 text-text-muted">
             <span className="text-xl md:text-2xl text-red-1">Apa </span>{" "}
             {statsTagline}

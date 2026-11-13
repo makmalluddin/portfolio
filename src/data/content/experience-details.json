@@ -595,13 +595,13 @@
         "id": "2",
         "icon": "clock",
         "title": "Kontribusi",
-        "description": "Selama internship, saya berfokus pada pengembangan corporate website dan CMS. Tanggung jawab utama saya mencakup pengembangan modul recruitment dari sisi frontend dan backend, integrasi dengan CMS, migrasi domain dan server perusahaan, serta deployment aplikasi ke server produksi."
+        "description": "Saya mengembangkan modul recruitment yang terintegrasi dengan CMS sehingga tim internal dapat mengelola informasi rekrutmen secara mandiri. Modul tersebut telah digunakan oleh tim internal. Saya juga membantu proses migrasi domain dan server serta menyiapkan deployment aplikasi pada infrastruktur baru."
       },
       {
         "id": "3",
         "icon": "briefcase",
         "title": "Tantangan & Solusi",
-        "description": "Selama internship, saya berfokus pada pengembangan corporate website dan CMS. Tanggung jawab utama saya mencakup pengembangan modul recruitment dari sisi frontend dan backend, integrasi dengan CMS, migrasi domain dan server perusahaan, serta deployment aplikasi ke server produksi."
+        "description": "Saya perlu beradaptasi dengan Laravel sebagai framework baru sekaligus menangani kendala deployment akibat resource server yang penuh oleh proses dan layanan lama. Saya mempelajari Laravel sambil merancang UI/UX pada bulan pertama, lalu mengidentifikasi dan menghentikan proses yang tidak diperlukan serta mengoptimalkan ukuran aplikasi sebelum deployment."
       },
       {
         "id": "4",

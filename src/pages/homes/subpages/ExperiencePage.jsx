@@ -37,7 +37,7 @@ function ExperiencePage() {
             <span className="text-blue-2">Profesional </span>& Non-Formal.
           </h3>
           <p>
-            Pengalaman kerja, freelance, volunteer, & bootcamp.
+            Pengalaman kerja, freelance, volunteer, & pendidikan.
           </p>
         </div>
 
