@@ -1,0 +1,18 @@
+[
+  {
+    "id": "cat-1",
+    "label": "Professional"
+  },
+  {
+    "id": "cat-2",
+    "label": "Freelance"
+  },
+  {
+    "id": "cat-3",
+    "label": "Volunteer"
+  },
+  {
+    "id": "cat-4",
+    "label": "Pendidikan"
+  }
+]

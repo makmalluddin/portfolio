@@ -1,0 +1,2410 @@
+[
+  {
+    "id": "1",
+    "slug": "it-programmer",
+    "relatedProjectKeys": [],
+    "colorVariantKey": "pink-1",
+    "role": "IT Programmer (R&D)",
+    "companyName": "PT CARE TECHNOLOGIES",
+    "logo": "src/assets/Logos/logo-nav.png",
+    "caption": "Melakukan deployment aplikasi ke lingkungan produksi, memelihara sistem aplikasi, melakukan debugging untuk mengatasi problem yang terjadi.",
+    "timeline": {
+      "months": [
+        {
+          "id": "month-1",
+          "label": "Nov 2026",
+          "weeks": 4
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task-1",
+          "name": "Training",
+          "allocation": {
+            "month-1": {
+              "M1": true,
+              "M2": true,
+              "M3": false,
+              "M4": false
+            }
+          }
+        }
+      ]
+    },
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "value": "2026"
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "value": "Saat Ini"
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "value": "Contract"
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "value": "Jakarta"
+      }
+    ],
+    "detailPengalaman": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "title": "Tanggung Jawab",
+        "description": "Melakukan deployment aplikasi ke lingkungan produksi, memelihara sistem aplikasi, melakukan debugging untuk mengatasi problem yang terjadi."
+      }
+    ],
+    "teknologi": [
+      {
+        "id": "1",
+        "type": "Alat Pengembangan",
+        "tools": "Visual Studio Basic, SQL Server Management Studio, Remote Desktop"
+      },
+      {
+        "id": "2",
+        "type": "Pemrograman",
+        "tools": ".Net 4.8, ASP.Net, Microsoft SQL"
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "caption": "WFH Meeting",
+        "image": "src/assets/Experience/ITProgrammer/WFH_Meeting.webp"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "slug": "web-developer",
+    "relatedProjectKeys": [
+      "corporate-website"
+    ],
+    "colorVariantKey": "blue-1",
+    "role": "Web Developer",
+    "companyName": "PT DWITUNGGAL JAYA PRATAMA MAJU (SG8 GROUP)",
+    "logo": "src/assets/Logos/sg8_logo.webp",
+    "caption": "Mengembangkan dan mengelola kebutuhan corporate website melalui pengembangan modul recruitment, integrasi frontend dan backend, serta CMS. Saya juga terlibat dalam proses migrasi domain, server, dan deployment aplikasi ke lingkungan produksi.",
+    "timeline": {
+      "months": [
+        {
+          "id": "month-1",
+          "label": "Des 2025",
+          "weeks": 4
+        },
+        {
+          "id": "month-2",
+          "label": "Jan 2026",
+          "weeks": 4
+        },
+        {
+          "id": "month-3",
+          "label": "Feb 2026",
+          "weeks": 4
+        },
+        {
+          "id": "month-4",
+          "label": "Mar 2026",
+          "weeks": 4
+        },
+        {
+          "id": "month-5",
+          "label": "Apr 2026",
+          "weeks": 4
+        },
+        {
+          "id": "month-6",
+          "label": "Mei 2026",
+          "weeks": 4
+        },
+        {
+          "id": "month-7",
+          "label": "Juni 2026",
+          "weeks": 4
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task-1",
+          "name": "Kick off bersama perusahaan online",
+          "allocation": {
+            "month-1": {
+              "M1": false,
+              "M2": true,
+              "M3": false,
+              "M4": false
+            },
+            "month-2": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-3": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-4": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-5": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-6": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-7": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-2",
+          "name": "Analisis brand dan SWOT perusahaan",
+          "allocation": {
+            "month-1": {
+              "M1": false,
+              "M2": true,
+              "M3": true,
+              "M4": false
+            },
+            "month-2": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-3": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-4": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-5": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-6": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-7": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-3",
+          "name": "Activity plan bersama mentor",
+          "allocation": {
+            "month-1": {
+              "M1": false,
+              "M2": false,
+              "M3": true,
+              "M4": false
+            },
+            "month-2": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-3": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-4": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-5": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-6": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-7": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-4",
+          "name": "Pitch deck activity bersama mentor",
+          "allocation": {
+            "month-1": {
+              "M1": false,
+              "M2": false,
+              "M3": true,
+              "M4": true
+            },
+            "month-2": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-3": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-4": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-5": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-6": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-7": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-5",
+          "name": "Membuat mock up Ui/UX website",
+          "allocation": {
+            "month-1": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-2": {
+              "M1": true,
+              "M2": true,
+              "M3": false,
+              "M4": false
+            },
+            "month-3": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-4": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-5": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-6": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-7": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-6",
+          "name": "Set up awal aplikasi dan version control",
+          "allocation": {
+            "month-1": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-2": {
+              "M1": false,
+              "M2": false,
+              "M3": true,
+              "M4": false
+            },
+            "month-3": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-4": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-5": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-6": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-7": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-7",
+          "name": "Pengembangan core backend & CMS",
+          "allocation": {
+            "month-1": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-2": {
+              "M1": false,
+              "M2": false,
+              "M3": true,
+              "M4": true
+            },
+            "month-3": {
+              "M1": true,
+              "M2": true,
+              "M3": true,
+              "M4": true
+            },
+            "month-4": {
+              "M1": true,
+              "M2": true,
+              "M3": true,
+              "M4": true
+            },
+            "month-5": {
+              "M1": true,
+              "M2": true,
+              "M3": true,
+              "M4": true
+            },
+            "month-6": {
+              "M1": true,
+              "M2": true,
+              "M3": true,
+              "M4": false
+            },
+            "month-7": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-1794119079865",
+          "name": "Pengembangan frontend & integrasi",
+          "allocation": {
+            "month-2": {
+              "M4": false
+            },
+            "month-3": {
+              "M1": true,
+              "M2": true,
+              "M3": true,
+              "M4": true
+            },
+            "month-4": {
+              "M1": true,
+              "M2": true,
+              "M3": true,
+              "M4": true
+            },
+            "month-5": {
+              "M1": true,
+              "M2": true,
+              "M3": true,
+              "M4": true
+            },
+            "month-6": {
+              "M1": true,
+              "M2": true,
+              "M3": true,
+              "M4": false
+            },
+            "month-7": {
+              "M1": false,
+              "M2": false
+            }
+          }
+        },
+        {
+          "id": "task-1794120700969",
+          "name": "Training Internal software engineering",
+          "allocation": {
+            "month-3": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794120755120",
+          "name": "Evaluasi projek fase 1",
+          "allocation": {
+            "month-3": {
+              "M3": false
+            },
+            "month-4": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794120834656",
+          "name": "Evaluasi projek fase 2",
+          "allocation": {
+            "month-6": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794120914189",
+          "name": "Debugging dan penyesuaian kesesuaian logic bisnis code",
+          "allocation": {
+            "month-6": {
+              "M2": true,
+              "M3": true,
+              "M4": true
+            }
+          }
+        },
+        {
+          "id": "task-1794120940888",
+          "name": "Deployment aplikasi",
+          "allocation": {
+            "month-6": {
+              "M4": true
+            },
+            "month-7": {
+              "M1": true,
+              "M2": true,
+              "M3": false,
+              "M4": false
+            }
+          }
+        }
+      ]
+    },
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "value": "2026"
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "value": "6 Bulan"
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "value": "Internship"
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "value": "Jakarta"
+      }
+    ],
+    "detailPengalaman": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "title": "Tanggung Jawab",
+        "description": "Selama internship, saya berfokus pada pengembangan corporate website dan CMS. Tanggung jawab utama saya mencakup pengembangan modul recruitment dari sisi frontend dan backend, integrasi dengan CMS, migrasi domain dan server perusahaan, serta deployment aplikasi ke server produksi."
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "title": "Kontribusi",
+        "description": "Saya mengembangkan modul recruitment yang terintegrasi dengan CMS sehingga tim internal dapat mengelola informasi rekrutmen secara mandiri. Modul tersebut telah digunakan oleh tim internal. Saya juga membantu proses migrasi domain dan server serta menyiapkan deployment aplikasi pada infrastruktur baru."
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "title": "Tantangan & Solusi",
+        "description": "Saya perlu beradaptasi dengan Laravel sebagai framework baru sekaligus menangani kendala deployment akibat resource server yang penuh oleh proses dan layanan lama. Saya mempelajari Laravel sambil merancang UI/UX pada bulan pertama, lalu mengidentifikasi dan menghentikan proses yang tidak diperlukan serta mengoptimalkan ukuran aplikasi sebelum deployment."
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "title": "Hasil & Dampak",
+        "description": "Modul recruitment berhasil dikembangkan dan telah digunakan oleh tim internal untuk mengelola informasi rekrutmen melalui CMS. Saya juga terlibat dalam migrasi domain dan server serta deployment website ke lingkungan baru. Pengalaman ini memperkuat pemahaman saya tentang workflow Full-Stack Developer dan deployment aplikasi."
+      }
+    ],
+    "teknologi": [
+      {
+        "id": "1",
+        "type": "Alat Pengembangan",
+        "tools": "Visual Studio Code, Git, GitHub, Postman, Figma, Canva, Notion, cPanel, Linux"
+      },
+      {
+        "id": "2",
+        "type": "Frontend",
+        "tools": "Javascript, Next.js, React.js, Tailwind CSS"
+      },
+      {
+        "id": "3",
+        "type": "Backend",
+        "tools": "PHP, Laravel, REST API"
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "caption": "Lingkungan Kerja",
+        "image": "src/assets/Experience/WebDev/workspace.webp"
+      },
+      {
+        "id": "2",
+        "caption": "Pengembangan Landing Page",
+        "image": "src/assets/Experience/WebDev/dashboard_revamp.webp"
+      },
+      {
+        "id": "3",
+        "caption": "Pengembangan CMS",
+        "image": "src/assets/Experience/WebDev/cms.webp"
+      },
+      {
+        "id": "4",
+        "caption": "Proses Pengembangan",
+        "image": "src/assets/Experience/WebDev/coding.webp"
+      },
+      {
+        "id": "5",
+        "caption": "Presentasi Progress",
+        "image": "src/assets/Experience/WebDev/presentation.webp"
+      },
+      {
+        "id": "6",
+        "caption": "IT Team Intern",
+        "image": "src/assets/Experience/WebDev/it_team.jpg"
+      },
+      {
+        "id": "7",
+        "caption": "Intern Team",
+        "image": "src/assets/Experience/WebDev/intern_team.webp"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "slug": "junior-software-engineer",
+    "relatedProjectKeys": [
+      "aerosea-monitoring"
+    ],
+    "colorVariantKey": "yellow-1",
+    "role": "Junior Software Engineer",
+    "companyName": "PT IndoMega Teknologi",
+    "logo": "src/assets/Logos/logo_indomega.png",
+    "caption": "Mendukung tim R&D melalui analisis data vessel, pengembangan prototype Smart System Fuelling, serta sistem IoT berbasis Arduino dan Raspberry Pi. Saya juga mengembangkan AIS Receiver dan dashboard monitoring yang mengintegrasikan data kapal dan pesawat secara real-time.",
+    "timeline": {
+      "months": [
+        {
+          "id": "month-1",
+          "label": "Feb 2024",
+          "weeks": 4
+        },
+        {
+          "id": "month-2",
+          "label": "Mar 2024",
+          "weeks": 4
+        },
+        {
+          "id": "month-3",
+          "label": "Apr 2024",
+          "weeks": 4
+        },
+        {
+          "id": "month-4",
+          "label": "Mei 2024",
+          "weeks": 4
+        },
+        {
+          "id": "month-5",
+          "label": "Juni 2024",
+          "weeks": 4
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task-1793852606103",
+          "name": "Rekap dan Analisis data vessel",
+          "allocation": {
+            "month-1": {
+              "M1": true,
+              "M2": true,
+              "M4": false
+            },
+            "month-2": {
+              "M1": false,
+              "M2": false,
+              "M3": false
+            }
+          }
+        },
+        {
+          "id": "task-1794117768320",
+          "name": "Studi Literatur Vue.js dan Packet Tracer",
+          "allocation": {
+            "month-1": {
+              "M2": true,
+              "M3": true,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-1794117841450",
+          "name": "Simulasi jaringan dengan Packet Tracer",
+          "allocation": {
+            "month-1": {
+              "M3": true,
+              "M4": true
+            }
+          }
+        },
+        {
+          "id": "task-1794117901119",
+          "name": "Belajar linux Debian beserta konfigurasi",
+          "allocation": {
+            "month-1": {
+              "M4": true
+            }
+          }
+        },
+        {
+          "id": "task-1794117931380",
+          "name": "Projek hotswap audio arduino",
+          "allocation": {
+            "month-2": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794117960930",
+          "name": "Support perakitan alat Smart System Fuelling",
+          "allocation": {
+            "month-2": {
+              "M1": true,
+              "M2": true,
+              "M3": true,
+              "M4": true
+            },
+            "month-3": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794118051811",
+          "name": "Perencanaan projek akhir bersama mentor",
+          "allocation": {
+            "month-3": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794118078530",
+          "name": "Tahap programming projek akhir",
+          "allocation": {
+            "month-3": {
+              "M1": true,
+              "M2": true,
+              "M3": true,
+              "M4": true
+            },
+            "month-4": {
+              "M1": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118169712",
+          "name": "Merancang dan menguji IoT Pooling data",
+          "allocation": {
+            "month-4": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794118213090",
+          "name": "Mengumpulkan data dengan IoT Ais Receiver",
+          "allocation": {
+            "month-4": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794118231883",
+          "name": "Mengolah data dengan Python",
+          "allocation": {
+            "month-4": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794118260523",
+          "name": "Lanjut pembuatan dashboard visualisasi data",
+          "allocation": {
+            "month-4": {
+              "M2": true,
+              "M3": true,
+              "M4": true
+            },
+            "month-5": {
+              "M1": false,
+              "M2": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118287190",
+          "name": "Debugging dan penyempurnaan UI",
+          "allocation": {
+            "month-4": {
+              "M4": true
+            },
+            "month-5": {
+              "M1": true,
+              "M2": false,
+              "M3": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118313531",
+          "name": "Penyusunan laporan akhir",
+          "allocation": {
+            "month-5": {
+              "M1": true,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118411211",
+          "name": "Monev dan presentasi projek akhir bersama mentor dan dosen",
+          "allocation": {
+            "month-5": {
+              "M1": true
+            }
+          }
+        }
+      ]
+    },
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "value": "2024"
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "value": "5 Bulan"
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "value": "Internship"
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "value": "Jakarta"
+      }
+    ],
+    "detailPengalaman": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "title": "Tanggung Jawab",
+        "description": "Selama internship di Indomega, saya mendukung tim R&D melalui analisis data vessel yang hilang dari server, pembuatan prototype Smart System Fuelling, serta pengembangan beberapa sistem IoT menggunakan Arduino dan Raspberry Pi. Saya juga mengembangkan AIS Receiver untuk mengumpulkan dan memproses data kapal."
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "title": "Kontribusi",
+        "description": "Saya mengembangkan AIS Receiver untuk mengumpulkan dan melakukan decoding data AIS menggunakan Python. Saya juga membangun dashboard website yang mengintegrasikan data kapal dari AISStream.io dan data pesawat dari OpenSky Network untuk visualisasi secara real-time."
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "title": "Tantangan & Solusi",
+        "description": "Tantangan yang saya hadapi meliputi memahami standar pengembangan IoT perusahaan, mengintegrasikan Raspberry Pi dengan server untuk pengumpulan data, serta menggunakan peralatan dalam pembuatan prototype. Saya melakukan riset, berdiskusi dengan senior, dan menguji konfigurasi Raspberry Pi melalui jaringan lokal sebelum menghubungkannya ke server perusahaan."
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "title": "Hasil & Dampak",
+        "description": "Saya turut menghasilkan sistem AIS Receiver untuk pengumpulan data kapal serta dashboard monitoring yang mengintegrasikan data kapal dan pesawat secara real-time melalui AISStream.io dan OpenSky Network. Pengalaman ini memperluas pemahaman saya tentang IoT, integrasi API, pengolahan data, dan pengembangan dashboard."
+      }
+    ],
+    "teknologi": [
+      {
+        "id": "1",
+        "type": "Alat Pengembangan",
+        "tools": "Visual Studio Code, Git, GitHub, Postman, Canva, Linux Debian, Microsoft Server"
+      },
+      {
+        "id": "2",
+        "type": "Web Development",
+        "tools": "HTML, CSS, Javascript, Express.js, Leaflet.js."
+      },
+      {
+        "id": "3",
+        "type": "IoT",
+        "tools": "Arduino, Esp32, Raspberry Pi 5, C++, Sensor."
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "caption": "Analisis Data Kapal yang Hilang",
+        "image": "src/assets/Experience/JuniorSwe/analytics.webp"
+      },
+      {
+        "id": "2",
+        "caption": "Sistem AIS Receiver",
+        "image": "src/assets/Experience/JuniorSwe/ais_receiver.webp"
+      },
+      {
+        "id": "3",
+        "caption": "Assembly AIS Receiver",
+        "image": "src/assets/Experience/JuniorSwe/pemasangan_ais.webp"
+      },
+      {
+        "id": "4",
+        "caption": "Instalasi Antena AIS Receiver",
+        "image": "src/assets/Experience/JuniorSwe/pemasangan_antena.webp"
+      },
+      {
+        "id": "5",
+        "caption": "Presentasi Projek Final",
+        "image": "src/assets/Experience/JuniorSwe/code_presentation.webp"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "slug": "smartnerdies",
+    "relatedProjectKeys": [],
+    "colorVariantKey": "blue-2",
+    "role": "IT & Electronics Engineer",
+    "companyName": "Smartnerdies",
+    "logo": "src/assets/Logos/smartnerdies.jpg",
+    "caption": "Menangani berbagai proyek freelance di bidang software development dan elektronika, mulai dari pengembangan aplikasi, perancangan skematik dan PCB, desain sistem elektronika, hingga pemodelan sistem cerdas menggunakan MATLAB Simulink.",
+    "timeline": {
+      "months": [
+        {
+          "id": "month-1",
+          "label": "2024 (Juni - Sept)",
+          "weeks": 4
+        },
+        {
+          "id": "month-2",
+          "label": "2024 (Okt - Des)",
+          "weeks": 3
+        },
+        {
+          "id": "month-3",
+          "label": "2025 (Jan - Apr)",
+          "weeks": 4
+        },
+        {
+          "id": "month-4",
+          "label": "2025 (Mei - Agust)",
+          "weeks": 4
+        },
+        {
+          "id": "month-5",
+          "label": "2025 (Sept - Des)",
+          "weeks": 4
+        },
+        {
+          "id": "month-6",
+          "label": "2026 (Jan - Apr)",
+          "weeks": 4
+        },
+        {
+          "id": "month-7",
+          "label": "2026 (Mei - Juli)",
+          "weeks": 4
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task-1793852606103",
+          "name": "Kursus Komputer Apps",
+          "allocation": {
+            "month-1": {
+              "M1": false,
+              "M2": true,
+              "M4": false
+            },
+            "month-2": {
+              "M1": false,
+              "M2": false,
+              "M3": false
+            }
+          }
+        },
+        {
+          "id": "task-1794477069519",
+          "name": "Economic Planning",
+          "allocation": {
+            "month-1": {
+              "M2": true,
+              "M3": false
+            }
+          }
+        },
+        {
+          "id": "task-1794477091899",
+          "name": "Calculus Calculation",
+          "allocation": {
+            "month-1": {
+              "M3": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477119959",
+          "name": "ML Model Calculation",
+          "allocation": {
+            "month-1": {
+              "M4": true
+            },
+            "month-2": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477136450",
+          "name": "Modul Pembelajaran",
+          "allocation": {
+            "month-2": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477178438",
+          "name": "ML Model Prediction",
+          "allocation": {
+            "month-2": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477196030",
+          "name": "Kalkulasi Beban Mekanikal",
+          "allocation": {
+            "month-2": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477206670",
+          "name": "LTSPICE - Penguat Tegangan",
+          "allocation": {
+            "month-3": {
+              "M3": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477246540",
+          "name": "LTSPICE - Bridge Circuit",
+          "allocation": {
+            "month-3": {
+              "M3": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477257350",
+          "name": "LTSPICE - JFET",
+          "allocation": {
+            "month-4": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477276441",
+          "name": "LTSPICE - Mosfet",
+          "allocation": {
+            "month-4": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477288691",
+          "name": "Simulink - Tank Konsep",
+          "allocation": {
+            "month-4": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477304301",
+          "name": "LTSPICE - Optocoupler",
+          "allocation": {
+            "month-4": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477314521",
+          "name": "Electronic Skematik",
+          "allocation": {
+            "month-4": {
+              "M1": true,
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477337182",
+          "name": "LTSPICE - BJT",
+          "allocation": {
+            "month-4": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477355932",
+          "name": "EW - Gerbang Logika",
+          "allocation": {
+            "month-4": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477376631",
+          "name": "PCB - Low Pass Filter",
+          "allocation": {
+            "month-4": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477388869",
+          "name": "PCB - Thermistor",
+          "allocation": {
+            "month-4": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477400090",
+          "name": "Technical Report",
+          "allocation": {
+            "month-4": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477408230",
+          "name": "LTSPICE - Biasing MOS",
+          "allocation": {
+            "month-5": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477456380",
+          "name": "LTSPICE - Tapis Lolos",
+          "allocation": {
+            "month-5": {
+              "M4": true
+            }
+          }
+        }
+      ]
+    },
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "value": "2024 - 2026"
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "value": "2 Tahun"
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "value": "Freelance"
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "value": "Jakarta"
+      }
+    ],
+    "detailPengalaman": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "title": "Tanggung Jawab",
+        "description": "Sebagai freelancer, saya menangani berbagai pekerjaan berdasarkan kebutuhan dan kesepakatan dengan klien. Ruang lingkup pekerjaan meliputi pengembangan aplikasi, perancangan skematik dan desain PCB, desain sistem elektronika, serta pemodelan sistem cerdas menggunakan MATLAB Simulink."
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "title": "Kontribusi",
+        "description": "Saya mengerjakan berbagai kebutuhan teknis klien, mulai dari pengembangan aplikasi hingga perancangan perangkat elektronika dan pemodelan sistem. Setiap pekerjaan disesuaikan dengan spesifikasi, kebutuhan, serta hasil yang diharapkan oleh klien."
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "title": "Tantangan & Solusi",
+        "description": "Tantangan utama dalam pekerjaan freelance adalah menyelesaikan proyek dengan tenggat waktu yang relatif singkat dan kebutuhan klien yang beragam. Untuk mengatasinya, saya menerapkan time boxing, menyusun prioritas pekerjaan, dan mengatur alokasi waktu agar setiap proyek dapat diselesaikan sesuai kesepakatan."
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "title": "Hasil & Dampak",
+        "description": "Pengalaman freelance ini memperluas kemampuan saya dalam menangani kebutuhan teknis lintas bidang sekaligus berinteraksi langsung dengan klien. Saya juga mengembangkan kemampuan mengelola waktu, memahami kebutuhan pengguna, dan menjaga tanggung jawab terhadap pekerjaan serta kesepakatan yang telah dibuat."
+      }
+    ],
+    "teknologi": [
+      {
+        "id": "1",
+        "type": "Alat Pengembangan",
+        "tools": "Visual Studio Code, Delphi 11, Python, HTML, CSS, JavaScript, Simulink"
+      },
+      {
+        "id": "2",
+        "type": "Elektronika",
+        "tools": "LTspice, KiCad, Electronic Workbench, PCB Design, PCB Assembly, Osiloskop"
+      },
+      {
+        "id": "3",
+        "type": "Alat Produktivitas",
+        "tools": "MS. Office (Word, Excel)"
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "caption": "Aplikasi Kursus dengan Delphi 11",
+        "image": "src/assets/Experience/Smartnerdies/dashboard_apps.jpeg"
+      },
+      {
+        "id": "2",
+        "caption": "Contoh Penggunaan Aplikasi",
+        "image": "src/assets/Experience/Smartnerdies/example_apps.jpeg"
+      },
+      {
+        "id": "3",
+        "caption": "Contoh Pengaturan DB Aplikasi",
+        "image": "src/assets/Experience/Smartnerdies/db_apps.jpeg"
+      },
+      {
+        "id": "4",
+        "caption": "LTSPICE Skematik Rangkaian",
+        "image": "src/assets/Experience/Smartnerdies/ltspice_modelling.jpeg"
+      },
+      {
+        "id": "5",
+        "caption": "Analisa Kalkulasi Pembuatan Rangkaian",
+        "image": "src/assets/Experience/Smartnerdies/calculation_rangkaian.jpeg"
+      },
+      {
+        "id": "6",
+        "caption": "LTSPICE Output .op Skematik",
+        "image": "src/assets/Experience/Smartnerdies/ltspice_op.jpeg"
+      },
+      {
+        "id": "7",
+        "caption": "PCB Design Dengan Kicad",
+        "image": "src/assets/Experience/Smartnerdies/pcb_design_kicad.jpeg"
+      },
+      {
+        "id": "8",
+        "caption": "Skematik Design Dengan Kicad",
+        "image": "src/assets/Experience/Smartnerdies/schematic_kicad.jpeg"
+      },
+      {
+        "id": "9",
+        "caption": "Pengujian PCB",
+        "image": "src/assets/Experience/Smartnerdies/solder_pcb.jpeg"
+      },
+      {
+        "id": "10",
+        "caption": "PCB Design Dengan Kicad",
+        "image": "src/assets/Experience/Smartnerdies/pcb_design_kicad2.jpeg"
+      },
+      {
+        "id": "11",
+        "caption": "Tank System Dengan Simulink",
+        "image": "src/assets/Experience/Smartnerdies/model_tank_simulink.jpeg"
+      },
+      {
+        "id": "12",
+        "caption": "Fuzzy Logic Untuk Tank",
+        "image": "src/assets/Experience/Smartnerdies/fuzzy_tank.jpeg"
+      },
+      {
+        "id": "13",
+        "caption": "Fuzzy Logic Untuk Tank ",
+        "image": "src/assets/Experience/Smartnerdies/fuzzy_tank2.jpeg"
+      },
+      {
+        "id": "14",
+        "caption": "Pengujian Tank Simulink",
+        "image": "src/assets/Experience/Smartnerdies/fuzzy_pengujian.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "desa-majalaya",
+    "relatedProjectKeys": [],
+    "colorVariantKey": "green-1",
+    "role": "Koordinator Engineering",
+    "companyName": "Desa Majalaya",
+    "logo": "src/assets/Logos/majalaya.png",
+    "caption": "Mengoordinasikan pengembangan sistem IoT greenhouse untuk memantau kelembapan, suhu, tekanan, dan ketinggian air kolam, serta mengotomatisasi penyiraman. Saya juga terlibat dalam instalasi penerangan jalan dan perawatan panel surya desa.",
+    "timeline": {
+      "months": [
+        {
+          "id": "month-1",
+          "label": "Juli 2024",
+          "weeks": 4
+        },
+        {
+          "id": "month-2",
+          "label": "Agustus 2024",
+          "weeks": 4
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task-1793852606103",
+          "name": "Sosialisasi Greenhouse, Otomasi GreenHouse, dan Energi Surya",
+          "allocation": {
+            "month-1": {
+              "M1": false,
+              "M2": false,
+              "M4": true
+            }
+          }
+        },
+        {
+          "id": "task-1794117768320",
+          "name": "Implementasi Desain Sistem, Perakitan, dan Wiring IoT",
+          "allocation": {
+            "month-1": {
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-2": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794117841450",
+          "name": "Workshop Instalasi Otomasi, Hidroponik Rakit Apung, dan IoT",
+          "allocation": {
+            "month-1": {
+              "M3": false,
+              "M4": false
+            },
+            "month-2": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794117901119",
+          "name": "Workshop Perawatan PLTS & Sosialisasi Pengoperasian Sistem",
+          "allocation": {
+            "month-1": {
+              "M4": false
+            },
+            "month-2": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477878764",
+          "name": "Tracking Hulu Mata Air & Sosialisasi Penjernihan Air",
+          "allocation": {
+            "month-2": {
+              "M3": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477952945",
+          "name": "Pemasangan Penerangan Jalan",
+          "allocation": {
+            "month-2": {
+              "M3": true
+            }
+          }
+        },
+        {
+          "id": "task-1794477971746",
+          "name": "Monev",
+          "allocation": {
+            "month-2": {
+              "M4": true
+            }
+          }
+        }
+      ]
+    },
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "value": "2024"
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "value": "1 Bulan"
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "value": "Volunteer"
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "value": "Cianjur"
+      }
+    ],
+    "detailPengalaman": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "title": "Tanggung Jawab",
+        "description": "Sebagai Koordinator Engineering, saya bertanggung jawab mengoordinasikan pengembangan sistem IoT greenhouse untuk memantau kelembapan, suhu, tekanan, dan ketinggian air kolam, serta mengatur penyiraman otomatis. Saya juga membantu instalasi penerangan jalan, perawatan panel surya, dan koordinasi pengembangan aplikasi monitoring."
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "title": "Kontribusi",
+        "description": "Saya mengoordinasikan perakitan dan integrasi sensor untuk memantau kondisi greenhouse dan kolam ikan, serta implementasi sistem penyiraman otomatis. Saya juga membantu instalasi penerangan jalan desa, perawatan panel surya, dan mengoordinasikan pengembangan aplikasi untuk monitoring sistem."
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "title": "Tantangan & Solusi",
+        "description": "Tantangan utama adalah mengintegrasikan seluruh komponen ke dalam panel box, termasuk memastikan wiring, sensor, dan perangkat IoT terhubung dengan benar. Saya mengatasinya melalui koordinasi dan diskusi singkat setiap hari bersama tim untuk memantau progres, memeriksa integrasi, serta meminimalkan miskomunikasi."
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "title": "Hasil & Dampak",
+        "description": "Sistem IoT greenhouse berhasil diimplementasikan dan diuji langsung di lokasi untuk memantau kelembapan, suhu, tekanan, dan ketinggian air kolam, serta menjalankan penyiraman otomatis. Pengalaman ini mengasah kemampuan saya dalam mengoordinasikan tim dan merealisasikan solusi teknis sesuai kebutuhan masyarakat."
+      }
+    ],
+    "teknologi": [
+      {
+        "id": "1",
+        "type": "Mikrokontroler & Sensor",
+        "tools": "ESP8266, Arduino Uno, BME280, Ultrasonic Sensor"
+      },
+      {
+        "id": "2",
+        "type": "Alat Elektronik & Pembantu",
+        "tools": "Wiring System, Modem, Perkakas"
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "caption": "Greenhouse Desa Majalaya",
+        "image": "src/assets/Experience/KKNMajalaya/greenhouse.webp"
+      },
+      {
+        "id": "2",
+        "caption": "Box 1 - Power Supply & Modem",
+        "image": "src/assets/Experience/KKNMajalaya/panel_1.webp"
+      },
+      {
+        "id": "3",
+        "caption": "Wiring Sistem IoT",
+        "image": "src/assets/Experience/KKNMajalaya/installing_wiring.webp"
+      },
+      {
+        "id": "4",
+        "caption": "Instalasi Panel Box",
+        "image": "src/assets/Experience/KKNMajalaya/instalasi_panel.webp"
+      },
+      {
+        "id": "5",
+        "caption": "Box 2 - Relay & Modul",
+        "image": "src/assets/Experience/KKNMajalaya/panel_2.webp"
+      },
+      {
+        "id": "6",
+        "caption": "Implementasi Program di IoT",
+        "image": "src/assets/Experience/KKNMajalaya/programming_iot.webp"
+      },
+      {
+        "id": "7",
+        "caption": "Tracking Hulu Mata Air",
+        "image": "src/assets/Experience/KKNMajalaya/tracking_hulu.webp"
+      },
+      {
+        "id": "8",
+        "caption": "Instalasi Penerangan Jalan",
+        "image": "src/assets/Experience/KKNMajalaya/another_bro.JPG"
+      },
+      {
+        "id": "9",
+        "caption": "Pembuatan Tiang Penerangan Jalan",
+        "image": "src/assets/Experience/KKNMajalaya/persiapan_tiang_penerangan.webp"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "slug": "sman-16",
+    "relatedProjectKeys": [],
+    "colorVariantKey": "pink-1",
+    "role": "Relawan Mahasiswa",
+    "companyName": "SMAN 16 Jakarta",
+    "logo": "src/assets/Logos/sman16.png",
+    "caption": "Berpartisipasi dalam program edukasi energi terbarukan melalui sosialisasi pemanfaatan energi surya dan air kepada siswa SMAN 16 Jakarta. Saya juga terlibat dalam dokumentasi kegiatan dan instalasi panel surya bersama dosen serta siswa.",
+    "timeline": {
+      "months": [
+        {
+          "id": "month-1",
+          "label": "Mei 2024",
+          "weeks": 4
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task-1793852606103",
+          "name": "Sosialisasi Energi Terbarukan Solar dan Air Kepada Guru",
+          "allocation": {
+            "month-1": {
+              "M1": true,
+              "M2": false,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-1794478558570",
+          "name": "Sosialisasi Energi Terbarikan Solar dan Air Kepada Siswa",
+          "allocation": {
+            "month-1": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794478570071",
+          "name": "Praktik Inovasi Energi Terbarukan oleh Siswa",
+          "allocation": {
+            "month-1": {
+              "M3": true
+            }
+          }
+        },
+        {
+          "id": "task-1794478586879",
+          "name": "Instalasi Solar Panel ",
+          "allocation": {
+            "month-1": {
+              "M4": true
+            }
+          }
+        }
+      ]
+    },
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "value": "2024"
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "value": "1 Bulan"
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "value": "Volunteer"
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "value": "Jakarta"
+      }
+    ],
+    "detailPengalaman": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "title": "Tanggung Jawab",
+        "description": "Sebagai relawan mahasiswa, saya terlibat dalam kegiatan sosialisasi pemanfaatan energi terbarukan berbasis surya dan air kepada guru serta siswa SMAN 16 Jakarta. Saya juga bertanggung jawab mendokumentasikan kegiatan dan membantu instalasi panel surya bersama dosen dan siswa."
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "title": "Kontribusi",
+        "description": "Saya mendukung pelaksanaan edukasi energi terbarukan sebagai bagian dari program P5 melalui dokumentasi kegiatan sosialisasi dan keterlibatan dalam instalasi panel surya di lingkungan sekolah. Kegiatan ini bertujuan memperkenalkan penerapan energi surya dan air dalam kehidupan sehari-hari."
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "title": "Tantangan & Solusi",
+        "description": "Tantangan yang dihadapi adalah akses instalasi yang cukup sulit, terutama saat menghubungkan wiring menuju panel box, serta menyampaikan materi teknis agar mudah dipahami siswa. Saya mengikuti jalur instalasi kelistrikan sekolah untuk menjangkau panel box dan menyesuaikan penyampaian materi dengan pemahaman peserta."
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "title": "Hasil & Dampak",
+        "description": "Kegiatan ini mendukung pengenalan dan penerapan energi terbarukan di lingkungan sekolah melalui sosialisasi serta instalasi panel surya. Program ini juga mencatat peningkatan skor evaluasi kesadaran energi hingga 30%, sebagai indikator peningkatan pemahaman peserta terhadap energi terbarukan."
+      }
+    ],
+    "teknologi": [
+      {
+        "id": "1",
+        "type": "Solar Energy & Instrumen",
+        "tools": "Solar Panel, Panel Box, Electrical Wiring, Electrical Hand Tools, Multimeter"
+      },
+      {
+        "id": "2",
+        "type": "Dokumentasi",
+        "tools": "Kamera"
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "caption": "Sosialisasi Kepada Guru",
+        "image": "src/assets/Experience/KKNSMA/sosialisasi_energi2.webp"
+      },
+      {
+        "id": "2",
+        "caption": "Sosialisasi Kepada Siswa",
+        "image": "src/assets/Experience/KKNSMA/sosialisasi_energi3.webp"
+      },
+      {
+        "id": "3",
+        "caption": "Instalasi Solar Panel",
+        "image": "src/assets/Experience/KKNSMA/instalasi_panel2.webp"
+      },
+      {
+        "id": "4",
+        "caption": "Hasil Instalasi Solar Panel",
+        "image": "src/assets/Experience/KKNSMA/instalasi_panel.webp"
+      },
+      {
+        "id": "5",
+        "caption": "Terbitan Jurnal ",
+        "image": "src/assets/Experience/KKNSMA/jurnal_pengabdian.webp"
+      },
+      {
+        "id": "6",
+        "caption": "News KKN",
+        "image": "src/assets/Experience/KKNSMA/berita_pengabdian.webp"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "slug": "s1-unj",
+    "relatedProjectKeys": [
+      "gas-chromatography-detection",
+      "ozon-level-detection"
+    ],
+    "colorVariantKey": "yellow-1",
+    "role": "S1 Fisika Komputasi",
+    "companyName": "Universitas Negeri Jakarta",
+    "logo": "src/assets/Logos/unj.webp",
+    "caption": "Menempuh pendidikan S1 Fisika dengan fokus pada fisika komputasi, metode numerik, pemrograman, analisis data, dan pemodelan matematis. Saya juga aktif mengikuti organisasi, kegiatan kepanitiaan, pelatihan, serta program pengembangan kompetensi di luar perkuliahan.",
+    "timeline": {
+      "months": [
+        {
+          "id": "month-1",
+          "label": "2021 - 2022 (Semester 1-2)",
+          "weeks": 4
+        },
+        {
+          "id": "month-2",
+          "label": "2022 - 2023 (Semester 3-4)",
+          "weeks": 4
+        },
+        {
+          "id": "month-3",
+          "label": "2023 - 2024 (Semester 5-6)",
+          "weeks": 4
+        },
+        {
+          "id": "month-4",
+          "label": "2024 - 2025 (Seemster 7-8)",
+          "weeks": 4
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task-1793852606103",
+          "name": "PKKMB (Prodi, Fakultas, Universitas)",
+          "allocation": {
+            "month-1": {
+              "M1": true,
+              "M2": false,
+              "M4": false
+            },
+            "month-2": {
+              "M1": false,
+              "M2": false,
+              "M3": false
+            }
+          }
+        },
+        {
+          "id": "task-1794117768320",
+          "name": "Seminar Ilmiah Fisika & Weconar",
+          "allocation": {
+            "month-1": {
+              "M1": false,
+              "M2": false,
+              "M3": true,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-1794117841450",
+          "name": "Tim OJS UNJ (Evaluasi Jurnal)",
+          "allocation": {
+            "month-1": {
+              "M3": false,
+              "M4": false
+            },
+            "month-2": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794117901119",
+          "name": "Panitia PKKMB Prodi",
+          "allocation": {
+            "month-1": {
+              "M4": false
+            },
+            "month-2": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794117931380",
+          "name": "Anggota BEM Prodi Departemen KPB",
+          "allocation": {
+            "month-2": {
+              "M1": false,
+              "M2": true,
+              "M3": true
+            }
+          }
+        },
+        {
+          "id": "task-1794117960930",
+          "name": "Panitia PKMP Rumpun Fisika",
+          "allocation": {
+            "month-2": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": true
+            },
+            "month-3": {
+              "M1": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118051811",
+          "name": "Wakil Ketua Departemen KPB BEM Prodi",
+          "allocation": {
+            "month-3": {
+              "M1": true,
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794118078530",
+          "name": "Magang Industri (PT IndoMega Teknologi)",
+          "allocation": {
+            "month-3": {
+              "M1": false,
+              "M2": true,
+              "M3": false,
+              "M4": false
+            },
+            "month-4": {
+              "M1": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118169712",
+          "name": "Asisten Laboratorium (Praktikum Elektronika)",
+          "allocation": {
+            "month-1": {
+              "M3": false
+            },
+            "month-3": {
+              "M1": true,
+              "M2": true
+            },
+            "month-4": {
+              "M1": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118213090",
+          "name": "Peserta Seminar Ilmiah Fisika (Presenter Banner)",
+          "allocation": {
+            "month-3": {
+              "M2": true
+            },
+            "month-4": {
+              "M1": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118231883",
+          "name": "Freelance",
+          "allocation": {
+            "month-3": {
+              "M3": true,
+              "M4": true
+            },
+            "month-4": {
+              "M1": true,
+              "M2": true,
+              "M3": true,
+              "M4": true
+            }
+          }
+        },
+        {
+          "id": "task-1794118260523",
+          "name": "Asisten Laboratorium (Praktikum Fisika Komputasi)",
+          "allocation": {
+            "month-3": {
+              "M3": true,
+              "M4": true
+            },
+            "month-4": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118287190",
+          "name": "Bootcamp Studi Independen",
+          "allocation": {
+            "month-3": {
+              "M3": false,
+              "M4": false
+            },
+            "month-4": {
+              "M1": true,
+              "M2": true,
+              "M3": false,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118313531",
+          "name": "Penulisan Proposal Skripsi",
+          "allocation": {
+            "month-4": {
+              "M1": true,
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794118411211",
+          "name": "Projek Akhir dan Penulisan Skripsi",
+          "allocation": {
+            "month-4": {
+              "M3": true,
+              "M4": true
+            }
+          }
+        }
+      ]
+    },
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "value": "2021-2026"
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "value": "4 Tahun"
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "value": "S1"
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "value": "Jakarta"
+      }
+    ],
+    "detailPengalaman": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "title": "Fokus Pembelajaran",
+        "description": "Selama menempuh pendidikan S1 Fisika, saya berfokus mempelajari metode numerik, algoritma dan pemrograman, analisis data, pemodelan matematis, serta statistika. Saya juga mempelajari penerapan kecerdasan buatan dan komputasi dalam penyelesaian permasalahan fisika."
+      },
+      {
+        "id": "5",
+        "icon": "user",
+        "title": "Penelitian Akhir / Skripsi",
+        "description": "Penelitian ini berfokus pada pengembangan instrumen yang mereplikasi prinsip kerja Gas Chromatography konvensional untuk mendeteksi gas volatil butana dan metanol. Respon sensor TCD dan TVOC digunakan sebagai data untuk melatih model Artificial Neural Network (ANN). Hasil pengujian menunjukkan bahwa instrumen mampu menghasilkan respon sensor yang baik, sementara model ANN berhasil mengklasifikasikan kedua jenis gas berdasarkan fitur terpilih dengan tingkat akurasi sebesar 97%."
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "title": "Aktivitas & Kontribusi",
+        "description": "Selain kegiatan akademik, saya aktif sebagai anggota BEM Program Studi Fisika dan panitia PKKMB. Saya juga mengikuti program KKN, pelatihan bootcamp, serta program magang untuk memperluas pengalaman organisasi, kolaborasi, dan penerapan ilmu di luar lingkungan perkuliahan."
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "title": "Tantangan & Solusi",
+        "description": "Tantangan terbesar saya adalah menyelesaikan skripsi setelah mengalami pergantian judul yang memengaruhi waktu pengerjaan. Saya mengatasinya dengan rutin mengevaluasi progres, mereview hasil pekerjaan, dan menetapkan target penyelesaian yang terukur agar proses penelitian tetap berjalan sesuai jadwal."
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "title": "Hasil & Pencapaian",
+        "description": "Saya berhasil menyelesaikan pendidikan dalam waktu empat tahun dengan IPK 3,71. Selama perkuliahan, saya mengembangkan pemahaman di bidang fisika, komputasi, statistika, dan pemrograman, sekaligus meningkatkan kemampuan komunikasi, kolaborasi, serta pengelolaan waktu melalui berbagai kegiatan akademik dan nonakademik."
+      }
+    ],
+    "teknologi": [
+      {
+        "id": "1",
+        "type": "Instrumen Perangkat Keras",
+        "tools": "Arduino, ESP32, ESP8266, PCB, Multimeter, Osiloskop, Power Supply, Komponen Elektronika"
+      },
+      {
+        "id": "2",
+        "type": "Aplikasi Perangkat Lunak",
+        "tools": "Tinkercad, Matlab/Simulink, SPSS, Packet Tracer, Kicad, VS Code, Jupyter Notebook"
+      },
+      {
+        "id": "3",
+        "type": "Pemrograman",
+        "tools": "Python, Javascript, Java, C++, Pandas, Numpy, Scikit-Learn, Tensorflow, Vue.js, Express.js, Leaflet.js"
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "caption": "After Class",
+        "image": "src/assets/Experience/Kuliah/after_class.webp"
+      },
+      {
+        "id": "2",
+        "caption": "Bersama Dosen",
+        "image": "src/assets/Experience/Kuliah/after_class2.webp"
+      },
+      {
+        "id": "3",
+        "caption": "Buka Bersama Fisika",
+        "image": "src/assets/Experience/Kuliah/buka_bersama_fisika.webp"
+      },
+      {
+        "id": "4",
+        "caption": "Panitia PKMP",
+        "image": "src/assets/Experience/Kuliah/panitia_pkmp.webp"
+      },
+      {
+        "id": "5",
+        "caption": "Panitia PKMP",
+        "image": "src/assets/Experience/Kuliah/panitia_pkmp2.webp"
+      },
+      {
+        "id": "6",
+        "caption": "Tim Evaluasi OJS UNJ",
+        "image": "src/assets/Experience/Kuliah/evaluasi_jurnal.webp"
+      },
+      {
+        "id": "7",
+        "caption": "Asisten Laboratorium",
+        "image": "src/assets/Experience/Kuliah/aslab_elektronika.webp"
+      },
+      {
+        "id": "8",
+        "caption": "Persiapan Perkuliahan",
+        "image": "src/assets/Experience/Kuliah/prepare_perkuliahan.webp"
+      },
+      {
+        "id": "9",
+        "caption": "Panitia PKKMB Fisika",
+        "image": "src/assets/Experience/Kuliah/panitia_pkkmb.webp"
+      },
+      {
+        "id": "10",
+        "caption": "Panitia Hari Guru",
+        "image": "src/assets/Experience/Kuliah/panitia_hariguru.jpeg"
+      },
+      {
+        "id": "11",
+        "caption": "Online Meeting Panitia PKKMB",
+        "image": "src/assets/Experience/Kuliah/panitia_pkkmb2.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "slug": "studi-independen",
+    "relatedProjectKeys": [
+      "shipping-prediction",
+      "power-plant-regression"
+    ],
+    "colorVariantKey": "red-1",
+    "role": "Java & Python For Data Science",
+    "companyName": "PT Tata Informasi Asia",
+    "logo": "src/assets/Logos/tia.webp",
+    "caption": "Mengikuti bootcamp Data Science melalui program MSIB Batch 7 dengan fokus pada pemrograman Java, pengolahan data menggunakan Python, serta pengembangan model Machine Learning. Saya juga mengembangkan dashboard prediksi ketepatan waktu pengiriman sebagai proyek akhir dan terpilih sebagai salah satu dari lima peserta untuk mengikuti sertifikasi BNSP Associate Data Scientist.",
+    "timeline": {
+      "months": [
+        {
+          "id": "month-1",
+          "label": "Sep 2024",
+          "weeks": 4
+        },
+        {
+          "id": "month-2",
+          "label": "Okt 2024",
+          "weeks": 4
+        },
+        {
+          "id": "month-3",
+          "label": "Nov 2024",
+          "weeks": 4
+        },
+        {
+          "id": "month-4",
+          "label": "Des 2024",
+          "weeks": 4
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task-1793852606103",
+          "name": "Kickoff & Perkenalan",
+          "allocation": {
+            "month-1": {
+              "M1": false,
+              "M2": true,
+              "M4": false
+            },
+            "month-2": {
+              "M1": false,
+              "M2": false,
+              "M3": false
+            }
+          }
+        },
+        {
+          "id": "task-1794117768320",
+          "name": "Pembelajaran Java & Tugas Harian, Mingguan",
+          "allocation": {
+            "month-1": {
+              "M2": true,
+              "M3": false,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-1794117841450",
+          "name": "Pembelajaran Array, Collections & Class Java",
+          "allocation": {
+            "month-1": {
+              "M3": true,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-1794117901119",
+          "name": "Pembelajaran Buffer, Overriding & Lambda Class Java",
+          "allocation": {
+            "month-1": {
+              "M4": true
+            }
+          }
+        },
+        {
+          "id": "task-1794117931380",
+          "name": "Konsep MVC Java & Networking",
+          "allocation": {
+            "month-2": {
+              "M1": true
+            }
+          }
+        },
+        {
+          "id": "task-1794117960930",
+          "name": "Pembelajaran Tentang Relational Database & Servlet",
+          "allocation": {
+            "month-2": {
+              "M1": false,
+              "M2": true,
+              "M3": false,
+              "M4": false
+            },
+            "month-3": {
+              "M1": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118051811",
+          "name": "Pembahasan Framework Spring Boot & REST API",
+          "allocation": {
+            "month-2": {
+              "M3": true
+            },
+            "month-3": {
+              "M1": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118078530",
+          "name": "Pembelajaran Objek, Class, List & Tuple Python",
+          "allocation": {
+            "month-2": {
+              "M4": true
+            },
+            "month-3": {
+              "M1": false,
+              "M2": false,
+              "M3": false,
+              "M4": false
+            },
+            "month-4": {
+              "M1": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118169712",
+          "name": "Pembelajaran Data Structure & Pandas Python",
+          "allocation": {
+            "month-3": {
+              "M1": true
+            },
+            "month-4": {
+              "M1": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118213090",
+          "name": "Pengenalan Machine Learning & Preprocessing Data",
+          "allocation": {
+            "month-3": {
+              "M2": true
+            },
+            "month-4": {
+              "M1": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118231883",
+          "name": "Pembelajaran Regresi, Klasifikasi, Clustering & Analisis Tableau",
+          "allocation": {
+            "month-3": {
+              "M3": true
+            },
+            "month-4": {
+              "M2": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118260523",
+          "name": "Penjelasan Model Lebih Lanjut & Deep Learning",
+          "allocation": {
+            "month-3": {
+              "M4": true
+            },
+            "month-4": {
+              "M2": false,
+              "M3": false,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118287190",
+          "name": "Pembelajaran Git, API & Docker",
+          "allocation": {
+            "month-4": {
+              "M1": true,
+              "M4": false
+            }
+          }
+        },
+        {
+          "id": "task-1794118313531",
+          "name": "Diskusi Awal Projek Akhir",
+          "allocation": {
+            "month-4": {
+              "M2": true
+            }
+          }
+        },
+        {
+          "id": "task-1794118411211",
+          "name": "Projek Akhir",
+          "allocation": {
+            "month-4": {
+              "M3": true,
+              "M4": true
+            }
+          }
+        },
+        {
+          "id": "task-1794481160903",
+          "name": "Presentasi Final Project",
+          "allocation": {
+            "month-4": {
+              "M4": true
+            }
+          }
+        }
+      ]
+    },
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "value": "SEP-DEC 2024"
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "value": "4 Bulan"
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "value": "BOOTCAMP"
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "value": "Jakarta"
+      }
+    ],
+    "detailPengalaman": [
+      {
+        "id": "1",
+        "icon": "calendar",
+        "title": "Fokus Pembelajaran",
+        "description": "Selama bootcamp, saya mempelajari fundamental Java untuk pengembangan backend serta Python untuk pengolahan dan analisis data. Materi juga mencakup pemodelan Machine Learning, regresi, klasifikasi, serta integrasi Java dan Python untuk implementasi model."
+      },
+      {
+        "id": "2",
+        "icon": "clock",
+        "title": "Projek Akhir",
+        "description": "Saya mengembangkan dashboard prediksi ketepatan waktu pengiriman barang berdasarkan lima fitur utama. Proyek ini mencakup pengembangan frontend menggunakan HTML, CSS, dan JavaScript, serta backend Java untuk mengintegrasikan model Machine Learning ke dalam dashboard."
+      },
+      {
+        "id": "3",
+        "icon": "briefcase",
+        "title": "Tantangan & Solusi",
+        "description": "Tantangan utama adalah membagi waktu antara kegiatan perkuliahan pada siang hari dan bootcamp pada malam hari. Saya mengatasinya dengan mengatur prioritas, menyusun jadwal belajar, dan memanfaatkan waktu secara konsisten agar dapat mengikuti seluruh rangkaian pembelajaran."
+      },
+      {
+        "id": "4",
+        "icon": "map-pin",
+        "title": "Hasil & Pencapaian",
+        "description": "Saya berhasil mengembangkan dashboard prediksi dengan model Random Forest sebagai model terbaik dari lima algoritma yang diuji, dengan akurasi mencapai 97%. Saya juga terpilih sebagai salah satu dari lima peserta dari total 70 peserta untuk mengikuti dan berhasil memperoleh sertifikasi BNSP Associate Data Scientist."
+      }
+    ],
+    "teknologi": [
+      {
+        "id": "1",
+        "type": "Programming",
+        "tools": "Java, Python, Spring Boot, FastApi, HTML, CSS, Javascript"
+      },
+      {
+        "id": "2",
+        "type": "Machine Learning",
+        "tools": "Jupyter Notebook, Pandas, Scikit-Learn, Matplotlib, Tensorflow, Keras"
+      },
+      {
+        "id": "3",
+        "type": "Alat Pengembangan",
+        "tools": "Visual Studio Code, Intelij IDEA"
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "caption": "Kickoff Bootcamp",
+        "image": "src/assets/Experience/Bootcamp/kickoff.webp"
+      },
+      {
+        "id": "2",
+        "caption": "Proses Pembelajaran",
+        "image": "src/assets/Experience/Bootcamp/class_activity.webp"
+      },
+      {
+        "id": "3",
+        "caption": "Belajar Spring Boot & REST",
+        "image": "src/assets/Experience/Bootcamp/learning_springboot.webp"
+      },
+      {
+        "id": "4",
+        "caption": "Model Training",
+        "image": "src/assets/Experience/Bootcamp/model_training.webp"
+      },
+      {
+        "id": "5",
+        "caption": "Presentasi Projek Final",
+        "image": "src/assets/Experience/Bootcamp/project_presentation.webp"
+      }
+    ]
+  }
+]

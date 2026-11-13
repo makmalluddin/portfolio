@@ -1,0 +1,231 @@
+import MainFrame from "@/src/components/MainFrame";
+import Reveal from "@/src/components/Reveal";
+import WorkTimelineTable from "./WorkLineTable";
+import { projectData } from "@/src/data/projectData";
+import ProjectCard from "@/src/components/project/ProjectCard";
+
+function ExperienceDetailSlug({ experience }) {
+  const {
+    companyName,
+    role,
+    logo,
+    caption,
+    metaData,
+    detailPengalaman,
+    teknologi,
+    relatedProjectKeys,
+    colorVariantKey,
+    timeline,
+  } = experience;
+
+  const relatedProject = projectData.filter(
+    (item) => relatedProjectKeys && relatedProjectKeys.includes(item.slug)
+  );
+
+  const colorClass = colorVariantKey ? `text-${colorVariantKey}` : "text-green-blue-1";
+
+  return (
+    <div>
+      {/* Hero Section */}
+      <MainFrame
+        title={
+          <p className="font-mono font-medium text-sm">
+            <span className="uppercase text-sm">
+              {role} {`- ${companyName}`}
+            </span>
+          </p>
+        }
+      >
+        <Reveal className="flex flex-col px-4 md:px-8 py-12 md:py-16 items-center justify-center gap-4 text-center">
+          <div className="flex flex-col items-center justify-center gap-2">
+            <img
+              src={logo}
+              alt={companyName}
+              loading="lazy"
+              className="border border-border-muted size-20 object-contain rounded-sm"
+            />
+
+            <p className="font-mono text-xs md:text-sm tracking-tight uppercase">
+              {companyName}
+            </p>
+          </div>
+          <h2 className="font-bold text-3xl md:text-6xl scale-y-90">
+            {role.split(" ")[0]}{" "}
+            <span className={colorClass}>
+              {role.split(" ").slice(1).join(" ")}
+            </span>
+            .
+          </h2>
+          <p className="max-w-xl text-center text-sm md:text-base">{caption}</p>
+          <div className="flex flex-wrap sm:flex-nowrap divide-y sm:divide-y-0 sm:divide-x border border-border-muted divide-border-muted">
+            {metaData.map((item) => {
+              const Icon = item.icon;
+
+              return (
+                <span
+                  key={item.id}
+                  className="flex gap-1 items-center justify-center px-4 py-2 text-text-secondary text-sm"
+                >
+                  <span className="text-md text-text-muted/70">
+                    <Icon className="size-4" />
+                  </span>
+                  <span>{item.value}</span>
+                </span>
+              );
+            })}
+          </div>
+        </Reveal>
+      </MainFrame>
+
+      {timeline && (
+        <MainFrame
+          title={
+            <p className="font-mono text-text-muted text-sm">
+              01 / ALUR PEKERJAAN
+            </p>
+          }
+        >
+          <Reveal>
+            <WorkTimelineTable timeline={timeline} colorVariantKey={colorVariantKey} />
+          </Reveal>
+        </MainFrame>
+      )}
+
+      <MainFrame
+        title={
+          <p className="font-mono text-text-muted text-sm">02 / KONTEKS</p>
+        }
+      >
+        <Reveal>
+          <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
+            Detail <span className={colorClass}>Pengalaman</span>.
+          </h3>
+        </Reveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 -mr-px -mb-px">
+          {detailPengalaman.map((item) => {
+            const Icon = item.icon;
+
+            return (
+              <Reveal key={item.id} className="h-full">
+                <div className="flex flex-col h-full gap-4 px-6 md:px-8 py-8 border-r border-b border-border-muted">
+                  <div className="flex w-full justify-between items-end">
+                    <span className={`border border-border-muted p-2 ${colorClass}/80`}>
+                      <Icon className="size-4" />
+                    </span>
+                    <span className="font-mono text-text-muted text-xs">
+                      0{item.id}
+                    </span>
+                  </div>
+                  <h4 className="font-bold text-lg md:text-xl">{item.title}</h4>
+                  <p className="text-text-muted text-sm md:text-base">
+                    {item.description}
+                  </p>
+                </div>
+              </Reveal>
+            );
+          })}
+        </div>
+      </MainFrame>
+
+      <MainFrame
+        title={
+          <p className="font-mono text-text-muted text-sm">03 / TEKNOLOGI</p>
+        }
+      >
+        <Reveal>
+          <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
+            Alat dan <span className={colorClass}>Teknologi</span>.
+          </h3>
+        </Reveal>
+        {teknologi.map((item) => (
+          <Reveal key={item.id}>
+            <div className="flex flex-col sm:flex-row px-4 md:px-8 py-6 items-start sm:items-center justify-start gap-2 sm:gap-0">
+              <span className="font-mono text-sm text-text-muted/80 w-20 shrink-0">
+                0{item.id}
+              </span>
+
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-16 w-full">
+                <span className="text-text-secondary text-base md:text-lg min-w-60 font-medium">
+                  {item.type}
+                </span>
+                <span className="font-inter text-text-secondary text-sm md:text-lg tracking-wider">
+                  {item.tools}
+                </span>
+              </div>
+            </div>
+          </Reveal>
+        ))}
+      </MainFrame>
+
+      {/* Galeri Pengalaman */}
+      {experience.galery?.length > 0 && (
+        <MainFrame
+          title={
+            <p className="font-mono text-text-muted text-sm">04 / GALERI PENGALAMAN</p>
+          }
+        >
+          <Reveal>
+            <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
+              Dokumentasi <span className={colorClass}>Aktivitas</span>.
+            </h3>
+          </Reveal>
+          <div className="grid grid-cols-1 md:grid-cols-2 -mr-px -mb-px">
+            {experience.galery.map((item) => (
+              <Reveal key={item.id} className="h-full">
+                <div className="flex flex-col h-full border-b md:border-r border-border-muted">
+                  <span className="flex w-full justify-between px-4 md:px-8 py-2 text-text-muted font-mono text-xs border-b border-border-muted">
+                    <span className="uppercase text-text-muted/70 tracking-wider">
+                      {item.caption}
+                    </span>
+                    <span>0{item.id}</span>
+                  </span>
+                  <div className="relative w-full aspect-video overflow-hidden">
+                    <img
+                      src={item.image}
+                      alt={item.caption}
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-contain"
+                    />
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+
+            {/* Slot border penyeimbang ganjil (hanya aktif di desktop) */}
+            {experience.galery.length % 2 !== 0 && (
+              <div className="hidden md:block border-r border-b border-border-muted" />
+            )}
+          </div>
+        </MainFrame>
+      )}
+
+      {/* Section 05: Projek Dikerjakan */}
+      {relatedProject.length > 0 && (
+        <MainFrame
+          title={
+            <p className="font-mono text-text-muted text-sm">
+              05 / PROJEK DIKERJAKAN
+            </p>
+          }
+        >
+          <h3 className="px-4 md:px-8 py-8 md:py-16 font-bold text-3xl md:text-5xl scale-y-90">
+            Projek <span className={colorClass}>Terkait</span>.
+          </h3>
+
+          <div className="-m-8 overflow-hidden p-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -mr-px -mb-px">
+              {relatedProject.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+          </div>
+        </MainFrame>
+      )}
+
+
+    </div>
+  );
+}
+
+export default ExperienceDetailSlug;

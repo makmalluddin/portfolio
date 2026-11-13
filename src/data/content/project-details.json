@@ -1,0 +1,695 @@
+[
+  {
+    "id": "1",
+    "slug": "corporate-website",
+    "categoryTitle": "CORPORATE WEBSITE REVAMP",
+    "titlePrefix": "Corporate Website Revamp With ",
+    "highlightedWord": "Custom ",
+    "titleSuffix": "CMS.",
+    "colorVariantKey": "blue-1",
+    "description": "Ini adalah aplikasi yang saya buat sebagai pembaruan landing page perusahaan lengkap dengan custom CMS untuk manage berbagai konten yang ditampilkan di landing page.",
+    "repoUrl": "",
+    "liveDemoUrl": "https://sg8group.com/",
+    "heroImage": "src/assets/Project/Corporate Website Revamp/landing_hero.webp",
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "user",
+        "value": "Fullstack Developer"
+      },
+      {
+        "id": "2",
+        "icon": "check",
+        "value": "Selesai"
+      },
+      {
+        "id": "3",
+        "icon": "calendar-days",
+        "value": "6 Bulan"
+      },
+      {
+        "id": "4",
+        "icon": "users",
+        "value": "4 Orang"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "01",
+        "title": "Latar Belakang & Tujuan",
+        "description": "Proyek ini bertujuan untuk memodernisasi tampilan website perusahaan sekaligus menyediakan Content Management System (CMS) agar tim internal dapat mengelola konten website secara lebih mandiri dan efisien."
+      },
+      {
+        "id": "02",
+        "title": "Kontribusi yang Saya Lakukan",
+        "description": "Pada proyek ini tanggung jawab saya meliputi pembuatan antarmuka dan backend untuk section recruitment beserta integrasinya, membuat fitur baru short link, mengembangkan CMS, memimpin tim untuk melakukan migrasi domain perusahaan ke provider baru, dan memimpin tim untuk melakukan produksi aplikasi ke server shared hosting menggunakan cpanel."
+      },
+      {
+        "id": "03",
+        "title": "Tantangan & Solusi",
+        "description": "Tantangan utama dalam proyek ini adalah memastikan aplikasi berjalan stabil di lingkungan produksi tanpa mengalami kendala yang dapat mengganggu operasional website. Untuk mengantisipasinya, saya melakukan backup website sebelumnya dan menyiapkan rencana pemulihan apabila proses deployment tidak berjalan sesuai harapan."
+      },
+      {
+        "id": "04",
+        "title": "Hasil Akhir",
+        "description": "Website berhasil dipublikasikan menggunakan provider baru dan kini dapat diakses oleh pengguna. Implementasi ini juga mendukung pengelolaan konten website secara lebih mandiri sehingga memudahkan tim internal dalam melakukan pemeliharaan dan pembaruan informasi."
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "image": "src/assets/Project/Corporate Website Revamp/landing_hero.webp",
+        "caption": "Halaman Utama"
+      },
+      {
+        "id": "2",
+        "image": "src/assets/Project/Corporate Website Revamp/landing_company_profile.webp",
+        "caption": "Halaman Profil Perusahaan"
+      },
+      {
+        "id": "3",
+        "image": "src/assets/Project/Corporate Website Revamp/landing_recruitment.webp",
+        "caption": "Halaman Recruitment "
+      },
+      {
+        "id": "4",
+        "image": "src/assets/Project/Corporate Website Revamp/landing_article.webp",
+        "caption": "Halaman Artikel"
+      },
+      {
+        "id": "5",
+        "image": "src/assets/Project/Corporate Website Revamp/cms_dashboard.png",
+        "caption": "Halaman Utama CMS"
+      },
+      {
+        "id": "6",
+        "image": "src/assets/Project/Corporate Website Revamp/cms_recruitment.webp",
+        "caption": "Halaman Recruitment CMS"
+      },
+      {
+        "id": "7",
+        "image": "src/assets/Project/Corporate Website Revamp/cms_admin_role.png",
+        "caption": "Halaman Role Privilege"
+      },
+      {
+        "id": "8",
+        "image": "src/assets/Project/Corporate Website Revamp/deploy_folder_structure.jpeg",
+        "caption": "Deployment Folder Structure"
+      },
+      {
+        "id": "9",
+        "image": "src/assets/Project/Corporate Website Revamp/deploy_htaccess.jpeg",
+        "caption": "Deployment Example Htaccess"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "slug": "aerosea-monitoring",
+    "categoryTitle": "AEROSEA MONITORING",
+    "titlePrefix": "Monitoring Dashboard to Visualize ",
+    "highlightedWord": "Vessel and Airplane ",
+    "titleSuffix": "Real-time.",
+    "colorVariantKey": "red-1",
+    "description": "Aplikasi yang saya buat sebagai visualisasi dari data yang didapatkan melalui kegiatan internship & penyedia data pihak ketiga. Data dapat disajikan secara real-time maupun historis sesuai preferensi user.",
+    "repoUrl": "https://github.com/makmalluddin/aerosea-monitoring",
+    "liveDemoUrl": "",
+    "heroImage": "src/assets/Project/Aerosea Monitoring/landing_dashboard.webp",
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "user",
+        "value": "Junior Software Engineer"
+      },
+      {
+        "id": "2",
+        "icon": "check",
+        "value": "Selesai"
+      },
+      {
+        "id": "3",
+        "icon": "calendar-days",
+        "value": "6 Bulan"
+      },
+      {
+        "id": "4",
+        "icon": "users",
+        "value": "Individu"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "01",
+        "title": "Latar Belakang & Tujuan",
+        "description": "Proyek ini bertujuan mengembangkan dashboard monitoring untuk memvisualisasikan pergerakan kapal dan pesawat menggunakan data historis maupun real-time. Sistem ini dirancang untuk mengintegrasikan berbagai sumber data ke dalam satu platform sehingga informasi dapat dipantau secara terpusat dan mudah dipahami."
+      },
+      {
+        "id": "02",
+        "title": "Kontribusi yang Saya Lakukan",
+        "description": "Saya mengembangkan sistem IoT bernama AIS Receiver untuk mengumpulkan raw data AIS, kemudian melakukan decoding menggunakan Python agar dapat diolah menjadi informasi kapal. Saya juga membangun dashboard monitoring menggunakan MERN Stack, dengan mengintegrasikan data historis serta data real-time dari penyedia layanan pihak ketiga, yaitu AISStream.io dan OpenSky Network."
+      },
+      {
+        "id": "03",
+        "title": "Tantangan & Solusi",
+        "description": "Tantangan utama dalam proyek ini adalah mengoptimalkan performa dashboard di sisi client serta mengelola permintaan data dari layanan pihak ketiga agar tetap sesuai dengan batas penggunaan dan ketentuan layanan. Untuk mengatasinya, saya mengatur mekanisme polling data secara efisien dan mengimplementasikan WebSocket menggunakan Socket.IO agar pembaruan data real-time dapat diterima tanpa membebani sistem secara berlebihan."
+      },
+      {
+        "id": "04",
+        "title": "Hasil Akhir",
+        "description": "Proyek ini menghasilkan dashboard monitoring yang mampu memvisualisasikan pergerakan kapal dan pesawat melalui integrasi data historis dan real-time. Dashboard dirancang agar informasi dapat ditampilkan secara responsif, dengan pembaruan data yang lancar dan antarmuka yang mudah digunakan."
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "image": "src/assets/Project/Aerosea Monitoring/landing_dashboard.webp",
+        "caption": "Halaman Utama"
+      },
+      {
+        "id": "2",
+        "image": "src/assets/Project/Aerosea Monitoring/landing_information.webp",
+        "caption": "Halaman Informasi "
+      },
+      {
+        "id": "3",
+        "image": "src/assets/Project/Aerosea Monitoring/landing_information2.webp",
+        "caption": "Halaman Informasi"
+      },
+      {
+        "id": "4",
+        "image": "src/assets/Project/Aerosea Monitoring/vessel_historis.webp",
+        "caption": "Halaman Vessel Historis"
+      },
+      {
+        "id": "5",
+        "image": "src/assets/Project/Aerosea Monitoring/vessel_live.webp",
+        "caption": "Halaman Vessel Live"
+      },
+      {
+        "id": "6",
+        "image": "src/assets/Project/Aerosea Monitoring/aircraft_historis.webp",
+        "caption": "Halaman Aircraft Historis"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "slug": "gas-chromatography-detection",
+    "categoryTitle": "GAS CHROMATOGRAPHY DETECTION",
+    "titlePrefix": "Classification of Volatile Compounds using ",
+    "highlightedWord": "Gas Chromatography ",
+    "titleSuffix": ".",
+    "colorVariantKey": "purple-1",
+    "description": "Ini adalah sistem yang saya buat agar dapat membedakan 2 jenis gas volatile yaitu butana dan metanol. IoT System menggunakan sensor TCD dan TVOC, model yang digunakan untuk Deep Learning adalah ANN.",
+    "repoUrl": "https://github.com/makmalluddin/chromatography-gas",
+    "liveDemoUrl": "",
+    "heroImage": "src/assets/Project/Gas Chromatography/pengambilan_data.webp",
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "user",
+        "value": "Researcher"
+      },
+      {
+        "id": "2",
+        "icon": "check",
+        "value": "Selesai"
+      },
+      {
+        "id": "3",
+        "icon": "calendar-days",
+        "value": "1 Tahun"
+      },
+      {
+        "id": "4",
+        "icon": "users",
+        "value": "2 Orang"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "01",
+        "title": "Latar Belakang & Tujuan",
+        "description": "Proyek ini merupakan penelitian tugas akhir yang bertujuan mengembangkan sistem deteksi dan klasifikasi gas volatil berupa butana dan metanol dengan memanfaatkan teknologi IoT dan Deep Learning. Sistem dirancang sebagai replika Gas Chromatography (GC) konvensional untuk memisahkan gas volatil, merekam respons sensor, dan mengolah data tersebut sebagai dasar proses klasifikasi."
+      },
+      {
+        "id": "02",
+        "title": "Kontribusi yang Saya Lakukan",
+        "description": "Bersama rekan penelitian, saya mengembangkan sistem IoT dengan integrasi sensor untuk membangun replika perangkat Gas Chromatography. Sistem ini dirancang untuk memisahkan gas volatil dan merekam respons sensor sebagai fitur klasifikasi. Saya juga mengembangkan model Artificial Neural Network (ANN) untuk mengidentifikasi jenis gas berdasarkan pola respons sensor yang diperoleh dari perangkat."
+      },
+      {
+        "id": "03",
+        "title": "Tantangan & Solusi",
+        "description": "Tantangan utama dalam proyek ini adalah mereplikasi kondisi kerja Gas Chromatography, khususnya dalam mengatur lingkungan pemisahan gas agar menghasilkan respons sensor yang optimal. Hal ini mencakup pemilihan material pemisah, pengaturan kondisi ruang, dan penggunaan gas pendorong. Untuk mengatasinya, saya menggunakan silika gel sebagai material pemisah dalam kolom serta merancang kotak khusus untuk mengatur kondisi setiap ruang agar mendukung proses pemisahan gas."
+      },
+      {
+        "id": "04",
+        "title": "Hasil Akhir",
+        "description": "Proyek ini menghasilkan sistem IoT yang mampu merekam respons sensor terhadap gas butana dan metanol, serta model ANN yang berhasil mengklasifikasikan kedua jenis gas tersebut. Model menghasilkan tingkat akurasi dan presisi hingga 97% yang dikategorikan berhasil mengklasifikasikan kedua gas volatil."
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "image": "src/assets/Project/Gas Chromatography/alat_jadi.jpeg",
+        "caption": "Alat Kromatografi Gas"
+      },
+      {
+        "id": "2",
+        "image": "src/assets/Project/Gas Chromatography/design_alat.webp",
+        "caption": "Desain Alat Top"
+      },
+      {
+        "id": "3",
+        "image": "src/assets/Project/Gas Chromatography/design_alat2.webp",
+        "caption": "Desain Alat Layer 1"
+      },
+      {
+        "id": "4",
+        "image": "src/assets/Project/Gas Chromatography/design_alat3.webp",
+        "caption": "Desain Alat Layer 2"
+      },
+      {
+        "id": "5",
+        "image": "src/assets/Project/Gas Chromatography/design_alat4.webp",
+        "caption": "Desain Ruang Sampel"
+      },
+      {
+        "id": "6",
+        "image": "src/assets/Project/Gas Chromatography/hasil_cetak.jpeg",
+        "caption": "Cetak Alat 3d Printing"
+      },
+      {
+        "id": "7",
+        "image": "src/assets/Project/Gas Chromatography/skematik_rangkaian.png",
+        "caption": "Skematik Rangkaian"
+      },
+      {
+        "id": "8",
+        "image": "src/assets/Project/Gas Chromatography/training_data.png",
+        "caption": "Training Model"
+      },
+      {
+        "id": "9",
+        "image": "src/assets/Project/Gas Chromatography/pca_data.png",
+        "caption": "Principle Component Analysis (PCA)"
+      },
+      {
+        "id": "10",
+        "image": "src/assets/Project/Gas Chromatography/pengambilan_data2.jpeg",
+        "caption": "Pengambilan Data"
+      },
+      {
+        "id": "11",
+        "image": "src/assets/Project/Gas Chromatography/antarmuka_alat.webp",
+        "caption": "GUI Alat"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "slug": "my-finance-app",
+    "categoryTitle": "MY FINANCE APP",
+    "titlePrefix": "My ",
+    "highlightedWord": "Finance ",
+    "titleSuffix": "App.",
+    "colorVariantKey": "green-1",
+    "description": "Aplikasi yang saya buat sebagai sistem pencatatan keuangan harian. Aplikasi ini saya bangun agar penggunaan uang harian tercatat secara rapi untuk melacak penggunaan uang.",
+    "repoUrl": "https://github.com/makmalluddin/my-finance-app",
+    "liveDemoUrl": "https://my-finance-app-green.vercel.app/",
+    "heroImage": "src/assets/Project/My Finance App/landing_login.webp",
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "user",
+        "value": "Fullstack Developer"
+      },
+      {
+        "id": "2",
+        "icon": "check",
+        "value": "Selesai"
+      },
+      {
+        "id": "3",
+        "icon": "calendar-days",
+        "value": "2 Bulan"
+      },
+      {
+        "id": "4",
+        "icon": "users",
+        "value": "Individu"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "01",
+        "title": "Latar Belakang & Tujuan",
+        "description": "My Finance App merupakan aplikasi berbasis web yang dikembangkan untuk membantu pengguna mencatat transaksi keuangan harian, memantau pemasukan dan pengeluaran, serta memahami kondisi finansial secara lebih terstruktur. Aplikasi ini dirancang untuk menyediakan satu platform yang memudahkan pengguna dalam mengelola aktivitas keuangan sehari-hari."
+      },
+      {
+        "id": "02",
+        "title": "Kontribusi yang Saya Lakukan",
+        "description": "Saya mengembangkan antarmuka aplikasi menggunakan Next.js, React, dan TypeScript, serta memanfaatkan Supabase sebagai backend dan database. Saya juga mengintegrasikan seluruh komponen aplikasi, mulai dari antarmuka hingga pengelolaan data, kemudian melakukan deployment menggunakan Vercel agar aplikasi dapat diakses secara online."
+      },
+      {
+        "id": "03",
+        "title": "Tantangan & Solusi",
+        "description": "Tantangan utama dalam proyek ini adalah memastikan setiap pengguna hanya dapat mengakses dan mengelola data keuangan miliknya sendiri. Untuk mengatasi hal tersebut, saya menerapkan Row Level Security (RLS) pada database Supabase. RLS memungkinkan pengaturan hak akses data melalui kebijakan (policy) yang dievaluasi pada setiap operasi database, sehingga akses terhadap data dapat dibatasi berdasarkan identitas pengguna yang sedang terautentikasi."
+      },
+      {
+        "id": "04",
+        "title": "Hasil Akhir",
+        "description": "Proyek ini menghasilkan aplikasi pengelolaan keuangan berbasis web yang telah dipublikasikan dan dapat diakses secara online. Aplikasi memungkinkan pengguna mencatat transaksi, memantau arus pemasukan dan pengeluaran, serta mengelola informasi keuangan harian dengan lebih terstruktur."
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "image": "src/assets/Project/My Finance App/landing_login.webp",
+        "caption": "Halaman Login & Register"
+      },
+      {
+        "id": "2",
+        "image": "src/assets/Project/My Finance App/dashboard.webp",
+        "caption": "Halaman Utama"
+      },
+      {
+        "id": "3",
+        "image": "src/assets/Project/My Finance App/add_transaction.webp",
+        "caption": "Halaman Menambah Transaksi"
+      },
+      {
+        "id": "4",
+        "image": "src/assets/Project/My Finance App/filter_transactions.webp",
+        "caption": "Halaman Melihat Detail Transaksi"
+      },
+      {
+        "id": "5",
+        "image": "src/assets/Project/My Finance App/summary.webp",
+        "caption": "Halaman Summary Keuangan"
+      },
+      {
+        "id": "6",
+        "image": "src/assets/Project/My Finance App/supabase.webp",
+        "caption": "Database di Supabase"
+      },
+      {
+        "id": "7",
+        "image": "src/assets/Project/My Finance App/supabase_rls_db.webp",
+        "caption": "Pengaturan RLS (Row Level Security) pada Database"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "shipping-prediction",
+    "categoryTitle": "SHIPPING PREDICTION",
+    "titlePrefix": "Delivery Time ",
+    "highlightedWord": "Accuracy ",
+    "titleSuffix": "Prediction.",
+    "colorVariantKey": "yellow-1",
+    "description": "Aplikasi yang saya buat untuk memprediksi waktu pengiriman barang berdasarkan variabel tertentu di bandingkan dengan estimasi yang diberikan pihak logistik.",
+    "repoUrl": "https://github.com/makmalluddin/shipping-prediction",
+    "liveDemoUrl": "",
+    "heroImage": "src/assets/Project/Delivery Time Accuracy Prediction/dashboard.webp",
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "user",
+        "value": "Data Scientist"
+      },
+      {
+        "id": "2",
+        "icon": "check",
+        "value": "Selesai"
+      },
+      {
+        "id": "3",
+        "icon": "calendar-days",
+        "value": "4 Bulan"
+      },
+      {
+        "id": "4",
+        "icon": "users",
+        "value": "Individu"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "01",
+        "title": "Latar Belakang & Tujuan",
+        "description": "Proyek ini merupakan proyek akhir Bootcamp Data Science yang bertujuan mengembangkan aplikasi prediksi estimasi waktu pengiriman barang berdasarkan 18 fitur dataset. Sistem dirancang untuk mengolah berbagai atribut pengiriman dan menghasilkan prediksi waktu yang dapat digunakan sebagai referensi dalam memperkirakan durasi pengiriman."
+      },
+      {
+        "id": "02",
+        "title": "Kontribusi yang Saya Lakukan",
+        "description": "Saya melakukan pengumpulan dataset, data cleaning, serta pengembangan dan evaluasi beberapa model Machine Learning, meliputi Decision Tree Regressor, Random Forest Regressor, Gradient Boosting Regressor, XGBoost Regressor, dan Artificial Neural Network (ANN). Berdasarkan hasil evaluasi, saya memilih Random Forest sebagai model terbaik dan mengekspornya ke format Pickle. Saya kemudian mengembangkan backend menggunakan Spring Boot untuk memuat model, memproses input, dan mengirimkan hasil prediksi ke antarmuka berbasis HTML, CSS, dan JavaScript."
+      },
+      {
+        "id": "03",
+        "title": "Tantangan & Solusi",
+        "description": "Tantangan utama dalam proyek ini adalah menyelesaikan seluruh tahapan pengembangan dalam waktu yang terbatas, mulai dari proses pemodelan Machine Learning hingga pembangunan backend dan frontend. Untuk mengatasinya, saya menerapkan skala prioritas dan membagi pekerjaan ke dalam target harian agar setiap tahapan dapat diselesaikan secara terstruktur sesuai tenggat waktu."
+      },
+      {
+        "id": "04",
+        "title": "Hasil Akhir",
+        "description": "Proyek ini menghasilkan aplikasi dashboard prediksi waktu pengiriman yang mengintegrasikan model Random Forest dengan backend Spring Boot dan antarmuka web. Aplikasi berhasil menerima input pengguna, memproses data melalui model yang telah diintegrasikan, dan menampilkan hasil prediksi sesuai dengan data yang dimasukkan."
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/dashboard.webp",
+        "caption": "Halaman Utama"
+      },
+      {
+        "id": "2",
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/what_info.jpeg",
+        "caption": "Modal Informasi"
+      },
+      {
+        "id": "3",
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/input_1.jpeg",
+        "caption": "Modal Input Data Pilihan"
+      },
+      {
+        "id": "4",
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/input_3.jpeg",
+        "caption": "Modal Input Data Geografis"
+      },
+      {
+        "id": "5",
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/input_4.jpeg",
+        "caption": "Modal Input Data Waktu"
+      },
+      {
+        "id": "6",
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/output.jpeg",
+        "caption": "Hasil Prediksi"
+      },
+      {
+        "id": "7",
+        "image": "src/assets/Project/Delivery Time Accuracy Prediction/model_training.png",
+        "caption": "Model Training"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "slug": "ozon-level-detection",
+    "categoryTitle": "OZON LEVEL DETECTION",
+    "titlePrefix": "Ozon ",
+    "highlightedWord": "Level ",
+    "titleSuffix": "Detection.",
+    "colorVariantKey": "blue-2",
+    "description": "Mengembangkan sistem machine learning untuk memprediksi kualitas udara berdasarkan level ozon dengan 18 fitur environmental. Mengaplikasikan FFT untuk ekstraksi fitur dan 3 model machine learning untuk prediksi.",
+    "repoUrl": "https://github.com/makmalluddin/ozon-detection",
+    "liveDemoUrl": "",
+    "heroImage": "src/assets/Project/Ozon Level Detection/datasets.webp",
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "user",
+        "value": "Undergraduate Student"
+      },
+      {
+        "id": "2",
+        "icon": "check",
+        "value": "Selesai"
+      },
+      {
+        "id": "3",
+        "icon": "calendar-days",
+        "value": "1 Bulan"
+      },
+      {
+        "id": "4",
+        "icon": "users",
+        "value": "3 Orang"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "01",
+        "title": "Latar Belakang & Tujuan",
+        "description": "Proyek ini merupakan penelitian kolaboratif yang bertujuan membandingkan performa beberapa model Machine Learning dalam mengklasifikasikan kualitas udara berdasarkan data konsentrasi ozon. Penelitian ini menerapkan Fast Fourier Transform (FFT) dan Principal Component Analysis (PCA) untuk proses ekstraksi dan reduksi fitur sebelum data digunakan dalam pemodelan."
+      },
+      {
+        "id": "02",
+        "title": "Kontribusi yang Saya Lakukan",
+        "description": "Dalam tim yang terdiri dari tiga orang, saya bertanggung jawab melakukan pemodelan dan evaluasi Machine Learning menggunakan data hasil ekstraksi fitur. Saya mengembangkan dan membandingkan tiga model klasifikasi, yaitu Random Forest, Gradient Boosting, dan Voting Classifier untuk mengidentifikasi model dengan performa klasifikasi terbaik."
+      },
+      {
+        "id": "03",
+        "title": "Tantangan & Solusi",
+        "description": "Tantangan utama dalam proyek ini adalah memastikan data hasil ekstraksi fitur menggunakan FFT dan PCA telah sesuai dan siap digunakan dalam proses pemodelan. Untuk mengantisipasi ketidaksesuaian data, saya melakukan pemeriksaan ulang terhadap dataset hasil pengolahan sebelum menggunakannya dalam proses pelatihan dan evaluasi model."
+      },
+      {
+        "id": "04",
+        "title": "Hasil Akhir",
+        "description": "Hasil evaluasi menunjukkan bahwa model Gradien Boosting menghasilkan performa klasifikasi terbaik dengan akurasi mencapai 92%. Temuan ini menjadi bagian dari hasil perbandingan performa model dalam mengklasifikasikan kualitas udara berdasarkan data tingkat ozon."
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "image": "src/assets/Project/Ozon Level Detection/data_cleaning.webp",
+        "caption": "Data Cleaning - Missing Value"
+      },
+      {
+        "id": "2",
+        "image": "src/assets/Project/Ozon Level Detection/data_cleaning2.png",
+        "caption": "Data Cleaning - Duplicate"
+      },
+      {
+        "id": "3",
+        "image": "src/assets/Project/Ozon Level Detection/eda_1.png",
+        "caption": "EDA"
+      },
+      {
+        "id": "4",
+        "image": "src/assets/Project/Ozon Level Detection/eda_2.webp",
+        "caption": "EDA - Histogram"
+      },
+      {
+        "id": "5",
+        "image": "src/assets/Project/Ozon Level Detection/fft_implementation.webp",
+        "caption": "Implementasi FFT"
+      },
+      {
+        "id": "6",
+        "image": "src/assets/Project/Ozon Level Detection/fft_implementation2.webp",
+        "caption": "Implementasi FFT"
+      },
+      {
+        "id": "7",
+        "image": "src/assets/Project/Ozon Level Detection/heatmap.webp",
+        "caption": "Heatmap"
+      },
+      {
+        "id": "8",
+        "image": "src/assets/Project/Ozon Level Detection/pca.webp",
+        "caption": "Principle Component Analysis (PCA)"
+      },
+      {
+        "id": "9",
+        "image": "src/assets/Project/Ozon Level Detection/gradien_boosting.png",
+        "caption": "Model Gradien Boosting"
+      },
+      {
+        "id": "10",
+        "image": "src/assets/Project/Ozon Level Detection/random_forest.png",
+        "caption": "Model Random Forest"
+      },
+      {
+        "id": "11",
+        "image": "src/assets/Project/Ozon Level Detection/voting_classifier.png",
+        "caption": "Model Voting Classifier"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "slug": "power-plant-regression",
+    "categoryTitle": "POWER PLANT REGRESSION",
+    "titlePrefix": "Power Plant ",
+    "highlightedWord": "Regression",
+    "titleSuffix": ".",
+    "colorVariantKey": "pink-1",
+    "description": "Membuat model regresi untuk memprediksi powerpant energy menggunakan 4 parameter utama. Mengevaluasi lima algoritma regresi untuk membandingakan efektivitas model dalam mengestimasi produksi energi listrik bersih per jam (PE).",
+    "repoUrl": "https://github.com/makmalluddin/powerplant-regression",
+    "liveDemoUrl": "",
+    "heroImage": "src/assets/Project/Powerplant/dataset.webp",
+    "metaData": [
+      {
+        "id": "1",
+        "icon": "user",
+        "value": "Bootcamp Student"
+      },
+      {
+        "id": "2",
+        "icon": "check",
+        "value": "Selesai"
+      },
+      {
+        "id": "3",
+        "icon": "calendar-days",
+        "value": "1 Minggu"
+      },
+      {
+        "id": "4",
+        "icon": "users",
+        "value": "Individual"
+      }
+    ],
+    "contexts": [
+      {
+        "id": "01",
+        "title": "Latar Belakang & Tujuan",
+        "description": "Proyek ini bertujuan membandingkan performa lima model regresi untuk memprediksi output energi listrik bersih per jam (PE) berdasarkan empat parameter utama dalam dataset. Penelitian ini dilakukan untuk mengidentifikasi algoritma Machine Learning yang mampu menghasilkan prediksi dengan performa terbaik."
+      },
+      {
+        "id": "02",
+        "title": "Kontribusi yang Saya Lakukan",
+        "description": "Saya melakukan pengembangan dan evaluasi lima model regresi, yaitu Random Forest Regressor, Polynomial Regression, Support Vector Regressor (SVR), Multiple Linear Regression, dan Decision Tree Regressor. Setiap model menggunakan pendekatan pengolahan data yang disesuaikan dengan karakteristik algoritmanya, termasuk transformasi fitur ke dalam bentuk polinomial untuk Polynomial Regression."
+      },
+      {
+        "id": "03",
+        "title": "Tantangan & Solusi",
+        "description": "Tantangan utama dalam proyek ini adalah memastikan setiap model menggunakan representasi data yang sesuai dengan kebutuhan algoritmanya. Hal ini penting karena setiap pendekatan regresi memiliki karakteristik pemrosesan fitur yang berbeda. Untuk mengatasinya, saya menyesuaikan preprocessing dan transformasi fitur pada masing-masing model agar proses pelatihan dan evaluasi dapat dilakukan secara tepat."
+      },
+      {
+        "id": "04",
+        "title": "Hasil Akhir",
+        "description": "Hasil perbandingan menunjukkan bahwa Random Forest Regressor menghasilkan performa prediksi terbaik dengan nilai akurasi yang dilaporkan mencapai 97%. Temuan ini menunjukkan bahwa pendekatan Random Forest memberikan hasil paling optimal dibandingkan empat model regresi lainnya dalam memprediksi output energi listrik berdasarkan dataset yang digunakan."
+      }
+    ],
+    "galery": [
+      {
+        "id": "1",
+        "image": "src/assets/Project/Powerplant/dt_model.png",
+        "caption": "Model Decision Tree"
+      },
+      {
+        "id": "2",
+        "image": "src/assets/Project/Powerplant/mlr_model.png",
+        "caption": "Model Multiple Linear Regression"
+      },
+      {
+        "id": "3",
+        "image": "src/assets/Project/Powerplant/polynomial_model.png",
+        "caption": "Model Polynomial Regression"
+      },
+      {
+        "id": "4",
+        "image": "src/assets/Project/Powerplant/rf_model.png",
+        "caption": "Model Random Forest Regressor"
+      },
+      {
+        "id": "5",
+        "image": "src/assets/Project/Powerplant/svr_model.png",
+        "caption": "Model Support Vector Regressor"
+      }
+    ]
+  }
+]

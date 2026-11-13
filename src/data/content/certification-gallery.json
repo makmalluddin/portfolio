@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Associate Data Scientist",
+    "type": "SERTIFIKAT",
+    "issueYear": "Februari 2025",
+    "expiryYear": "Februari 2028",
+    "duration": "-",
+    "image": "src/assets/Sertifikasi/bnsp.webp",
+    "credentialUrl": "https://drive.google.com/drive/folders/1r6XXhrQ7gsWHjHrVvysrctAxqm5x-7vU?usp=drive_link"
+  },
+  {
+    "id": "2",
+    "title": "Python Essentials 1",
+    "type": "SERTIFIKAT",
+    "issueYear": "October 2024",
+    "expiryYear": "Selamanya",
+    "duration": "-",
+    "image": "src/assets/Sertifikasi/python.webp",
+    "credentialUrl": "https://www.credly.com/badges/b59de019-440b-49e5-a3e1-568f2812c29a/public_url"
+  },
+  {
+    "id": "3",
+    "title": "Java & Python For Data Scientist",
+    "type": "PELATIHAN",
+    "issueYear": "Desember 2024",
+    "expiryYear": "Selamanya",
+    "duration": "20 Jam",
+    "image": "src/assets/Sertifikasi/stupen.webp",
+    "credentialUrl": "https://drive.google.com/drive/folders/1dK-nyU3gZV6Lb_8N3dQwfhietTjSAsou?usp=sharing"
+  },
+  {
+    "id": "4",
+    "title": "Introduction SQL",
+    "type": "SERTIFIKAT",
+    "issueYear": "Desember 2025",
+    "expiryYear": "Selamanya",
+    "duration": "-",
+    "image": "src/assets/Sertifikasi/dicoding.webp",
+    "credentialUrl": "https://drive.google.com/drive/folders/1KJol-kX0QtLmwnXYz5EMjHITIcLSsLJ6?usp=drive_link"
+  },
+  {
+    "id": "5",
+    "title": "Intro To Software Engineering",
+    "type": "PELATIHAN",
+    "issueYear": "Februari 2026",
+    "expiryYear": "Selamanya",
+    "duration": "10 Jam",
+    "image": "src/assets/Sertifikasi/revou.webp",
+    "credentialUrl": "https://drive.google.com/drive/folders/1u-Evb4jeIicrw4gAR4Lqw8wBppRn05ab?usp=drive_link"
+  },
+  {
+    "id": "6",
+    "title": "Pelatihan Data Analytics",
+    "type": "PELATIHAN",
+    "issueYear": "September 2023",
+    "expiryYear": "Selamanya",
+    "duration": "32 Jam",
+    "image": "src/assets/Sertifikasi/xquisite.webp",
+    "credentialUrl": "https://drive.google.com/drive/folders/1xne1uqOq2GI7DKZMKvctnOvGo16uypdW?usp=drive_link"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "brandName": "UDIN",
+  "socialLinks": [
+    {
+      "id": "1",
+      "label": "Github",
+      "href": "https://github.com/makmalluddin",
+      "icon": "github"
+    },
+    {
+      "id": "2",
+      "label": "Email",
+      "href": "mailto:makmalluddin123@gmail.com",
+      "icon": "email"
+    },
+    {
+      "id": "3",
+      "label": "Linkedin",
+      "href": "https://www.linkedin.com/in/makmalluddin",
+      "icon": "linkedin"
+    }
+  ]
+}

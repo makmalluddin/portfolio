@@ -1,0 +1,152 @@
+[
+  {
+    "id": "1",
+    "slug": "corporate-website",
+    "number": "01",
+    "category": "LANDING PAGE",
+    "title": "Corporate Website",
+    "highlightTitle": "Revamp",
+    "description": "Revamp website company untuk modernisasi tampilan dilengkapi custom CMS dengan role-based akses untuk manage konten di landing page.",
+    "image": "src/assets/Project/Corporate Website Revamp/landing_company_profile.webp",
+    "highlightTags": [
+      "Website Development",
+      "Content Management System (CMS)"
+    ],
+    "tags": [
+      "React.js",
+      "Laravel",
+      "Next.js",
+      "cPanel"
+    ],
+    "accentColor": "blue-1"
+  },
+  {
+    "id": "2",
+    "slug": "aerosea-monitoring",
+    "number": "02",
+    "category": "DASHBOARD MONITORING",
+    "title": "Aerosea",
+    "highlightTitle": "Monitoring",
+    "description": "Dashboard monitoring untuk visualisasi pergerakan pesawat dan kapal secara real-time maupun historis, memanfaatkan integrasi websocket serta penyedia API pihak ketiga.",
+    "image": "src/assets/Project/Aerosea Monitoring/vessel_historis.webp",
+    "highlightTags": [
+      "Dashboard Monitoring",
+      "Docker"
+    ],
+    "tags": [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "Socker.io",
+      "Leaflet.js"
+    ],
+    "accentColor": "yellow-1"
+  },
+  {
+    "id": "3",
+    "slug": "gas-chromatography-detection",
+    "number": "03",
+    "category": "UNDERGRADUATE THESIS",
+    "title": "Gas Chromatography",
+    "highlightTitle": "Detection",
+    "description": "Sebuah sistem untuk membedakan 2 jenis gas volatil yaitu Butana dan Metanol. Dikembangkan bersama sistem IoT dengan integrasi sensor untuk pengumpulan data.",
+    "image": "src/assets/Project/Gas Chromatography/alat_jadi.jpeg",
+    "highlightTags": [
+      "Deep Learning",
+      "IoT System"
+    ],
+    "tags": [
+      "Python",
+      "ANN",
+      "PyQt5",
+      "Jupyter Notebook",
+      "ESP32",
+      "TCD & TVOC Sensor",
+      "Autocad"
+    ],
+    "accentColor": "purple-1"
+  },
+  {
+    "id": "4",
+    "slug": "my-finance-app",
+    "number": "04",
+    "category": "FINANCIAL DASHBOARD",
+    "title": "My Finance ",
+    "highlightTitle": "App",
+    "description": "Aplikasi pencatat keuangan pribadi dengan lebih dari tujuh fitur yang membantu pengguna mencatat transaksi, memantau pengeluaran dan pemasukan, dan melihat kondisi keuangan.",
+    "image": "src/assets/Project/My Finance App/dashboard.webp",
+    "highlightTags": [
+      "Finance"
+    ],
+    "tags": [
+      "Next.js",
+      "Supabase",
+      "Typescript",
+      "Vercel"
+    ],
+    "accentColor": "green-1"
+  },
+  {
+    "id": "5",
+    "slug": "shipping-prediction",
+    "number": "05",
+    "category": "BOOTCAMP PROJECT",
+    "title": "Delivery Time",
+    "highlightTitle": "Prediction",
+    "description": "Dashboard dengan model machine learning untuk memprediksi waktu pengiriman dengan estimasi perkiraan kurir. Menggunakan Spring Boot dan HTML untuk dashboard, dan model Random Forest dengan 18 Fitur Data.",
+    "image": "src/assets/Project/Delivery Time Accuracy Prediction/output.jpeg",
+    "highlightTags": [
+      "Dashboard",
+      "Machine Learning"
+    ],
+    "tags": [
+      "Java",
+      "Spring Boot",
+      "Python",
+      "Scikit-Learn"
+    ],
+    "accentColor": "red-1"
+  },
+  {
+    "id": "6",
+    "slug": "ozon-level-detection",
+    "number": "06",
+    "category": "COLLEGE PROJECT",
+    "title": "Ozon Level ",
+    "highlightTitle": "Detection",
+    "description": "Membandingkan performa 3 model machine learning untuk klasifikasi kualitas udara berdasarkan tingkat ozon dengan data yang terdiri dari 18 Fitur. Menerapkan FFT & PCA untuk ekstraksi fitur",
+    "image": "src/assets/Project/Ozon Level Detection/heatmap.webp",
+    "highlightTags": [
+      "Machine Learning"
+    ],
+    "tags": [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "Jupyter Notebook"
+    ],
+    "accentColor": "blue-2"
+  },
+  {
+    "id": "7",
+    "slug": "power-plant-regression",
+    "number": "07",
+    "category": "BOOTCAMP PROJECT",
+    "title": "Power Plant ",
+    "highlightTitle": "Regression",
+    "description": "Menguji keefektifan 5 model regresi machine learning untuk memprediksi output energi listrik bersih per jam (PE) menggunakan dataset dengan 4 parameter utama.",
+    "image": "src/assets/Project/Powerplant/dt_model.png",
+    "highlightTags": [
+      "Regression",
+      "Machine Learning"
+    ],
+    "tags": [
+      "Python",
+      "Scikit-Learn",
+      "Pandas",
+      "Jupyter Notebook"
+    ],
+    "accentColor": "pink-1"
+  }
+]
