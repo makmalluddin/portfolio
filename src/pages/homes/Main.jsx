@@ -16,16 +16,16 @@ function Main() {
   return (
     <div className="flex flex-col">
       <Hero />
-      <div id="projects" className="scroll-mt-12">
+      <div id="projects" className="lg:scroll-mt-12">
         <Projects />
       </div>
-      <div id="experiences" className="scroll-mt-12">
+      <div id="experiences" className="lg:scroll-mt-12">
         <Experience />
       </div>
-      <div id="skills" className="scroll-mt-12">
+      <div id="skills" className="lg:scroll-mt-12">
         <Skill />
       </div>
-      <div id="certifications" className="scroll-mt-12">
+      <div id="certifications" className="lg:scroll-mt-12">
         <Certification />
       </div>
     </div>

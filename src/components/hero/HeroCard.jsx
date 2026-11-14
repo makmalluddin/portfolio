@@ -67,7 +67,12 @@ function HeroCard({ data }) {
 
       {/* Hero Stats Frame */}
       <MainFrame>
-        <Reveal className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y sm:divide-x divide-border-muted">
+        <Reveal
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 [&>*]:border-border-muted
+            max-sm:divide-y
+            sm:max-lg:[&>*:nth-child(even)]:border-l sm:max-lg:[&>*:nth-child(n+3)]:border-t
+            lg:divide-x"
+        >
           <div className="flex items-center justify-start py-4 md:py-2 px-6 md:px-8 gap-1 text-text-muted">
             <span className="text-xl md:text-2xl text-red-1">Apa </span>{" "}
             {statsTagline}
@@ -78,7 +83,7 @@ function HeroCard({ data }) {
               key={item.id}
               className="flex flex-col items-start justify-center py-6 md:py-8 px-6 md:px-8"
             >
-              <p className="font-heading font-bold text-xl md:text-2xl text-text-secondary">
+              <p className="font-sans font-bold text-xl md:text-2xl text-text-secondary">
                 {item.value}{" "}
                 <span className="text-lg md:text-xl">{item.unit}</span>
               </p>

@@ -12,7 +12,7 @@ function Projects() {
           </p>
         }
       >
-        <div className="-m-8 overflow-hidden p-8">
+        <div className="overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -mr-px -mb-px">
             {projectData.map((project) => (
               <ProjectCard key={project.id} project={project} />

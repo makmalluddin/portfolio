@@ -57,22 +57,32 @@ function ExperienceDetailSlug({ experience }) {
             .
           </h2>
           <p className="max-w-xl text-center text-sm md:text-base">{caption}</p>
-          <div className="flex flex-wrap sm:flex-nowrap divide-y sm:divide-y-0 sm:divide-x border border-border-muted divide-border-muted">
-            {metaData.map((item) => {
-              const Icon = item.icon;
 
-              return (
-                <span
-                  key={item.id}
-                  className="flex gap-1 items-center justify-center px-4 py-2 text-text-secondary text-sm"
-                >
-                  <span className="text-md text-text-muted/70">
-                    <Icon className="size-4" />
+          {/* MetaData */}
+          <div className="border border-border-muted overflow-hidden w-full sm:w-auto">
+            <div className="grid grid-cols-2 sm:flex -mr-px -mb-px">
+              {metaData.map((item) => {
+                const Icon = item.icon;
+                const isLongText = item.value.length > 14;
+
+                return (
+                  <span
+                    key={item.id}
+                    className="flex gap-1.5 items-center justify-center px-4 py-2 text-text-secondary text-sm border-r border-b border-border-muted"
+                  >
+                    <span className="shrink-0 text-md text-text-muted/70">
+                      <Icon className="size-4" />
+                    </span>
+                    <span
+                      className={`text-left sm:whitespace-nowrap ${isLongText ? "w-min sm:w-auto" : ""
+                        }`}
+                    >
+                      {item.value}
+                    </span>
                   </span>
-                  <span>{item.value}</span>
-                </span>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </Reveal>
       </MainFrame>
